@@ -1,0 +1,11 @@
+framework module GXCoreBL {
+  umbrella header "GXCoreBL.h"
+
+  export *
+  module * { export * }
+}
+
+module GXCoreBL.Swift {
+  header "GXCoreBL-Swift.h"
+  requires objc
+}

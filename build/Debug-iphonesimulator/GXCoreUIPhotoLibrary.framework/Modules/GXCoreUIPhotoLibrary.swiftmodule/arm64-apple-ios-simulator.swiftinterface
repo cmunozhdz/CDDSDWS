@@ -1,0 +1,86 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GXCoreUIPhotoLibrary
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CoreServices
+import Foundation
+import GXCoreUI
+@_exported import GXCoreUIPhotoLibrary
+import PhotosUI
+import Swift
+import _Concurrency
+import _StringProcessing
+extension GXCoreUI.GXImagePickerControllerHelper : GXCoreUI.GXImagePickerControllerHelperOptionals {
+  @objc public static func optionalNewImagePickerController(with sourceType: UIKit.UIImagePickerController.SourceType, mediaType: Swift.String) throws -> UIKit.UIViewController & GXCoreUI.GXUIImagePickerController
+  @objc public static func optionalNewEntityDataFieldImagePicker(withEntityData entityData: GXObjectsModel.GXEntityDataWithOverrideValues, fieldDescriptor fieldDesc: GXObjectsModel.GXEntityDataFieldDescriptor, fieldSpecifier: Swift.String?, indexer: [Any]?, sourceType: UIKit.UIImagePickerController.SourceType) throws -> UIKit.UIViewController & GXCoreUI.GXEntityDataFieldImagePickerProtocol
+}
+@objc extension UIKit.UIImagePickerController : GXCoreUI.GXUIImagePickerController {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerDelegate: (UIKit.UIImagePickerControllerDelegate & UIKit.UINavigationControllerDelegate)? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerSourceType: UIKit.UIImagePickerController.SourceType {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerMediaTypes: [Swift.String] {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerAllowsEditing: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @available(iOS 11.0, *)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerImageExportPreset: UIKit.UIImagePickerController.ImageURLExportPreset {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerVideoMaximumDuration: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerVideoQuality: UIKit.UIImagePickerController.QualityType {
+    @objc get
+    @objc set
+  }
+  @available(iOS 11.0, *)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerVideoExportPreset: Swift.String {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerShowsCameraControls: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerCameraOverlayView: UIKit.UIView? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerCameraViewTransform: CoreFoundation.CGAffineTransform {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerTakePicture()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerStartVideoCapture() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerStopVideoCapture()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerCameraCaptureMode: UIKit.UIImagePickerController.CameraCaptureMode {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerCameraDevice: UIKit.UIImagePickerController.CameraDevice {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var imagePickerCameraFlashMode: UIKit.UIImagePickerController.CameraFlashMode {
+    @objc get
+    @objc set
+  }
+}
+@available(iOS 14, *)
+extension PhotosUI.PHPickerViewController : GXObjectsModel.GXViewControllerAdaptativePresentation {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxAllowsModalPresentation() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxAllowsPopupPresentation() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxAllowsNavigationControllerPresentation() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxDismissObservingSupportsDealloc() -> Swift.Bool
+}

@@ -1,0 +1,11 @@
+framework module GXDataLayer {
+  umbrella header "GXDataLayer.h"
+
+  export *
+  module * { export * }
+}
+
+module GXDataLayer.Swift {
+  header "GXDataLayer-Swift.h"
+  requires objc
+}

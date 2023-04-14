@@ -1,0 +1,11 @@
+framework module GXUCAnimationView {
+  umbrella header "GXUCAnimationView.h"
+
+  export *
+  module * { export * }
+}
+
+module GXUCAnimationView.Swift {
+  header "GXUCAnimationView-Swift.h"
+  requires objc
+}

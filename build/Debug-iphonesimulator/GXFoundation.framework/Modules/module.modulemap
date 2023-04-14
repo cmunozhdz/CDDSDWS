@@ -1,0 +1,11 @@
+framework module GXFoundation {
+  umbrella header "GXFoundation.h"
+
+  export *
+  module * { export * }
+}
+
+module GXFoundation.Swift {
+  header "GXFoundation-Swift.h"
+  requires objc
+}

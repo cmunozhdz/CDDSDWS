@@ -1,0 +1,11 @@
+{ 
+    "images" : [ { 
+        "idiom" : "universal",
+        "filename" : "wwp_nm_menubanner_tall.png",
+        "scale" : "1x"
+    } ],
+    "info" : { 
+        "version" : 1,
+        "author" : "GeneXus"
+    }
+}

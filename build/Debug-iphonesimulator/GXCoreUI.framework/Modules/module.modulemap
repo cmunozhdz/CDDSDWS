@@ -1,0 +1,11 @@
+framework module GXCoreUI {
+  umbrella header "GXCoreUI.h"
+
+  export *
+  module * { export * }
+}
+
+module GXCoreUI.Swift {
+  header "GXCoreUI-Swift.h"
+  requires objc
+}

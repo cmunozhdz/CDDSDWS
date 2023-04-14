@@ -1,0 +1,1209 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "YAJL",
+        "printedName": "YAJL",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer_Private",
+        "printedName": "GXDataLayer_Private",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer_Private",
+        "printedName": "GXDataLayer_Private",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXDataLayerRemote"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXRemoteWorkWithDetailListEntityDataProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 230,
+      "length": 44,
+      "value": "\"GXDataLayerRemote.GXRemoteWorkWithDetailListEntityDataProvider\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXBaseRemoteDetailEntityDataProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 325,
+      "length": 13,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXBaseRemoteDetailEntityDataProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 345,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXBaseRemoteDetailEntityDataProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 325,
+      "length": 13,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXBaseRemoteDetailEntityDataProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 345,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXBaseRemoteDetailEntityDataProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 325,
+      "length": 13,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXBaseRemoteDetailEntityDataProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 345,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataCacheLoadOperation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 344,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataCacheLoadOperation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 344,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataCacheLoadOperation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1582,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataCacheLoadOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 763,
+      "length": 30,
+      "value": "\"GXDataLayerRemote.GXEntityDataCacheLoadOperation\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataManagerLoaderContext.swift",
+      "kind": "StringLiteral",
+      "offset": 202,
+      "length": 32,
+      "value": "\"GXDataLayerRemote.GXEntityDataManagerLoaderContext\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataFieldHideCodeRESTProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 243,
+      "length": 37,
+      "value": "\"GXDataLayerRemote.GXEntityDataFieldHideCodeRESTProvider\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXBaseRemoteEntityDataProviderHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2716,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXBaseRemoteEntityDataProviderHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2818,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXBaseRemoteEntityDataProviderHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 206,
+      "length": 36,
+      "value": "\"GXDataLayerRemote.GXBaseRemoteEntityDataProviderHelper\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataServiceResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 344,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataCacheSaveOperationContext.swift",
+      "kind": "Dictionary",
+      "offset": 528,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXRemoteWorkWithSectionListEntityDataProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 231,
+      "length": 45,
+      "value": "\"GXDataLayerRemote.GXRemoteWorkWithSectionListEntityDataProvider\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityDataDeleteOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 218,
+      "length": 35,
+      "value": "\"GXDataLayerRemote.GXCoreDataEntityDataDeleteOperation\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXRemoteWorkWithSectionDetailEntityDataProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 232,
+      "length": 47,
+      "value": "\"GXDataLayerRemote.GXRemoteWorkWithSectionDetailEntityDataProvider\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataModelFactory.swift",
+      "kind": "Array",
+      "offset": 534,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataModelFactory.swift",
+      "kind": "Array",
+      "offset": 583,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataModelFactory.swift",
+      "kind": "StringLiteral",
+      "offset": 249,
+      "length": 22,
+      "value": "\"GXDataLayerRemote.GXCoreDataModelFactory\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataServiceManager.swift",
+      "kind": "StringLiteral",
+      "offset": 739,
+      "length": 42,
+      "value": "\"GXEntityDataServiceManager._loadersByURL\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataFieldDynamicComboRESTProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 225,
+      "length": 41,
+      "value": "\"GXDataLayerRemote.GXEntityDataFieldDynamicComboRESTProvider\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 209,
+      "length": 4,
+      "value": "\"__\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 8,
+      "value": "\"_Query\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 327,
+      "length": 24,
+      "value": "\"_QueryCollectionEntity\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 399,
+      "length": 11,
+      "value": "\"_Sublevel\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 453,
+      "length": 11,
+      "value": "\"timeStamp\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 510,
+      "length": 15,
+      "value": "\"dataTimeStamp\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 570,
+      "length": 14,
+      "value": "\"lastModified\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 625,
+      "length": 10,
+      "value": "\"complete\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 671,
+      "length": 5,
+      "value": "\"uri\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 718,
+      "length": 13,
+      "value": "\"gx_md5_hash\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 774,
+      "length": 12,
+      "value": "\"loadedMask\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 831,
+      "length": 14,
+      "value": "\"queryBaseUri\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 893,
+      "length": 17,
+      "value": "\"queryParameters\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 979,
+      "length": 7,
+      "value": "\"rowId\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1025,
+      "length": 13,
+      "value": "\"parentLevel\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1096,
+      "length": 15,
+      "value": "\"queryEntities\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1166,
+      "length": 12,
+      "value": "\"entityData\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1234,
+      "length": 7,
+      "value": "\"query\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1300,
+      "length": 15,
+      "value": "\"entityQueries\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1368,
+      "length": 9,
+      "value": "\"queries\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1438,
+      "length": 12,
+      "value": "\"entityData\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1495,
+      "length": 10,
+      "value": "\"dataType\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1548,
+      "length": 9,
+      "value": "\"caption\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1606,
+      "length": 15,
+      "value": "\"allowsDBNulls\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1667,
+      "length": 12,
+      "value": "\"dateFormat\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1725,
+      "length": 12,
+      "value": "\"hourFormat\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1781,
+      "length": 10,
+      "value": "\"readOnly\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1834,
+      "length": 9,
+      "value": "\"descAtt\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1889,
+      "length": 4,
+      "value": "\"pk\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1934,
+      "length": 7,
+      "value": "\"isKey\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1983,
+      "length": 8,
+      "value": "\"length\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2036,
+      "length": 11,
+      "value": "\"relations\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2089,
+      "length": 8,
+      "value": "\"levels\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2156,
+      "length": 11,
+      "value": "\"csObjName\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2223,
+      "length": 11,
+      "value": "\"csAttName\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2292,
+      "length": 13,
+      "value": "\"csLevelName\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2356,
+      "length": 10,
+      "value": "\"enumType\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2412,
+      "length": 4,
+      "value": "\"gx\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXCoreDataEntityConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2467,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataServiceLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 655,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataServiceManagerLoaderContext.swift",
+      "kind": "StringLiteral",
+      "offset": 210,
+      "length": 39,
+      "value": "\"GXDataLayerRemote.GXEntityDataServiceManagerLoaderContext\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXRemoteWorkWithDetailDetailEntityDataProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 237,
+      "length": 46,
+      "value": "\"GXDataLayerRemote.GXRemoteWorkWithDetailDetailEntityDataProvider\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataCacheSaveOperationContextLevelEntityData.swift",
+      "kind": "Dictionary",
+      "offset": 519,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataCacheSaveOperationContextLevelEntityData.swift",
+      "kind": "Array",
+      "offset": 607,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataCacheSaveOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 1766,
+      "length": 33,
+      "value": "\"com.genexus.GXCoreDataCacheSave\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayerRemote\/GXDataLayerRemote\/GXEntityDataCacheSaveOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 662,
+      "length": 30,
+      "value": "\"GXDataLayerRemote.GXEntityDataCacheSaveOperation\""
+    }
+  ]
+}

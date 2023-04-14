@@ -1,0 +1,428 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GXCoreBL
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AppTrackingTransparency
+import CoreLocation
+import Foundation
+@_exported import GXCoreBL
+@_spi(GXInternal) import GXDataLayer
+@_spi(GXInternal) import GXFoundation
+@_spi(GXInternal) import GXObjectsModel
+@_spi(GXInternal) import GXStandardClasses
+import Swift
+import UIKit
+import UserNotifications
+import _Concurrency
+import _StringProcessing
+@_inheritsConvenienceInitializers @objc(GXGeographyExpressionEvaluatorHelper) public class GXGeographyExpressionEvaluatorHelper : ObjectiveC.NSObject {
+  @discardableResult
+  @objc public static func evaluateGeographyMethodValue(expression: GXObjectsModel.GXExpressionMethod, withEntityData entityData: GXObjectsModel.GXEntityData?, actionHandlerContext context: GXObjectsModel.GXActionHandlerContextProtocol?, target: Any, arguments: [Any], completion: @escaping (Any?, Swift.Error?) -> (), asyncAllowed: Swift.Bool, handledSync: Swift.UnsafeMutablePointer<GXFoundation.GXOptionalBoolean>) -> Any?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXEOSuperAppProvisioning) open class GXEOSuperAppProvisioning : GXStandardClasses.GXExternalObjectBase {
+  @objc override dynamic open var externalObjectName: Swift.String {
+    @objc get
+  }
+  @objc(getByText:::) open class func getByText(_ text: Swift.String, _ start: Swift.Int, _ count: Swift.Int) -> GXStandardClasses.GXObjectCollection
+  @objc(getByLocation::::) open class func getByLocation(_ center: Swift.String, _ radius: Swift.Int, _ start: Swift.Int, _ count: Swift.Int) -> GXStandardClasses.GXObjectCollection
+  @objc(getByTag:::) open class func getByTag(_ tag: Swift.String, _ start: Swift.Int, _ count: Swift.Int) -> GXStandardClasses.GXObjectCollection
+  @objc(getFeatured::) open class func getFeatured(_ start: Swift.Int, _ count: Swift.Int) -> GXStandardClasses.GXObjectCollection
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class GXActionExObjBaseMiniProgramsHandler : GXCoreBL.GXActionExternalObjectHandler {
+  @objc override dynamic public class func handleActionExecutionUsingMethodHandlerSelectorNamePrefix() -> Swift.Bool
+  @objc override dynamic public init(actionExObjDescriptor actionExObjDesc: GXObjectsModel.GXActionExternalObjectDescriptor, componentActionsHandlers: [GXObjectsModel.GXActionHandler]?, userInfo: [Swift.String : Any]? = nil)
+  @objc deinit
+}
+extension GXCoreBL.ActionHandler {
+  public func optionalIntegerParameter(_ actionParameter: GXObjectsModel.GXActionParameterDescriptor, fromValue paramValue: Any?) -> Swift.Int?
+  public func optionalUnsignedIntegerParameter(_ actionParameter: GXObjectsModel.GXActionParameterDescriptor, fromValue paramValue: Any?) -> Swift.UInt?
+  public func optionalBoolParameter(_ actionParameter: GXObjectsModel.GXActionParameterDescriptor, fromValue paramValue: Any?) -> Swift.Bool?
+  public func optionalFloatParameter(_ actionParameter: GXObjectsModel.GXActionParameterDescriptor, fromValue paramValue: Any?) -> Swift.Float?
+  public func optionalDoubleParameter(_ actionParameter: GXObjectsModel.GXActionParameterDescriptor, fromValue paramValue: Any?) -> Swift.Double?
+  public func optionalDecimalParameter(_ actionParameter: GXObjectsModel.GXActionParameterDescriptor, fromValue paramValue: Any?) -> Foundation.Decimal?
+}
+@_inheritsConvenienceInitializers @objc(GXAnalyticsServiceHelper) public class GXAnalyticsServiceHelper : ObjectiveC.NSObject {
+  @objc public class func defaultSender(_ sender: Any?, label: Swift.UnsafeMutablePointer<Foundation.NSString?>, value: Swift.UnsafeMutablePointer<Foundation.NSNumber?>)
+  public class func analyticsSenderValues(_ sender: Any?) -> (label: Swift.String?, value: Foundation.NSNumber?)
+  @objc public class func defaultAnalyticsService(_ service: GXCoreBL.GXAnalyticsService, trackViewFromObject object: GXObjectsModel.GXSDObjectLocator)
+  @objc public class func defaultAnalyticsService(_ service: GXCoreBL.GXAnalyticsService, trackEventName name: Swift.String, from object: GXObjectsModel.GXSDObjectLocator, sender: Any?)
+  @objc public class func shouldTrackEventName(_ eventName: Swift.String) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXActionExObjSuperAppsMiniAppsHandler) public class GXActionExObjSuperAppsMiniAppsHandler : GXCoreBL.GXActionExObjBaseMiniProgramsHandler {
+  @objc public func gxActionExObjMethodHandler_Load(_ parameters: [Any])
+  @objc public func gxActionExObjMethodHandler_GetCached()
+  @objc public func gxActionExObjMethodHandler_RemoveCached(_ parameters: [Any])
+  @objc public func gxActionExObjMethodHandler_ClearCached()
+  @objc override dynamic public init(actionExObjDescriptor actionExObjDesc: GXObjectsModel.GXActionExternalObjectDescriptor, componentActionsHandlers: [GXObjectsModel.GXActionHandler]?, userInfo: [Swift.String : Any]? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXExtensionLibraryContext) public class GXExtensionLibraryContext : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXMiniProgramLoader) public class GXMiniProgramLoader : ObjectiveC.NSObject {
+  public class func loadMiniProgram(_ miniProgramId: GXObjectsModel.GXMiniProgramId, completion: ((Swift.Error?) -> Swift.Void)?)
+  @objc public class func exitFromMiniProgram()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXDomainExpressionEvaluatorHelper) public class GXDomainExpressionEvaluatorHelper : ObjectiveC.NSObject {
+  @objc(evaluateConvertWithParameters:target:error:) public static func evaluateConvert(parameters: [Any], target: GXObjectsModel.GXDomainInfo) throws -> Any
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXEORuntime) open class GXEORuntime : GXStandardClasses.GXExternalObjectBase {
+  @objc override dynamic open var externalObjectName: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXWeChatServiceHelper) public class GXWeChatServiceHelper : ObjectiveC.NSObject {
+  @objc open class func isWeChatServiceAvailable() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GXCoreBL.GXWeChatServiceHelper {
+  @objc dynamic open class func nativeToken(completion: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
+}
+@objc extension GXCoreBL.GXEOiOSPermissions {
+  @objc(userTrackingPermissionStatusNumber) dynamic public var userTrackingPermissionStatusNumber: GXFoundation.GXAuthorizationStatusType {
+    @objc get
+  }
+  @objc(userTrackingPermissionStatus) dynamic public class var userTrackingPermissionStatus: GXFoundation.GXAuthorizationStatusType {
+    @objc get
+  }
+  @discardableResult
+  @objc(requestUserTrackingPermission) public static func requestUserTrackingPermission() -> Foundation.NSError?
+}
+extension GXCoreBL.GXEORuntime {
+  @objc(environment) dynamic public var environment: Swift.Int {
+    @objc get
+  }
+  @objc(exitCode) dynamic public var exitCode: Swift.Int {
+    @objc get
+    @objc set
+  }
+}
+extension GXCoreBL.GXActionsFactory {
+  public static func newActionHandler(actionDescriptor: GXObjectsModel.GXActionDescriptor?, userInfo: [GXCoreBL.ActionHandler.UserInfoKey : Any]?) -> GXCoreBL.ActionHandler?
+  @objc(newCancelActionHandlerWithUserInfo:forModelObject:) dynamic public class func newCancelActionHandler(userInfo: [GXCoreBL.ActionHandler.UserInfoKey : Any]?, for modelObject: GXObjectsModel.GXModelObject) -> GXCoreBL.ActionHandler
+  @objc(dynamicObjectCallActionHandlerWithString:userInfo:forModelObject:) dynamic public class func dynamicObjectCallActionHandler(dynamicCallString: Swift.String, userInfo: [GXCoreBL.ActionHandler.UserInfoKey : Any]?, for modelObject: GXObjectsModel.GXModelObject) -> GXCoreBL.ActionHandler
+}
+@_inheritsConvenienceInitializers @objc(GXEOGlobalEvents) open class GXEOGlobalEvents : GXStandardClasses.GXExternalObjectBase {
+  @objc override dynamic open var externalObjectName: Swift.String {
+    @objc get
+  }
+  @objc override dynamic open func dispatchExteralObjectEvent(_ eventName: Swift.String, withParameters parameters: [Any]?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXEOClientSocket) open class GXEOClientSocket : ObjectiveC.NSObject, GXCoreBL.GXWebSocketHandlerDelegate {
+  @objc(status) open var status: Swift.Int {
+    @objc get
+  }
+  @objc(open:) open func open(_ url: Swift.String)
+  @objc(close) open func close()
+  @objc(send:) open func send(_ message: Swift.String)
+  @objc public func success()
+  @objc public func failed()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum GXLocationAccuracyAutorization : Swift.Int {
+  case unknown = 0
+  case restricted
+  case full
+  public static func convert(fromCLAccuracyAuthorization accuracyAuth: CoreLocation.CLAccuracyAuthorization) -> GXCoreBL.GXLocationAccuracyAutorization
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum GXLocationAccuracy : Swift.Int {
+  case `default` = 0
+  case best = -1
+  case bestForNavigation = -2
+  case nearestTenMeters = -3
+  case hundredMeters = -4
+  case kilometer = -5
+  case threeKilomters = -6
+  case reduced = -7
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc(GXRandomNonceGenerator) public class GXRandomNonceGenerator : ObjectiveC.NSObject {
+  @objc public static func randomNonceString() -> Swift.String
+  public static func randomNonceString(length: Swift.Int) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class GXMiniAppsManager {
+  open class func loadMiniApp(info: GXObjectsModel.GXMiniAppInformation, completion: ((Swift.Error?) -> Swift.Void)? = nil)
+  open class func cachedMiniApps() throws -> [GXCoreBL.GXCachedMiniApp]
+  @discardableResult
+  open class func removeCachedMiniApp(id miniAppId: Swift.String, version miniAppVersion: Swift.Int? = nil) throws -> Swift.Bool
+  open class func clearCachedMiniApps() throws
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXMapsProvidersManager) public class GXMapsProvidersManager : ObjectiveC.NSObject {
+  @objc public class func register(_ provider: GXCoreBL.GXMapsProviderProtocol, forIdentifier identifier: Swift.String)
+  @objc public class func getClass(withControlType controlType: Swift.String, forProviderId identifier: Swift.String) -> Swift.AnyClass?
+  @objc public class func getClass(withControlType controlType: Swift.String) -> Swift.AnyClass?
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct GXCachedMiniApp {
+  public var miniAppId: Swift.String
+  public var miniAppVersion: Swift.Int
+  public var creationDatetime: Foundation.Date
+  public var lastUsedDatetime: Foundation.Date
+  public init(miniAppId: Swift.String, miniAppVersion: Swift.Int, creationDatetime: Foundation.Date, lastUsedDatetime: Foundation.Date)
+}
+extension GXCoreBL.GXCachedMiniApp : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension GXCoreBL.GXCachedMiniApp : GXObjectsModel.GXSDTDataConvertible {
+  public init?(sdtData: GXObjectsModel.GXSDTDataProtocol)
+  public func sdtRepresentation(modelObject: GXObjectsModel.GXModelObject) -> GXObjectsModel.GXSDTDataProtocol
+}
+extension GXCoreBL.GXCachedMiniApp : GXObjectsModel.GXDictionaryConvertible {
+  public init?(dictionary: [Swift.String : Any])
+  public func dictionaryRepresentation() -> [Swift.String : Any]
+  public typealias Keys = Swift.String
+  public typealias Values = Any
+}
+@_hasMissingDesignatedInitializers open class GXSuperAppProvisioning {
+  public enum ProvisioningError : Swift.Error {
+    case invalidRequest(Swift.String)
+    case networkError(Swift.Error)
+    case invalidResponse(Swift.String)
+  }
+  public typealias MiniAppsInfoCompletion = ((Swift.Result<[GXObjectsModel.GXMiniAppInformation], GXCoreBL.GXSuperAppProvisioning.ProvisioningError>) -> Swift.Void)
+  @discardableResult
+  open class func miniAppsInfoByText(_ text: Swift.String, start: Swift.Int, count: Swift.Int, completion: @escaping GXCoreBL.GXSuperAppProvisioning.MiniAppsInfoCompletion) -> GXFoundation.GXCancelableOperation
+  @discardableResult
+  open class func miniAppsInfoByLocation(center: CoreLocation.CLLocationCoordinate2D, radius: CoreLocation.CLLocationDistance, start: Swift.Int, count: Swift.Int, completion: @escaping GXCoreBL.GXSuperAppProvisioning.MiniAppsInfoCompletion) -> GXFoundation.GXCancelableOperation
+  @discardableResult
+  open class func miniAppsInfoByTag(_ tag: Swift.String, start: Swift.Int, count: Swift.Int, completion: @escaping GXCoreBL.GXSuperAppProvisioning.MiniAppsInfoCompletion) -> GXFoundation.GXCancelableOperation
+  @discardableResult
+  open class func featuredMiniAppsInfo(start: Swift.Int, count: Swift.Int, completion: @escaping GXCoreBL.GXSuperAppProvisioning.MiniAppsInfoCompletion) -> GXFoundation.GXCancelableOperation
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXActionExObjMiniAppAPIHandler) public class GXActionExObjMiniAppAPIHandler : GXCoreBL.GXActionExObjBaseMiniProgramsHandler {
+  @objc public func gxActionExObjMethodHandler_Exit()
+  @objc override dynamic public init(actionExObjDescriptor actionExObjDesc: GXObjectsModel.GXActionExternalObjectDescriptor, componentActionsHandlers: [GXObjectsModel.GXActionHandler]?, userInfo: [Swift.String : Any]? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXActionExObjSuperAppsProvisioningHandler) public class GXActionExObjSuperAppsProvisioningHandler : GXCoreBL.GXActionExObjBaseMiniProgramsHandler {
+  @objc override dynamic public func onFinishedExecutingWithError(_ error: Swift.Error?)
+  @objc override dynamic public func cancelActionExecution()
+  @objc public func gxActionExObjMethodHandler_ServerURL()
+  @objc public func gxActionExObjMethodHandler_GetByText(_ parameters: [Any])
+  @objc public func gxActionExObjMethodHandler_GetByLocation(_ parameters: [Any])
+  @objc public func gxActionExObjMethodHandler_GetByTag(_ parameters: [Any])
+  @objc public func gxActionExObjMethodHandler_GetFeatured(_ parameters: [Any])
+  @objc override dynamic public init(actionExObjDescriptor actionExObjDesc: GXObjectsModel.GXActionExternalObjectDescriptor, componentActionsHandlers: [GXObjectsModel.GXActionHandler]?, userInfo: [Swift.String : Any]? = nil)
+  @objc deinit
+}
+@objc(GXMapProviderProtocol) public protocol GXMapsProviderProtocol : ObjectiveC.NSObjectProtocol {
+  @objc var mapsApiIdentifier: Swift.String { get }
+  @objc optional var initializationIsRequiered: Swift.Bool { get }
+  @objc optional func initializeProvider()
+  @objc func getClass(forControlType controlType: Swift.String) -> Swift.AnyClass?
+}
+@objc extension GXCoreBL.GXLocationManager {
+  @objc dynamic public var currentLocationAccuracyAuthorizationStatus: GXCoreBL.GXLocationAccuracyAutorization {
+    @objc get
+  }
+  @objc public static func convertFromCLAccuracyAuthorization(_ accuracyAuth: CoreLocation.CLAccuracyAuthorization) -> GXCoreBL.GXLocationAccuracyAutorization
+  @objc public static func convertCLLocationAccuracy(fromGXLocationAccuracy accuracy: Swift.Int) -> CoreLocation.CLLocationAccuracy
+}
+extension GXCoreBL.GXRemoteConfigurationService {
+  public func boolValue(forKey key: Swift.String) -> Swift.Bool?
+  public func decimalValue(forKey key: Swift.String) -> Foundation.Decimal?
+  public func intValue(forKey key: Swift.String) -> Swift.Int?
+  public func uintValue(forKey key: Swift.String) -> Swift.UInt?
+  public func doubleValue(forKey key: Swift.String) -> Swift.Double?
+}
+@objc public protocol GXEOiOSPermissionsLocationOptionals {
+  @objc(gxRequestWhenInUseAuthorization) optional static func gxRequestWhenInUseAuthorization()
+  @objc(gxRequestWhenInUseAuthorizationWithCompletionHandler:) optional static func gxRequestWhenInUseAuthorization(withCompletionHandler: (() -> ())?)
+  @objc(gxRequestAlwaysAuthorization) optional static func gxRequestAlwaysAuthorization()
+  @objc(gxRequestAlwaysAuthorizationWithCompletionHandler:) optional static func gxRequestAlwaysAuthorization(withCompletionHandler: (() -> ())?)
+}
+@objc(GXExtensionLibraryProtocol) public protocol GXExtensionLibraryProtocol : ObjectiveC.NSObjectProtocol {
+  @objc func initializeExtensionLibrary(withContext context: GXCoreBL.GXExtensionLibraryContext)
+}
+extension GXDataLayer.GXDynamicCallHelper {
+  @objc(dynamicJsonLinkForDynamicObjectName:parameterValues:parameterDescriptors:) public static func dynamicJsonLink(for dynObjectName: Swift.String, parameterValues: Swift.Array<Any>, parameterDescriptors: Swift.Array<GXObjectsModel.GXActionParameterDescriptor>) -> Swift.String
+}
+@_inheritsConvenienceInitializers @objc(GXEOMiniApps) open class GXEOMiniApps : GXStandardClasses.GXExternalObjectBase {
+  @objc override dynamic open var externalObjectName: Swift.String {
+    @objc get
+  }
+  @objc(exit) public class func exit()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_spi(GXInternal) extension GXStandardClasses.GXProcedureHelper : GXStandardClasses.GXProcedureHelperInternalOptionals {
+  @_spi(GXInternal) public class func internalSyncExecuteOnlineGXOfflineThread(procName: Swift.String, params: [Any], options: GXStandardClasses.GXProcedureExecutionOptions?) -> [Any]
+  @_spi(GXInternal) public class func internalExecuteGXOfflineThread(procName: Swift.String, params: [Any], options: GXStandardClasses.GXProcedureHelperExecutionOptions?, completion: ((Swift.Result<(model: GXObjectsModel.GXModel, result: [Any]), Swift.Error>) -> Swift.Void)?) -> GXFoundation.GXCancelableOperation?
+}
+@_inheritsConvenienceInitializers @objc(GXEOMiniAppsManager) open class GXEOMiniAppsManager : GXStandardClasses.GXExternalObjectBase {
+  @objc override dynamic open var externalObjectName: Swift.String {
+    @objc get
+  }
+  @objc(loadMiniApp:) open class func loadMiniApp(_ sdtData: GXObjectsModel.GXSDTDataProtocol)
+  @objc(getCached) open class func getCached() -> GXStandardClasses.GXObjectCollection
+  @objc(removeCached::) open class func removeCached(_ miniAppId: Swift.String, _ miniAppVersion: Swift.Int) -> Swift.Bool
+  @objc(clearCached) open class func clearCached() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol GXUNNotificationActionHandler : ObjectiveC.NSObjectProtocol {
+  @objc var eventName: Swift.String { get }
+  @objc var eventParamters: [Swift.String : Any] { get }
+}
+@objc public protocol GXUNNotificationContent : ObjectiveC.NSObjectProtocol {
+  @objc var badge: Foundation.NSNumber? { get }
+  @objc var body: Swift.String? { get }
+  @objc var categoryIdentifier: Swift.String? { get }
+  @objc var subtitle: Swift.String? { get }
+  @objc var threadIdentifier: Swift.String? { get }
+  @objc var title: Swift.String? { get }
+  @objc var userInfo: [Swift.AnyHashable : Any] { get }
+  @objc func actionHandler(for identifier: Swift.String) -> GXCoreBL.GXUNNotificationActionHandler?
+}
+@objc public protocol GXUNNotificationRequest : ObjectiveC.NSObjectProtocol {
+  @objc @available(iOS 10.0, *)
+  var identifier: Swift.String { get }
+  @objc var content: GXCoreBL.GXUNNotificationContent { get }
+}
+@objc public protocol GXUNNotification : ObjectiveC.NSObjectProtocol {
+  @objc var date: Foundation.Date? { get }
+  @objc var request: GXCoreBL.GXUNNotificationRequest { get }
+}
+public let GXUNNotificationDefaultActionIdentifier: Swift.String
+public let GXUNNotificationDismissActionIdentifier: Swift.String
+@objc public protocol GXUNNotificationResponse : ObjectiveC.NSObjectProtocol {
+  @objc var notification: GXCoreBL.GXUNNotification { get }
+  @objc var actionIdentifier: Swift.String { get }
+  @objc optional var userText: Swift.String { get }
+}
+@_inheritsConvenienceInitializers @objc public class GXDynamicServicesURLHelper : ObjectiveC.NSObject {
+  @objc public static let hasDynamicServicesURL: Swift.Bool
+  @objc public static var hasServicesURLConfigurationPanel: Swift.Bool {
+    @objc get
+  }
+  @objc public static var servicesURLConfigPanelName: Swift.String? {
+    @objc get
+  }
+  @objc public class var needsShowServicesURLConfigurationPanel: Swift.Bool {
+    @objc get
+  }
+  @objc public class func saveDynamicAppServicesURL(_ urlString: Swift.String)
+  @objc(saveValidDynamicAppServicesURLIfNeededWithDefaultServerAddress) public class func saveValidDynamicAppServicesURLIfNeededWithDefaultServerAddress() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_spi(GXInternal) extension GXCoreBL.GXDynamicServicesURLHelper {
+  @_spi(GXInternal) public static var validatedDynamicServerURLString: Swift.String? {
+    @_spi(GXInternal) get
+  }
+}
+@_spi(GXInternal) extension GXObjectsModel.GXApplication.UserDefautsKeys {
+  @_spi(GXInternal) public static let embeddedApplicationValidatedDynamicServerURLString: Swift.String
+}
+@_inheritsConvenienceInitializers @available(*, deprecated, message: "Use GXActionExObjMiniAppAPIHandler or GXActionExObjSuperAppsProvisioningHandler instead")
+@objc public class GXActionExObjMiniProgramLoaderHandler : GXCoreBL.GXActionExObjBaseMiniProgramsHandler {
+  @objc public func gxActionExObjMethodHandler_Load(_ parameters: [Any])
+  @objc public func gxActionExObjMethodHandler_Exit()
+  @objc override dynamic public init(actionExObjDescriptor actionExObjDesc: GXObjectsModel.GXActionExternalObjectDescriptor, componentActionsHandlers: [GXObjectsModel.GXActionHandler]?, userInfo: [Swift.String : Any]? = nil)
+  @objc deinit
+}
+@objc(GXUserNotificationsProviderProtocol) public protocol GXUserNotificationsProviderProtocol : ObjectiveC.NSObjectProtocol {
+  @objc var typeIdentifier: Swift.String { get }
+  @objc optional func initializeProvider(withLaunchOptions launchOptions: [Swift.AnyHashable : Any]?)
+  @objc optional var usesMethodSwizzerlingOnDelegateClasses: Swift.Bool { get }
+  @objc optional var remoteAppDelegate: GXCoreBL.GXRemoteNotificationsProviderAppDelegateProtocol { get }
+  @objc optional var localAppDelegate: GXCoreBL.GXLocalNotificationsProviderAppDelegateProtocol { get }
+  @objc optional var unNotificationsCenterDelegate: Any { get }
+  @objc optional func registerForUserNotificationTypes(types: Swift.UInt)
+  @objc optional func registerForPushNotifications()
+  @objc optional var registeringForPushNotificationsAlsoRegisterForUserNotification: Swift.Bool { get }
+  @objc optional func registrationHandlerAdditionalData(completion: @escaping ([Swift.String : Any]) -> Swift.Void)
+  @objc optional var handlesSilentNotificationsCompletion: Swift.Bool { get }
+  @objc optional var handlesNotificationsResponsesCompletion: Swift.Bool { get }
+}
+@objc(GXRemoteNotificationsProviderAppDelegateProtocol) public protocol GXRemoteNotificationsProviderAppDelegateProtocol : ObjectiveC.NSObjectProtocol {
+  @objc func onDidRegisterForRemoteNotifications(withDeviceToken devToken: Foundation.Data)
+  @objc func onDidFailToRegisterForRemoteNotificationsWithError(_ error: Swift.Error)
+  @objc @available(iOS, deprecated: 10.0)
+  func onDidReceiveRemoteNotification(_ userInfo: [Swift.AnyHashable : Any])
+  @objc func onDidReceiveRemoteNotification(_ userInfo: [Swift.AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping () -> Swift.Void)
+  @objc @available(iOS, introduced: 9.0, deprecated: 10.0)
+  func onHandleAction(withIdentifier identifier: Swift.String?, forRemoteNotification userInfo: [Swift.AnyHashable : Any], withResponseInfo responseInfo: [Swift.AnyHashable : Any], completionHandler: @escaping () -> Swift.Void)
+  @objc @available(iOS, deprecated: 10.0)
+  func onHandleAction(withIdentifier identifier: Swift.String?, forRemoteNotification userInfo: [Swift.AnyHashable : Any], completionHandler: @escaping () -> Swift.Void)
+}
+@objc(GXLocalNotificationsProviderAppDelegateProtocol) public protocol GXLocalNotificationsProviderAppDelegateProtocol : ObjectiveC.NSObjectProtocol {
+  @objc @available(iOS, deprecated: 10.0)
+  func onDidReceiveLocalNotification(_ localNotification: Any)
+  @objc @available(iOS, introduced: 9.0, deprecated: 10.0)
+  func onHandleAction(withIdentifier identifier: Swift.String?, for localNotification: Any, withResponseInfo responseInfo: [Swift.AnyHashable : Any], completionHandler: @escaping () -> Swift.Void)
+  @objc @available(iOS, deprecated: 10.0)
+  func onHandleAction(withIdentifier identifier: Swift.String?, for localNotification: Any, completionHandler: @escaping () -> Swift.Void)
+}
+@_inheritsConvenienceInitializers @objc(GXEOClientInformation) open class GXEOClientInformation : GXStandardClasses.GXExternalObjectBase {
+  @objc override dynamic open var externalObjectName: Swift.String {
+    @objc get
+  }
+  @objc(deviceId) open var deviceId: Swift.String {
+    @objc get
+  }
+  @objc(osName) open var osName: Swift.String {
+    @objc get
+  }
+  @objc(osVersion) open var osVersion: Swift.String {
+    @objc get
+  }
+  @objc(language) open var language: Swift.String {
+    @objc get
+  }
+  @objc(deviceType) open var deviceType: Swift.Int {
+    @objc get
+  }
+  @objc(platformName) open var platformName: Swift.String {
+    @objc get
+  }
+  @objc(applicationId) open var applicationId: Swift.String {
+    @objc get
+  }
+  @objc(appVersionCode) open var appVersionCode: Swift.String {
+    @objc get
+  }
+  @objc(appVersionName) open var appVersionName: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GXCoreBL.GXLocationAccuracyAutorization : Swift.Equatable {}
+extension GXCoreBL.GXLocationAccuracyAutorization : Swift.Hashable {}
+extension GXCoreBL.GXLocationAccuracyAutorization : Swift.RawRepresentable {}
+extension GXCoreBL.GXLocationAccuracy : Swift.Equatable {}
+extension GXCoreBL.GXLocationAccuracy : Swift.Hashable {}
+extension GXCoreBL.GXLocationAccuracy : Swift.RawRepresentable {}

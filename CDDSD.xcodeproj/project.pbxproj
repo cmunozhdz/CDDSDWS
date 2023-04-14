@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20803999268F49DE00ABA43C /* ImageManipulation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20803998268F49DE00ABA43C /* ImageManipulation.framework */; };
+		2080399A268F4A4100ABA43C /* ImageManipulation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20803998268F49DE00ABA43C /* ImageManipulation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20BEAC37288757A80097C2BB /* FSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20BEAC35288757A80097C2BB /* FSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20BEAC38288757A80097C2BB /* SmartDevicesPlus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20BEAC36288757A80097C2BB /* SmartDevicesPlus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20BEAC392889946B0097C2BB /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BEAC35288757A80097C2BB /* FSCalendar.framework */; };
+		20BEAC3A2889946B0097C2BB /* SmartDevicesPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BEAC36288757A80097C2BB /* SmartDevicesPlus.framework */; };
+		31A333CC52FD2E42247E8EFE /* GXUCAnimationView.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A5A5CD27A8AD9E799BD6CD /* GXUCAnimationView.xcframework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		31AE56BBC1AB455027201C3E /* GXUCAnimationView.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31A5A5CD27A8AD9E799BD6CD /* GXUCAnimationView.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51F52753A537981C32788C5B /* GXCoreModule_SD_DeviceAuthentication.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F52753A547981C32788C5B /* GXCoreModule_SD_DeviceAuthentication.xcframework */; };
+		51F52753A557981C32788C5B /* GXCoreModule_SD_DeviceAuthentication.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51F52753A547981C32788C5B /* GXCoreModule_SD_DeviceAuthentication.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67B04BA469DAFB45A6919F1D /* cddsd.properties.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F322074A454F903A8110F7 /* cddsd.properties.json */; };
+		67B064B0FE5B74AE344A9C20 /* sdvisitanteslista.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F96CF98058A1EFE944F4E1 /* sdvisitanteslista.panel.json */; };
+		67B08C94C2AA8D6A7E2A2EDE /* GXUIApplication.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67FA6086BC578E83C082A782 /* GXUIApplication.xcframework */; };
+		67B08D77772B00173541D484 /* GXImages.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F1A988E027F65331DAAF20 /* GXImages.json */; };
+		67B0B6EE1CC0C839E2F5107D /* animationbrochure_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F00AD0ED547858BC0C1DF6 /* animationbrochure_animation.json */; };
+		67B13F74986FA37612D6B3F8 /* GXGAM.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67FD7AFDDF05EEF9DC8E3F43 /* GXGAM.xcframework */; };
+		67B188A04F3E2E8E81C6611F /* GXGAMUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F64B73C9A88C5B2D88ABDD /* GXGAMUI.xcframework */; };
+		67B190A4CEF48661AF3FA241 /* recepaquetesfoto.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FEDE713A53A5DF4BC9532D /* recepaquetesfoto.json */; };
+		67B1CA110D5D72B03C89F74D /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSNative.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FB8E2C441D48DE4EC0188F /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSNative.json */; };
+		67B2D6F9740ED769BD606757 /* GXDataLayer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F95E1F7DCEDCBA28254123 /* GXDataLayer.xcframework */; };
+		67B2F54AB31D3150FBDBEF4D /* GXCoreUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F13CA94CC7DE2C5E3A241E /* GXCoreUI.xcframework */; };
+		67B327BB6792DEA9E0C0AED6 /* animationcompass_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F6A314EDA7F26314B1B5AB /* animationcompass_animation.json */; };
+		67B334E9EABBC2D22F683265 /* GXApplicationModel+GXTwitterOptionals.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F158C36BD0686E71B19A5D /* GXApplicationModel+GXTwitterOptionals.m */; };
+		67B33D835AE26A6A3156ADC7 /* cddsdob.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F53FCE0B16BE6AE58049CB /* cddsdob.panel.json */; };
+		67B354FFA32AACF48156F8CF /* domains.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FA2813CEE4F1931F14BA13 /* domains.json */; };
+		67B35F478232125F9801DBD5 /* GXAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB7A603806563882CDAEB8 /* GXAppDelegate.swift */; };
+		67B38010B9C3F41268247504 /* GXCoreBL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F430FC5E19D374D10A42E9 /* GXCoreBL.xcframework */; };
+		67B3A4E6B20C28056F84E3E5 /* sdequiposctrldt.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F3ABDC0DC66D18D10355E2 /* sdequiposctrldt.panel.json */; };
+		67B3C5712A4A44E01A7D5424 /* cddsdhome.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F4AAEC86E38919F2FE3CB2 /* cddsdhome.panel.json */; };
+		67B3C70AEF02E9F284DA9DB1 /* ticketpesado.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FFD37F5EC9994DB1CF5323 /* ticketpesado.json */; };
+		67B3DC49E9C4AF2A827F7CD6 /* settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F44299B0E1B8553C19DEB9 /* settings.json */; };
+		67B3DC7B985B38C7182CA60B /* sdvisitaes.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FC5ABBDA18E96B6C8E0E19 /* sdvisitaes.panel.json */; };
+		67B421601F8FB98D19B5F6AB /* gamsdchangepassword.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F8B9401404A61342337928 /* gamsdchangepassword.panel.json */; };
+		67B49484BAC456857255FC19 /* sdticketpesado.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FE1946E5A1331ABD291B67 /* sdticketpesado.panel.json */; };
+		67B4A01FDA16FC79ACAC4E6F /* animationcoffe_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F6FC2A25D91424044E1D19 /* animationcoffe_animation.json */; };
+		67B4E1A087FEB68115874842 /* skeletoncontent_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F5C2C2FDEDAE38565F313F /* skeletoncontent_animation.json */; };
+		67B524BA33E006D541D95EFA /* animationconfetti_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FE0A1588EA98C328C59751 /* animationconfetti_animation.json */; };
+		67B52DDB5072238CAFB8CD6A /* Material Icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67F1F589652F55C265582DE3 /* Material Icons.ttf */; };
+		67B59C839083385A5CBFCAD7 /* animationpencil_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F216E48EBDD2C20E0F57AF /* animationpencil_animation.json */; };
+		67B5A5CD15D8AD9E799BD6CD /* Images_Spanish_CDDSDDSApple.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F8FDB6F5C7F45932872C1E /* Images_Spanish_CDDSDDSApple.json */; };
+		67B5FD95297E828DC162F030 /* gamsdnotauthorized.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F81A301B8E1FF5388EF048 /* gamsdnotauthorized.panel.json */; };
+		67B62A477115D954D193D1C4 /* animationtruck_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FC804A941ACAF469918855 /* animationtruck_animation.json */; };
+		67B63318D6ADB8B78A2A0361 /* GXUserNotificationsManager+Optionals.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F4DCD629D5AD3915D0CB58 /* GXUserNotificationsManager+Optionals.m */; };
+		67B63F96A646F881CA811721 /* sdticketbuscar.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F102386CBA8D0585456DA6 /* sdticketbuscar.panel.json */; };
+		67B641C1C93B2747674341C4 /* cddsddsapple.theme.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F571B5956EFCC9829D86A4 /* cddsddsapple.theme.json */; };
+		67B6A04B3CE4B671599FDF10 /* workwithplus.nativemobile.examplemenuoption.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FE2E1CEDF17FB4C0B647FC /* workwithplus.nativemobile.examplemenuoption.panel.json */; };
+		67B6A7D408CE6A2C771A22CE /* cddsddsandroid.theme.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F4D297681A611619CDD973 /* cddsddsandroid.theme.json */; };
+		67B6DE1A718DA794363ED044 /* GXCoreModule_SD_Scanner.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67FE101460CFE34E8205AF71 /* GXCoreModule_SD_Scanner.xcframework */; };
+		67B6F980EB9E1BDC81422152 /* GXCustomUserControlsMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 67FC70693C2A8B53E1363D40 /* GXCustomUserControlsMapper.m */; };
+		67B7102839D7B759AEB1C3D8 /* themes.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F22D1E7C1A8E648EB4ACDA /* themes.json */; };
+		67B7A07C96673A6773B1F2A1 /* workwithplus.nativemobile.workwithpluspredefinedstyles.theme.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F4A3DA096142CD490C29E3 /* workwithplus.nativemobile.workwithpluspredefinedstyles.theme.json */; };
+		67B7B156BFE791F308029385 /* sdqrvisitante.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FC9D6289255F0EBE448CAF /* sdqrvisitante.panel.json */; };
+		67B7E4729BA5C8E78C46569B /* appid.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FE6EA36CFE0009E99CE533 /* appid.json */; };
+		67B8B77A0675F6B183540C28 /* GXCoreUIPhotoLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67FAADDC625F45C0F123D9D3 /* GXCoreUIPhotoLibrary.xcframework */; };
+		67B8D2E8DDF685C78AA686C2 /* GXAudioBL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F5E121F8FAC6C3D8BF5A46 /* GXAudioBL.xcframework */; };
+		67B8E1D03C2E066335A51FBF /* animationgift_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F8D1C6A714A3F6C5384709 /* animationgift_animation.json */; };
+		67B933BB24AA824D5430F105 /* sdvistantesprompt.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F7E92194B60400D88EDEB3 /* sdvistantesprompt.panel.json */; };
+		67B94412617E71FD91B50310 /* sdequiposes.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FA899570F70013F06E64BC /* sdequiposes.panel.json */; };
+		67B94429D881D78EB3743B5F /* cddsdlogin.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F79D3E744415111E57A5CA /* cddsdlogin.panel.json */; };
+		67B947116C558EA792BC4FA0 /* cddsd.gxapp.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FEB8BDA09E2E3E68A20D15 /* cddsd.gxapp.json */; };
+		67B97C02352B686249092AF1 /* Font_Awesome_6_Free_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67F6BAAE8807597986DE7FFF /* Font_Awesome_6_Free_Regular.ttf */; };
+		67B982EDE6EC3966EEEE38CD /* animationdemo_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F745D6B70A17749E55B440 /* animationdemo_animation.json */; };
+		67B99096D5F6BD642AE6848B /* cddsd.ios.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F799A9149349755719C443 /* cddsd.ios.json */; };
+		67B99E166EA9609B42C20F15 /* sdequiposfirmadt.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F518E16F167E28044821F7 /* sdequiposfirmadt.panel.json */; };
+		67B9C26C6E76B23C1471C60F /* languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FD8E01914842D1E2764D70 /* languages.json */; };
+		67BA0756C54B2642EBFB72BD /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F9E1C56B9B4074C026D73F /* images.xcassets */; };
+		67BA459F8EBDC1535DB2882E /* equipoctrlsalidafirma.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FE78D61141E2B47D4242AB /* equipoctrlsalidafirma.json */; };
+		67BA5A3137299F0190E8E2D9 /* Font_Awesome_6_Free_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67F2B81826231C04D5045A3C /* Font_Awesome_6_Free_Brands.ttf */; };
+		67BAA42A3C21F7AD51FA6505 /* sdequiposctrl.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F7B4509A449B9403F78E0B /* sdequiposctrl.panel.json */; };
+		67BAA45C5C27BBB0342E0850 /* GXCoreModule_Common_Log.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F6DE5279D5CCD495FDECAE /* GXCoreModule_Common_Log.xcframework */; };
+		67BAAA78A15F9CC7568F269E /* animationscan_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F0349027A6B71FC8950FE2 /* animationscan_animation.json */; };
+		67BB544A94FF71D925A7C2EA /* cddsd.settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FDE0283B3628AD3E763D07 /* cddsd.settings.json */; };
+		67BB81C2844DDDAD5D00A925 /* sd_firma.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F453B1915A472FDB5767F0 /* sd_firma.panel.json */; };
+		67BBE0063CD554FE736791A1 /* Font_Awesome_6_Free_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67F146981A0A72D9D3D9C52E /* Font_Awesome_6_Free_Solid.ttf */; };
+		67BC183AAA9A51D3DD8D3618 /* Spanish.language.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F504757741720C1654FD71 /* Spanish.language.json */; };
+		67BC1E8CC27521D209B41E13 /* sdpaquetefoto.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F8F2D48D7CD229C8ACB017 /* sdpaquetefoto.panel.json */; };
+		67BC2C279206C9DA54E619DC /* animationfav_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F88FBC12AEABBB81142030 /* animationfav_animation.json */; };
+		67BC3D31B50A57C16AD915D2 /* sdvisitasdiarias.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F9B62E90348B7C9F84982F /* sdvisitasdiarias.panel.json */; };
+		67BC603B04C58559408BFD8F /* GXFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F7E1F0A553FF462091EC79 /* GXFoundation.xcframework */; };
+		67BC6A818D46CDCAB45A41B6 /* sd_paqueteria.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F03B1E79E99A149D2FE0D0 /* sd_paqueteria.panel.json */; };
+		67BC7F8760E30BED82CFDC51 /* GXEOiOSPermissionsOptionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FECC9325794EF5587D8419 /* GXEOiOSPermissionsOptionals.swift */; };
+		67BCA0935351671D89788F6E /* sdvisitantealta.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FB35E39272DBCD88D4F41C /* sdvisitantealta.panel.json */; };
+		67BCB6A753B9D6A35D1CA4A5 /* skeletonlist_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F916FC067421D4843533A7 /* skeletonlist_animation.json */; };
+		67BCB943672767DB4461E78C /* workwithplus.nativemobile.workwithplusdsfonticons.theme.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F1693DC31346B587EC1B10 /* workwithplus.nativemobile.workwithplusdsfonticons.theme.json */; };
+		67BCD306EAA8476011CEFC13 /* sdc_paqueteria.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FD028EDB52EB8B4EEFE3C1 /* sdc_paqueteria.panel.json */; };
+		67BCDEEA337B2383B4986A57 /* workwithplus.nativemobile.workwithplusdsnative.theme.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F17FBCC1B3C4004A0FA5CF /* workwithplus.nativemobile.workwithplusdsnative.theme.json */; };
+		67BCF64BFC98CAABAF15DE79 /* gxversion.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F69B2A9F88511001B00690 /* gxversion.json */; };
+		67BCF6E9A1A2A7A518711FBD /* cddsddsanyplatform.theme.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F41FC20CE9F977E2BC3604 /* cddsddsanyplatform.theme.json */; };
+		67BD2245B59F5078F2EA0326 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67F5FF3B1E0E63CECD7AD15B /* Montserrat.ttf */; };
+		67BD9B113C223FC876B73995 /* cddsd.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F134223BA28B6CDF9134EA /* cddsd.panel.json */; };
+		67BDDE1EAF777C823928C337 /* animationdetail_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F6FF60B373A9AADB3F8C02 /* animationdetail_animation.json */; };
+		67BDEC853BC31E4E0EF0E9E6 /* sdvalidadorsat.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F4B5761C57FBC9974C12AE /* sdvalidadorsat.panel.json */; };
+		67BDF3DD45EE07DA34DCC8A6 /* GXDataLayerRemote.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F0F5416BC5E9DBE93FC8FD /* GXDataLayerRemote.xcframework */; };
+		67BE1748D0EC0E4370D02866 /* YAJL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67FDF129425779A3B8D67F9E /* YAJL.xcframework */; };
+		67BE2E6E9C9AA0DBE9348F55 /* registro.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F30D6CD8A773E2D3DCC6B5 /* registro.json */; };
+		67BE34E135993978C30AD0A6 /* GXObjectsModel.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F95ECDABB139BDBFA25A81 /* GXObjectsModel.xcframework */; };
+		67BE56BBC9FB455027201C3E /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSFontIcons.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F333CC52FD1F72247E8EFE /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSFontIcons.json */; };
+		67BE6C53116D19545CF99A0D /* GXStandardClasses.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F8F044EBA78ADB18502991 /* GXStandardClasses.xcframework */; };
+		67BEBA49DFD9965B6AF6A0C1 /* sdscanner.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F70E90AA30D6F2113C9942 /* sdscanner.panel.json */; };
+		67BEBE0AB642E82A7EF72647 /* sdregistrotemp.panel.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FFC1D44A6092635DC1CD93 /* sdregistrotemp.panel.json */; };
+		67BF1356CA8FDE3496387D35 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67F3CFBEE24EFB1F8CCF5686 /* Settings.bundle */; };
+		67BF2A32E42A6482E1D6311B /* animationblender_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FBEAF3B39B2B71FD96F954 /* animationblender_animation.json */; };
+		67BF8674619B281684754C90 /* Images_Spanish_CDDSDDSAnyPlatform.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F3AEF73380DDE4AA5DE92F /* Images_Spanish_CDDSDDSAnyPlatform.json */; };
+		67BFD61E014721422CC9F240 /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusPredefinedStyles.json in Resources */ = {isa = PBXBuildFile; fileRef = 67FEFD82D850F3AE9B40A47C /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusPredefinedStyles.json */; };
+		67BFE7B741C7E9FCBB5850BB /* skeletonlistitem_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F83B1B8B44AF941E12266E /* skeletonlistitem_animation.json */; };
+		67E1FA6730AAB1498320AEF4 /* GXCoreModule_SD_Scanner.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67FE101460CFE34E8205AF71 /* GXCoreModule_SD_Scanner.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67E25339994C9DB0994E1D93 /* GXStandardClasses.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67F8F044EBA78ADB18502991 /* GXStandardClasses.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67E273F16500DDA6B3A051CB /* GXCoreModule_Common_Log.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67F6DE5279D5CCD495FDECAE /* GXCoreModule_Common_Log.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67E2D21C25E57AE6E465F89B /* GXCoreUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67F13CA94CC7DE2C5E3A241E /* GXCoreUI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67E4330DF530D38B77815F8C /* GXDataLayer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67F95E1F7DCEDCBA28254123 /* GXDataLayer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67E50E2CD8BC6511AD4E2F9B /* GXUIApplication.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67FA6086BC578E83C082A782 /* GXUIApplication.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67E52515F3421FB81E5625BE /* GXCoreUIPhotoLibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67FAADDC625F45C0F123D9D3 /* GXCoreUIPhotoLibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67E5FB7EF568AFFCFD9D0616 /* YAJL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67FDF129425779A3B8D67F9E /* YAJL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67E69E7AA62FE99C4B2D37A6 /* GXGAMUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67F64B73C9A88C5B2D88ABDD /* GXGAMUI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67E92132FFE840C60BFDC954 /* GXCoreBL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67F430FC5E19D374D10A42E9 /* GXCoreBL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67EAC234BF52F5B6C0E392AF /* GXAudioBL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67F5E121F8FAC6C3D8BF5A46 /* GXAudioBL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67EBFABF8E42979F3016325D /* GXDataLayerRemote.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67F0F5416BC5E9DBE93FC8FD /* GXDataLayerRemote.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67EDBFDE9C8ADD14A19DB651 /* GXObjectsModel.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67F95ECDABB139BDBFA25A81 /* GXObjectsModel.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67EE67EADB9E1AC5C3A78479 /* GXGAM.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67FD7AFDDF05EEF9DC8E3F43 /* GXGAM.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67EE97581F8456D4B71C4A19 /* GXFoundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67F7E1F0A553FF462091EC79 /* GXFoundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE2B1D60589B0D05DD56006B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2B29B97316FDCFA39411CA /* main.m */; };
+		AE2B4025E09D197063450094 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4025E09B1970634500947A86 /* InfoPlist.strings */; };
+		AEEB563D2360D65200916649 /* GXLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEB563B2360D65200916649 /* GXLaunchScreen.storyboard */; };
+		C89743BB1B7E5A8F6D44204F /* Pods_CDDSD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D418E9291C4F854287251F /* Pods_CDDSD.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE2B650F1CD3D3290096F510 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				67EAC234BF52F5B6C0E392AF /* GXAudioBL.xcframework in Embed Frameworks */,
+				67E92132FFE840C60BFDC954 /* GXCoreBL.xcframework in Embed Frameworks */,
+				67E273F16500DDA6B3A051CB /* GXCoreModule_Common_Log.xcframework in Embed Frameworks */,
+				67E1FA6730AAB1498320AEF4 /* GXCoreModule_SD_Scanner.xcframework in Embed Frameworks */,
+				67E2D21C25E57AE6E465F89B /* GXCoreUI.xcframework in Embed Frameworks */,
+				67E52515F3421FB81E5625BE /* GXCoreUIPhotoLibrary.xcframework in Embed Frameworks */,
+				67E4330DF530D38B77815F8C /* GXDataLayer.xcframework in Embed Frameworks */,
+				67EBFABF8E42979F3016325D /* GXDataLayerRemote.xcframework in Embed Frameworks */,
+				67EE97581F8456D4B71C4A19 /* GXFoundation.xcframework in Embed Frameworks */,
+				67EE67EADB9E1AC5C3A78479 /* GXGAM.xcframework in Embed Frameworks */,
+				67E69E7AA62FE99C4B2D37A6 /* GXGAMUI.xcframework in Embed Frameworks */,
+				67EDBFDE9C8ADD14A19DB651 /* GXObjectsModel.xcframework in Embed Frameworks */,
+				67E25339994C9DB0994E1D93 /* GXStandardClasses.xcframework in Embed Frameworks */,
+				67E50E2CD8BC6511AD4E2F9B /* GXUIApplication.xcframework in Embed Frameworks */,
+				67E5FB7EF568AFFCFD9D0616 /* YAJL.xcframework in Embed Frameworks */,
+				51F52753A557981C32788C5B /* GXCoreModule_SD_DeviceAuthentication.xcframework in Embed Frameworks */,
+				31AE56BBC1AB455027201C3E /* GXUCAnimationView.xcframework in Embed Frameworks */,
+				2080399A268F4A4100ABA43C /* ImageManipulation.framework in Embed Frameworks */,
+				20BEAC37288757A80097C2BB /* FSCalendar.framework in Embed Frameworks */,
+				20BEAC38288757A80097C2BB /* SmartDevicesPlus.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		20803998268F49DE00ABA43C /* ImageManipulation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageManipulation.framework; path = "./UserControls/$(PLATFORM_NAME)/ImageManipulation.framework"; sourceTree = "<group>"; };
+		20BEAC35288757A80097C2BB /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = "./UserControls/$(PLATFORM_NAME)/FSCalendar.framework"; sourceTree = "<group>"; };
+		20BEAC36288757A80097C2BB /* SmartDevicesPlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SmartDevicesPlus.framework; path = "./UserControls/$(PLATFORM_NAME)/SmartDevicesPlus.framework"; sourceTree = "<group>"; };
+		31A5A5CD27A8AD9E799BD6CD /* GXUCAnimationView.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXUCAnimationView.xcframework; path = UserControls/GXUCAnimationView.xcframework; sourceTree = SOURCE_ROOT; };
+		51F52753A547981C32788C5B /* GXCoreModule_SD_DeviceAuthentication.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXCoreModule_SD_DeviceAuthentication.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXCoreModule_SD_DeviceAuthentication.xcframework"; sourceTree = SOURCE_ROOT; };
+		67F00AD0ED547858BC0C1DF6 /* animationbrochure_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = animationbrochure_animation.json; path = animations/animationbrochure_animation.json; sourceTree = SOURCE_ROOT; };
+		67F0349027A6B71FC8950FE2 /* animationscan_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = animationscan_animation.json; path = animations/animationscan_animation.json; sourceTree = SOURCE_ROOT; };
+		67F03B1E79E99A149D2FE0D0 /* sd_paqueteria.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sd_paqueteria.panel.json; path = metadata/sd_paqueteria.panel.json; sourceTree = SOURCE_ROOT; };
+		67F0F5416BC5E9DBE93FC8FD /* GXDataLayerRemote.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXDataLayerRemote.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXDataLayerRemote.xcframework"; sourceTree = SOURCE_ROOT; };
+		67F102386CBA8D0585456DA6 /* sdticketbuscar.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdticketbuscar.panel.json; path = metadata/sdticketbuscar.panel.json; sourceTree = SOURCE_ROOT; };
+		67F134223BA28B6CDF9134EA /* cddsd.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cddsd.panel.json; path = metadata/cddsd.panel.json; sourceTree = SOURCE_ROOT; };
+		67F13CA94CC7DE2C5E3A241E /* GXCoreUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXCoreUI.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXCoreUI.xcframework"; sourceTree = SOURCE_ROOT; };
+		67F146981A0A72D9D3D9C52E /* Font_Awesome_6_Free_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = compiled; name = Font_Awesome_6_Free_Solid.ttf; path = fonts/Font_Awesome_6_Free_Solid.ttf; sourceTree = SOURCE_ROOT; };
+		67F158C36BD0686E71B19A5D /* GXApplicationModel+GXTwitterOptionals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GXApplicationModel+GXTwitterOptionals.m"; path = "Classes/GXApplicationModel+GXTwitterOptionals.m"; sourceTree = SOURCE_ROOT; };
+		67F16569662ABC904AB6818B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		67F1693DC31346B587EC1B10 /* workwithplus.nativemobile.workwithplusdsfonticons.theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workwithplus.nativemobile.workwithplusdsfonticons.theme.json; path = metadata/workwithplus.nativemobile.workwithplusdsfonticons.theme.json; sourceTree = SOURCE_ROOT; };
+		67F17FBCC1B3C4004A0FA5CF /* workwithplus.nativemobile.workwithplusdsnative.theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workwithplus.nativemobile.workwithplusdsnative.theme.json; path = metadata/workwithplus.nativemobile.workwithplusdsnative.theme.json; sourceTree = SOURCE_ROOT; };
+		67F1A988E027F65331DAAF20 /* GXImages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = GXImages.json; path = metadata/GXImages.json; sourceTree = SOURCE_ROOT; };
+		67F1F589652F55C265582DE3 /* Material Icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = compiled; name = "Material Icons.ttf"; path = "fonts/Material Icons.ttf"; sourceTree = SOURCE_ROOT; };
+		67F216E48EBDD2C20E0F57AF /* animationpencil_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = animationpencil_animation.json; path = animations/animationpencil_animation.json; sourceTree = SOURCE_ROOT; };
+		67F22D1E7C1A8E648EB4ACDA /* themes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = themes.json; path = metadata/themes.json; sourceTree = SOURCE_ROOT; };
+		67F2B81826231C04D5045A3C /* Font_Awesome_6_Free_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = compiled; name = Font_Awesome_6_Free_Brands.ttf; path = fonts/Font_Awesome_6_Free_Brands.ttf; sourceTree = SOURCE_ROOT; };
+		67F2B9E0265F4178E24DA712 /* GXCustomUserControlsMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GXCustomUserControlsMapper.h; path = Classes/GXCustomUserControlsMapper.h; sourceTree = SOURCE_ROOT; };
+		67F30D6CD8A773E2D3DCC6B5 /* registro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = registro.json; path = metadata/registro.json; sourceTree = SOURCE_ROOT; };
+		67F322074A454F903A8110F7 /* cddsd.properties.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cddsd.properties.json; path = metadata/cddsd.properties.json; sourceTree = SOURCE_ROOT; };
+		67F333CC52FD1F72247E8EFE /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSFontIcons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSFontIcons.json; path = metadata/Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSFontIcons.json; sourceTree = SOURCE_ROOT; };
+		67F3ABDC0DC66D18D10355E2 /* sdequiposctrldt.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdequiposctrldt.panel.json; path = metadata/sdequiposctrldt.panel.json; sourceTree = SOURCE_ROOT; };
+		67F3AEF73380DDE4AA5DE92F /* Images_Spanish_CDDSDDSAnyPlatform.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Images_Spanish_CDDSDDSAnyPlatform.json; path = metadata/Images_Spanish_CDDSDDSAnyPlatform.json; sourceTree = SOURCE_ROOT; };
+		67F3CFBEE24EFB1F8CCF5686 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Settings.bundle; sourceTree = SOURCE_ROOT; };
+		67F41FC20CE9F977E2BC3604 /* cddsddsanyplatform.theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cddsddsanyplatform.theme.json; path = metadata/cddsddsanyplatform.theme.json; sourceTree = SOURCE_ROOT; };
+		67F430FC5E19D374D10A42E9 /* GXCoreBL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXCoreBL.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXCoreBL.xcframework"; sourceTree = SOURCE_ROOT; };
+		67F44299B0E1B8553C19DEB9 /* settings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = settings.json; path = metadata/settings.json; sourceTree = SOURCE_ROOT; };
+		67F453B1915A472FDB5767F0 /* sd_firma.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sd_firma.panel.json; path = metadata/sd_firma.panel.json; sourceTree = SOURCE_ROOT; };
+		67F4A3DA096142CD490C29E3 /* workwithplus.nativemobile.workwithpluspredefinedstyles.theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workwithplus.nativemobile.workwithpluspredefinedstyles.theme.json; path = metadata/workwithplus.nativemobile.workwithpluspredefinedstyles.theme.json; sourceTree = SOURCE_ROOT; };
+		67F4AAEC86E38919F2FE3CB2 /* cddsdhome.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cddsdhome.panel.json; path = metadata/cddsdhome.panel.json; sourceTree = SOURCE_ROOT; };
+		67F4B5761C57FBC9974C12AE /* sdvalidadorsat.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdvalidadorsat.panel.json; path = metadata/sdvalidadorsat.panel.json; sourceTree = SOURCE_ROOT; };
+		67F4D297681A611619CDD973 /* cddsddsandroid.theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cddsddsandroid.theme.json; path = metadata/cddsddsandroid.theme.json; sourceTree = SOURCE_ROOT; };
+		67F4DCD629D5AD3915D0CB58 /* GXUserNotificationsManager+Optionals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GXUserNotificationsManager+Optionals.m"; path = "Classes/GXUserNotificationsManager+Optionals.m"; sourceTree = SOURCE_ROOT; };
+		67F504757741720C1654FD71 /* Spanish.language.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Spanish.language.json; path = metadata/Spanish.language.json; sourceTree = SOURCE_ROOT; };
+		67F518E16F167E28044821F7 /* sdequiposfirmadt.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdequiposfirmadt.panel.json; path = metadata/sdequiposfirmadt.panel.json; sourceTree = SOURCE_ROOT; };
+		67F53FCE0B16BE6AE58049CB /* cddsdob.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cddsdob.panel.json; path = metadata/cddsdob.panel.json; sourceTree = SOURCE_ROOT; };
+		67F571B5956EFCC9829D86A4 /* cddsddsapple.theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cddsddsapple.theme.json; path = metadata/cddsddsapple.theme.json; sourceTree = SOURCE_ROOT; };
+		67F5C2C2FDEDAE38565F313F /* skeletoncontent_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = skeletoncontent_animation.json; path = animations/skeletoncontent_animation.json; sourceTree = SOURCE_ROOT; };
+		67F5E121F8FAC6C3D8BF5A46 /* GXAudioBL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXAudioBL.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXAudioBL.xcframework"; sourceTree = SOURCE_ROOT; };
+		67F5FF3B1E0E63CECD7AD15B /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = compiled; name = Montserrat.ttf; path = fonts/Montserrat.ttf; sourceTree = SOURCE_ROOT; };
+		67F64B73C9A88C5B2D88ABDD /* GXGAMUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXGAMUI.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXGAMUI.xcframework"; sourceTree = SOURCE_ROOT; };
+		67F69B2A9F88511001B00690 /* gxversion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = gxversion.json; path = metadata/gxversion.json; sourceTree = SOURCE_ROOT; };
+		67F6A314EDA7F26314B1B5AB /* animationcompass_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = animationcompass_animation.json; path = animations/animationcompass_animation.json; sourceTree = SOURCE_ROOT; };
+		67F6BAAE8807597986DE7FFF /* Font_Awesome_6_Free_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = compiled; name = Font_Awesome_6_Free_Regular.ttf; path = fonts/Font_Awesome_6_Free_Regular.ttf; sourceTree = SOURCE_ROOT; };
+		67F6DE5279D5CCD495FDECAE /* GXCoreModule_Common_Log.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXCoreModule_Common_Log.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXCoreModule_Common_Log.xcframework"; sourceTree = SOURCE_ROOT; };
+		67F6FC2A25D91424044E1D19 /* animationcoffe_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = animationcoffe_animation.json; path = animations/animationcoffe_animation.json; sourceTree = SOURCE_ROOT; };
+		67F6FF60B373A9AADB3F8C02 /* animationdetail_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = animationdetail_animation.json; path = animations/animationdetail_animation.json; sourceTree = SOURCE_ROOT; };
+		67F70E90AA30D6F2113C9942 /* sdscanner.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdscanner.panel.json; path = metadata/sdscanner.panel.json; sourceTree = SOURCE_ROOT; };
+		67F745D6B70A17749E55B440 /* animationdemo_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = animationdemo_animation.json; path = animations/animationdemo_animation.json; sourceTree = SOURCE_ROOT; };
+		67F799A9149349755719C443 /* cddsd.ios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cddsd.ios.json; path = metadata/cddsd.ios.json; sourceTree = SOURCE_ROOT; };
+		67F79D3E744415111E57A5CA /* cddsdlogin.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cddsdlogin.panel.json; path = metadata/cddsdlogin.panel.json; sourceTree = SOURCE_ROOT; };
+		67F7B4509A449B9403F78E0B /* sdequiposctrl.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdequiposctrl.panel.json; path = metadata/sdequiposctrl.panel.json; sourceTree = SOURCE_ROOT; };
+		67F7E1F0A553FF462091EC79 /* GXFoundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXFoundation.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXFoundation.xcframework"; sourceTree = SOURCE_ROOT; };
+		67F7E92194B60400D88EDEB3 /* sdvistantesprompt.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdvistantesprompt.panel.json; path = metadata/sdvistantesprompt.panel.json; sourceTree = SOURCE_ROOT; };
+		67F81A301B8E1FF5388EF048 /* gamsdnotauthorized.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = gamsdnotauthorized.panel.json; path = metadata/gamsdnotauthorized.panel.json; sourceTree = SOURCE_ROOT; };
+		67F83B1B8B44AF941E12266E /* skeletonlistitem_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = skeletonlistitem_animation.json; path = animations/skeletonlistitem_animation.json; sourceTree = SOURCE_ROOT; };
+		67F88FBC12AEABBB81142030 /* animationfav_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = animationfav_animation.json; path = animations/animationfav_animation.json; sourceTree = SOURCE_ROOT; };
+		67F8B9401404A61342337928 /* gamsdchangepassword.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = gamsdchangepassword.panel.json; path = metadata/gamsdchangepassword.panel.json; sourceTree = SOURCE_ROOT; };
+		67F8D1C6A714A3F6C5384709 /* animationgift_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = animationgift_animation.json; path = animations/animationgift_animation.json; sourceTree = SOURCE_ROOT; };
+		67F8F044EBA78ADB18502991 /* GXStandardClasses.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXStandardClasses.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXStandardClasses.xcframework"; sourceTree = SOURCE_ROOT; };
+		67F8F2D48D7CD229C8ACB017 /* sdpaquetefoto.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdpaquetefoto.panel.json; path = metadata/sdpaquetefoto.panel.json; sourceTree = SOURCE_ROOT; };
+		67F8FDB6F5C7F45932872C1E /* Images_Spanish_CDDSDDSApple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Images_Spanish_CDDSDDSApple.json; path = metadata/Images_Spanish_CDDSDDSApple.json; sourceTree = SOURCE_ROOT; };
+		67F916FC067421D4843533A7 /* skeletonlist_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = skeletonlist_animation.json; path = animations/skeletonlist_animation.json; sourceTree = SOURCE_ROOT; };
+		67F95E1F7DCEDCBA28254123 /* GXDataLayer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXDataLayer.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXDataLayer.xcframework"; sourceTree = SOURCE_ROOT; };
+		67F95ECDABB139BDBFA25A81 /* GXObjectsModel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXObjectsModel.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXObjectsModel.xcframework"; sourceTree = SOURCE_ROOT; };
+		67F96CF98058A1EFE944F4E1 /* sdvisitanteslista.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdvisitanteslista.panel.json; path = metadata/sdvisitanteslista.panel.json; sourceTree = SOURCE_ROOT; };
+		67F9B62E90348B7C9F84982F /* sdvisitasdiarias.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdvisitasdiarias.panel.json; path = metadata/sdvisitasdiarias.panel.json; sourceTree = SOURCE_ROOT; };
+		67F9E1C56B9B4074C026D73F /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = images.xcassets; sourceTree = SOURCE_ROOT; };
+		67FA2813CEE4F1931F14BA13 /* domains.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = domains.json; path = metadata/domains.json; sourceTree = SOURCE_ROOT; };
+		67FA6086BC578E83C082A782 /* GXUIApplication.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXUIApplication.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXUIApplication.xcframework"; sourceTree = SOURCE_ROOT; };
+		67FA899570F70013F06E64BC /* sdequiposes.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdequiposes.panel.json; path = metadata/sdequiposes.panel.json; sourceTree = SOURCE_ROOT; };
+		67FAADDC625F45C0F123D9D3 /* GXCoreUIPhotoLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXCoreUIPhotoLibrary.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXCoreUIPhotoLibrary.xcframework"; sourceTree = SOURCE_ROOT; };
+		67FB35E39272DBCD88D4F41C /* sdvisitantealta.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdvisitantealta.panel.json; path = metadata/sdvisitantealta.panel.json; sourceTree = SOURCE_ROOT; };
+		67FB7A603806563882CDAEB8 /* GXAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GXAppDelegate.swift; path = Classes/GXAppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		67FB8E2C441D48DE4EC0188F /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSNative.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSNative.json; path = metadata/Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSNative.json; sourceTree = SOURCE_ROOT; };
+		67FBEAF3B39B2B71FD96F954 /* animationblender_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = animationblender_animation.json; path = animations/animationblender_animation.json; sourceTree = SOURCE_ROOT; };
+		67FC5ABBDA18E96B6C8E0E19 /* sdvisitaes.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdvisitaes.panel.json; path = metadata/sdvisitaes.panel.json; sourceTree = SOURCE_ROOT; };
+		67FC70693C2A8B53E1363D40 /* GXCustomUserControlsMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GXCustomUserControlsMapper.m; path = Classes/GXCustomUserControlsMapper.m; sourceTree = SOURCE_ROOT; };
+		67FC804A941ACAF469918855 /* animationtruck_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = animationtruck_animation.json; path = animations/animationtruck_animation.json; sourceTree = SOURCE_ROOT; };
+		67FC9D6289255F0EBE448CAF /* sdqrvisitante.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdqrvisitante.panel.json; path = metadata/sdqrvisitante.panel.json; sourceTree = SOURCE_ROOT; };
+		67FD028EDB52EB8B4EEFE3C1 /* sdc_paqueteria.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdc_paqueteria.panel.json; path = metadata/sdc_paqueteria.panel.json; sourceTree = SOURCE_ROOT; };
+		67FD7AFDDF05EEF9DC8E3F43 /* GXGAM.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXGAM.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXGAM.xcframework"; sourceTree = SOURCE_ROOT; };
+		67FD8E01914842D1E2764D70 /* languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = languages.json; path = metadata/languages.json; sourceTree = SOURCE_ROOT; };
+		67FDE0283B3628AD3E763D07 /* cddsd.settings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cddsd.settings.json; path = metadata/cddsd.settings.json; sourceTree = SOURCE_ROOT; };
+		67FDF129425779A3B8D67F9E /* YAJL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = YAJL.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/YAJL.xcframework"; sourceTree = SOURCE_ROOT; };
+		67FE0A1588EA98C328C59751 /* animationconfetti_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = compiled; name = animationconfetti_animation.json; path = animations/animationconfetti_animation.json; sourceTree = SOURCE_ROOT; };
+		67FE101460CFE34E8205AF71 /* GXCoreModule_SD_Scanner.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GXCoreModule_SD_Scanner.xcframework; path = "$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2/GXCoreModule_SD_Scanner.xcframework"; sourceTree = SOURCE_ROOT; };
+		67FE1946E5A1331ABD291B67 /* sdticketpesado.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdticketpesado.panel.json; path = metadata/sdticketpesado.panel.json; sourceTree = SOURCE_ROOT; };
+		67FE2E1CEDF17FB4C0B647FC /* workwithplus.nativemobile.examplemenuoption.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workwithplus.nativemobile.examplemenuoption.panel.json; path = metadata/workwithplus.nativemobile.examplemenuoption.panel.json; sourceTree = SOURCE_ROOT; };
+		67FE6EA36CFE0009E99CE533 /* appid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = appid.json; path = metadata/appid.json; sourceTree = SOURCE_ROOT; };
+		67FE78D61141E2B47D4242AB /* equipoctrlsalidafirma.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = equipoctrlsalidafirma.json; path = metadata/equipoctrlsalidafirma.json; sourceTree = SOURCE_ROOT; };
+		67FEB8BDA09E2E3E68A20D15 /* cddsd.gxapp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cddsd.gxapp.json; path = metadata/cddsd.gxapp.json; sourceTree = SOURCE_ROOT; };
+		67FECC9325794EF5587D8419 /* GXEOiOSPermissionsOptionals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GXEOiOSPermissionsOptionals.swift; path = Classes/GXEOiOSPermissionsOptionals.swift; sourceTree = SOURCE_ROOT; };
+		67FEDE713A53A5DF4BC9532D /* recepaquetesfoto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = recepaquetesfoto.json; path = metadata/recepaquetesfoto.json; sourceTree = SOURCE_ROOT; };
+		67FEFD82D850F3AE9B40A47C /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusPredefinedStyles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusPredefinedStyles.json; path = metadata/Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusPredefinedStyles.json; sourceTree = SOURCE_ROOT; };
+		67FFC1D44A6092635DC1CD93 /* sdregistrotemp.panel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sdregistrotemp.panel.json; path = metadata/sdregistrotemp.panel.json; sourceTree = SOURCE_ROOT; };
+		67FFD37F5EC9994DB1CF5323 /* ticketpesado.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ticketpesado.json; path = metadata/ticketpesado.json; sourceTree = SOURCE_ROOT; };
+		751E220207BF63D7FA6872C8 /* Pods-CDDSD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDSD.debug.xcconfig"; path = "Target Support Files/Pods-CDDSD/Pods-CDDSD.debug.xcconfig"; sourceTree = "<group>"; };
+		8C67F0C6D7946F56A11B8547 /* Pods-CDDSD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDSD.release.xcconfig"; path = "Target Support Files/Pods-CDDSD/Pods-CDDSD.release.xcconfig"; sourceTree = "<group>"; };
+		AE2B1D6058910D05DD3D006B /* CDDSD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDSD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2B29B97316FDCFA39411CA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
+		AE2B32CA4F630368D1EE00C9 /* CDDSD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDDSD-Prefix.pch"; sourceTree = "<group>"; };
+		AE2B57A004EC19C3756C004F /* CDDSD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDSD-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE2B58D1107310486CEB800E /* CDDSD-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CDDSD-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		AE2B59E9BE8F615EE525000D /* CDDSD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CDDSD.entitlements; sourceTree = "<group>"; };
+		AEEB563C2360D65200916649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GXLaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1D418E9291C4F854287251F /* Pods_CDDSD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDSD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B8D2E8DDF685C78AA686C2 /* GXAudioBL.xcframework in Frameworks */,
+				67B38010B9C3F41268247504 /* GXCoreBL.xcframework in Frameworks */,
+				67BAA45C5C27BBB0342E0850 /* GXCoreModule_Common_Log.xcframework in Frameworks */,
+				67B6DE1A718DA794363ED044 /* GXCoreModule_SD_Scanner.xcframework in Frameworks */,
+				67B2F54AB31D3150FBDBEF4D /* GXCoreUI.xcframework in Frameworks */,
+				67B8B77A0675F6B183540C28 /* GXCoreUIPhotoLibrary.xcframework in Frameworks */,
+				67B2D6F9740ED769BD606757 /* GXDataLayer.xcframework in Frameworks */,
+				67BDF3DD45EE07DA34DCC8A6 /* GXDataLayerRemote.xcframework in Frameworks */,
+				67BC603B04C58559408BFD8F /* GXFoundation.xcframework in Frameworks */,
+				67B13F74986FA37612D6B3F8 /* GXGAM.xcframework in Frameworks */,
+				67B188A04F3E2E8E81C6611F /* GXGAMUI.xcframework in Frameworks */,
+				67BE34E135993978C30AD0A6 /* GXObjectsModel.xcframework in Frameworks */,
+				67BE6C53116D19545CF99A0D /* GXStandardClasses.xcframework in Frameworks */,
+				67B08C94C2AA8D6A7E2A2EDE /* GXUIApplication.xcframework in Frameworks */,
+				67BE1748D0EC0E4370D02866 /* YAJL.xcframework in Frameworks */,
+				51F52753A537981C32788C5B /* GXCoreModule_SD_DeviceAuthentication.xcframework in Frameworks */,
+				31A333CC52FD2E42247E8EFE /* GXUCAnimationView.xcframework in Frameworks */,
+				20803999268F49DE00ABA43C /* ImageManipulation.framework in Frameworks */,
+				20BEAC392889946B0097C2BB /* FSCalendar.framework in Frameworks */,
+				20BEAC3A2889946B0097C2BB /* SmartDevicesPlus.framework in Frameworks */,
+				C89743BB1B7E5A8F6D44204F /* Pods_CDDSD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1719F769701D97BADD03C13A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				751E220207BF63D7FA6872C8 /* Pods-CDDSD.debug.xcconfig */,
+				8C67F0C6D7946F56A11B8547 /* Pods-CDDSD.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE2B1D6058910D05DD3D006B /* CDDSD.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28EEBF621118D79A00187D67 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AE2B58D1107310486CEB800E /* CDDSD-Info.plist */,
+				AE2B59E9BE8F615EE525000D /* CDDSD.entitlements */,
+				AE2B57A004EC19C3756C004F /* CDDSD-Bridging-Header.h */,
+				67FB7A603806563882CDAEB8 /* GXAppDelegate.swift */,
+				67F158C36BD0686E71B19A5D /* GXApplicationModel+GXTwitterOptionals.m */,
+				67F2B9E0265F4178E24DA712 /* GXCustomUserControlsMapper.h */,
+				67FC70693C2A8B53E1363D40 /* GXCustomUserControlsMapper.m */,
+				67FECC9325794EF5587D8419 /* GXEOiOSPermissionsOptionals.swift */,
+				67F4DCD629D5AD3915D0CB58 /* GXUserNotificationsManager+Optionals.m */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA = {
+			isa = PBXGroup;
+			children = (
+				28EEBF621118D79A00187D67 /* Shared */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				AE0B9DD81CD51D1A00F6DC30 /* Embed Frameworks */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				AEFF020219ED4A5670A791B9 /* Modules */,
+				40F45E4014ACB99D00F68FEC /* User Controls */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				1719F769701D97BADD03C13A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5759CC5C1F462BFB006E93FA /* Animations */,
+				4070305D128DB9C600F50487 /* Images */,
+				4070305C128DB9B700F50487 /* Embedded Metadata */,
+				AE2B32CA4F630368D1EE00C9 /* CDDSD-Prefix.pch */,
+				AE2B29B97316FDCFA39411CA /* main.m */,
+				AEEB563B2360D65200916649 /* GXLaunchScreen.storyboard */,
+				4025E09B1970634500947A86 /* InfoPlist.strings */,
+				67F2B81826231C04D5045A3C /* Font_Awesome_6_Free_Brands.ttf */,
+				67F6BAAE8807597986DE7FFF /* Font_Awesome_6_Free_Regular.ttf */,
+				67F146981A0A72D9D3D9C52E /* Font_Awesome_6_Free_Solid.ttf */,
+				67F1F589652F55C265582DE3 /* Material Icons.ttf */,
+				67F5FF3B1E0E63CECD7AD15B /* Montserrat.ttf */,
+				67F3CFBEE24EFB1F8CCF5686 /* Settings.bundle */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20803998268F49DE00ABA43C /* ImageManipulation.framework */,
+				20BEAC35288757A80097C2BB /* FSCalendar.framework */,
+				20BEAC36288757A80097C2BB /* SmartDevicesPlus.framework */,
+				F1D418E9291C4F854287251F /* Pods_CDDSD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4070305C128DB9B700F50487 /* Embedded Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				67FE6EA36CFE0009E99CE533 /* appid.json */,
+				67FEB8BDA09E2E3E68A20D15 /* cddsd.gxapp.json */,
+				67F799A9149349755719C443 /* cddsd.ios.json */,
+				67F134223BA28B6CDF9134EA /* cddsd.panel.json */,
+				67F322074A454F903A8110F7 /* cddsd.properties.json */,
+				67FDE0283B3628AD3E763D07 /* cddsd.settings.json */,
+				67F4D297681A611619CDD973 /* cddsddsandroid.theme.json */,
+				67F41FC20CE9F977E2BC3604 /* cddsddsanyplatform.theme.json */,
+				67F571B5956EFCC9829D86A4 /* cddsddsapple.theme.json */,
+				67F4AAEC86E38919F2FE3CB2 /* cddsdhome.panel.json */,
+				67F79D3E744415111E57A5CA /* cddsdlogin.panel.json */,
+				67F53FCE0B16BE6AE58049CB /* cddsdob.panel.json */,
+				67FA2813CEE4F1931F14BA13 /* domains.json */,
+				67FE78D61141E2B47D4242AB /* equipoctrlsalidafirma.json */,
+				67F8B9401404A61342337928 /* gamsdchangepassword.panel.json */,
+				67F81A301B8E1FF5388EF048 /* gamsdnotauthorized.panel.json */,
+				67F1A988E027F65331DAAF20 /* GXImages.json */,
+				67F69B2A9F88511001B00690 /* gxversion.json */,
+				67F3AEF73380DDE4AA5DE92F /* Images_Spanish_CDDSDDSAnyPlatform.json */,
+				67F8FDB6F5C7F45932872C1E /* Images_Spanish_CDDSDDSApple.json */,
+				67F333CC52FD1F72247E8EFE /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSFontIcons.json */,
+				67FB8E2C441D48DE4EC0188F /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSNative.json */,
+				67FEFD82D850F3AE9B40A47C /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusPredefinedStyles.json */,
+				67FD8E01914842D1E2764D70 /* languages.json */,
+				67FEDE713A53A5DF4BC9532D /* recepaquetesfoto.json */,
+				67F30D6CD8A773E2D3DCC6B5 /* registro.json */,
+				67FD028EDB52EB8B4EEFE3C1 /* sdc_paqueteria.panel.json */,
+				67F7B4509A449B9403F78E0B /* sdequiposctrl.panel.json */,
+				67F3ABDC0DC66D18D10355E2 /* sdequiposctrldt.panel.json */,
+				67FA899570F70013F06E64BC /* sdequiposes.panel.json */,
+				67F518E16F167E28044821F7 /* sdequiposfirmadt.panel.json */,
+				67F8F2D48D7CD229C8ACB017 /* sdpaquetefoto.panel.json */,
+				67FC9D6289255F0EBE448CAF /* sdqrvisitante.panel.json */,
+				67FFC1D44A6092635DC1CD93 /* sdregistrotemp.panel.json */,
+				67F70E90AA30D6F2113C9942 /* sdscanner.panel.json */,
+				67F102386CBA8D0585456DA6 /* sdticketbuscar.panel.json */,
+				67FE1946E5A1331ABD291B67 /* sdticketpesado.panel.json */,
+				67F4B5761C57FBC9974C12AE /* sdvalidadorsat.panel.json */,
+				67FC5ABBDA18E96B6C8E0E19 /* sdvisitaes.panel.json */,
+				67FB35E39272DBCD88D4F41C /* sdvisitantealta.panel.json */,
+				67F96CF98058A1EFE944F4E1 /* sdvisitanteslista.panel.json */,
+				67F9B62E90348B7C9F84982F /* sdvisitasdiarias.panel.json */,
+				67F7E92194B60400D88EDEB3 /* sdvistantesprompt.panel.json */,
+				67F453B1915A472FDB5767F0 /* sd_firma.panel.json */,
+				67F03B1E79E99A149D2FE0D0 /* sd_paqueteria.panel.json */,
+				67F44299B0E1B8553C19DEB9 /* settings.json */,
+				67F504757741720C1654FD71 /* Spanish.language.json */,
+				67F22D1E7C1A8E648EB4ACDA /* themes.json */,
+				67FFD37F5EC9994DB1CF5323 /* ticketpesado.json */,
+				67FE2E1CEDF17FB4C0B647FC /* workwithplus.nativemobile.examplemenuoption.panel.json */,
+				67F1693DC31346B587EC1B10 /* workwithplus.nativemobile.workwithplusdsfonticons.theme.json */,
+				67F17FBCC1B3C4004A0FA5CF /* workwithplus.nativemobile.workwithplusdsnative.theme.json */,
+				67F4A3DA096142CD490C29E3 /* workwithplus.nativemobile.workwithpluspredefinedstyles.theme.json */,
+			);
+			name = "Embedded Metadata";
+			sourceTree = "<group>";
+		};
+		4070305D128DB9C600F50487 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				67F9E1C56B9B4074C026D73F /* images.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		40F45E4014ACB99D00F68FEC /* User Controls */ = {
+			isa = PBXGroup;
+			children = (
+				31A5A5CD27A8AD9E799BD6CD /* GXUCAnimationView.xcframework */,
+			);
+			name = "User Controls";
+			sourceTree = "<group>";
+		};
+		5759CC5C1F462BFB006E93FA /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				67FBEAF3B39B2B71FD96F954 /* animationblender_animation.json */,
+				67F00AD0ED547858BC0C1DF6 /* animationbrochure_animation.json */,
+				67F6FC2A25D91424044E1D19 /* animationcoffe_animation.json */,
+				67F6A314EDA7F26314B1B5AB /* animationcompass_animation.json */,
+				67FE0A1588EA98C328C59751 /* animationconfetti_animation.json */,
+				67F745D6B70A17749E55B440 /* animationdemo_animation.json */,
+				67F6FF60B373A9AADB3F8C02 /* animationdetail_animation.json */,
+				67F88FBC12AEABBB81142030 /* animationfav_animation.json */,
+				67F8D1C6A714A3F6C5384709 /* animationgift_animation.json */,
+				67F216E48EBDD2C20E0F57AF /* animationpencil_animation.json */,
+				67F0349027A6B71FC8950FE2 /* animationscan_animation.json */,
+				67FC804A941ACAF469918855 /* animationtruck_animation.json */,
+				67F5C2C2FDEDAE38565F313F /* skeletoncontent_animation.json */,
+				67F83B1B8B44AF941E12266E /* skeletonlistitem_animation.json */,
+				67F916FC067421D4843533A7 /* skeletonlist_animation.json */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		AE0B9DD81CD51D1A00F6DC30 /* Embed Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67F5E121F8FAC6C3D8BF5A46 /* GXAudioBL.xcframework */,
+				67F430FC5E19D374D10A42E9 /* GXCoreBL.xcframework */,
+				67F6DE5279D5CCD495FDECAE /* GXCoreModule_Common_Log.xcframework */,
+				67FE101460CFE34E8205AF71 /* GXCoreModule_SD_Scanner.xcframework */,
+				67F13CA94CC7DE2C5E3A241E /* GXCoreUI.xcframework */,
+				67FAADDC625F45C0F123D9D3 /* GXCoreUIPhotoLibrary.xcframework */,
+				67F95E1F7DCEDCBA28254123 /* GXDataLayer.xcframework */,
+				67F0F5416BC5E9DBE93FC8FD /* GXDataLayerRemote.xcframework */,
+				67F7E1F0A553FF462091EC79 /* GXFoundation.xcframework */,
+				67FD7AFDDF05EEF9DC8E3F43 /* GXGAM.xcframework */,
+				67F64B73C9A88C5B2D88ABDD /* GXGAMUI.xcframework */,
+				67F95ECDABB139BDBFA25A81 /* GXObjectsModel.xcframework */,
+				67F8F044EBA78ADB18502991 /* GXStandardClasses.xcframework */,
+				67FA6086BC578E83C082A782 /* GXUIApplication.xcframework */,
+				67FDF129425779A3B8D67F9E /* YAJL.xcframework */,
+				51F52753A547981C32788C5B /* GXCoreModule_SD_DeviceAuthentication.xcframework */,
+			);
+			name = "Embed Frameworks";
+			sourceTree = "<group>";
+		};
+		AEFF020219ED4A5670A791B9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* CDDSD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CDDSD" */;
+			buildPhases = (
+				2810C8ABA074D20F7AEC949D /* [CP] Check Pods Manifest.lock */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				AE2B650F1CD3D3290096F510 /* Embed Frameworks */,
+				EEF52AE682C5BF9E5E03F5F4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CDDSD;
+			productName = CDDSD;
+			productReference = AE2B1D6058910D05DD3D006B /* CDDSD.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 1120;
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = CDAL5XDG84;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CDDSD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = es;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				es,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* CDDSD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2B4025E09D197063450094 /* InfoPlist.strings in Resources */,
+				AEEB563D2360D65200916649 /* GXLaunchScreen.storyboard in Resources */,
+				67B7E4729BA5C8E78C46569B /* appid.json in Resources */,
+				67B947116C558EA792BC4FA0 /* cddsd.gxapp.json in Resources */,
+				67B99096D5F6BD642AE6848B /* cddsd.ios.json in Resources */,
+				67BD9B113C223FC876B73995 /* cddsd.panel.json in Resources */,
+				67B04BA469DAFB45A6919F1D /* cddsd.properties.json in Resources */,
+				67BB544A94FF71D925A7C2EA /* cddsd.settings.json in Resources */,
+				67B6A7D408CE6A2C771A22CE /* cddsddsandroid.theme.json in Resources */,
+				67BCF6E9A1A2A7A518711FBD /* cddsddsanyplatform.theme.json in Resources */,
+				67B641C1C93B2747674341C4 /* cddsddsapple.theme.json in Resources */,
+				67B3C5712A4A44E01A7D5424 /* cddsdhome.panel.json in Resources */,
+				67B94429D881D78EB3743B5F /* cddsdlogin.panel.json in Resources */,
+				67B33D835AE26A6A3156ADC7 /* cddsdob.panel.json in Resources */,
+				67B354FFA32AACF48156F8CF /* domains.json in Resources */,
+				67BA459F8EBDC1535DB2882E /* equipoctrlsalidafirma.json in Resources */,
+				67B421601F8FB98D19B5F6AB /* gamsdchangepassword.panel.json in Resources */,
+				67B5FD95297E828DC162F030 /* gamsdnotauthorized.panel.json in Resources */,
+				67B08D77772B00173541D484 /* GXImages.json in Resources */,
+				67BCF64BFC98CAABAF15DE79 /* gxversion.json in Resources */,
+				67BF8674619B281684754C90 /* Images_Spanish_CDDSDDSAnyPlatform.json in Resources */,
+				67B5A5CD15D8AD9E799BD6CD /* Images_Spanish_CDDSDDSApple.json in Resources */,
+				67BE56BBC9FB455027201C3E /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSFontIcons.json in Resources */,
+				67B1CA110D5D72B03C89F74D /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusDSNative.json in Resources */,
+				67BFD61E014721422CC9F240 /* Images_Spanish_WorkWithPlus_NativeMobile_WorkWithPlusPredefinedStyles.json in Resources */,
+				67B9C26C6E76B23C1471C60F /* languages.json in Resources */,
+				67B190A4CEF48661AF3FA241 /* recepaquetesfoto.json in Resources */,
+				67BE2E6E9C9AA0DBE9348F55 /* registro.json in Resources */,
+				67BCD306EAA8476011CEFC13 /* sdc_paqueteria.panel.json in Resources */,
+				67BAA42A3C21F7AD51FA6505 /* sdequiposctrl.panel.json in Resources */,
+				67B3A4E6B20C28056F84E3E5 /* sdequiposctrldt.panel.json in Resources */,
+				67B94412617E71FD91B50310 /* sdequiposes.panel.json in Resources */,
+				67B99E166EA9609B42C20F15 /* sdequiposfirmadt.panel.json in Resources */,
+				67BC1E8CC27521D209B41E13 /* sdpaquetefoto.panel.json in Resources */,
+				67B7B156BFE791F308029385 /* sdqrvisitante.panel.json in Resources */,
+				67BEBE0AB642E82A7EF72647 /* sdregistrotemp.panel.json in Resources */,
+				67BEBA49DFD9965B6AF6A0C1 /* sdscanner.panel.json in Resources */,
+				67B63F96A646F881CA811721 /* sdticketbuscar.panel.json in Resources */,
+				67B49484BAC456857255FC19 /* sdticketpesado.panel.json in Resources */,
+				67BDEC853BC31E4E0EF0E9E6 /* sdvalidadorsat.panel.json in Resources */,
+				67B3DC7B985B38C7182CA60B /* sdvisitaes.panel.json in Resources */,
+				67BCA0935351671D89788F6E /* sdvisitantealta.panel.json in Resources */,
+				67B064B0FE5B74AE344A9C20 /* sdvisitanteslista.panel.json in Resources */,
+				67BC3D31B50A57C16AD915D2 /* sdvisitasdiarias.panel.json in Resources */,
+				67B933BB24AA824D5430F105 /* sdvistantesprompt.panel.json in Resources */,
+				67BB81C2844DDDAD5D00A925 /* sd_firma.panel.json in Resources */,
+				67BC6A818D46CDCAB45A41B6 /* sd_paqueteria.panel.json in Resources */,
+				67B3DC49E9C4AF2A827F7CD6 /* settings.json in Resources */,
+				67BC183AAA9A51D3DD8D3618 /* Spanish.language.json in Resources */,
+				67B7102839D7B759AEB1C3D8 /* themes.json in Resources */,
+				67B3C70AEF02E9F284DA9DB1 /* ticketpesado.json in Resources */,
+				67B6A04B3CE4B671599FDF10 /* workwithplus.nativemobile.examplemenuoption.panel.json in Resources */,
+				67BCB943672767DB4461E78C /* workwithplus.nativemobile.workwithplusdsfonticons.theme.json in Resources */,
+				67BCDEEA337B2383B4986A57 /* workwithplus.nativemobile.workwithplusdsnative.theme.json in Resources */,
+				67B7A07C96673A6773B1F2A1 /* workwithplus.nativemobile.workwithpluspredefinedstyles.theme.json in Resources */,
+				67BA0756C54B2642EBFB72BD /* images.xcassets in Resources */,
+				67BF2A32E42A6482E1D6311B /* animationblender_animation.json in Resources */,
+				67B0B6EE1CC0C839E2F5107D /* animationbrochure_animation.json in Resources */,
+				67B4A01FDA16FC79ACAC4E6F /* animationcoffe_animation.json in Resources */,
+				67B327BB6792DEA9E0C0AED6 /* animationcompass_animation.json in Resources */,
+				67B524BA33E006D541D95EFA /* animationconfetti_animation.json in Resources */,
+				67B982EDE6EC3966EEEE38CD /* animationdemo_animation.json in Resources */,
+				67BDDE1EAF777C823928C337 /* animationdetail_animation.json in Resources */,
+				67BC2C279206C9DA54E619DC /* animationfav_animation.json in Resources */,
+				67B8E1D03C2E066335A51FBF /* animationgift_animation.json in Resources */,
+				67B59C839083385A5CBFCAD7 /* animationpencil_animation.json in Resources */,
+				67BAAA78A15F9CC7568F269E /* animationscan_animation.json in Resources */,
+				67B62A477115D954D193D1C4 /* animationtruck_animation.json in Resources */,
+				67B4E1A087FEB68115874842 /* skeletoncontent_animation.json in Resources */,
+				67BFE7B741C7E9FCBB5850BB /* skeletonlistitem_animation.json in Resources */,
+				67BCB6A753B9D6A35D1CA4A5 /* skeletonlist_animation.json in Resources */,
+				67BA5A3137299F0190E8E2D9 /* Font_Awesome_6_Free_Brands.ttf in Resources */,
+				67B97C02352B686249092AF1 /* Font_Awesome_6_Free_Regular.ttf in Resources */,
+				67BBE0063CD554FE736791A1 /* Font_Awesome_6_Free_Solid.ttf in Resources */,
+				67B52DDB5072238CAFB8CD6A /* Material Icons.ttf in Resources */,
+				67BD2245B59F5078F2EA0326 /* Montserrat.ttf in Resources */,
+				67BF1356CA8FDE3496387D35 /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2810C8ABA074D20F7AEC949D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CDDSD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEF52AE682C5BF9E5E03F5F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDDSD/Pods-CDDSD-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDSD/Pods-CDDSD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2B1D60589B0D05DD56006B /* main.m in Sources */,
+				67B35F478232125F9801DBD5 /* GXAppDelegate.swift in Sources */,
+				67B334E9EABBC2D22F683265 /* GXApplicationModel+GXTwitterOptionals.m in Sources */,
+				67B6F980EB9E1BDC81422152 /* GXCustomUserControlsMapper.m in Sources */,
+				67BC7F8760E30BED82CFDC51 /* GXEOiOSPermissionsOptionals.swift in Sources */,
+				67B63318D6ADB8B78A2A0361 /* GXUserNotificationsManager+Optionals.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4025E09B1970634500947A86 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67F16569662ABC904AB6818B /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AEEB563B2360D65200916649 /* GXLaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEEB563C2360D65200916649 /* Base */,
+			);
+			name = GXLaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751E220207BF63D7FA6872C8 /* Pods-CDDSD.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = GxAppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CDDSD.entitlements;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/UserControls\"",
+					"\"$(SRCROOT)/UserControls/$(PLATFORM_NAME)\"",
+					"\"$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDDSD-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/include/libxml2\"",
+				);
+				INFOPLIST_FILE = "CDDSD-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/\"",
+					"\"$(SRCROOT)/UserControls\"",
+					"\"$(SRCROOT)/UserControls/$(PLATFORM_NAME)\"",
+					"\"$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.genexus.CDDSD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CDDSD-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1.2;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C67F0C6D7946F56A11B8547 /* Pods-CDDSD.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = GxAppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CDDSD.entitlements;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/UserControls\"",
+					"\"$(SRCROOT)/UserControls/$(PLATFORM_NAME)\"",
+					"\"$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDDSD-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/include/libxml2\"",
+				);
+				INFOPLIST_FILE = "CDDSD-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/\"",
+					"\"$(SRCROOT)/UserControls\"",
+					"\"$(SRCROOT)/UserControls/$(PLATFORM_NAME)\"",
+					"\"$(USER_LIBRARY_DIR)/GeneXus/GeneXus/18.0.169539_U2\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.genexus.CDDSD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "CDDSD-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 18.02.20230407;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=appletvsimulator*]" = "$(inherit) arm64 i386";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherit) arm64 i386";
+				"EXCLUDED_ARCHS[sdk=watchsimulator*]" = "$(inherit) arm64 i386";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherit)",
+					"DEBUG=1",
+					"GXFRAMEWORKS=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 18.02.20230407;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DDEBUG -DGXFRAMEWORKS";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 18.02.20230407;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=appletvsimulator*]" = "$(inherit) arm64 i386";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherit) arm64 i386";
+				"EXCLUDED_ARCHS[sdk=watchsimulator*]" = "$(inherit) arm64 i386";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherit)",
+					"GXFRAMEWORKS=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 18.02.20230407;
+				OTHER_SWIFT_FLAGS = "-DGXFRAMEWORKS";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CDDSD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CDDSD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

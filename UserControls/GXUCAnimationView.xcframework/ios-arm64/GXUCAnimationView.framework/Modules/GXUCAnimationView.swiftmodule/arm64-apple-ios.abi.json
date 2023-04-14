@@ -1,0 +1,353 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXUCAnimationView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreUI",
+        "printedName": "GXCoreUI",
+        "declKind": "Import",
+        "moduleName": "GXUCAnimationView"
+      },
+      {
+        "kind": "Import",
+        "name": "Lottie",
+        "printedName": "Lottie",
+        "declKind": "Import",
+        "moduleName": "GXUCAnimationView"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXUCAnimationView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreUI",
+        "printedName": "GXCoreUI",
+        "declKind": "Import",
+        "moduleName": "GXUCAnimationView"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXUCAnimationView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreUI",
+        "printedName": "GXCoreUI",
+        "declKind": "Import",
+        "moduleName": "GXUCAnimationView"
+      },
+      {
+        "kind": "Import",
+        "name": "Lottie",
+        "printedName": "Lottie",
+        "declKind": "Import",
+        "moduleName": "GXUCAnimationView"
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreBL",
+        "printedName": "GXCoreBL",
+        "declKind": "Import",
+        "moduleName": "GXUCAnimationView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreUI",
+        "printedName": "GXCoreUI",
+        "declKind": "Import",
+        "moduleName": "GXUCAnimationView"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LottieAnimationExtensionLibrary",
+        "printedName": "LottieAnimationExtensionLibrary",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initializeExtensionLibrary",
+            "printedName": "initializeExtensionLibrary(withContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GXExtensionLibraryContext",
+                "printedName": "GXCoreBL.GXExtensionLibraryContext",
+                "usr": "c:@M@GXCoreBL@objc(cs)GXExtensionLibraryContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXUCAnimationView@objc(cs)LottieAnimationExtensionLibrary(im)initializeExtensionLibraryWithContext:",
+            "mangledName": "$s17GXUCAnimationView31LottieAnimationExtensionLibraryC010initializeeF011withContexty8GXCoreBL011GXExtensionfI0C_tF",
+            "moduleName": "GXUCAnimationView",
+            "objc_name": "initializeExtensionLibraryWithContext:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LottieAnimationExtensionLibrary",
+                "printedName": "GXUCAnimationView.LottieAnimationExtensionLibrary",
+                "usr": "c:@M@GXUCAnimationView@objc(cs)LottieAnimationExtensionLibrary"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GXUCAnimationView@objc(cs)LottieAnimationExtensionLibrary(im)init",
+            "mangledName": "$s17GXUCAnimationView31LottieAnimationExtensionLibraryCACycfc",
+            "moduleName": "GXUCAnimationView",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GXUCAnimationView@objc(cs)LottieAnimationExtensionLibrary",
+        "mangledName": "$s17GXUCAnimationView31LottieAnimationExtensionLibraryC",
+        "moduleName": "GXUCAnimationView",
+        "objc_name": "LottieAnimationExtensionLibrary",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "GXExtensionLibraryProtocol",
+            "printedName": "GXExtensionLibraryProtocol",
+            "usr": "c:@M@GXCoreBL@objc(pl)GXExtensionLibraryProtocol",
+            "mangledName": "$s8GXCoreBL26GXExtensionLibraryProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationView\/LottieActivityIndicatorView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1279,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationView\/LottieActivityIndicatorView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1523,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationView\/LottieActivityIndicatorView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1165,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationView\/LottieActivityIndicatorViewProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 165,
+      "length": 14,
+      "value": "\"idLottieFile\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationView\/LottieActivityIndicatorViewProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 333,
+      "length": 10,
+      "value": "\"idLottie\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationViewControl.swift",
+      "kind": "StringLiteral",
+      "offset": 330,
+      "length": 15,
+      "value": "\"animationName\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationViewControl.swift",
+      "kind": "StringLiteral",
+      "offset": 386,
+      "length": 9,
+      "value": "\"looping\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationViewControl.swift",
+      "kind": "StringLiteral",
+      "offset": 436,
+      "length": 10,
+      "value": "\"progress\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationViewControl.swift",
+      "kind": "StringLiteral",
+      "offset": 496,
+      "length": 14,
+      "value": "\"setanimation\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationViewControl.swift",
+      "kind": "StringLiteral",
+      "offset": 551,
+      "length": 13,
+      "value": "\"setprogress\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationViewControl.swift",
+      "kind": "StringLiteral",
+      "offset": 605,
+      "length": 6,
+      "value": "\"play\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationViewControl.swift",
+      "kind": "StringLiteral",
+      "offset": 652,
+      "length": 7,
+      "value": "\"pause\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationViewControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 911,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationViewControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 949,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationViewControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11908,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationViewControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11955,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationViewControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12003,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/UserControls\/GXUCAnimationView\/GXUCAnimationViewControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12046,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}

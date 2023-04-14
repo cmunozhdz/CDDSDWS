@@ -1,0 +1,519 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXCoreModule_Common_Log",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXStandardClasses",
+        "printedName": "GXStandardClasses",
+        "declKind": "Import",
+        "moduleName": "GXCoreModule_Common_Log"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXEOLog",
+        "printedName": "GXEOLog",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "debug",
+            "printedName": "debug(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog(cm)debug:",
+            "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogC5debugyySSFZ",
+            "moduleName": "GXCoreModule_Common_Log",
+            "static": true,
+            "objc_name": "debug:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "debug",
+            "printedName": "debug(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog(cm)debug::",
+            "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogC5debugyySS_SStFZ",
+            "moduleName": "GXCoreModule_Common_Log",
+            "static": true,
+            "objc_name": "debug::",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "info",
+            "printedName": "info(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog(cm)info:",
+            "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogC4infoyySSFZ",
+            "moduleName": "GXCoreModule_Common_Log",
+            "static": true,
+            "objc_name": "info:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "info",
+            "printedName": "info(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog(cm)info::",
+            "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogC4infoyySS_SStFZ",
+            "moduleName": "GXCoreModule_Common_Log",
+            "static": true,
+            "objc_name": "info::",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "warning",
+            "printedName": "warning(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog(cm)warning:",
+            "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogC7warningyySSFZ",
+            "moduleName": "GXCoreModule_Common_Log",
+            "static": true,
+            "objc_name": "warning:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "warning",
+            "printedName": "warning(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog(cm)warning::",
+            "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogC7warningyySS_SStFZ",
+            "moduleName": "GXCoreModule_Common_Log",
+            "static": true,
+            "objc_name": "warning::",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "error",
+            "printedName": "error(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog(cm)error:",
+            "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogC5erroryySSFZ",
+            "moduleName": "GXCoreModule_Common_Log",
+            "static": true,
+            "objc_name": "error:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "error",
+            "printedName": "error(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog(cm)error::",
+            "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogC5erroryySS_SStFZ",
+            "moduleName": "GXCoreModule_Common_Log",
+            "static": true,
+            "objc_name": "error::",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fatal",
+            "printedName": "fatal(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog(cm)fatal:",
+            "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogC5fatalyySSFZ",
+            "moduleName": "GXCoreModule_Common_Log",
+            "static": true,
+            "objc_name": "fatal:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fatal",
+            "printedName": "fatal(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog(cm)fatal::",
+            "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogC5fatalyySS_SStFZ",
+            "moduleName": "GXCoreModule_Common_Log",
+            "static": true,
+            "objc_name": "fatal::",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "write",
+            "printedName": "write(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog(cm)write:",
+            "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogC5writeyySSFZ",
+            "moduleName": "GXCoreModule_Common_Log",
+            "static": true,
+            "objc_name": "write:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "write",
+            "printedName": "write(_:_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog(cm)write:::",
+            "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogC5writeyySS_SSSitFZ",
+            "moduleName": "GXCoreModule_Common_Log",
+            "static": true,
+            "objc_name": "write:::",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXEOLog",
+                "printedName": "GXCoreModule_Common_Log.GXEOLog",
+                "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog(im)init",
+            "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogCACycfc",
+            "moduleName": "GXCoreModule_Common_Log",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GXCoreModule_Common_Log@objc(cs)GXEOLog",
+        "mangledName": "$s23GXCoreModule_Common_Log7GXEOLogC",
+        "moduleName": "GXCoreModule_Common_Log",
+        "isOpen": true,
+        "objc_name": "GXEOLog",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)GXExternalObjectBase",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "GXStandardClasses.GXExternalObjectBase",
+          "GXStandardClasses.GXEmbeddedModelNSObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

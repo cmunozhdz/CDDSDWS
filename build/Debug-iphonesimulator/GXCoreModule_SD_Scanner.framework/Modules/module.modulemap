@@ -1,0 +1,6 @@
+framework module GXCoreModule_SD_Scanner {
+  umbrella header "GXCoreModule_SD_Scanner.h"
+
+  export *
+  module * { export * }
+}

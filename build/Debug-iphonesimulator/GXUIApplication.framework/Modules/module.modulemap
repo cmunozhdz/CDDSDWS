@@ -1,0 +1,11 @@
+framework module GXUIApplication {
+  umbrella header "GXUIApplication.h"
+
+  export *
+  module * { export * }
+}
+
+module GXUIApplication.Swift {
+  header "GXUIApplication-Swift.h"
+  requires objc
+}

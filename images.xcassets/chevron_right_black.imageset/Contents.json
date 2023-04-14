@@ -1,0 +1,11 @@
+{ 
+    "images" : [ { 
+        "idiom" : "universal",
+        "filename" : "chevron_right_black.png",
+        "scale" : "1x"
+    } ],
+    "info" : { 
+        "version" : 1,
+        "author" : "GeneXus"
+    }
+}

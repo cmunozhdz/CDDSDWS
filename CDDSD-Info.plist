@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>es_MX</string>
+	<key>CFBundleDisplayName</key>
+	<string>CDD</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+	<string>es</string>
+	</array>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>gxgam2a3c47b0d82144cca19b5c4315106311</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>GXDefaultServerAddress</key>
+	<string>https://serviciosrest.polakgrupo.com/cddserviciosdev</string>
+	<key>GXDefaultServerMainEntryPoint</key>
+	<string>d82625fd-5892-40b0-99c9-5c8559c197fc-CDDSD</string>
+	<key>GXDynamicUrlFlag</key>
+	<true/>
+	<key>GXServicesURLConfigPanel</key>
+	<string></string>
+	<key>GXKnowledgeBaseName</key>
+	<string>CDD</string>
+	<key>GXMetadataVersion</key>
+	<integer>21594623</integer>
+	<key>GXiOSGeneratorLanguage</key>
+	<string>swift</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSCameraUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSContactsUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSHomeKitUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSMotionUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NFCReaderUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSRemindersUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSSiriUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>CDD SD </string>
+	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<dict>
+		<key>CDD SD</key>
+		<string>CDD SD</string>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Montserrat.ttf</string>
+		<string>Font_Awesome_6_Free_Solid.ttf</string>
+		<string>Font_Awesome_6_Free_Regular.ttf</string>
+		<string>Font_Awesome_6_Free_Brands.ttf</string>
+		<string>Material Icons.ttf</string>
+	</array>
+
+	<key>UILaunchStoryboardName</key>
+	<string>GXLaunchScreen</string>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+</dict>
+</plist>

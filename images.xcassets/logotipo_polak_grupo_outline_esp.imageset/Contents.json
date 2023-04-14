@@ -1,0 +1,11 @@
+{ 
+    "images" : [ { 
+        "idiom" : "universal",
+        "filename" : "logotipo_polak_grupo_outline_esp.png",
+        "scale" : "1x"
+    } ],
+    "info" : { 
+        "version" : 1,
+        "author" : "GeneXus"
+    }
+}

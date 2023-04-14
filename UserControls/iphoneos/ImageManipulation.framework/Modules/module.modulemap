@@ -1,0 +1,6 @@
+framework module ImageManipulation {
+  umbrella header "ImageManipulation.h"
+
+  export *
+  module * { export * }
+}

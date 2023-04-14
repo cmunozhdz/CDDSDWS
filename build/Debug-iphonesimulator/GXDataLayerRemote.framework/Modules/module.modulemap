@@ -1,0 +1,11 @@
+framework module GXDataLayerRemote {
+  umbrella header "GXDataLayerRemote.h"
+
+  export *
+  module * { export * }
+}
+
+module GXDataLayerRemote.Swift {
+  header "GXDataLayerRemote-Swift.h"
+  requires objc
+}

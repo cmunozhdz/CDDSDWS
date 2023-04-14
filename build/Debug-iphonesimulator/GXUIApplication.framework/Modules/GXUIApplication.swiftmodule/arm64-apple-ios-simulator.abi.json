@@ -1,0 +1,3252 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "GXCoreBL",
+        "printedName": "GXCoreBL",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication"
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreUI",
+        "printedName": "GXCoreUI",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication"
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation_Private",
+        "printedName": "GXFoundation_Private",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXUIApplicationExecutionEnvironment",
+        "printedName": "GXUIApplicationExecutionEnvironment",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "beginCoreInitialization",
+            "printedName": "beginCoreInitialization()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15GXUIApplication0A20ExecutionEnvironmentC23beginCoreInitializationyyFZ",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC23beginCoreInitializationyyFZ",
+            "moduleName": "GXUIApplication",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "endCoreInitialization",
+            "printedName": "endCoreInitialization(extensionLibraries:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GXCoreBL.GXExtensionLibraryProtocol]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXExtensionLibraryProtocol",
+                    "printedName": "GXCoreBL.GXExtensionLibraryProtocol",
+                    "usr": "c:@M@GXCoreBL@objc(pl)GXExtensionLibraryProtocol"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15GXUIApplication0A20ExecutionEnvironmentC21endCoreInitialization18extensionLibrariesySay8GXCoreBL26GXExtensionLibraryProtocol_pG_tFZ",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC21endCoreInitialization18extensionLibrariesySay8GXCoreBL26GXExtensionLibraryProtocol_pG_tFZ",
+            "moduleName": "GXUIApplication",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "applicationState",
+            "printedName": "applicationState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXApplicationStateType",
+                "printedName": "GXFoundation.GXApplicationStateType",
+                "usr": "c:@E@GXApplicationStateType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)applicationState",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC16applicationStateSo013GXApplicationE4TypeVvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "applicationState",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXApplicationStateType",
+                    "printedName": "GXFoundation.GXApplicationStateType",
+                    "usr": "c:@E@GXApplicationStateType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)applicationState",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC16applicationStateSo013GXApplicationE4TypeVvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "applicationState",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isTransitioningFromBackgroundToForeground",
+            "printedName": "isTransitioningFromBackgroundToForeground",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)transitioningFromBackgroundToForeground",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC41isTransitioningFromBackgroundToForegroundSbvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "transitioningFromBackgroundToForeground",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)isTransitioningFromBackgroundToForeground",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC41isTransitioningFromBackgroundToForegroundSbvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "isTransitioningFromBackgroundToForeground",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activeStateNotificationsSupported",
+            "printedName": "activeStateNotificationsSupported",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)activeStateNotificationsSupported",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC33activeStateNotificationsSupportedSbvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "activeStateNotificationsSupported",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)activeStateNotificationsSupported",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC33activeStateNotificationsSupportedSbvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "activeStateNotificationsSupported",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "didBecomeActiveNotification",
+            "printedName": "didBecomeActiveNotification",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)didBecomeActiveNotification",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC27didBecomeActiveNotificationSSSgvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "didBecomeActiveNotification",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)didBecomeActiveNotification",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC27didBecomeActiveNotificationSSSgvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "didBecomeActiveNotification",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "willResignActiveNotification",
+            "printedName": "willResignActiveNotification",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)willResignActiveNotification",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC28willResignActiveNotificationSSSgvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "willResignActiveNotification",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)willResignActiveNotification",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC28willResignActiveNotificationSSSgvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "willResignActiveNotification",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "didReceiveMemoryWarningNotification",
+            "printedName": "didReceiveMemoryWarningNotification",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)didReceiveMemoryWarningNotification",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC35didReceiveMemoryWarningNotificationSSSgvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "didReceiveMemoryWarningNotification",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)didReceiveMemoryWarningNotification",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC35didReceiveMemoryWarningNotificationSSSgvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "didReceiveMemoryWarningNotification",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "willTerminateNotification",
+            "printedName": "willTerminateNotification",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)willTerminateNotification",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC25willTerminateNotificationSSSgvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "willTerminateNotification",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)willTerminateNotification",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC25willTerminateNotificationSSSgvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "willTerminateNotification",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isMultitaskingSupported",
+            "printedName": "isMultitaskingSupported",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)multitaskingSupported",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC23isMultitaskingSupportedSbvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "multitaskingSupported",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)isMultitaskingSupported",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC23isMultitaskingSupportedSbvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "isMultitaskingSupported",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "multitaskingNotificationsSupported",
+            "printedName": "multitaskingNotificationsSupported",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)multitaskingNotificationsSupported",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC34multitaskingNotificationsSupportedSbvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "multitaskingNotificationsSupported",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)multitaskingNotificationsSupported",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC34multitaskingNotificationsSupportedSbvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "multitaskingNotificationsSupported",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "didEnterBackgroundNotification",
+            "printedName": "didEnterBackgroundNotification",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)didEnterBackgroundNotification",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC30didEnterBackgroundNotificationSSSgvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "didEnterBackgroundNotification",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)didEnterBackgroundNotification",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC30didEnterBackgroundNotificationSSSgvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "didEnterBackgroundNotification",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "willEnterForegroundNotification",
+            "printedName": "willEnterForegroundNotification",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)willEnterForegroundNotification",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC31willEnterForegroundNotificationSSSgvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "willEnterForegroundNotification",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)willEnterForegroundNotification",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC31willEnterForegroundNotificationSSSgvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "willEnterForegroundNotification",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backgroundTimeRemaining",
+            "printedName": "backgroundTimeRemaining",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)backgroundTimeRemaining",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC23backgroundTimeRemainingSdvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "backgroundTimeRemaining",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)backgroundTimeRemaining",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC23backgroundTimeRemainingSdvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "backgroundTimeRemaining",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "backgroundTaskInvalidIdentifier",
+            "printedName": "backgroundTaskInvalidIdentifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)backgroundTaskInvalidIdentifier",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC31backgroundTaskInvalidIdentifierSuyF",
+            "moduleName": "GXUIApplication",
+            "objc_name": "backgroundTaskInvalidIdentifier",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "beginBackgroundTask",
+            "printedName": "beginBackgroundTask(withName:expirationHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)beginBackgroundTaskWithName:expirationHandler:",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC19beginBackgroundTask8withName17expirationHandlerSuSSSg_yycSgtF",
+            "moduleName": "GXUIApplication",
+            "objc_name": "beginBackgroundTaskWithName:expirationHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "endBackgroundTask",
+            "printedName": "endBackgroundTask(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)endBackgroundTask:",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC17endBackgroundTaskyySuF",
+            "moduleName": "GXUIApplication",
+            "objc_name": "endBackgroundTask:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "open",
+            "printedName": "open(_:options:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)openURL:options:completionHandler:",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC4open_7options17completionHandlery10Foundation3URLV_SDySSypGSgySbcSgtF",
+            "moduleName": "GXUIApplication",
+            "objc_name": "openURL:options:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "openURLOptionUniversalLinksOnlyKey",
+            "printedName": "openURLOptionUniversalLinksOnlyKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)openURLOptionUniversalLinksOnlyKey",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC34openURLOptionUniversalLinksOnlyKeySSSgvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "openURLOptionUniversalLinksOnlyKey",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)openURLOptionUniversalLinksOnlyKey",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC34openURLOptionUniversalLinksOnlyKeySSSgvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "openURLOptionUniversalLinksOnlyKey",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "canOpen",
+            "printedName": "canOpen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)canOpenURL:",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC7canOpenySb10Foundation3URLVF",
+            "moduleName": "GXUIApplication",
+            "objc_name": "canOpenURL:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "currentTraitCollection",
+            "printedName": "currentTraitCollection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UITraitCollection",
+                "printedName": "UIKit.UITraitCollection",
+                "usr": "c:objc(cs)UITraitCollection"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)currentTraitCollection",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC22currentTraitCollectionSo07UITraitF0Cvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "currentTraitCollection",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITraitCollection",
+                    "printedName": "UIKit.UITraitCollection",
+                    "usr": "c:objc(cs)UITraitCollection"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)currentTraitCollection",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC22currentTraitCollectionSo07UITraitF0Cvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "currentTraitCollection",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyWindow",
+            "printedName": "keyWindow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIWindow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindow",
+                    "printedName": "UIKit.UIWindow",
+                    "usr": "c:objc(cs)UIWindow"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)keyWindow",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC9keyWindowSo8UIWindowCSgvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "keyWindow",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIWindow?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIWindow",
+                        "printedName": "UIKit.UIWindow",
+                        "usr": "c:objc(cs)UIWindow"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)keyWindow",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC9keyWindowSo8UIWindowCSgvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "keyWindow",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "windows",
+            "printedName": "windows",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[UIKit.UIWindow]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindow",
+                    "printedName": "UIKit.UIWindow",
+                    "usr": "c:objc(cs)UIWindow"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)windows",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC7windowsSaySo8UIWindowCGvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "windows",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIWindow]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIWindow",
+                        "printedName": "UIKit.UIWindow",
+                        "usr": "c:objc(cs)UIWindow"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)windows",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC7windowsSaySo8UIWindowCGvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "windows",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "connectedScenes",
+            "printedName": "connectedScenes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<UIKit.UIScene>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIScene",
+                    "printedName": "UIKit.UIScene",
+                    "usr": "c:objc(cs)UIScene"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)connectedScenes",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC15connectedScenesShySo7UISceneCGvp",
+            "moduleName": "GXUIApplication",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "objc_name": "connectedScenes",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<UIKit.UIScene>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIScene",
+                        "printedName": "UIKit.UIScene",
+                        "usr": "c:objc(cs)UIScene"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)connectedScenes",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC15connectedScenesShySo7UISceneCGvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "connectedScenes",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "openSessions",
+            "printedName": "openSessions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<UIKit.UISceneSession>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UISceneSession",
+                    "printedName": "UIKit.UISceneSession",
+                    "usr": "c:objc(cs)UISceneSession"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)openSessions",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC12openSessionsShySo14UISceneSessionCGvp",
+            "moduleName": "GXUIApplication",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "objc_name": "openSessions",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<UIKit.UISceneSession>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UISceneSession",
+                        "printedName": "UIKit.UISceneSession",
+                        "usr": "c:objc(cs)UISceneSession"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)openSessions",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC12openSessionsShySo14UISceneSessionCGvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "openSessions",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "supportsMultipleScenes",
+            "printedName": "supportsMultipleScenes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)supportsMultipleScenes",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC22supportsMultipleScenesSbvp",
+            "moduleName": "GXUIApplication",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "objc_name": "supportsMultipleScenes",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Available",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)supportsMultipleScenes",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC22supportsMultipleScenesSbvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "supportsMultipleScenes",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "sendAction",
+            "printedName": "sendAction(toFirstResponder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Selector",
+                "printedName": "ObjectiveC.Selector",
+                "usr": "s:10ObjectiveC8SelectorV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)sendActionToFirstResponder:",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC10sendAction16toFirstRespondery10ObjectiveC8SelectorV_tF",
+            "moduleName": "GXUIApplication",
+            "objc_name": "sendActionToFirstResponder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "userInterfaceLayoutDirection",
+            "printedName": "userInterfaceLayoutDirection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIUserInterfaceLayoutDirection",
+                "printedName": "UIKit.UIUserInterfaceLayoutDirection",
+                "usr": "c:@E@UIUserInterfaceLayoutDirection"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)userInterfaceLayoutDirection",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC28userInterfaceLayoutDirectionSo06UIUserefG0Vvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "userInterfaceLayoutDirection",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIUserInterfaceLayoutDirection",
+                    "printedName": "UIKit.UIUserInterfaceLayoutDirection",
+                    "usr": "c:@E@UIUserInterfaceLayoutDirection"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)userInterfaceLayoutDirection",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC28userInterfaceLayoutDirectionSo06UIUserefG0Vvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "userInterfaceLayoutDirection",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "statusBarFrame",
+            "printedName": "statusBarFrame",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)statusBarFrame",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC14statusBarFrameSo6CGRectVvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "statusBarFrame",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)statusBarFrame",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC14statusBarFrameSo6CGRectVvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "statusBarFrame",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "interfaceOrientation",
+            "printedName": "interfaceOrientation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientation",
+                "printedName": "UIKit.UIInterfaceOrientation",
+                "usr": "c:@E@UIInterfaceOrientation"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)interfaceOrientation",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC20interfaceOrientationSo011UIInterfaceE0Vvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "interfaceOrientation",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientation",
+                    "printedName": "UIKit.UIInterfaceOrientation",
+                    "usr": "c:@E@UIInterfaceOrientation"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)interfaceOrientation",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC20interfaceOrientationSo011UIInterfaceE0Vvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "interfaceOrientation",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "supportedInterfaceOrientationsForKeyWindow",
+            "printedName": "supportedInterfaceOrientationsForKeyWindow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientationMask",
+                "printedName": "UIKit.UIInterfaceOrientationMask",
+                "usr": "c:@E@UIInterfaceOrientationMask"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)supportedInterfaceOrientationsForKeyWindow",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC42supportedInterfaceOrientationsForKeyWindowSo26UIInterfaceOrientationMaskVvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "supportedInterfaceOrientationsForKeyWindow",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientationMask",
+                    "printedName": "UIKit.UIInterfaceOrientationMask",
+                    "usr": "c:@E@UIInterfaceOrientationMask"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)supportedInterfaceOrientationsForKeyWindow",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC42supportedInterfaceOrientationsForKeyWindowSo26UIInterfaceOrientationMaskVvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "supportedInterfaceOrientationsForKeyWindow",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "preferredContentSizeCategory",
+            "printedName": "preferredContentSizeCategory",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIContentSizeCategory",
+                "printedName": "UIKit.UIContentSizeCategory",
+                "usr": "c:@T@UIContentSizeCategory"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)preferredContentSizeCategory",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC28preferredContentSizeCategorySo09UIContentfG0avp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "preferredContentSizeCategory",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIContentSizeCategory",
+                    "printedName": "UIKit.UIContentSizeCategory",
+                    "usr": "c:@T@UIContentSizeCategory"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)preferredContentSizeCategory",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC28preferredContentSizeCategorySo09UIContentfG0avg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "preferredContentSizeCategory",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "preferredContentSizeCategoryIsAccessibilityCategory",
+            "printedName": "preferredContentSizeCategoryIsAccessibilityCategory",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(py)preferredContentSizeCategoryIsAccessibilityCategory",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC043preferredContentSizeCategoryIsAccessibilityG0Sbvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "preferredContentSizeCategoryIsAccessibilityCategory",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)preferredContentSizeCategoryIsAccessibilityCategory",
+                "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC043preferredContentSizeCategoryIsAccessibilityG0Sbvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "preferredContentSizeCategoryIsAccessibilityCategory",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "beginReceivingRemoteControlEvents",
+            "printedName": "beginReceivingRemoteControlEvents()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)beginReceivingRemoteControlEvents",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC33beginReceivingRemoteControlEventsyyF",
+            "moduleName": "GXUIApplication",
+            "objc_name": "beginReceivingRemoteControlEvents",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "endReceivingRemoteControlEvents",
+            "printedName": "endReceivingRemoteControlEvents()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment(im)endReceivingRemoteControlEvents",
+            "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC31endReceivingRemoteControlEventsyyF",
+            "moduleName": "GXUIApplication",
+            "objc_name": "endReceivingRemoteControlEvents",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GXUIApplication@objc(cs)GXUIApplicationExecutionEnvironment",
+        "mangledName": "$s15GXUIApplication0A20ExecutionEnvironmentC",
+        "moduleName": "GXUIApplication",
+        "objc_name": "GXUIApplicationExecutionEnvironment",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "GXExecutionEnvironment",
+            "printedName": "GXExecutionEnvironment",
+            "usr": "c:@M@GXFoundation@objc(pl)GXExecutionEnvironment",
+            "mangledName": "$s12GXFoundation22GXExecutionEnvironmentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreBL_Private",
+        "printedName": "GXCoreBL_Private",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication"
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreUI",
+        "printedName": "GXCoreUI",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication"
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreBL",
+        "printedName": "GXCoreBL",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreBL_Private",
+        "printedName": "GXCoreBL_Private",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication"
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreUI",
+        "printedName": "GXCoreUI",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication"
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreUI_Private",
+        "printedName": "GXCoreUI_Private",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication"
+      },
+      {
+        "kind": "Import",
+        "name": "GXUIApplication_Private",
+        "printedName": "GXUIApplication_Private",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication"
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreBL",
+        "printedName": "GXCoreBL",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreBL_Private",
+        "printedName": "GXCoreBL_Private",
+        "declKind": "Import",
+        "moduleName": "GXUIApplication"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXUIApplicationClass",
+        "printedName": "GXUIApplicationClass",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "remoteControlReceived",
+            "printedName": "remoteControlReceived(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIEvent?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEvent",
+                    "printedName": "UIKit.UIEvent",
+                    "usr": "c:objc(cs)UIEvent"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)GXUIApplicationClass(im)remoteControlReceivedWithEvent:",
+            "mangledName": "$sSo20GXUIApplicationClassC0A0E21remoteControlReceived4withySo7UIEventCSg_tF",
+            "moduleName": "GXUIApplication",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "remoteControlReceivedWithEvent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "userInterfaceLayoutDirection",
+            "printedName": "userInterfaceLayoutDirection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIUserInterfaceLayoutDirection",
+                "printedName": "UIKit.UIUserInterfaceLayoutDirection",
+                "usr": "c:@E@UIUserInterfaceLayoutDirection"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)GXUIApplicationClass(py)userInterfaceLayoutDirection",
+            "mangledName": "$sSo20GXUIApplicationClassC0A0E28userInterfaceLayoutDirectionSo06UIUserdeF0Vvp",
+            "moduleName": "GXUIApplication",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "userInterfaceLayoutDirection",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIUserInterfaceLayoutDirection",
+                    "printedName": "UIKit.UIUserInterfaceLayoutDirection",
+                    "usr": "c:@E@UIUserInterfaceLayoutDirection"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@@objc(cs)GXUIApplicationClass(im)userInterfaceLayoutDirection",
+                "mangledName": "$sSo20GXUIApplicationClassC0A0E28userInterfaceLayoutDirectionSo06UIUserdeF0Vvg",
+                "moduleName": "GXUIApplication",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "userInterfaceLayoutDirection",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)GXUIApplicationClass",
+        "moduleName": "GXUIApplication",
+        "isOpen": true,
+        "objc_name": "GXUIApplicationClass",
+        "declAttributes": [
+          "Custom",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIApplication",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIApplication",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppDelegate_Shared",
+        "printedName": "AppDelegate_Shared",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "application",
+            "printedName": "application(_:willFinishLaunchingWithOptions:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[UIKit.UIApplication.LaunchOptionsKey : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[UIKit.UIApplication.LaunchOptionsKey : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LaunchOptionsKey",
+                        "printedName": "UIKit.UIApplication.LaunchOptionsKey",
+                        "usr": "c:@T@UIApplicationLaunchOptionsKey"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)application:willFinishLaunchingWithOptions:",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE11application_30willFinishLaunchingWithOptionsSbSo13UIApplicationC_SDySo0k6LaunchJ3KeyaypGSgtF",
+            "moduleName": "GXUIApplication",
+            "isOpen": true,
+            "objc_name": "application:willFinishLaunchingWithOptions:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "application",
+            "printedName": "application(_:didFinishLaunchingWithOptions:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[UIKit.UIApplication.LaunchOptionsKey : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[UIKit.UIApplication.LaunchOptionsKey : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LaunchOptionsKey",
+                        "printedName": "UIKit.UIApplication.LaunchOptionsKey",
+                        "usr": "c:@T@UIApplicationLaunchOptionsKey"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)application:didFinishLaunchingWithOptions:",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE11application_29didFinishLaunchingWithOptionsSbSo13UIApplicationC_SDySo0k6LaunchJ3KeyaypGSgtF",
+            "moduleName": "GXUIApplication",
+            "isOpen": true,
+            "objc_name": "application:didFinishLaunchingWithOptions:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "applicationDidBecomeActive",
+            "printedName": "applicationDidBecomeActive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)applicationDidBecomeActive:",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE26applicationDidBecomeActiveyySo13UIApplicationCF",
+            "moduleName": "GXUIApplication",
+            "isOpen": true,
+            "objc_name": "applicationDidBecomeActive:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "applicationWillTerminate",
+            "printedName": "applicationWillTerminate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)applicationWillTerminate:",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE24applicationWillTerminateyySo13UIApplicationCF",
+            "moduleName": "GXUIApplication",
+            "isOpen": true,
+            "objc_name": "applicationWillTerminate:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "application",
+            "printedName": "application(_:open:options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[UIKit.UIApplication.OpenURLOptionsKey : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpenURLOptionsKey",
+                    "printedName": "UIKit.UIApplication.OpenURLOptionsKey",
+                    "usr": "c:@T@UIApplicationOpenURLOptionsKey"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)application:openURL:options:",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE11application_4open7optionsSbSo13UIApplicationC_10Foundation3URLVSDySo0H17OpenURLOptionsKeyaypGtF",
+            "moduleName": "GXUIApplication",
+            "isOpen": true,
+            "intro_iOS": "9.0",
+            "objc_name": "application:openURL:options:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "application",
+            "printedName": "application(_:continue:restorationHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSUserActivity",
+                "printedName": "Foundation.NSUserActivity",
+                "usr": "c:objc(cs)NSUserActivity"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([UIKit.UIUserActivityRestoring]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[UIKit.UIUserActivityRestoring]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[UIKit.UIUserActivityRestoring]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIUserActivityRestoring",
+                            "printedName": "UIKit.UIUserActivityRestoring",
+                            "usr": "c:objc(pl)UIUserActivityRestoring"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)application:continueUserActivity:restorationHandler:",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE11application_8continue18restorationHandlerSbSo13UIApplicationC_So14NSUserActivityCySaySo06UIUserK9Restoring_pGSgctF",
+            "moduleName": "GXUIApplication",
+            "isOpen": true,
+            "objc_name": "application:continueUserActivity:restorationHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "applicationWillResignActive",
+            "printedName": "applicationWillResignActive(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)applicationWillResignActive:",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE27applicationWillResignActiveyySo13UIApplicationCF",
+            "moduleName": "GXUIApplication",
+            "isOpen": true,
+            "objc_name": "applicationWillResignActive:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "applicationDidEnterBackground",
+            "printedName": "applicationDidEnterBackground(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)applicationDidEnterBackground:",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE29applicationDidEnterBackgroundyySo13UIApplicationCF",
+            "moduleName": "GXUIApplication",
+            "isOpen": true,
+            "objc_name": "applicationDidEnterBackground:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "applicationWillEnterForeground",
+            "printedName": "applicationWillEnterForeground(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)applicationWillEnterForeground:",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE30applicationWillEnterForegroundyySo13UIApplicationCF",
+            "moduleName": "GXUIApplication",
+            "isOpen": true,
+            "objc_name": "applicationWillEnterForeground:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nothingSelectedViewController",
+            "printedName": "nothingSelectedViewController()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So18AppDelegate_SharedC15GXUIApplicationE29nothingSelectedViewControllerSo06UIViewH0CyF",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE29nothingSelectedViewControllerSo06UIViewH0CyF",
+            "moduleName": "GXUIApplication",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initialSetup",
+            "printedName": "initialSetup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)initialSetup",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE12initialSetupyyF",
+            "moduleName": "GXUIApplication",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "gxapplicationExtensionLibraries",
+            "printedName": "gxapplicationExtensionLibraries",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GXCoreBL.GXExtensionLibraryProtocol]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXExtensionLibraryProtocol",
+                    "printedName": "GXCoreBL.GXExtensionLibraryProtocol",
+                    "usr": "c:@M@GXCoreBL@objc(pl)GXExtensionLibraryProtocol"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(py)gxapplicationExtensionLibraries",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE31gxapplicationExtensionLibrariesSay8GXCoreBL26GXExtensionLibraryProtocol_pGvp",
+            "moduleName": "GXUIApplication",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[GXCoreBL.GXExtensionLibraryProtocol]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GXExtensionLibraryProtocol",
+                        "printedName": "GXCoreBL.GXExtensionLibraryProtocol",
+                        "usr": "c:@M@GXCoreBL@objc(pl)GXExtensionLibraryProtocol"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)gxapplicationExtensionLibraries",
+                "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE31gxapplicationExtensionLibrariesSay8GXCoreBL26GXExtensionLibraryProtocol_pGvg",
+                "moduleName": "GXUIApplication",
+                "isOpen": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "gxapplication",
+            "printedName": "gxapplication(_:willOrDid:finishLaunchingWithOptions:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)gxapplication:willOrDid:finishLaunchingWithOptions:",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE13gxapplication_9willOrDid26finishLaunchingWithOptionsSbSo13UIApplicationC_SbSDys11AnyHashableVypGSgtF",
+            "moduleName": "GXUIApplication",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "gxApplication",
+            "printedName": "gxApplication(_:performActionFor:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplicationShortcutItem",
+                "printedName": "UIKit.UIApplicationShortcutItem",
+                "usr": "c:objc(cs)UIApplicationShortcutItem"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So18AppDelegate_SharedC15GXUIApplicationE13gxApplication_16performActionFor17completionHandlerSbSo13UIApplicationC_So0L12ShortcutItemCySbctF",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE13gxApplication_16performActionFor17completionHandlerSbSo13UIApplicationC_So0L12ShortcutItemCySbctF",
+            "moduleName": "GXUIApplication",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "gxDataValue",
+            "printedName": "gxDataValue(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnyHashable",
+                "printedName": "Swift.AnyHashable",
+                "usr": "s:s11AnyHashableV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)gxDataValueForKey:",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE11gxDataValue3forypSgs11AnyHashableV_tF",
+            "moduleName": "GXUIApplication",
+            "objc_name": "gxDataValueForKey:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "preferenceViewController",
+            "printedName": "preferenceViewController(_:didValidateModelForUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GXPreferencesViewController",
+                "printedName": "GXCoreUI.GXPreferencesViewController",
+                "usr": "c:objc(cs)GXPreferencesViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)preferenceViewController:didValidateModelForUrl:",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE24preferenceViewController_22didValidateModelForUrlySo013GXPreferencesfG0C_SStF",
+            "moduleName": "GXUIApplication",
+            "objc_name": "preferenceViewController:didValidateModelForUrl:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "gxShowDeveloperInfo",
+            "printedName": "gxShowDeveloperInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(py)gxShowDeveloperInfo",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE19gxShowDeveloperInfoSbvp",
+            "moduleName": "GXUIApplication",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)gxShowDeveloperInfo",
+                "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE19gxShowDeveloperInfoSbvg",
+                "moduleName": "GXUIApplication",
+                "isOpen": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isDeveloperInfoExtensionDynamic",
+            "printedName": "isDeveloperInfoExtensionDynamic",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(py)isDeveloperInfoExtensionDynamic",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE31isDeveloperInfoExtensionDynamicSbvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "isDeveloperInfoExtensionDynamic",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)isDeveloperInfoExtensionDynamic",
+                "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE31isDeveloperInfoExtensionDynamicSbvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "isDeveloperInfoExtensionDynamic",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showDeveloperInfo",
+            "printedName": "showDeveloperInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(py)showDeveloperInfo",
+            "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE17showDeveloperInfoSbvp",
+            "moduleName": "GXUIApplication",
+            "objc_name": "showDeveloperInfo",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXUIApplication@@objc(cs)AppDelegate_Shared(im)showDeveloperInfo",
+                "mangledName": "$sSo18AppDelegate_SharedC15GXUIApplicationE17showDeveloperInfoSbvg",
+                "moduleName": "GXUIApplication",
+                "objc_name": "showDeveloperInfo",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)AppDelegate_Shared",
+        "moduleName": "GXUIApplication",
+        "isOpen": true,
+        "objc_name": "AppDelegate_Shared",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "GXUtilitiesDeveloperInfoExtension",
+            "printedName": "GXUtilitiesDeveloperInfoExtension",
+            "usr": "c:@M@GXFoundation@objc(pl)GXUtilitiesDeveloperInfoExtension",
+            "mangledName": "$s12GXFoundation33GXUtilitiesDeveloperInfoExtensionP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXUIApplication\/GXUIApplication\/GXUIApplicationExecutionEnvironment.swift",
+      "kind": "Array",
+      "offset": 2409,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXUIApplication\/GXUIApplication\/GXUIApplicationExecutionEnvironment.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3138,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXUIApplication\/GXUIApplication\/GXUIApplicationStorageService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4130,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXUIApplication\/GXUIApplication\/GXUIApplicationStorageService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4646,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXUIApplication\/GXUIApplication\/AppDelegate_Shared+UIApplicationDelegate.swift",
+      "kind": "Dictionary",
+      "offset": 1733,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXUIApplication\/GXUIApplication\/SDNetworkActivityIndicator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 529,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

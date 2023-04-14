@@ -1,0 +1,11 @@
+{ 
+    "images" : [ { 
+        "idiom" : "universal",
+        "filename" : "prompt.png",
+        "scale" : "1x"
+    } ],
+    "info" : { 
+        "version" : 1,
+        "author" : "GeneXus"
+    }
+}

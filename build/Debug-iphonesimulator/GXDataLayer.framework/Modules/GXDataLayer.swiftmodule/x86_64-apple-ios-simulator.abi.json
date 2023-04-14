@@ -1,0 +1,2500 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayer",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXImageHelper",
+        "printedName": "GXImageHelper",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXImageHelper",
+                "printedName": "GXDataLayer.GXImageHelper",
+                "usr": "c:@M@GXDataLayer@objc(cs)GXImageHelper"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GXDataLayer@objc(cs)GXImageHelper(im)init",
+            "mangledName": "$s11GXDataLayer13GXImageHelperCACycfc",
+            "moduleName": "GXDataLayer",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GXDataLayer@objc(cs)GXImageHelper",
+        "mangledName": "$s11GXDataLayer13GXImageHelperC",
+        "moduleName": "GXDataLayer",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXSynchronizationServices",
+        "printedName": "GXSynchronizationServices",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "receive",
+            "printedName": "receive",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXSynchronizationReceiveService",
+                "printedName": "GXDataLayer.GXSynchronizationReceiveService",
+                "usr": "c:objc(pl)GXSynchronizationReceiveService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GXDataLayer@objc(pl)GXSynchronizationServices(py)receive",
+            "mangledName": "$s11GXDataLayer25GXSynchronizationServicesP7receiveSo0C14ReceiveService_pvp",
+            "moduleName": "GXDataLayer",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXSynchronizationReceiveService",
+                    "printedName": "GXDataLayer.GXSynchronizationReceiveService",
+                    "usr": "c:objc(pl)GXSynchronizationReceiveService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GXDataLayer@objc(pl)GXSynchronizationServices(im)receive",
+                "mangledName": "$s11GXDataLayer25GXSynchronizationServicesP7receiveSo0C14ReceiveService_pvg",
+                "moduleName": "GXDataLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : GXDataLayer.GXSynchronizationServices>",
+                "sugared_genericSig": "<Self where Self : GXDataLayer.GXSynchronizationServices>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "send",
+            "printedName": "send",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXSynchronizationSendService",
+                "printedName": "GXDataLayer.GXSynchronizationSendService",
+                "usr": "c:objc(pl)GXSynchronizationSendService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GXDataLayer@objc(pl)GXSynchronizationServices(py)send",
+            "mangledName": "$s11GXDataLayer25GXSynchronizationServicesP4sendSo0C11SendService_pvp",
+            "moduleName": "GXDataLayer",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXSynchronizationSendService",
+                    "printedName": "GXDataLayer.GXSynchronizationSendService",
+                    "usr": "c:objc(pl)GXSynchronizationSendService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GXDataLayer@objc(pl)GXSynchronizationServices(im)send",
+                "mangledName": "$s11GXDataLayer25GXSynchronizationServicesP4sendSo0C11SendService_pvg",
+                "moduleName": "GXDataLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : GXDataLayer.GXSynchronizationServices>",
+                "sugared_genericSig": "<Self where Self : GXDataLayer.GXSynchronizationServices>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "blobDownload",
+            "printedName": "blobDownload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXSynchronizationBlobDownloadService",
+                "printedName": "GXDataLayer.GXSynchronizationBlobDownloadService",
+                "usr": "c:objc(pl)GXSynchronizationBlobDownloadService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GXDataLayer@objc(pl)GXSynchronizationServices(py)blobDownload",
+            "mangledName": "$s11GXDataLayer25GXSynchronizationServicesP12blobDownloadSo0c4BlobF7Service_pvp",
+            "moduleName": "GXDataLayer",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXSynchronizationBlobDownloadService",
+                    "printedName": "GXDataLayer.GXSynchronizationBlobDownloadService",
+                    "usr": "c:objc(pl)GXSynchronizationBlobDownloadService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GXDataLayer@objc(pl)GXSynchronizationServices(im)blobDownload",
+                "mangledName": "$s11GXDataLayer25GXSynchronizationServicesP12blobDownloadSo0c4BlobF7Service_pvg",
+                "moduleName": "GXDataLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : GXDataLayer.GXSynchronizationServices>",
+                "sugared_genericSig": "<Self where Self : GXDataLayer.GXSynchronizationServices>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@GXDataLayer@objc(pl)GXSynchronizationServices",
+        "mangledName": "$s11GXDataLayer25GXSynchronizationServicesP",
+        "moduleName": "GXDataLayer",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayer"
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer_Private",
+        "printedName": "GXDataLayer_Private",
+        "declKind": "Import",
+        "moduleName": "GXDataLayer"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXDataLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXDataLayer",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXEntityHelper",
+        "printedName": "GXEntityHelper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "domainEnumValues",
+            "printedName": "domainEnumValues(from:fieldInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXDomainEnumValues",
+                "printedName": "GXObjectsModel.GXDomainEnumValues",
+                "usr": "c:objc(cs)GXDomainEnumValues"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GXEntityDataFieldInfo",
+                "printedName": "GXObjectsModel.GXEntityDataFieldInfo",
+                "usr": "c:objc(pl)GXEntityDataFieldInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityHelper(cm)domainEnumValuesFromString:fieldInfo:",
+            "mangledName": "$sSo14GXEntityHelperC11GXDataLayerE16domainEnumValues4from9fieldInfoSo08GXDomainfG0CSS_So0a9DataFieldJ0_ptFZ",
+            "moduleName": "GXDataLayer",
+            "static": true,
+            "deprecated": true,
+            "objc_name": "domainEnumValuesFromString:fieldInfo:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "domainEnumValues",
+            "printedName": "domainEnumValues(from:fieldInfo:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXDomainEnumValues",
+                "printedName": "GXObjectsModel.GXDomainEnumValues",
+                "usr": "c:objc(cs)GXDomainEnumValues"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GXEntityDataFieldInfo",
+                "printedName": "GXObjectsModel.GXEntityDataFieldInfo",
+                "usr": "c:objc(pl)GXEntityDataFieldInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GXObjectsModel.GXModelObject?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXModelObject",
+                    "printedName": "GXObjectsModel.GXModelObject",
+                    "usr": "c:objc(pl)GXModelObject"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityHelper(cm)domainEnumValuesFromString:fieldInfo:forModelObject:",
+            "mangledName": "$sSo14GXEntityHelperC11GXDataLayerE16domainEnumValues4from9fieldInfo3forSo08GXDomainfG0CSS_So0a9DataFieldJ0_pSo13GXModelObject_pSgtFZ",
+            "moduleName": "GXDataLayer",
+            "static": true,
+            "objc_name": "domainEnumValuesFromString:fieldInfo:forModelObject:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "geoPointStringFromString",
+            "printedName": "geoPointStringFromString(longitude:latitude:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityHelper(cm)geoPointStringFromStringWithLongitude:latitude:",
+            "mangledName": "$sSo14GXEntityHelperC11GXDataLayerE018geoPointStringFromG09longitude8latitudeS2S_SStFZ",
+            "moduleName": "GXDataLayer",
+            "static": true,
+            "objc_name": "geoPointStringFromStringWithLongitude:latitude:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "geoPointStringFromDouble",
+            "printedName": "geoPointStringFromDouble(longitude:latitude:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityHelper(cm)geoPointStringFromDoubleWithLongitude:latitude:",
+            "mangledName": "$sSo14GXEntityHelperC11GXDataLayerE24geoPointStringFromDouble9longitude8latitudeSSSd_SdtFZ",
+            "moduleName": "GXDataLayer",
+            "static": true,
+            "objc_name": "geoPointStringFromDoubleWithLongitude:latitude:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "geoPointString",
+            "printedName": "geoPointString(fromArray:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityHelper(cm)geoPointStringFromLatLonArray:",
+            "mangledName": "$sSo14GXEntityHelperC11GXDataLayerE14geoPointString9fromArraySSSgypSg_tFZ",
+            "moduleName": "GXDataLayer",
+            "static": true,
+            "objc_name": "geoPointStringFromLatLonArray:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "geoLineString",
+            "printedName": "geoLineString(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityHelper(cm)geoLineStringFromCoordinatesArray:",
+            "mangledName": "$sSo14GXEntityHelperC11GXDataLayerE13geoLineString4fromSSSgSayypG_tFZ",
+            "moduleName": "GXDataLayer",
+            "static": true,
+            "objc_name": "geoLineStringFromCoordinatesArray:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "geoPolygonString",
+            "printedName": "geoPolygonString(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityHelper(cm)geoPolygonStringFromCoordinatesArray:",
+            "mangledName": "$sSo14GXEntityHelperC11GXDataLayerE16geoPolygonString4fromSSSgSayypG_tFZ",
+            "moduleName": "GXDataLayer",
+            "static": true,
+            "objc_name": "geoPolygonStringFromCoordinatesArray:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)GXEntityHelper",
+        "moduleName": "GXObjectsModel",
+        "isOpen": true,
+        "objc_name": "GXEntityHelper",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXBusinessComponentsHelper",
+        "printedName": "GXBusinessComponentsHelper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "rootLevelAndKey",
+            "printedName": "rootLevelAndKey(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(rootLevel: GXObjectsModel.GXBusinessComponentLevel?, key: GXObjectsModel.GXEntityDataKey?)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GXObjectsModel.GXBusinessComponentLevel?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GXBusinessComponentLevel",
+                        "printedName": "GXObjectsModel.GXBusinessComponentLevel",
+                        "usr": "c:objc(cs)GXBusinessComponentLevel"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GXObjectsModel.GXEntityDataKey?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GXEntityDataKey",
+                        "printedName": "GXObjectsModel.GXEntityDataKey",
+                        "usr": "c:objc(pl)GXEntityDataKey"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GXBusinessComponentWithKeyHandler",
+                "printedName": "GXDataLayer.GXBusinessComponentWithKeyHandler",
+                "usr": "c:objc(cs)GXBusinessComponentWithKeyHandler"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So26GXBusinessComponentsHelperC11GXDataLayerE15rootLevelAndKey4fromSo0a9ComponentG0CSg0fG0_So012GXEntityDataI0_pSg3keytSo0ak4WithI7HandlerC_tFZ",
+            "mangledName": "$sSo26GXBusinessComponentsHelperC11GXDataLayerE15rootLevelAndKey4fromSo0a9ComponentG0CSg0fG0_So012GXEntityDataI0_pSg3keytSo0ak4WithI7HandlerC_tFZ",
+            "moduleName": "GXDataLayer",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)GXBusinessComponentsHelper",
+        "moduleName": "GXObjectsModel",
+        "isOpen": true,
+        "objc_name": "GXBusinessComponentsHelper",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXImage",
+        "printedName": "GXImage",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "updatingWebImageContext",
+            "printedName": "updatingWebImageContext(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14GXObjectsModel7GXImageC11GXDataLayerE23updatingWebImageContextySDySSypGSgAGF",
+            "mangledName": "$s14GXObjectsModel7GXImageC11GXDataLayerE23updatingWebImageContextySDySSypGSgAGF",
+            "moduleName": "GXDataLayer",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GXObjectsModel@objc(cs)GXImage",
+        "mangledName": "$s14GXObjectsModel7GXImageC",
+        "moduleName": "GXObjectsModel",
+        "objc_name": "GXImage",
+        "declAttributes": [
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)GXNamedElement",
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "GXObjectsModel.GXNamedElement",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IndexPath",
+        "printedName": "IndexPath",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(gxEntityDataIndex:section:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10Foundation9IndexPathV11GXDataLayerE012gxEntityDataB07sectionACSi_Sitcfc",
+            "mangledName": "$s10Foundation9IndexPathV11GXDataLayerE012gxEntityDataB07sectionACSi_Sitcfc",
+            "moduleName": "GXDataLayer",
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "gxEntityDataIndex",
+            "printedName": "gxEntityDataIndex",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation9IndexPathV11GXDataLayerE012gxEntityDataB0Sivp",
+            "mangledName": "$s10Foundation9IndexPathV11GXDataLayerE012gxEntityDataB0Sivp",
+            "moduleName": "GXDataLayer",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation9IndexPathV11GXDataLayerE012gxEntityDataB0Sivg",
+                "mangledName": "$s10Foundation9IndexPathV11GXDataLayerE012gxEntityDataB0Sivg",
+                "moduleName": "GXDataLayer",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "gxEntityDataSection",
+            "printedName": "gxEntityDataSection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation9IndexPathV11GXDataLayerE19gxEntityDataSectionSivp",
+            "mangledName": "$s10Foundation9IndexPathV11GXDataLayerE19gxEntityDataSectionSivp",
+            "moduleName": "GXDataLayer",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation9IndexPathV11GXDataLayerE19gxEntityDataSectionSivg",
+                "mangledName": "$s10Foundation9IndexPathV11GXDataLayerE19gxEntityDataSectionSivg",
+                "moduleName": "GXDataLayer",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10Foundation9IndexPathV",
+        "mangledName": "$s10Foundation9IndexPathV",
+        "moduleName": "Foundation",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSIndexPath",
+                    "printedName": "Foundation.NSIndexPath",
+                    "usr": "c:objc(cs)NSIndexPath"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableCollection",
+            "printedName": "MutableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexPath",
+                    "printedName": "Foundation.IndexPath",
+                    "usr": "s:10Foundation9IndexPathV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SM",
+            "mangledName": "$sSM"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RandomAccessCollection",
+            "printedName": "RandomAccessCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexPath",
+                    "printedName": "Foundation.IndexPath",
+                    "usr": "s:10Foundation9IndexPathV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Foundation.IndexPath>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IndexPath",
+                        "printedName": "Foundation.IndexPath",
+                        "usr": "s:10Foundation9IndexPathV"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sk",
+            "mangledName": "$sSk"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByArrayLiteral",
+            "printedName": "ExpressibleByArrayLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ArrayLiteralElement",
+                "printedName": "ArrayLiteralElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByArrayLiteralP",
+            "mangledName": "$ss25ExpressibleByArrayLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<Foundation.IndexPath>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IndexPath",
+                        "printedName": "Foundation.IndexPath",
+                        "usr": "s:10Foundation9IndexPathV"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexPath",
+                    "printedName": "Foundation.IndexPath",
+                    "usr": "s:10Foundation9IndexPathV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Foundation.IndexPath>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IndexPath",
+                        "printedName": "Foundation.IndexPath",
+                        "usr": "s:10Foundation9IndexPathV"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexPath",
+                    "printedName": "Foundation.IndexPath",
+                    "usr": "s:10Foundation9IndexPathV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Foundation.IndexPath>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IndexPath",
+                        "printedName": "Foundation.IndexPath",
+                        "usr": "s:10Foundation9IndexPathV"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<Foundation.IndexPath>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IndexPath",
+                        "printedName": "Foundation.IndexPath",
+                        "usr": "s:10Foundation9IndexPathV"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSIndexPath",
+                    "printedName": "Foundation.NSIndexPath",
+                    "usr": "c:objc(cs)NSIndexPath"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXModel",
+        "printedName": "GXModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "businessComponentsManager",
+            "printedName": "businessComponentsManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXBusinessComponentManager",
+                "printedName": "GXDataLayer.GXBusinessComponentManager",
+                "usr": "c:objc(cs)GXBusinessComponentManager"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXModel(py)businessComponentsManager",
+            "mangledName": "$sSo7GXModelC11GXDataLayerE25businessComponentsManagerSo019GXBusinessComponentF0Cvp",
+            "moduleName": "GXDataLayer",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXBusinessComponentManager",
+                    "printedName": "GXDataLayer.GXBusinessComponentManager",
+                    "usr": "c:objc(cs)GXBusinessComponentManager"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXDataLayer@@objc(cs)GXModel(im)businessComponentsManager",
+                "mangledName": "$sSo7GXModelC11GXDataLayerE25businessComponentsManagerSo019GXBusinessComponentF0Cvg",
+                "moduleName": "GXDataLayer",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "entityDataManager",
+            "printedName": "entityDataManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXEntityDataManager",
+                "printedName": "GXDataLayer.GXEntityDataManager",
+                "usr": "c:objc(cs)GXEntityDataManager"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXModel(py)entityDataManager",
+            "mangledName": "$sSo7GXModelC11GXDataLayerE17entityDataManagerSo08GXEntityeF0Cvp",
+            "moduleName": "GXDataLayer",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXEntityDataManager",
+                    "printedName": "GXDataLayer.GXEntityDataManager",
+                    "usr": "c:objc(cs)GXEntityDataManager"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXDataLayer@@objc(cs)GXModel(im)entityDataManager",
+                "mangledName": "$sSo7GXModelC11GXDataLayerE17entityDataManagerSo08GXEntityeF0Cvg",
+                "moduleName": "GXDataLayer",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "synchronizationServices",
+            "printedName": "synchronizationServices",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GXDataLayer.GXSynchronizationServices?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXSynchronizationServices",
+                    "printedName": "GXDataLayer.GXSynchronizationServices",
+                    "usr": "c:@M@GXDataLayer@objc(pl)GXSynchronizationServices"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXModel(py)synchronizationServices",
+            "mangledName": "$sSo7GXModelC11GXDataLayerE23synchronizationServicesAC017GXSynchronizationE0_pSgvp",
+            "moduleName": "GXDataLayer",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GXDataLayer.GXSynchronizationServices?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GXSynchronizationServices",
+                        "printedName": "GXDataLayer.GXSynchronizationServices",
+                        "usr": "c:@M@GXDataLayer@objc(pl)GXSynchronizationServices"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXDataLayer@@objc(cs)GXModel(im)synchronizationServices",
+                "mangledName": "$sSo7GXModelC11GXDataLayerE23synchronizationServicesAC017GXSynchronizationE0_pSgvg",
+                "moduleName": "GXDataLayer",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "registerSynchronizationServicesFactory",
+            "printedName": "registerSynchronizationServicesFactory(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GXObjectsModel.GXModel) -> GXDataLayer.GXSynchronizationServices?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GXDataLayer.GXSynchronizationServices?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GXSynchronizationServices",
+                        "printedName": "GXDataLayer.GXSynchronizationServices",
+                        "usr": "c:@M@GXDataLayer@objc(pl)GXSynchronizationServices"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXModel",
+                    "printedName": "GXObjectsModel.GXModel",
+                    "usr": "c:objc(cs)GXModel"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So7GXModelC11GXDataLayerE38registerSynchronizationServicesFactoryyyAC017GXSynchronizationF0_pSgABcFZ",
+            "mangledName": "$sSo7GXModelC11GXDataLayerE38registerSynchronizationServicesFactoryyyAC017GXSynchronizationF0_pSgABcFZ",
+            "moduleName": "GXDataLayer",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "SPIAccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "GXInternal"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)GXModel",
+        "moduleName": "GXObjectsModel",
+        "isOpen": true,
+        "objc_name": "GXModel",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXEntityDataFieldDynamicComboData",
+        "printedName": "GXEntityDataFieldDynamicComboData",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(values:fieldInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXEntityDataFieldDynamicComboData",
+                "printedName": "GXDataLayer.GXEntityDataFieldDynamicComboData",
+                "usr": "c:objc(cs)GXEntityDataFieldDynamicComboData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GXEntityDataFieldInfo",
+                "printedName": "GXObjectsModel.GXEntityDataFieldInfo",
+                "usr": "c:objc(pl)GXEntityDataFieldInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityDataFieldDynamicComboData(im)initWithValues:fieldInfo:",
+            "mangledName": "$sSo029GXEntityDataFieldDynamicComboB0C11GXDataLayerE6values9fieldInfoABSayypG_So0abcJ0_ptcfc",
+            "moduleName": "GXDataLayer",
+            "deprecated": true,
+            "objc_name": "initWithValues:fieldInfo:",
+            "declAttributes": [
+              "Dynamic",
+              "Convenience",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(values:fieldInfo:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXEntityDataFieldDynamicComboData",
+                "printedName": "GXDataLayer.GXEntityDataFieldDynamicComboData",
+                "usr": "c:objc(cs)GXEntityDataFieldDynamicComboData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GXEntityDataFieldInfo",
+                "printedName": "GXObjectsModel.GXEntityDataFieldInfo",
+                "usr": "c:objc(pl)GXEntityDataFieldInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GXObjectsModel.GXModelObject?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXModelObject",
+                    "printedName": "GXObjectsModel.GXModelObject",
+                    "usr": "c:objc(pl)GXModelObject"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityDataFieldDynamicComboData(im)initWithValues:fieldInfo:forModelObject:",
+            "mangledName": "$sSo029GXEntityDataFieldDynamicComboB0C11GXDataLayerE6values9fieldInfo3forABSayypG_So0abcJ0_pSo13GXModelObject_pSgtcfc",
+            "moduleName": "GXDataLayer",
+            "objc_name": "initWithValues:fieldInfo:forModelObject:",
+            "declAttributes": [
+              "Dynamic",
+              "Convenience",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Var",
+            "name": "totalCount",
+            "printedName": "totalCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityDataFieldDynamicComboData(py)totalCount",
+            "mangledName": "$sSo029GXEntityDataFieldDynamicComboB0C11GXDataLayerE10totalCountSivp",
+            "moduleName": "GXDataLayer",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityDataFieldDynamicComboData(im)totalCount",
+                "mangledName": "$sSo029GXEntityDataFieldDynamicComboB0C11GXDataLayerE10totalCountSivg",
+                "moduleName": "GXDataLayer",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "__index",
+            "printedName": "__index(forValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityDataFieldDynamicComboData(im)indexForValue:",
+            "mangledName": "$sSo029GXEntityDataFieldDynamicComboB0C11GXDataLayerE7__index8forValueSuypSg_tF",
+            "moduleName": "GXDataLayer",
+            "objc_name": "indexForValue:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "index",
+            "printedName": "index(forValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So029GXEntityDataFieldDynamicComboB0C11GXDataLayerE5index8forValueSiSgypSg_tF",
+            "mangledName": "$sSo029GXEntityDataFieldDynamicComboB0C11GXDataLayerE5index8forValueSiSgypSg_tF",
+            "moduleName": "GXDataLayer",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "value",
+            "printedName": "value(at:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityDataFieldDynamicComboData(im)valueAtIndex:",
+            "mangledName": "$sSo029GXEntityDataFieldDynamicComboB0C11GXDataLayerE5value2atypSgSi_tF",
+            "moduleName": "GXDataLayer",
+            "objc_name": "valueAtIndex:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "description",
+            "printedName": "description(at:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXDataLayer@@objc(cs)GXEntityDataFieldDynamicComboData(im)descriptionAtIndex:",
+            "mangledName": "$sSo029GXEntityDataFieldDynamicComboB0C11GXDataLayerE11description2atSSSgSi_tF",
+            "moduleName": "GXDataLayer",
+            "objc_name": "descriptionAtIndex:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)GXEntityDataFieldDynamicComboData",
+        "moduleName": "GXDataLayer",
+        "isOpen": true,
+        "objc_name": "GXEntityDataFieldDynamicComboData",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)GXMutableDomainEnumValues",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "GXObjectsModel.GXMutableDomainEnumValues",
+          "GXObjectsModel.GXDomainEnumValues",
+          "GXObjectsModel.GXModelObjectChild",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXMiniAppInformation",
+        "printedName": "GXMiniAppInformation",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sdtData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GXObjectsModel.GXMiniAppInformation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXMiniAppInformation",
+                    "printedName": "GXObjectsModel.GXMiniAppInformation",
+                    "usr": "s:14GXObjectsModel20GXMiniAppInformationV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GXSDTDataProtocol",
+                "printedName": "GXObjectsModel.GXSDTDataProtocol",
+                "usr": "c:@M@GXObjectsModel@objc(pl)GXSDTData"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14GXObjectsModel20GXMiniAppInformationV11GXDataLayerE7sdtDataACSgAA17GXSDTDataProtocol_p_tcfc",
+            "mangledName": "$s14GXObjectsModel20GXMiniAppInformationV11GXDataLayerE7sdtDataACSgAA17GXSDTDataProtocol_p_tcfc",
+            "moduleName": "GXDataLayer",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "sdtRepresentation",
+            "printedName": "sdtRepresentation(modelObject:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXSDTDataProtocol",
+                "printedName": "GXObjectsModel.GXSDTDataProtocol",
+                "usr": "c:@M@GXObjectsModel@objc(pl)GXSDTData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GXModelObject",
+                "printedName": "GXObjectsModel.GXModelObject",
+                "usr": "c:objc(pl)GXModelObject"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14GXObjectsModel20GXMiniAppInformationV11GXDataLayerE17sdtRepresentation11modelObjectAA17GXSDTDataProtocol_pSo07GXModelK0_p_tF",
+            "mangledName": "$s14GXObjectsModel20GXMiniAppInformationV11GXDataLayerE17sdtRepresentation11modelObjectAA17GXSDTDataProtocol_pSo07GXModelK0_p_tF",
+            "moduleName": "GXDataLayer",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "gxSDTName",
+            "printedName": "gxSDTName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GXObjectsModel20GXMiniAppInformationV11GXDataLayerE9gxSDTNameSSvpZ",
+            "mangledName": "$s14GXObjectsModel20GXMiniAppInformationV11GXDataLayerE9gxSDTNameSSvpZ",
+            "moduleName": "GXDataLayer",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "GXInternal"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GXObjectsModel20GXMiniAppInformationV11GXDataLayerE9gxSDTNameSSvgZ",
+                "mangledName": "$s14GXObjectsModel20GXMiniAppInformationV11GXDataLayerE9gxSDTNameSSvgZ",
+                "moduleName": "GXDataLayer",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "spi_group_names": [
+                  "GXInternal"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14GXObjectsModel20GXMiniAppInformationV",
+        "mangledName": "$s14GXObjectsModel20GXMiniAppInformationV",
+        "moduleName": "GXObjectsModel",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "GXSDTDataConvertible",
+            "printedName": "GXSDTDataConvertible",
+            "usr": "s:14GXObjectsModel20GXSDTDataConvertibleP",
+            "mangledName": "$s14GXObjectsModel20GXSDTDataConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "GXDictionaryConvertible",
+            "printedName": "GXDictionaryConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Keys",
+                "printedName": "Keys",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Values",
+                "printedName": "Values",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:14GXObjectsModel23GXDictionaryConvertibleP",
+            "mangledName": "$s14GXObjectsModel23GXDictionaryConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayer\/GXDataLayer\/GXEntityHelper+GXDataLayer_DomainInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 293,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayer\/GXDataLayer\/GXEntityHelper+GXDataLayer_DomainInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 328,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayer\/GXDataLayer\/GXEntityHelper+GXDataLayer_DomainInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 363,
+      "length": 4,
+      "value": "\"\\\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXDataLayer\/GXDataLayer\/GXMiniAppInformation+GXDataLayer.swift",
+      "kind": "StringLiteral",
+      "offset": 757,
+      "length": 37,
+      "value": "\"GeneXusSuperApps.MiniAppInformation\""
+    }
+  ]
+}

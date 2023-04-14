@@ -1,0 +1,11 @@
+framework module GXAudioBL {
+  umbrella header "GXAudioBL.h"
+
+  export *
+  module * { export * }
+}
+
+module GXAudioBL.Swift {
+  header "GXAudioBL-Swift.h"
+  requires objc
+}

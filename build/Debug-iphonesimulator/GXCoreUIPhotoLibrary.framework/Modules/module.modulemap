@@ -1,0 +1,11 @@
+framework module GXCoreUIPhotoLibrary {
+  umbrella header "GXCoreUIPhotoLibrary.h"
+
+  export *
+  module * { export * }
+}
+
+module GXCoreUIPhotoLibrary.Swift {
+  header "GXCoreUIPhotoLibrary-Swift.h"
+  requires objc
+}

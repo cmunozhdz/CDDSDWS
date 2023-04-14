@@ -1,0 +1,6 @@
+framework module SmartDevicesPlus {
+  umbrella header "SmartDevicesPlus.h"
+
+  export *
+  module * { export * }
+}

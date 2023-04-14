@@ -1,0 +1,11 @@
+framework module GXGAM {
+  umbrella header "GXGAM.h"
+
+  export *
+  module * { export * }
+}
+
+module GXGAM.Swift {
+  header "GXGAM-Swift.h"
+  requires objc
+}

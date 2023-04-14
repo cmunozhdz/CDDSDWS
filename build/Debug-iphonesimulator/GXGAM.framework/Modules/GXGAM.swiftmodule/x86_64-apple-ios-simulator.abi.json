@@ -1,0 +1,1425 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GXGAM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "GXGAM"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXGAM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXGAM"
+      },
+      {
+        "kind": "Import",
+        "name": "GXGAM_Private",
+        "printedName": "GXGAM_Private",
+        "declKind": "Import",
+        "moduleName": "GXGAM"
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "GXGAM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXDataLayer",
+        "printedName": "GXDataLayer",
+        "declKind": "Import",
+        "moduleName": "GXGAM"
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXGAM"
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXGAM"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXAppleIDInformation",
+        "printedName": "GXAppleIDInformation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authorizationCode",
+            "printedName": "authorizationCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GXGAM@objc(cs)AppleIDInformation(py)authorizationCode",
+            "mangledName": "$s5GXGAM20GXAppleIDInformationC17authorizationCodeSSSgvp",
+            "moduleName": "GXGAM",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GXGAM@objc(cs)AppleIDInformation(im)authorizationCode",
+                "mangledName": "$s5GXGAM20GXAppleIDInformationC17authorizationCodeSSSgvg",
+                "moduleName": "GXGAM",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXGAM@objc(cs)AppleIDInformation(im)encodeWithCoder:",
+            "mangledName": "$s5GXGAM20GXAppleIDInformationC6encode4withySo7NSCoderC_tF",
+            "moduleName": "GXGAM",
+            "objc_name": "encodeWithCoder:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GXGAM.GXAppleIDInformation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXAppleIDInformation",
+                    "printedName": "GXGAM.GXAppleIDInformation",
+                    "usr": "c:@M@GXGAM@objc(cs)AppleIDInformation"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GXGAM@objc(cs)AppleIDInformation(im)initWithCoder:",
+            "mangledName": "$s5GXGAM20GXAppleIDInformationC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "GXGAM",
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "ObjC",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXAppleIDInformation",
+                "printedName": "GXGAM.GXAppleIDInformation",
+                "usr": "c:@M@GXGAM@objc(cs)AppleIDInformation"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GXGAM@objc(cs)AppleIDInformation(im)init",
+            "mangledName": "$s5GXGAM20GXAppleIDInformationCACycfc",
+            "moduleName": "GXGAM",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GXGAM@objc(cs)AppleIDInformation",
+        "mangledName": "$s5GXGAM20GXAppleIDInformationC",
+        "moduleName": "GXGAM",
+        "objc_name": "AppleIDInformation",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXSignInWithAppleHelper",
+        "printedName": "GXSignInWithAppleHelper",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isLoginServiceAvailable",
+            "printedName": "isLoginServiceAvailable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GXGAM@objc(cs)GXSignInWithAppleHelper(cpy)isLoginServiceAvailable",
+            "mangledName": "$s5GXGAM23GXSignInWithAppleHelperC23isLoginServiceAvailableSbvpZ",
+            "moduleName": "GXGAM",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GXGAM@objc(cs)GXSignInWithAppleHelper(cm)isLoginServiceAvailable",
+                "mangledName": "$s5GXGAM23GXSignInWithAppleHelperC23isLoginServiceAvailableSbvgZ",
+                "moduleName": "GXGAM",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "performUserSignIn",
+            "printedName": "performUserSignIn(withCompletionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((GXGAM.GXAppleIDInformation?, Swift.Error?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(GXGAM.GXAppleIDInformation?, Swift.Error?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(GXGAM.GXAppleIDInformation?, Swift.Error?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "GXGAM.GXAppleIDInformation?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "GXAppleIDInformation",
+                                "printedName": "GXGAM.GXAppleIDInformation",
+                                "usr": "c:@M@GXGAM@objc(cs)AppleIDInformation"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.Error?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXGAM@objc(cs)GXSignInWithAppleHelper(cm)performUserSignInWithCompletionHandler:",
+            "mangledName": "$s5GXGAM23GXSignInWithAppleHelperC015performUserSignC021withCompletionHandleryyAA20GXAppleIDInformationCSg_s5Error_pSgtcSg_tFZ",
+            "moduleName": "GXGAM",
+            "static": true,
+            "objc_name": "performUserSignInWithCompletionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteAppleIDInformation",
+            "printedName": "deleteAppleIDInformation(forUser:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXGAM@objc(cs)GXSignInWithAppleHelper(cm)deleteAppleIDInformationForUser:",
+            "mangledName": "$s5GXGAM23GXSignInWithAppleHelperC06deleteE13IDInformation7forUserySS_tFZ",
+            "moduleName": "GXGAM",
+            "static": true,
+            "objc_name": "deleteAppleIDInformationForUser:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXSignInWithAppleHelper",
+                "printedName": "GXGAM.GXSignInWithAppleHelper",
+                "usr": "c:@M@GXGAM@objc(cs)GXSignInWithAppleHelper"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GXGAM@objc(cs)GXSignInWithAppleHelper(im)init",
+            "mangledName": "$s5GXGAM23GXSignInWithAppleHelperCACycfc",
+            "moduleName": "GXGAM",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "authorizationController",
+            "printedName": "authorizationController(controller:didCompleteWithAuthorization:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASAuthorizationController",
+                "printedName": "AuthenticationServices.ASAuthorizationController",
+                "usr": "c:objc(cs)ASAuthorizationController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASAuthorization",
+                "printedName": "AuthenticationServices.ASAuthorization",
+                "usr": "c:objc(cs)ASAuthorization"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXGAM@objc(cs)GXSignInWithAppleHelper(im)authorizationController:didCompleteWithAuthorization:",
+            "mangledName": "$s5GXGAM23GXSignInWithAppleHelperC23authorizationController10controller011didCompleteD13AuthorizationySo015ASAuthorizationH0C_So0M0CtF",
+            "moduleName": "GXGAM",
+            "objc_name": "authorizationController:didCompleteWithAuthorization:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "authorizationController",
+            "printedName": "authorizationController(controller:didCompleteWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASAuthorizationController",
+                "printedName": "AuthenticationServices.ASAuthorizationController",
+                "usr": "c:objc(cs)ASAuthorizationController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXGAM@objc(cs)GXSignInWithAppleHelper(im)authorizationController:didCompleteWithError:",
+            "mangledName": "$s5GXGAM23GXSignInWithAppleHelperC23authorizationController10controller011didCompleteD5ErrorySo015ASAuthorizationH0C_s0L0_ptF",
+            "moduleName": "GXGAM",
+            "objc_name": "authorizationController:didCompleteWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GXGAM@objc(cs)GXSignInWithAppleHelper",
+        "mangledName": "$s5GXGAM23GXSignInWithAppleHelperC",
+        "moduleName": "GXGAM",
+        "objc_name": "GXSignInWithAppleHelper",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXGAM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXFoundation",
+        "printedName": "GXFoundation",
+        "declKind": "Import",
+        "moduleName": "GXGAM"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXGAM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXStandardClasses",
+        "printedName": "GXStandardClasses",
+        "declKind": "Import",
+        "moduleName": "GXGAM"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SdtGAMCountry",
+        "printedName": "SdtGAMCountry",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SdtGAMCountry",
+                "printedName": "GXGAM.SdtGAMCountry",
+                "usr": "c:@M@GXGAM@objc(cs)SdtGAMCountry"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GXGAM@objc(cs)SdtGAMCountry(im)init",
+            "mangledName": "$s5GXGAM13SdtGAMCountryCACycfc",
+            "moduleName": "GXGAM",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GXGAM@objc(cs)SdtGAMCountry",
+        "mangledName": "$s5GXGAM13SdtGAMCountryC",
+        "moduleName": "GXGAM",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "<",
+        "printedName": "<(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "SdtGAMCountry",
+            "printedName": "GXGAM.SdtGAMCountry",
+            "usr": "c:@M@GXGAM@objc(cs)SdtGAMCountry"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "SdtGAMCountry",
+            "printedName": "GXGAM.SdtGAMCountry",
+            "usr": "c:@M@GXGAM@objc(cs)SdtGAMCountry"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:5GXGAM1loiySbAA13SdtGAMCountryC_ADtF",
+        "mangledName": "$s5GXGAM1loiySbAA13SdtGAMCountryC_ADtF",
+        "moduleName": "GXGAM",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "==",
+        "printedName": "==(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "SdtGAMCountry",
+            "printedName": "GXGAM.SdtGAMCountry",
+            "usr": "c:@M@GXGAM@objc(cs)SdtGAMCountry"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "SdtGAMCountry",
+            "printedName": "GXGAM.SdtGAMCountry",
+            "usr": "c:@M@GXGAM@objc(cs)SdtGAMCountry"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:5GXGAM2eeoiySbAA13SdtGAMCountryC_ADtF",
+        "mangledName": "$s5GXGAM2eeoiySbAA13SdtGAMCountryC_ADtF",
+        "moduleName": "GXGAM",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreBL",
+        "printedName": "GXCoreBL",
+        "declKind": "Import",
+        "moduleName": "GXGAM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXStandardClasses",
+        "printedName": "GXStandardClasses",
+        "declKind": "Import",
+        "moduleName": "GXGAM"
+      },
+      {
+        "kind": "Import",
+        "name": "GXStandardClasses_Private",
+        "printedName": "GXStandardClasses_Private",
+        "declKind": "Import",
+        "moduleName": "GXGAM"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXEOGAMApplication",
+        "printedName": "GXEOGAMApplication",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "externalObjectName",
+            "printedName": "externalObjectName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GXGAM@objc(cs)GXEOGAMApplication(py)externalObjectName",
+            "mangledName": "$s5GXGAM18GXEOGAMApplicationC18externalObjectNameSSvp",
+            "moduleName": "GXGAM",
+            "overriding": true,
+            "objc_name": "externalObjectName",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GXGAM@objc(cs)GXEOGAMApplication(im)externalObjectName",
+                "mangledName": "$s5GXGAM18GXEOGAMApplicationC18externalObjectNameSSvg",
+                "moduleName": "GXGAM",
+                "overriding": true,
+                "objc_name": "externalObjectName",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXEOGAMApplication",
+                "printedName": "GXGAM.GXEOGAMApplication",
+                "usr": "c:@M@GXGAM@objc(cs)GXEOGAMApplication"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GXGAM@objc(cs)GXEOGAMApplication(im)init",
+            "mangledName": "$s5GXGAM18GXEOGAMApplicationCACycfc",
+            "moduleName": "GXGAM",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getGUID",
+            "printedName": "getGUID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXGAM@objc(cs)GXEOGAMApplication(cm)getGUID",
+            "mangledName": "$s5GXGAM18GXEOGAMApplicationC7getGUIDSSyFZ",
+            "moduleName": "GXGAM",
+            "static": true,
+            "objc_name": "getGUID",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getClientId",
+            "printedName": "getClientId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXGAM@objc(cs)GXEOGAMApplication(cm)getClientId",
+            "mangledName": "$s5GXGAM18GXEOGAMApplicationC11getClientIdSSyFZ",
+            "moduleName": "GXGAM",
+            "static": true,
+            "objc_name": "getClientId",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GXGAM@objc(cs)GXEOGAMApplication",
+        "mangledName": "$s5GXGAM18GXEOGAMApplicationC",
+        "moduleName": "GXGAM",
+        "objc_name": "GXEOGAMApplication",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)GXExternalObjectBase",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "GXStandardClasses.GXExternalObjectBase",
+          "GXStandardClasses.GXEmbeddedModelNSObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXEOGAMUserData",
+        "printedName": "GXEOGAMUserData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "attributes",
+            "printedName": "attributes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXObjectCollection",
+                "printedName": "GXStandardClasses.GXObjectCollection",
+                "usr": "c:objc(cs)GXObjectCollection"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXGAM@@objc(cs)GXEOGAMUserData(py)attributes",
+            "mangledName": "$sSo15GXEOGAMUserDataC5GXGAME10attributesSo18GXObjectCollectionCvp",
+            "moduleName": "GXGAM",
+            "objc_name": "attributes",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXObjectCollection",
+                    "printedName": "GXStandardClasses.GXObjectCollection",
+                    "usr": "c:objc(cs)GXObjectCollection"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXGAM@@objc(cs)GXEOGAMUserData(im)attributes",
+                "mangledName": "$sSo15GXEOGAMUserDataC5GXGAME10attributesSo18GXObjectCollectionCvg",
+                "moduleName": "GXGAM",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXObjectCollection",
+                    "printedName": "GXStandardClasses.GXObjectCollection",
+                    "usr": "c:objc(cs)GXObjectCollection"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXGAM@@objc(cs)GXEOGAMUserData(im)setAttributes:",
+                "mangledName": "$sSo15GXEOGAMUserDataC5GXGAME10attributesSo18GXObjectCollectionCvs",
+                "moduleName": "GXGAM",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "country",
+            "printedName": "country",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SdtGAMCountry",
+                "printedName": "GXGAM.SdtGAMCountry",
+                "usr": "c:@M@GXGAM@objc(cs)SdtGAMCountry"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXGAM@@objc(cs)GXEOGAMUserData(py)country",
+            "mangledName": "$sSo15GXEOGAMUserDataC5GXGAME7countryAC13SdtGAMCountryCvp",
+            "moduleName": "GXGAM",
+            "objc_name": "country",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdtGAMCountry",
+                    "printedName": "GXGAM.SdtGAMCountry",
+                    "usr": "c:@M@GXGAM@objc(cs)SdtGAMCountry"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXGAM@@objc(cs)GXEOGAMUserData(im)country",
+                "mangledName": "$sSo15GXEOGAMUserDataC5GXGAME7countryAC13SdtGAMCountryCvg",
+                "moduleName": "GXGAM",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdtGAMCountry",
+                    "printedName": "GXGAM.SdtGAMCountry",
+                    "usr": "c:@M@GXGAM@objc(cs)SdtGAMCountry"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXGAM@@objc(cs)GXEOGAMUserData(im)setCountry:",
+                "mangledName": "$sSo15GXEOGAMUserDataC5GXGAME7countryAC13SdtGAMCountryCvs",
+                "moduleName": "GXGAM",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)GXEOGAMUserData",
+        "moduleName": "GXGAM",
+        "isOpen": true,
+        "objc_name": "GXEOGAMUserData",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)GXExternalObjectBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "GXStandardClasses.GXExternalObjectBase",
+          "GXStandardClasses.GXEmbeddedModelNSObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/GXGAMSecureCredentialsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 29,
+      "value": "\"com.artech.iosgenerator.gam\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/GXGAMSecureCredentialsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 346,
+      "length": 24,
+      "value": "\"gxGamCombinedTokensKey\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/GXGAMSecureCredentialsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4773,
+      "length": 15,
+      "value": "\"gxGamTokenKey\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/GXGAMSecureCredentialsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4830,
+      "length": 19,
+      "value": "\"gxGamInvalidToken\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/GXGAMSecureCredentialsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6487,
+      "length": 20,
+      "value": "\"gxGamIsDeviceToken\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/GXGAMSecureCredentialsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7129,
+      "length": 21,
+      "value": "\"gxGamTokenTimeStamp\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/GXGAMSecureCredentialsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7735,
+      "length": 19,
+      "value": "\"gxGamRefreshToken\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/GXGAMSecureCredentialsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7801,
+      "length": 24,
+      "value": "\"gxGamValidRefreshToken\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/GXGAMSecureCredentialsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9395,
+      "length": 20,
+      "value": "\"gxGAMUseBiometrics\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/GXGAMSecureCredentialsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 12371,
+      "length": 16,
+      "value": "\"<GX_SEPARATOR>\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/SignInWithApple\/GXSignInWithAppleHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 282,
+      "length": 33,
+      "value": "\"gxAppleIDInfoKeychainPrefix.key\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/SignInWithApple\/GXSignInWithAppleHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1246,
+      "length": 11,
+      "value": "\"userId.gx\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/SignInWithApple\/GXSignInWithAppleHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1282,
+      "length": 13,
+      "value": "\"userName.xg\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/SignInWithApple\/GXSignInWithAppleHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1317,
+      "length": 10,
+      "value": "\"email.gx\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/SignInWithApple\/GXSignInWithAppleHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1354,
+      "length": 15,
+      "value": "\"likelyReal.gx\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/SignInWithApple\/GXSignInWithAppleHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 356,
+      "length": 20,
+      "value": "\"GXGAM.GXAppleIDInformation\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/SignInWithApple\/GXSignInWithAppleHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7715,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXGAM\/GXGAM\/GXGAMSecureDataMemoryStore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 423,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

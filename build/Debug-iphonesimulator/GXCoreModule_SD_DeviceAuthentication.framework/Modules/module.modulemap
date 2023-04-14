@@ -1,0 +1,11 @@
+framework module GXCoreModule_SD_DeviceAuthentication {
+  umbrella header "GXCoreModule_SD_DeviceAuthentication.h"
+
+  export *
+  module * { export * }
+}
+
+module GXCoreModule_SD_DeviceAuthentication.Swift {
+  header "GXCoreModule_SD_DeviceAuthentication-Swift.h"
+  requires objc
+}

@@ -1,0 +1,11 @@
+framework module GXStandardClasses {
+  umbrella header "GXStandardClasses.h"
+
+  export *
+  module * { export * }
+}
+
+module GXStandardClasses.Swift {
+  header "GXStandardClasses-Swift.h"
+  requires objc
+}

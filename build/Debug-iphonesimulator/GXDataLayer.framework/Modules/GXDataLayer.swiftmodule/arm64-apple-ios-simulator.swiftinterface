@@ -1,0 +1,73 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GXDataLayer
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import GXDataLayer
+import GXObjectsModel
+import Swift
+import _Concurrency
+import _StringProcessing
+extension GXObjectsModel.GXEntityHelper {
+  @available(*, deprecated, message: "Use domainEnumValues(from:fieldInfo:for:) instead")
+  @objc(domainEnumValuesFromString:fieldInfo:) dynamic public class func domainEnumValues(from string: Swift.String, fieldInfo: GXObjectsModel.GXEntityDataFieldInfo) -> GXObjectsModel.GXDomainEnumValues
+  @objc(domainEnumValuesFromString:fieldInfo:forModelObject:) dynamic public class func domainEnumValues(from string: Swift.String, fieldInfo: GXObjectsModel.GXEntityDataFieldInfo, for modelObject: GXObjectsModel.GXModelObject?) -> GXObjectsModel.GXDomainEnumValues
+}
+extension GXObjectsModel.GXBusinessComponentsHelper {
+  public static func rootLevelAndKey(from bcWithKey: GXDataLayer.GXBusinessComponentWithKeyHandler) -> (rootLevel: GXObjectsModel.GXBusinessComponentLevel?, key: GXObjectsModel.GXEntityDataKey?)
+}
+extension GXObjectsModel.GXImage {
+  public func updatingWebImageContext(_ context: [Swift.String : Any]?) -> [Swift.String : Any]?
+}
+@_inheritsConvenienceInitializers @objc public class GXImageHelper : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Foundation.IndexPath {
+  public init(gxEntityDataIndex: Swift.Int, section: Swift.Int)
+  public var gxEntityDataIndex: Swift.Int {
+    get
+  }
+  public var gxEntityDataSection: Swift.Int {
+    get
+  }
+}
+@objc(GXEntityHelper) extension GXObjectsModel.GXEntityHelper {
+  @objc public static func geoPointStringFromString(longitude: Swift.String, latitude: Swift.String) -> Swift.String
+  @objc public static func geoPointStringFromDouble(longitude: Swift.Double, latitude: Swift.Double) -> Swift.String
+  @objc(geoPointStringFromLatLonArray:) public static func geoPointString(fromArray coords: Any?) -> Swift.String?
+  @objc(geoLineStringFromCoordinatesArray:) public static func geoLineString(from coordinates: Swift.Array<Any>) -> Swift.String?
+  @objc(geoPolygonStringFromCoordinatesArray:) public static func geoPolygonString(from coordinates: Swift.Array<Any>) -> Swift.String?
+}
+@objc public protocol GXSynchronizationServices {
+  @objc var receive: GXDataLayer.GXSynchronizationReceiveService { get }
+  @objc var send: GXDataLayer.GXSynchronizationSendService { get }
+  @objc var blobDownload: GXDataLayer.GXSynchronizationBlobDownloadService { get }
+}
+extension GXObjectsModel.GXModel {
+  @objc dynamic public var businessComponentsManager: GXDataLayer.GXBusinessComponentManager {
+    @objc get
+  }
+  @objc dynamic public var entityDataManager: GXDataLayer.GXEntityDataManager {
+    @objc get
+  }
+  @objc dynamic public var synchronizationServices: GXDataLayer.GXSynchronizationServices? {
+    @objc get
+  }
+}
+extension GXDataLayer.GXEntityDataFieldDynamicComboData {
+  @available(*, deprecated, message: "Use init(values:fieldInfo:for:) instead")
+  @objc convenience dynamic public init(values: [Any], fieldInfo: GXObjectsModel.GXEntityDataFieldInfo)
+  @objc(initWithValues:fieldInfo:forModelObject:) convenience dynamic public init(values: [Any], fieldInfo: GXObjectsModel.GXEntityDataFieldInfo, for modelObject: GXObjectsModel.GXModelObject?)
+  @objc dynamic public var totalCount: Swift.Int {
+    @objc get
+  }
+  @objc(indexForValue:) dynamic public func __index(forValue value: Any?) -> Swift.UInt
+  public func index(forValue value: Any?) -> Swift.Int?
+  @objc(valueAtIndex:) dynamic public func value(at index: Swift.Int) -> Any?
+  @objc(descriptionAtIndex:) dynamic public func description(at index: Swift.Int) -> Swift.String?
+}
+extension GXObjectsModel.GXMiniAppInformation : GXObjectsModel.GXSDTDataConvertible {
+  public init?(sdtData: GXObjectsModel.GXSDTDataProtocol)
+  public func sdtRepresentation(modelObject: GXObjectsModel.GXModelObject) -> GXObjectsModel.GXSDTDataProtocol
+}

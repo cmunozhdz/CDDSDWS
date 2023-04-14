@@ -1,0 +1,11 @@
+framework module GXObjectsModel {
+  umbrella header "GXObjectsModel.h"
+
+  export *
+  module * { export * }
+}
+
+module GXObjectsModel.Swift {
+  header "GXObjectsModel-Swift.h"
+  requires objc
+}

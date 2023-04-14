@@ -1,0 +1,81 @@
+{ 
+    "Tokens" : [ { 
+        "Values" : { 
+            "colors_fonticondefault" : "#3A3A3A",
+            "fontsizes_icon-default" : "20dip",
+            "fontsizes_icon-xsmall" : "14dip",
+            "fontsizes_icon-small" : "20dip",
+            "fontsizes_icon-regular" : "26dip",
+            "fontsizes_icon-large" : "38dip",
+            "fontsizes_icon-xlarge" : "60dip"
+        }
+    }, { 
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Values" : { 
+            "colors_fonticondefault" : "#FEFEFE"
+        }
+    } ],
+    "Styles" : [ { 
+        "Name" : "FontIconBase",
+        "color" : "$colors_fonticondefault",
+        "font_size" : "$fontsizes_icon-default"
+    }, { 
+        "Name" : "IconFontAwesome",
+        "color" : "$colors_fonticondefault",
+        "font_size" : "$fontsizes_icon-default",
+        "font_family" : "Font Awesome 6 Free Solid"
+    }, { 
+        "Name" : "FontAwesomeRegular",
+        "font_family" : "Font Awesome 6 Free Regular"
+    }, { 
+        "Name" : "FontAwesomeSolid",
+        "font_family" : "Font Awesome 6 Free Solid"
+    }, { 
+        "Name" : "FontAwesomeLight",
+        "font_family" : "Font Awesome 6 Pro Light"
+    }, { 
+        "Name" : "FontAwesomeThin",
+        "font_family" : "Font Awesome 6 Pro Thin"
+    }, { 
+        "Name" : "FontAwesomeDuotone",
+        "font_family" : "Font Awesome 6 Duotone Solid"
+    }, { 
+        "Name" : "FontAwesomeBrands",
+        "font_family" : "Font Awesome 6 Brands Regular"
+    }, { 
+        "Name" : "IconSizeS",
+        "font_size" : "$fontsizes_icon-small"
+    }, { 
+        "Name" : "IconSizeM",
+        "font_size" : "$fontsizes_icon-regular"
+    }, { 
+        "Name" : "IconSizeL",
+        "font_size" : "$fontsizes_icon-large"
+    }, { 
+        "Name" : "IconSizeXL",
+        "font_size" : "$fontsizes_icon-xlarge"
+    } ],
+    "Fonts" : [ { 
+        "Name" : "Font Awesome 6 Free Solid",
+        "InternalName" : "Font Awesome 6 Free-Solid",
+        "FileName" : "Font_Awesome_6_Free_Solid.ttf",
+        "File" : "Font_Awesome_6_Free_Solid"
+    }, { 
+        "Name" : "Font Awesome 6 Free Regular",
+        "InternalName" : "Font Awesome 6 Free-Regular",
+        "FileName" : "Font_Awesome_6_Free_Regular.ttf",
+        "File" : "Font_Awesome_6_Free_Regular"
+    }, { 
+        "Name" : "Font Awesome 6 Brands Regular",
+        "InternalName" : "Font Awesome 6 Brands-Regular",
+        "FileName" : "Font_Awesome_6_Free_Brands.ttf",
+        "File" : "Font_Awesome_6_Free_Brands"
+    }, { 
+        "Name" : "Material Icons",
+        "InternalName" : "Material Icons-Regular",
+        "FileName" : "Material Icons.ttf",
+        "File" : "Material_Icons"
+    } ]
+}

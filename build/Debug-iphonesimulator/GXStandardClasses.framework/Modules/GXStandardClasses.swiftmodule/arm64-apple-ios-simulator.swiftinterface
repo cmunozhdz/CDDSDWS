@@ -1,0 +1,1060 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GXStandardClasses
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CommonCrypto
+import Foundation
+import GXDataLayer
+import GXFoundation
+import GXObjectsModel
+@_exported import GXStandardClasses
+import Swift
+import YAJL
+import _Concurrency
+import _StringProcessing
+open class GXSoapLocationCollection {
+  public init()
+  open func item(_ name: Swift.String) -> GXStandardClasses.GXSoapLocation
+  open func add(_ loc: GXStandardClasses.GXSoapLocation, _ name: Swift.String)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class GXFileCollection : GXStandardClasses.GXObjectCollection {
+  public func item(_ idx: Swift.Int) -> GXStandardClasses.GXFile
+  @objc override dynamic public func createItemInstance() -> Any?
+  @objc override dynamic public init(array initialArray: [Any], embeddedModelObject modelObject: GXStandardClasses.GXEmbeddedModelObject)
+  @objc override dynamic public init(typeName: Swift.String?, embeddedModelObject modelObject: GXStandardClasses.GXEmbeddedModelObject)
+  @objc deinit
+}
+extension GXStandardClasses.GXCryptoError {
+  @objc public static var GXCryptoError_ExecutionOK: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static var GXCryptoError_NotImplemented: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static var GXCryptoHashError_WrongInputString: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static var GXCryptoHashError_InvalidAlgorithm: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static var GXCryptoHashError_UnsupportedKey: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static var GXCryptoHashError_KeyIsRequired: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static var GXCryptoHashError_InvalidKey: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static var GXCryptoSymmetricError_InvalidaKeyLength: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static func GXCryptoSymmetricErrorTemplate_CouldNotPerformOperation(status: Swift.Int) -> GXStandardClasses.GXCryptoError
+  @objc public static var GXCryptoSymmetricError_UnsupportedCertificateType: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static var GXCryptoSymmetricError_CertificateFileNotFound: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static var GXCryptoAsymmetricError_MissingPublicKey: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static var GXCryptoAsymmetricError_MissingPrivateKey: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static var GXCryptoAsymmetricError_AlgorithmNotSupported: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static var GXCryptoAsymmetricError_CouldNotEncrypt: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+  @objc public static var GXCryptoAsymmetricError_CouldNotDecrypt: GXStandardClasses.GXCryptoError {
+    @objc get
+  }
+}
+@objc(GXProcedureObjCOptionals) public protocol GXProcedureObjCOptionals {
+  @discardableResult
+  @objc(execute:) optional func execute(params: Foundation.NSArray?) -> Foundation.NSArray
+}
+extension Swift.String {
+  public func gxBoolValue() -> Swift.Bool
+  public func gxIntValue() -> Swift.Int
+  public func gxLength() -> Swift.Int
+  public func gxSubstring(_ from: Swift.Int, length: Swift.Int) -> Swift.String
+  public static func gxStringFromNumber(_ num: GXStandardClasses.GXNumber, totalLength: Swift.Int, decimals: Swift.Int) -> Swift.String
+  public static func gxStringFromNumber(_ num: GXStandardClasses.GXNumber, totalLength: Swift.Int, decimals: Swift.Int, decimalSeparator: Swift.String, thousandSeparator: Swift.String) -> Swift.String
+  public static func gxStringByTrimmingLeftFromNumber(_ num: GXStandardClasses.GXNumber, totalLength len: Swift.Int, decimals dec: Swift.Int) -> Swift.String
+  public func gxDecimalValue() -> Foundation.Decimal
+  public func gxDecimalValueWithSeparator(_ sep: Swift.String) -> Foundation.Decimal
+  @available(*, deprecated, renamed: "gxUnicodeValue")
+  public func gxAsciiValue() -> Swift.Int
+  @available(*, deprecated, renamed: "gxFromUnicodeValue(_:)")
+  public static func gxFromAsciiValue(_ val: GXStandardClasses.GXNumber) -> Swift.String
+  public static func gxEmptyStringOfLength(_ len: Swift.Int) -> Swift.String
+  public func gxStringOfLength(_ length: Swift.Int, byAppendingLeftOccurrencesOfString str: Swift.String) -> Swift.String
+  public func gxStringOfLength(_ length: Swift.Int, byAppendingRightOccurrencesOfString str: Swift.String) -> Swift.String
+  public func gxSearchFor(_ str: Swift.String, start: Swift.Int) -> Swift.Int
+  public func gxSearchBackwardFor(_ str: Swift.String, start: Swift.Int) -> Swift.Int
+  public static func gxNewLine() -> Swift.String
+  public func gxCharAt(_ idx: Swift.Int) -> Swift.String
+  public func gxUnicodeValue() -> Swift.Int
+  public static func gxFromUnicodeValue(_ value: Swift.Int) -> Swift.String
+}
+@_inheritsConvenienceInitializers public class GXGenericsObjectCollection<T> : GXStandardClasses.GXObjectCollection {
+  @available(*, unavailable)
+  @objc override dynamic public init(typeName: Swift.String?, embeddedModelObject: GXStandardClasses.GXEmbeddedModelObject)
+  @objc override dynamic public init(array initialArray: [Any], embeddedModelObject: GXStandardClasses.GXEmbeddedModelObject)
+  @objc override dynamic public var items: Foundation.NSMutableArray {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public var itemsTypeName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public var currentItem: Any? {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public func addItem(_ item: Any)
+  @objc override dynamic public func add(_ item: Any)
+  @objc override dynamic public func addItem(_ item: Any, at index: Swift.Int)
+  @objc override dynamic public func load(from array: [Any])
+  @objc deinit
+}
+public let OUTPUT_RVIEWER: Swift.Int
+public let OUTPUT_PDF: Swift.Int
+extension GXStandardClasses.GXReport {
+  public var P_lines: Swift.Int {
+    get
+    set
+  }
+  public var lineHeight: Swift.Int {
+    get
+    set
+  }
+  public var gxXPage: Swift.Int {
+    get
+    set
+  }
+  public var gxYPage: Swift.Int {
+    get
+    set
+  }
+  public var Gx_line: Swift.Int {
+    get
+    set
+  }
+  public var Gx_page: Swift.Int {
+    get
+    set
+  }
+  public func getPrinter() -> GXStandardClasses.GXReportHandler
+  public func endPrinter()
+  public func initPrinter(_ output: Swift.String, _ gxXPage: Swift.Int, _ gxYPage: Swift.Int, _ iniFile: Swift.String, _ form: Swift.String, _ printer: Swift.String, _ mode: Swift.Int, _ orientation: Swift.Int, _ pageSize: Swift.Int, _ pageLength: Swift.Int, _ pageWidth: Swift.Int, _ scale: Swift.Int, _ copies: Swift.Int, _ defSrc: Swift.Int, _ quality: Swift.Int, _ color: Swift.Int, _ duplex: Swift.Int) -> Swift.Bool
+}
+extension GXStandardClasses.GXReport {
+  @objc override dynamic open func cleanup()
+}
+public protocol GXReportHandler {
+  func GxClearAttris()
+  func GxSetDocName(_ name: Swift.String)
+  func GxSetDocFormat(_ format: Swift.String)
+  func setModal(_ modal: Swift.Bool)
+  func setPageLines(_: Swift.Int)
+  func setLineHeight(_: Swift.Int)
+  func setM_top(_: Swift.Int)
+  func setM_bot(_: Swift.Int)
+  func GxStartDocument(pageLength: Swift.Int, pageWidth: Swift.Int)
+  func GxEndDocument()
+  func GxEndPage()
+  func GxStartPage()
+  func setPage(_: Swift.Int)
+  func setMetrics(_ fontName: Swift.String, _ bold: Swift.Bool, _ italic: Swift.Bool, _ ascent: Swift.Int, _ descent: Swift.Int, _ height: Swift.Int, _ maxAdvance: Swift.Int, _ sizes: [Swift.Int])
+  func GxAttris(_ fontName: Swift.String, _ fontSize: Swift.Int, _ bold: Swift.Bool, _ italic: Swift.Bool, _ strikeThru: Swift.Bool, _ underline: Swift.Bool, _ pen: Swift.Int, _ red: Swift.Int, _ green: Swift.Int, _ blue: Swift.Int, _ backMode: Swift.Int, _ backRed: Swift.Int, _ backGreen: Swift.Int, _ backBlue: Swift.Int)
+  func GxDrawText(_ text: Swift.String, _ left: Swift.Int, _ top: Swift.Int, _ right: Swift.Int, _ bottom: Swift.Int, _ align: Swift.Int, _ htmlFormat: Swift.Int, _ border: Swift.Int, _ valign: Swift.Int)
+  func GxDrawLine(_ left: Swift.Int, _ top: Swift.Int, _ right: Swift.Int, _ bottom: Swift.Int, _ border: Swift.Int, _ foreColorRed: Swift.Int, _ foreColorGreen: Swift.Int, _ foreColorBlue: Swift.Int, _ style: Swift.Int)
+  func GxDrawRect(_ left: Swift.Int, _ top: Swift.Int, _ right: Swift.Int, _ bottom: Swift.Int, _ border: Swift.Int, _ foreColorRed: Swift.Int, _ foreColorGreen: Swift.Int, _ foreColorBlue: Swift.Int, _ backgroundMode: Swift.Int, _ backColorRed: Swift.Int, _ backColorGreen: Swift.Int, _ backColorBlue: Swift.Int, _ styleTop: Swift.Int, _ styleBackground: Swift.Int, _ styleRight: Swift.Int, _ styleLeft: Swift.Int, _ radioTopLeft: Swift.Int, _ radioTopRight: Swift.Int, _ radioBottomLeft: Swift.Int, _ radioBottomRight: Swift.Int)
+  func GxDrawBitMap(_ imageUri: Swift.String, _ left: Swift.Int, _ top: Swift.Int, _ right: Swift.Int, _ bottom: Swift.Int)
+}
+@_hasMissingDesignatedInitializers public class GXPrinterPDF : GXStandardClasses.GXReportHandler {
+  public func GxClearAttris()
+  public func GxSetDocName(_ name: Swift.String)
+  public func GxSetDocFormat(_ format: Swift.String)
+  public func setModal(_ modal: Swift.Bool)
+  public func setPageLines(_: Swift.Int)
+  public func setLineHeight(_: Swift.Int)
+  public func setM_top(_: Swift.Int)
+  public func setM_bot(_: Swift.Int)
+  public func GxStartDocument(pageLength: Swift.Int, pageWidth: Swift.Int)
+  public func GxEndDocument()
+  public func GxStartPage()
+  public func GxEndPage()
+  public func setPage(_: Swift.Int)
+  public func setMetrics(_ fontName: Swift.String, _ bold: Swift.Bool, _ italic: Swift.Bool, _ ascent: Swift.Int, _ descent: Swift.Int, _ height: Swift.Int, _ maxAdvance: Swift.Int, _ sizes: [Swift.Int])
+  public func GxAttris(_ fontName: Swift.String, _ fontSize: Swift.Int, _ bold: Swift.Bool, _ italic: Swift.Bool, _ strikeThru: Swift.Bool, _ underline: Swift.Bool, _ pen: Swift.Int, _ red: Swift.Int, _ green: Swift.Int, _ blue: Swift.Int, _ backMode: Swift.Int, _ backRed: Swift.Int, _ backGreen: Swift.Int, _ backBlue: Swift.Int)
+  public func GxDrawText(_ text: Swift.String, _ left: Swift.Int, _ top: Swift.Int, _ right: Swift.Int, _ bottom: Swift.Int, _ align: Swift.Int, _ htmlFormat: Swift.Int = 0, _ border: Swift.Int = 0, _ vAlign: Swift.Int = 0)
+  public func GxDrawLine(_ left: Swift.Int, _ top: Swift.Int, _ right: Swift.Int, _ bottom: Swift.Int, _ thickness: Swift.Int = 1, _ foreColorRed: Swift.Int = 0, _ foreColorGreen: Swift.Int = 0, _ foreColorBlue: Swift.Int = 0, _ style: Swift.Int = 0)
+  public func GxDrawRect(_ left: Swift.Int, _ top: Swift.Int, _ right: Swift.Int, _ bottom: Swift.Int, _ thickness: Swift.Int = 1, _ foreColorRed: Swift.Int = 0, _ foreColorGreen: Swift.Int = 0, _ foreColorBlue: Swift.Int = 0, _ backgroundMode: Swift.Int = 0, _ backColorRed: Swift.Int = 255, _ backColorGreen: Swift.Int = 255, _ backColorBlue: Swift.Int = 255, _ styleTop: Swift.Int = 0, _ styleBackground: Swift.Int = 0, _ styleRight: Swift.Int = 0, _ styleLeft: Swift.Int = 0, _ radiusTopLeft: Swift.Int = 0, _ radiusTopRight: Swift.Int = 0, _ radiusBottomLeft: Swift.Int = 0, _ radiusBottomRight: Swift.Int = 0)
+  public func GxDrawBitMap(_ imageUri: Swift.String, _ left: Swift.Int, _ top: Swift.Int, _ right: Swift.Int, _ bottom: Swift.Int)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class GXCryptoCertificate : GXStandardClasses.GXCryptoBaseType {
+  public func load(_ path: Swift.String?, password pass: Swift.String?) -> Swift.Int
+  public func fromBase64(_ strData: Swift.String?)
+  @objc deinit
+}
+extension GXStandardClasses.GXProperties {
+  public func set(_ key: Swift.String, _ value: Swift.String)
+}
+extension GXStandardClasses.GXMessageList {
+  public func addItem(_ msg: Swift.String, _ id: Swift.String, _ type: Swift.Int, _: Swift.String)
+  public func addItem(_ msg: Swift.String, _ type: Swift.Int, _: Swift.String)
+}
+@_hasMissingDesignatedInitializers open class DecimalUtil {
+  open class var ZERO: Foundation.Decimal {
+    get
+  }
+  open class func decToString(_ d: GXStandardClasses.GXNumber) -> Swift.String
+  open class func doubleToDec(_ val: GXStandardClasses.GXNumber) -> Foundation.Decimal
+  open class func doubleToDec(_ val: GXStandardClasses.GXNumber, _ length: Swift.Int, _ decimals: Swift.Int) -> Foundation.Decimal
+  open class func stringToDecimal(_ strVal: Swift.String) -> Foundation.Decimal
+  open class func pow(_ base: GXStandardClasses.GXNumber, _ p: GXStandardClasses.GXNumber) -> Foundation.Decimal
+  @objc deinit
+}
+public let GX_NOMASK: Swift.Int
+public let GX_MASKLOCKERR: Swift.Int
+public let GX_MASKNOTFOUND: Swift.Int
+public let GX_MASKDUPKEY: Swift.Int
+public let GX_MASKOBJEXIST: Swift.Int
+public let GX_MASKLOOPLOCK: Swift.Int
+public let GX_MASKFOREIGNKEY: Swift.Int
+public let GX_ROLLBACKSAVEPOINT: Swift.Int
+public func AddObjectProperty(_ name: Swift.String, _ value: Any, _ includeState: Swift.Bool, _ includeNonInitialized: Swift.Bool = true)
+public func + (left: Swift.Int, right: Swift.Double) -> Swift.Double
+public func + (left: Swift.Double, right: Swift.Int) -> Swift.Double
+public func - (left: Swift.Int, right: Swift.Double) -> Swift.Double
+public func - (left: Swift.Double, right: Swift.Int) -> Swift.Double
+public func * (left: Swift.Int, right: Swift.Double) -> Swift.Double
+public func * (left: Swift.Double, right: Swift.Int) -> Swift.Double
+public func / (left: Swift.Int, right: Swift.Double) -> Swift.Double
+public func / (left: Swift.Double, right: Swift.Int) -> Swift.Double
+public func / (left: Swift.Int64, right: Swift.Double) -> Swift.Double
+public func - (left: Swift.Int, right: Swift.Int64) -> Swift.Int64
+public func * (left: Swift.Int, right: Swift.Int64) -> Swift.Int64
+public func * (left: Swift.Int64, right: Swift.Int) -> Swift.Int64
+public func / (left: Swift.Int, right: Swift.Int64) -> Swift.Int64
+public func / (left: Swift.Int64, right: Swift.Int) -> Swift.Int64
+public func % (left: Swift.Int, right: Swift.Int64) -> Swift.Int
+public func % (left: Swift.Int64, right: Swift.Int) -> Swift.Int
+public func == (left: Swift.Int, right: Swift.Int64) -> Swift.Bool
+public func == (left: Swift.Int64, right: Swift.Int) -> Swift.Bool
+public func != (left: Swift.Int, right: Swift.Int64) -> Swift.Bool
+public func != (left: Swift.Int64, right: Swift.Int) -> Swift.Bool
+public func < (left: Swift.Int, right: Swift.Int64) -> Swift.Bool
+public func < (left: Swift.Int64, right: Swift.Int) -> Swift.Bool
+public func <= (left: Swift.Int, right: Swift.Int64) -> Swift.Bool
+public func <= (left: Swift.Int64, right: Swift.Int) -> Swift.Bool
+public func > (left: Swift.Int, right: Swift.Int64) -> Swift.Bool
+public func > (left: Swift.Int64, right: Swift.Int) -> Swift.Bool
+public func >= (left: Swift.Int, right: Swift.Int64) -> Swift.Bool
+public func >= (left: Swift.Int64, right: Swift.Int) -> Swift.Bool
+public func + (left: Swift.Int, right: Foundation.Decimal) -> Foundation.Decimal
+public func + (left: Foundation.Decimal, right: Swift.Int) -> Foundation.Decimal
+public func - (left: Swift.Int, right: Foundation.Decimal) -> Foundation.Decimal
+public func - (left: Foundation.Decimal, right: Swift.Int) -> Foundation.Decimal
+public func * (left: Swift.Int, right: Foundation.Decimal) -> Foundation.Decimal
+public func * (left: Foundation.Decimal, right: Swift.Int) -> Foundation.Decimal
+public func / (left: Swift.Int, right: Foundation.Decimal) -> Foundation.Decimal
+public func / (left: Foundation.Decimal, right: Swift.Int) -> Foundation.Decimal
+public func % (left: Foundation.Decimal, right: Swift.Int) -> Swift.Int
+public func % (left: Swift.Int, right: Foundation.Decimal) -> Swift.Int
+public func == (left: Foundation.Decimal, right: Swift.Int) -> Swift.Bool
+public func == (left: Swift.Int, right: Foundation.Decimal) -> Swift.Bool
+public func != (left: Foundation.Decimal, right: Swift.Int) -> Swift.Bool
+public func != (left: Swift.Int, right: Foundation.Decimal) -> Swift.Bool
+public func < (left: Swift.Int, right: Foundation.Decimal) -> Swift.Bool
+public func < (left: Foundation.Decimal, right: Swift.Int) -> Swift.Bool
+public func <= (left: Swift.Int, right: Foundation.Decimal) -> Swift.Bool
+public func <= (left: Foundation.Decimal, right: Swift.Int) -> Swift.Bool
+public func > (left: Swift.Int, right: Foundation.Decimal) -> Swift.Bool
+public func > (left: Foundation.Decimal, right: Swift.Int) -> Swift.Bool
+public func >= (left: Swift.Int, right: Foundation.Decimal) -> Swift.Bool
+public func >= (left: Foundation.Decimal, right: Swift.Int) -> Swift.Bool
+public func + (left: Swift.Int64, right: Foundation.Decimal) -> Foundation.Decimal
+public func + (left: Foundation.Decimal, right: Swift.Int64) -> Foundation.Decimal
+public func - (left: Swift.Int64, right: Foundation.Decimal) -> Foundation.Decimal
+public func - (left: Foundation.Decimal, right: Swift.Int64) -> Foundation.Decimal
+public func * (left: Swift.Int64, right: Foundation.Decimal) -> Foundation.Decimal
+public func * (left: Foundation.Decimal, right: Swift.Int64) -> Foundation.Decimal
+public func / (left: Swift.Int64, right: Foundation.Decimal) -> Foundation.Decimal
+public func / (left: Foundation.Decimal, right: Swift.Int64) -> Foundation.Decimal
+public func % (left: Foundation.Decimal, right: Swift.Int64) -> Swift.Int
+public func % (left: Swift.Int64, right: Foundation.Decimal) -> Swift.Int
+public func == (left: Foundation.Decimal, right: Swift.Int64) -> Swift.Bool
+public func == (left: Swift.Int64, right: Foundation.Decimal) -> Swift.Bool
+public func != (left: Foundation.Decimal, right: Swift.Int64) -> Swift.Bool
+public func != (left: Swift.Int64, right: Foundation.Decimal) -> Swift.Bool
+public func < (left: Swift.Int64, right: Foundation.Decimal) -> Swift.Bool
+public func < (left: Foundation.Decimal, right: Swift.Int64) -> Swift.Bool
+public func <= (left: Swift.Int64, right: Foundation.Decimal) -> Swift.Bool
+public func <= (left: Foundation.Decimal, right: Swift.Int64) -> Swift.Bool
+public func > (left: Swift.Int64, right: Foundation.Decimal) -> Swift.Bool
+public func > (left: Foundation.Decimal, right: Swift.Int64) -> Swift.Bool
+public func >= (left: Swift.Int64, right: Foundation.Decimal) -> Swift.Bool
+public func >= (left: Foundation.Decimal, right: Swift.Int64) -> Swift.Bool
+public func % (left: Foundation.Decimal, right: Foundation.Decimal) -> Swift.Int
+public func + (left: Swift.String, right: Any) -> Swift.String
+extension Swift.Bool {
+  public init(_ value: Swift.Int)
+}
+extension Swift.Int {
+  public init(_ value: Swift.Bool)
+  public func boolValue() -> Swift.Bool
+}
+extension Foundation.ComparisonResult {
+  public func toInt() -> Swift.Int
+}
+public enum TypeConstants {
+  case byte
+  case short
+  case int
+  case long
+  case float
+  case double
+  case string
+  case date
+  case decimal
+  case boolean
+  case blob
+  case uuid
+  case object_COLLECTION
+  public static func == (a: GXStandardClasses.TypeConstants, b: GXStandardClasses.TypeConstants) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol GXNumber {
+  init(_ val: Foundation.Decimal)
+  func toNSNumber() -> Foundation.NSNumber
+  func toDecimal() -> Foundation.Decimal
+  func gxNumberRoundedToDecimals(_ decimals: Swift.Int) -> Foundation.Decimal
+  func gxNumberRoundedToEvenDecimals(_ decimals: Swift.Int) -> Foundation.Decimal
+  func gxNumberTruncatedToDecimals(_ decimals: Swift.Int) -> Foundation.Decimal
+}
+extension GXStandardClasses.GXNumber {
+  public func gxNumberRoundedToDecimals(_ decimals: Swift.Int) -> Foundation.Decimal
+  public func gxNumberRoundedToEvenDecimals(_ decimals: Swift.Int) -> Foundation.Decimal
+  public func gxNumberTruncatedToDecimals(_ decimals: Swift.Int) -> Foundation.Decimal
+}
+extension Swift.SignedNumeric {
+  public func gxNegate() -> Self
+}
+extension Swift.Int : GXStandardClasses.GXNumber {
+  public init(_ val: Foundation.Decimal)
+  public func toNSNumber() -> Foundation.NSNumber
+  public func toDecimal() -> Foundation.Decimal
+}
+extension Swift.Int64 : GXStandardClasses.GXNumber {
+  public init(_ val: Foundation.Decimal)
+  public func toNSNumber() -> Foundation.NSNumber
+  public func toDecimal() -> Foundation.Decimal
+}
+extension Foundation.Decimal : GXStandardClasses.GXNumber {
+  public init(_ value: Foundation.Decimal)
+  public func toNSNumber() -> Foundation.NSNumber
+  public func toDecimal() -> Foundation.Decimal
+}
+extension Swift.Double : GXStandardClasses.GXNumber {
+  public init(_ val: Foundation.Decimal)
+  public func toNSNumber() -> Foundation.NSNumber
+  public func toDecimal() -> Foundation.Decimal
+}
+@_inheritsConvenienceInitializers @objc(GXutil) public class GXutil : ObjectiveC.NSObject {
+  public class func msg(_ msg: Swift.String)
+  @objc public class func msgStatus(_ msg: Swift.String)
+  public class func stringCollectionsToJSONArray(withCodes codes: GXStandardClasses.GXStringCollection, descriptions descs: GXStandardClasses.GXStringCollection) -> GXStandardClasses.GXJSONArray
+  public class func stringCollectionsToJSONWithCodes(_ codes: GXStandardClasses.GXStringCollection, descriptions descs: GXStandardClasses.GXStringCollection) -> Swift.String
+  public class func format(_ format: Swift.String, parm1: Any, parm2: Any, parm3: Any, parm4: Any, parm5: Any, parm6: Any, parm7: Any, parm8: Any, parm9: Any) -> Swift.String
+  public class func rand() -> Foundation.Decimal
+  public class func aleat() -> Swift.Int
+  public class func getImagePath(_ imgNameOrGuid: Swift.String, language lang: Swift.String, themeName: Swift.String) -> Swift.String
+  public class func localPathOrURLString(fromURLString urlStr: Swift.String, attribute att: Swift.String?) -> Swift.String
+  public class func localPathOrURLString(fromURLString urlStr: Swift.String, gxi urlGxi: Swift.String, attribute att: Swift.String?) -> Swift.String
+  public class func getRelativeBlobFile(_ gxi: Swift.String) -> Swift.String
+  public class func serverNow() -> Foundation.Date
+  public class func serverDate() -> Foundation.Date
+  public class func serverTime() -> Swift.String
+  public class func workstationName() -> Swift.String
+  public class func setWorkstationName(_ name: Swift.String?) -> Foundation.NSNumber
+  @objc(gxiif:op1:op2:) public class func gxiif(_ boolean: Foundation.NSNumber, op1: Any, op2: Any) -> Any
+  public class func gxMLines(_ str: Swift.String, lineLength len: Swift.Int) -> Swift.Int
+  public class func gxGetMLine(_ str: Swift.String, lineNumber num: Swift.Int, lineLength len: Swift.Int) -> Swift.String
+  public class func date(toCharREST date: Foundation.Date?) -> Swift.String?
+  public class func time(toCharREST dTime: Foundation.Date?) -> Swift.String?
+  public class func dateToCharDB(_ date: Foundation.Date) -> Swift.String
+  public class func timeToCharDB(_ dTime: Foundation.Date?) -> Swift.String?
+  @objc(charToDateREST:) public class func char(toDateREST str: Swift.String?) -> Foundation.Date
+  public class func char(toTimeREST str: Swift.String?) -> Foundation.Date
+  @objc public class func boolToStr(_ val: Foundation.NSNumber) -> Swift.String
+  public class func strToBool(_ str: Swift.String) -> Swift.Bool
+  public class func urlEncode(_ url: Swift.String) -> Swift.String
+  public class func urlParameterEncode(_ urlParameter: Swift.String) -> Swift.String
+  @objc public class func formatChar(_ str: Swift.String, picture: Swift.String) -> Swift.String
+  @objc(getLanguage) public class func getLanguage() -> Swift.String
+  public class func getLanguageProperty(_ propName: Swift.String) -> Swift.String
+  @objc public class func dateFormatForCurrentLanguage() -> Swift.Int
+  public class func timeFormatForCurrentLanguage() -> Swift.Int
+  public class func dateTimeFormatForCurrentLanguage() -> Swift.Int
+  public class func blobFromBase64(_ base64String: Swift.String) -> Swift.String
+  public class func blobToBase64(_ blobPath: Swift.String) -> Swift.String
+  public class func toValueListForDBMS(_ dbms: Swift.String, collection col: GXStandardClasses.GXObjectCollection, prefix: Swift.String, tail: Swift.String) -> Swift.String
+  @objc(gxDtoC:) public class func gxDtoC(_ date: Foundation.Date) -> Swift.String
+  @objc(gxTtoC:) public class func gxTtoC(_ dateTime: Foundation.Date) -> Swift.String
+  @objc(gxTtoC:dayDigits:) public class func gxTtoC(_ dateTime: Foundation.Date, dayDigits: Foundation.NSNumber) -> Swift.String
+  @objc(gxTtoC:dayDigits:hourDigits:) public class func gxTtoC(_ dateTime: Foundation.Date, dayDigits: Foundation.NSNumber = 8, hourDigits: Foundation.NSNumber = 5) -> Swift.String
+  @objc(gxCtoD:) public class func gxCtoD(_ string: Swift.String) -> Foundation.Date
+  @objc(gxCtoT:) public class func gxCtoT(_ string: Swift.String) -> Foundation.Date
+  public class func formatLink(_ urlStr: Swift.String) -> Swift.String
+  public class func formatLink(_ urlStr: Swift.String, parameters params: [Swift.AnyHashable]?) -> Swift.String
+  @objc(colorValueFromRed:green:blue:) public class func colorValueFromRed(_ red: Foundation.NSNumber, green: Foundation.NSNumber, blue: Foundation.NSNumber) -> Foundation.NSNumber
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GXStandardClasses.GXutil {
+  @objc(impl_random) dynamic public class func impl_random() -> Foundation.NSNumber
+  @objc(impl_rseed:) dynamic public class func impl_rseed(_ seed: Foundation.NSNumber) -> Foundation.NSNumber
+  @objc(impl_sleep:) dynamic public class func impl_sleep(_ secs: Foundation.NSNumber) -> Foundation.NSNumber
+  @objc(impl_gxInt:) dynamic public class func impl_gxInt(_ num: Foundation.NSNumber) -> Foundation.NSNumber
+  @objc dynamic public class func impl_formatNumber(_ num: Foundation.NSNumber?, picture: Swift.String, numberHasDecimals hasDecimals: Swift.Bool) -> Swift.String
+  @objc(dynamicCompare:operator:with:) dynamic public class func dynamicCompare(_ left: Swift.AnyObject, operator op: Swift.String, with right: Any) -> Foundation.NSNumber
+}
+extension GXStandardClasses.GXProcedureHelper {
+  @objc dynamic public class func gxOfflineProcedureClass(forProcedureName procedureName: Swift.String, modelObject: GXObjectsModel.GXModelObject) -> GXStandardClasses.GXProcedure.Type?
+  @objc dynamic public class func gxOfflineProcedureClass(forProcedureModel procModel: GXObjectsModel.GXProcedureModel) -> GXStandardClasses.GXProcedure.Type?
+  @available(*, deprecated, message: "Use gxOfflineProcedureClass(forProcedureName:modelObject:) instead")
+  @objc(gxOfflineProcedureClassForProcedureName:) dynamic public class func gxOfflineProcedureClass(forProcedureName procedureName: Swift.String) -> GXStandardClasses.GXProcedure.Type?
+  @available(*, deprecated, message: "Use executeOfflineProcedureInstance(_:from:withParameters:) instead")
+  @objc(executeOfflineProcedure:withParameters:) dynamic public class func executeOfflineProcedure(_ gxProcClass: GXStandardClasses.GXProcedure.Type, withParameters gxProcParams: [Any]?) -> [Any]
+  @available(*, deprecated, message: "Use executeOfflineProcedureInstance(_:from:withParameters:) instead")
+  @objc(executeOfflineProcedureInstance:withParameters:) dynamic public class func executeOfflineProcedureInstance(_ gxProc: GXStandardClasses.GXProcedure, withParameters gxProcParams: [Any]?) -> [Any]
+}
+extension GXStandardClasses.GXProcedureHelper {
+  @nonobjc public class func executeOnline(_ name: Swift.String, params: [Any], options: GXStandardClasses.GXProcedureExecutionOptions? = nil) -> [Any]
+  @discardableResult
+  @nonobjc public class func execute(_ name: Swift.String, params: [Any], options: GXStandardClasses.GXProcedureHelperExecutionOptions? = nil, completion: ((Swift.Result<[Any], Swift.Error>) -> Swift.Void)? = nil) -> GXFoundation.GXCancelableOperation?
+}
+@_inheritsConvenienceInitializers @objc(GXProcedureExecutionOptions) public class GXProcedureExecutionOptions : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc required override dynamic public init()
+  @objc public var procedureHttpRequestTimeout: Swift.Double
+  @objc public var shouldRetryOnSecurityCheckFailure: Swift.Bool
+  @objc public var shouldProcessMessagesOutput: Swift.Bool
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXProcedureHelperExecutionOptions) public class GXProcedureHelperExecutionOptions : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc required override dynamic public init()
+  @objc public var connectivitySupportResolver: GXObjectsModel.GXInheritedConnectivitySupportResolver?
+  @objc public var executionOptions: GXStandardClasses.GXProcedureExecutionOptions?
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+extension GXStandardClasses.GXBusinessComponent {
+  public var Gx_mode: Swift.String {
+    get
+    set(mode)
+  }
+  public func getMode() -> Swift.String
+  public func getMessages() -> GXStandardClasses.GXMessageList
+  public func errors() -> Swift.Int
+}
+extension GXStandardClasses.GXObjectCollection {
+  @objc(initWithArray:) convenience dynamic public init(array items: [Any])
+  @objc(initWithTypeName:) convenience dynamic public init(typeName: Swift.String?)
+  @available(*, deprecated, message: "Use init(typeName:items:embeddedModelObject:) instead")
+  convenience public init(typeName: Swift.String?, items: Swift.Array<Swift.AnyObject>)
+  convenience public init(typeName: Swift.String?, items: Swift.Array<Swift.AnyObject>, embeddedModelObject: GXStandardClasses.GXEmbeddedModelObject)
+  public var itemCount: Swift.Int {
+    get
+  }
+  public func readxmlcollection(_ reader: GXStandardClasses.GXXMLReader, _ sName: Swift.String, _ itemName: Swift.String) -> Swift.Int
+  public func readxml(_ reader: GXStandardClasses.GXXMLReader, _ sName: Swift.String) -> Swift.Int
+  public func writexml(_ writer: GXStandardClasses.GXXMLWriter, _ name: Swift.String, _ namespace: Swift.String)
+  public func writexml(_ writer: GXStandardClasses.GXXMLWriter, _ name: Swift.String, _ namespace: Swift.String, _ includeState: Swift.Bool)
+  public func writexmlcollection(_ writer: GXStandardClasses.GXXMLWriter, _ name: Swift.String, _ namespace: Swift.String, _ itemName: Swift.String, _ itemNamespace: Swift.String)
+  public func writexmlcollection(_ writer: GXStandardClasses.GXXMLWriter, _ name: Swift.String, _ pNamespace: Swift.String, _ itemName: Swift.String, _ pItemNamespace: Swift.String, _ includeState: Swift.Bool)
+  public func add(_ item: Any, _ index: Swift.Int)
+  public func intElementAt(_ idx: Swift.Int) -> Swift.Int
+  public func int64ElementAt(_ idx: Swift.Int) -> Swift.Int64
+  public func decimalElementAt(_ idx: Swift.Int) -> Foundation.Decimal
+  public func elementAt(_ idx: Swift.Int) -> Any
+  public func remove(_ index: Swift.Int)
+  public func fromJSonFile(_ file: GXStandardClasses.GXFile, _ messages: GXStandardClasses.GXObjectCollection?) -> Swift.Bool
+  public func fromJSONString(_ str: Swift.String, _ messages: GXStandardClasses.GXObjectCollection?) -> Swift.Bool
+  public func fromxmlfile(_ file: GXStandardClasses.GXFile, _ messages: GXStandardClasses.GXObjectCollection?) -> Swift.Bool
+  public func fromxml(_ str: Swift.String, _ messages: GXStandardClasses.GXObjectCollection?) -> Swift.Bool
+}
+extension GXStandardClasses.GXJSONArray {
+  public func toJson() -> Swift.String
+}
+@_hasMissingDesignatedInitializers public class GXGeographyHelper {
+  public static func srid(from geography: Swift.String) -> Swift.Int
+  public static func longitude(from geoPoint: Swift.String) -> Swift.Double
+  public static func latitude(from geoPoint: Swift.String) -> Swift.Double
+  public static func distance(_ from: Swift.String, _ to: Swift.String) -> Swift.Int
+  public static func intersect(_ first: Swift.String, _ second: Swift.String) -> Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class GXSoapParamBase {
+  public static let colLocations: GXStandardClasses.GXSoapLocationCollection
+  public static var nLocRead: Swift.Int
+  public static var nSOAPErr: Swift.Int
+  public static var sSOAPErrMsg: Swift.String
+  public static func getSOAPErr() -> Swift.Int
+  public static func getSOAPErrMsg() -> Swift.String
+  @objc deinit
+}
+@objc(GXGeography) public protocol GXGeography : ObjectiveC.NSObjectProtocol {
+  @objc static func fromWKT(_ WKTString: Swift.String) -> GXFoundation.WKTGeometry?
+  @objc static func geography(fromArguments arguments: [Any]) -> GXFoundation.WKTGeometry?
+  @objc func toWKT() -> Swift.String
+  @objc func stringValue() -> Swift.String
+  @objc func distance(fromGeography: GXStandardClasses.GXGeography) -> CoreLocation.CLLocationDistance
+}
+@objc extension GXFoundation.WKTGeometry : GXStandardClasses.GXGeography {
+  @objc public static func fromWKT(_ WKTString: Swift.String) -> GXFoundation.WKTGeometry?
+  @objc public static func geography(fromArguments arguments: [Any]) -> GXFoundation.WKTGeometry?
+  @objc dynamic public func toWKT() -> Swift.String
+  @objc dynamic public func stringValue() -> Swift.String
+  @objc dynamic public func distance(fromGeography: GXStandardClasses.GXGeography) -> CoreLocation.CLLocationDistance
+}
+extension GXFoundation.WKTGeometry : YAJL.YAJLCoding {
+  @objc dynamic public var json: Any! {
+    @objc get
+  }
+}
+extension GXFoundation.WKTPoint {
+  @objc override dynamic public func distance(fromGeography: GXStandardClasses.GXGeography) -> CoreLocation.CLLocationDistance
+}
+extension GXFoundation.WKTPoint : GXObjectsModel.GXDataTypeWithProperties {
+  @objc dynamic public func valueForProperty(name: Swift.String) -> Swift.AnyObject
+  @objc dynamic public func setValue(_ newValue: Swift.AnyObject, forPropertyName propertyName: Swift.String)
+}
+extension GXStandardClasses.GXStringCollection {
+  public func item(_ index: Swift.Int) -> Swift.String
+}
+open class GXDataStoreProvider {
+  final public let dataStoreHelper: GXStandardClasses.GXDataStoreHelperProtocol?
+  final public let buffers: [[Any]]
+  open var openCursors: Swift.Dictionary<Swift.Int, GXStandardClasses.GXDBCommand>
+  open var dynStatements: Swift.Dictionary<Swift.Int, Swift.String>
+  open var dynStatementParams: Swift.Dictionary<Swift.Int, Swift.Array<Swift.Int>>
+  public init()
+  public init(_ dataStoreHelper: GXStandardClasses.GXDataStoreHelperProtocol, _ buffers: [[Any]])
+  open func execute(_ cursor: Swift.Int, params: [Any] = [], nullParams: [Swift.Bool] = [], runtimeParams: [Swift.String : Swift.String] = [:])
+  open func readNext(_ cursor: Swift.Int)
+  open func close(_ cursor: Swift.Int)
+  open func getStatus(_ cursor: Swift.Int) -> Swift.Int
+  open func getDBCommand(_ cursor: Swift.Int) -> GXStandardClasses.GXDBCommand
+  open func dynParam(_ cursorId: Swift.Int, _ args: Swift.Array<Swift.Array<Any>>)
+  open func addInsertedBlobURLAbsoluteString(_ urlStr: Swift.String)
+  open func addDeletedBlobURLAbsoluteString(_ urlStr: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class GXSwiftHelper {
+  open class func convertAnyToAnyObject(_ item: Any) -> Swift.AnyObject
+  open class func convertAnyArrayToAnyObjectArray(_ items: [Any]) -> [Swift.AnyObject]
+  open class func getStringTypeFromAny(_ item: Any) -> Swift.String
+  open class func getStringTypeArrayFromAnyArray(_ items: [Any]) -> [Swift.String]
+  open class func convertAnyObjectToAny(_ item: Swift.AnyObject, strType: Swift.String) -> Any
+  open class func convertAnyObjectArrayToAnyArray(_ items: [Swift.AnyObject], strTypes: [Swift.String]) -> [Any]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class GXMultimediaUtil {
+  public static func getUri(from multimedia: Swift.String) -> Swift.String
+  public static func getName(from multimedia: Swift.String) -> Swift.String
+  public static func getType(from multimedia: Swift.String) -> Swift.String
+  @objc deinit
+}
+extension GXStandardClasses.GXRegEx {
+  public class func matches(_ text: Swift.String, _ regExp: Swift.String) -> GXStandardClasses.GXObjectCollection
+  public class func isMatch(_ text: Swift.String, _ regExp: Swift.String) -> Swift.Bool
+  public class func split(_ text: Swift.String, _ regExp: Swift.String) -> GXStandardClasses.GXObjectCollection
+  public class func replace(_ text: Swift.String, _ regExp: Swift.String, _ replacement: Swift.String) -> Swift.String
+}
+extension GXObjectsModel.GXModel {
+  @objc dynamic public var dbManager: GXStandardClasses.GXDBManager? {
+    @objc get
+  }
+  @objc dynamic public var embeddedModelObject: GXStandardClasses.GXEmbeddedModelObject? {
+    @objc get
+  }
+}
+extension Foundation.NSString {
+  @objc(gxUnicodeValue) dynamic public func gxUnicodeValue() -> Foundation.NSNumber
+  @objc(gxFromUnicodeValue:) public static func gxFromUnicodeValue(_ value: Foundation.NSNumber) -> Swift.String
+}
+extension GXStandardClasses.GXExternalObjectBase {
+  public func fireExternalObjectEvent(_ name: Swift.String, parameters: [Any])
+}
+extension Foundation.Decimal {
+  public func add(_ d: Foundation.Decimal) -> Foundation.Decimal
+  public func subtract(_ d: Foundation.Decimal) -> Foundation.Decimal
+  public func multiply(_ d: Foundation.Decimal) -> Foundation.Decimal
+  public func divide(_ d: Foundation.Decimal) -> Foundation.Decimal
+  public func compareTo(_ d: Foundation.Decimal) -> Swift.Int
+  public func gxModule(_ d: Foundation.Decimal) -> Swift.Int
+}
+public protocol GXDataStoreHelperProtocol {
+  func getCursor(_ cursor: Swift.Int) -> GXStandardClasses.GXCursor?
+  func getDynamicStatement(_ cursor: Swift.Int, _ dynConstraints: [Any]) -> [Any]
+}
+@objc @_inheritsConvenienceInitializers open class GXDataStoreHelperBase : ObjectiveC.NSObject, GXStandardClasses.GXDataStoreHelperProtocol {
+  open func getCursor(_ cursor: Swift.Int) -> GXStandardClasses.GXCursor?
+  open func getDynamicStatement(_ cursor: Swift.Int, _ dynConstraints: [Any]) -> [Any]
+  open func addWhere(_ currentWhere: Swift.String, _ condition: Swift.String) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class GXCursor {
+  open var name: Swift.String
+  open var statement: Swift.String
+  public init(_ name: Swift.String, _ statement: Swift.String)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers open class ForEachCursor : GXStandardClasses.GXCursor {
+  override public init(_ name: Swift.String, _ statement: Swift.String)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers open class UpdateCursor : GXStandardClasses.GXCursor {
+  override public init(_ name: Swift.String, _ statement: Swift.String)
+  @objc deinit
+}
+extension GXStandardClasses.GXOfflineSession {
+  public func getValue(_ key: Swift.String) -> Swift.String
+  public func setValue(_ key: Swift.String, _ value: Swift.String)
+  public func getObject(_ key: Swift.String) -> Swift.AnyObject
+  public func setObject(_ key: Swift.String, _ value: Swift.AnyObject)
+}
+@_hasMissingDesignatedInitializers public class GXPrintWriter {
+  convenience public init()
+  public func print(_ str: Swift.String)
+  public func println(_ str: Swift.String)
+  public func close()
+  @objc deinit
+}
+@objc(GXOfflineThread) public class GXOfflineThread : Foundation.Thread {
+  @objc final public let gxThreadEmbeddedModel: GXObjectsModel.GXModel
+  @objc required public init?(modelObject: GXObjectsModel.GXModelObject, handler: @escaping (GXObjectsModel.GXModel) -> Swift.Void)
+  @objc override dynamic public func main()
+  @objc override dynamic public var gxCurrentContextModel: GXObjectsModel.GXModel? {
+    @objc get
+  }
+  @objc deinit
+}
+extension GXStandardClasses.GXOfflineThread : GXStandardClasses.GXEmbeddedModelObject {
+  @objc dynamic public var gxModel: GXObjectsModel.GXModel? {
+    @objc get
+  }
+  @objc dynamic public var gxEmbeddedModel: GXObjectsModel.GXModel? {
+    @objc get
+  }
+}
+extension Foundation.Thread {
+  @objc dynamic public class var gxOfflineCurrent: GXStandardClasses.GXOfflineThread? {
+    @objc get
+  }
+  @objc dynamic public class var isGXOfflineThread: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var gxCurrentContextEmbeddedModel: GXObjectsModel.GXModel? {
+    @objc get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GXCryptoBaseType) public class GXCryptoBaseType : ObjectiveC.NSObject {
+  public var errCode: Swift.Int
+  public var errDescription: Swift.String
+  @objc deinit
+}
+extension GXStandardClasses.GXOfflineThread {
+  public class func executeOnNewOfflineThreadIfNeeded<T>(for modelObject: GXObjectsModel.GXModelObject, qos: Foundation.QualityOfService = .default, keepErrorHandler: Swift.Bool = true, handler: @escaping (GXObjectsModel.GXModel) throws -> T, completionQueue: Dispatch.DispatchQueue? = nil, completion: @escaping (Swift.Result<(model: GXObjectsModel.GXModel, result: T), Swift.Error>) -> Swift.Void)
+  @objc(executeOnNewOfflineThreadIfNeededForModelObject:qos:keepErrorHandler:handler:completionQueue:completion:) dynamic public class func __executeOnNewOfflineThreadIfNeeded(for modelObject: GXObjectsModel.GXModelObject, qos: Foundation.QualityOfService, keepErrorHandler: Swift.Bool, handler: @escaping (GXObjectsModel.GXModel) -> Swift.Void, completionQueue: Dispatch.DispatchQueue?, completion: @escaping (GXObjectsModel.GXModel?, Swift.Error?) -> Swift.Void)
+  @discardableResult
+  public class func syncExecuteOnNewOfflineThreadIfNeeded<T>(for modelObject: GXObjectsModel.GXModelObject, qos: Foundation.QualityOfService = .default, keepErrorHandler: Swift.Bool = true, handler: @escaping (GXObjectsModel.GXModel) throws -> T) throws -> T
+  @objc(syncExecuteOnNewOfflineThreadIfNeededForModelObject:qos:keepErrorHandler:handler:error:) dynamic public class func __syncExecuteOnNewOfflineThreadIfNeeded(for modelObject: GXObjectsModel.GXModelObject, qos: Foundation.QualityOfService, keepErrorHandler: Swift.Bool, handler: @escaping (GXObjectsModel.GXModel) -> Swift.Void) throws
+}
+open class GXExpressionObject {
+  open var errCode: Swift.Int {
+    get
+  }
+  open var errDescription: Swift.String {
+    get
+  }
+  open var expression: Swift.String
+  open var variables: GXStandardClasses.GXProperties
+  public init()
+  open func evaluate() -> Foundation.Decimal
+  @objc deinit
+}
+extension GXStandardClasses.GXOfflineHelper {
+  @objc dynamic public class func isOfflineApp(appModel: GXObjectsModel.GXApplicationModel?) -> Swift.Bool
+  @available(*, deprecated, message: "Use class(from:for:) instead")
+  @objc(classFromString:) dynamic public class func `class`(from name: Swift.String) -> Swift.AnyClass?
+  @objc(classFromString:forEmbeddedModelObject:) dynamic public class func `class`(from name: Swift.String, for embeddedModelObject: GXStandardClasses.GXEmbeddedModelObject) -> Swift.AnyClass?
+  @objc(classFromString:forEmbeddedModelObject:fromBundle:) dynamic public class func `class`(from name: Swift.String, for modelObject: GXStandardClasses.GXEmbeddedModelObject, in bundle: Foundation.Bundle?) -> Swift.AnyClass?
+  @objc(selectorFromMethodName:parametersCount:) dynamic public class func selector(fromMethodName methodBaseName: Swift.String, parametersCount parCount: Swift.UInt) -> ObjectiveC.Selector?
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GXCryptoAsymmetricEncrypt) public class GXCryptoAsymmetricEncrypt : GXStandardClasses.GXCryptoBaseType {
+  public var algorithm: Swift.String?
+  public var certificate: GXStandardClasses.GXCryptoCertificate?
+  public func encrypt(_ plainText: Swift.String) -> Swift.String
+  public func decrypt(_ encryptedText: Swift.String) -> Swift.String
+  @objc deinit
+}
+extension GXStandardClasses.GXSdtBusinessComponent {
+  public func getTransaction() -> GXStandardClasses.GXBusinessComponent
+  public func load(_ key: [Any])
+  public func copy(_ sourceBC: GXStandardClasses.GXSdtBusinessComponent)
+  public func setvalue(_ key: Swift.String, _ value: Any)
+  public func toxml(_ inclHeader: Swift.Bool, _ inclState: Swift.Bool, _ header: Swift.String, _ nameSpace: Swift.String) -> Swift.String
+  public func fromJSONFile(_ file: GXStandardClasses.GXFile, _ messages: GXStandardClasses.GXObjectCollection?) -> Swift.Bool
+  public func fromJSONString(_ str: Swift.String, _ messages: GXStandardClasses.GXObjectCollection?) -> Swift.Bool
+  public func fromxmlfile(_ file: GXStandardClasses.GXFile, _ messages: GXStandardClasses.GXObjectCollection?) -> Swift.Bool
+  public func fromxml(_ str: Swift.String, _ messages: GXStandardClasses.GXObjectCollection?) -> Swift.Bool
+  @available(*, deprecated, message: "Use create(typeName:values:embeddedModelObject:) instead")
+  public class func create(typeName: Swift.String, values: Swift.Dictionary<Swift.AnyHashable, Any>) -> GXStandardClasses.GXSdtBusinessComponent?
+  public class func create(typeName: Swift.String, values: Swift.Dictionary<Swift.AnyHashable, Any>, embeddedModelObject: GXStandardClasses.GXEmbeddedModelObject) -> Self?
+}
+extension GXStandardClasses.GXReportText {
+  public var Gx_out: Swift.String {
+    get
+    set
+  }
+  public var out: GXStandardClasses.GXPrintWriter {
+    get
+    set
+  }
+  public func loadReportMetadata(_ name: Swift.String)
+  public func setOutput(_ fileName: Swift.String)
+  public func GxDrawDynamicGetPrintBlockHeight(_ value: Swift.Int) -> Swift.Int
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class GXAsciiPrintWriter : GXStandardClasses.GXPrintWriter {
+  override public func print(_ str: Swift.String)
+  override public func close()
+  @objc deinit
+}
+public protocol GXCryptoSymmetricEncryptAlgorithm : AnyObject {
+  var error: GXStandardClasses.GXCryptoError! { get set }
+  var keySize: Swift.Int { get }
+  var blockSize: Swift.Int { get }
+  var commonCryptoAlgorithm: CommonCrypto.CCAlgorithm { get }
+  func encryptString(_ str: Swift.String, key: Swift.String, iv: Swift.String?) -> Swift.String?
+  func decryptString(_ str: Swift.String, key: Swift.String, iv: Swift.String?) -> Swift.String?
+}
+@objc @_inheritsConvenienceInitializers public class GXCryptoSymmetricEncryptBaseAlgorithm : ObjectiveC.NSObject, GXStandardClasses.GXCryptoSymmetricEncryptAlgorithm {
+  public var error: GXStandardClasses.GXCryptoError!
+  public func encryptString(_ str: Swift.String, key: Swift.String, iv: Swift.String?) -> Swift.String?
+  public func decryptString(_ str: Swift.String, key: Swift.String, iv: Swift.String?) -> Swift.String?
+  public var keySize: Swift.Int {
+    get
+  }
+  public var blockSize: Swift.Int {
+    get
+  }
+  public var commonCryptoAlgorithm: CommonCrypto.CCAlgorithm {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class GXCryptoSymmetricEncryptDESAlgorithm : GXStandardClasses.GXCryptoSymmetricEncryptBaseAlgorithm {
+  override public var keySize: Swift.Int {
+    get
+  }
+  override public var blockSize: Swift.Int {
+    get
+  }
+  override public var commonCryptoAlgorithm: CommonCrypto.CCAlgorithm {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class GXCryptoSymmetricEncryptAES128Algorithm : GXStandardClasses.GXCryptoSymmetricEncryptBaseAlgorithm {
+  override public var keySize: Swift.Int {
+    get
+  }
+  override public var blockSize: Swift.Int {
+    get
+  }
+  override public var commonCryptoAlgorithm: CommonCrypto.CCAlgorithm {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class GXCryptoSymmetricEncryptAES192Algorithm : GXStandardClasses.GXCryptoSymmetricEncryptBaseAlgorithm {
+  override public var keySize: Swift.Int {
+    get
+  }
+  override public var blockSize: Swift.Int {
+    get
+  }
+  override public var commonCryptoAlgorithm: CommonCrypto.CCAlgorithm {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class GXCryptoSymmetricEncryptAES256Algorithm : GXStandardClasses.GXCryptoSymmetricEncryptBaseAlgorithm {
+  override public var keySize: Swift.Int {
+    get
+  }
+  override public var blockSize: Swift.Int {
+    get
+  }
+  override public var commonCryptoAlgorithm: CommonCrypto.CCAlgorithm {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class GXCryptoSymmetricEncryptTripleDESAlgorithm : GXStandardClasses.GXCryptoSymmetricEncryptBaseAlgorithm {
+  override public var keySize: Swift.Int {
+    get
+  }
+  override public var blockSize: Swift.Int {
+    get
+  }
+  override public var commonCryptoAlgorithm: CommonCrypto.CCAlgorithm {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class GXHttpRequestHelper : ObjectiveC.NSObject {
+  @available(*, deprecated, message: "Use mutableURLRequest(for:,modelObject:) instead")
+  @objc public static func mutableURLRequest(forURL url: Foundation.URL) -> Foundation.NSMutableURLRequest
+  @objc(mutableURLRequestForURL:modelObject:) public static func mutableURLRequest(for url: Foundation.URL, modelObject: GXObjectsModel.GXModelObject?) -> Foundation.NSMutableURLRequest
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class GXDirectoryCollection : GXStandardClasses.GXObjectCollection {
+  public func item(_ idx: Swift.Int) -> GXStandardClasses.GXDirectory
+  @objc override dynamic public func createItemInstance() -> Any?
+  @objc override dynamic public init(array initialArray: [Any], embeddedModelObject modelObject: GXStandardClasses.GXEmbeddedModelObject)
+  @objc override dynamic public init(typeName: Swift.String?, embeddedModelObject modelObject: GXStandardClasses.GXEmbeddedModelObject)
+  @objc deinit
+}
+extension Foundation.Date {
+  public func before(_ cmpDate: Foundation.Date) -> Swift.Bool
+  public func after(_ cmpDate: Foundation.Date) -> Swift.Bool
+  public func gxSecondsToDate(_ date: Foundation.Date) -> Swift.Int64
+  public func gxSecondsToDateWithMilliseconds(_ date: Foundation.Date) -> Foundation.Decimal
+  public func gxAge() -> Swift.Int
+  public func gxAge(_ endDate: Foundation.Date) -> Swift.Int
+  public func gxDateDayOfWeek() -> Swift.Int
+  public func gxDateTimeDayOfWeek() -> Swift.Int
+  public static func gxDateFromSOAPValue(_ value: Swift.String) -> Foundation.Date
+  public static func gxDateTimeFromSOAPValue(_ value: Swift.String) -> Foundation.Date
+  public static func gxDate(fromYear year: Swift.Int, month: Swift.Int, day: Swift.Int) -> Foundation.Date
+  public static func gxDateTime(fromYear year: Swift.Int, month: Swift.Int, day: Swift.Int, hour: Swift.Int = 0, minute: Swift.Int = 0, second: Swift.Int = 0, millisecond: Swift.Int = 0) -> Foundation.Date
+  public static func gxTimeOnlyDateTime(fromHour hour: Swift.Int, minute: Swift.Int = 0, second: Swift.Int = 0, millisecond: Swift.Int = 0) -> Foundation.Date
+  public static func gxCurrentDate() -> Foundation.Date
+  public static func gxCurrentDateTime() -> Foundation.Date
+  public static func gxCurrentDateTimeMS() -> Foundation.Date
+  public func gxDateYear() -> Swift.Int
+  public func gxDateTimeYear() -> Swift.Int
+  public func gxDateMonth() -> Swift.Int
+  public func gxDateTimeMonth() -> Swift.Int
+  public func gxDateDay() -> Swift.Int
+  public func gxDateTimeDay() -> Swift.Int
+  public func gxHours() -> Swift.Int
+  public func gxMinutes() -> Swift.Int
+  public func gxSeconds() -> Swift.Int
+  public func gxMilliseconds() -> Swift.Int
+  public func gxDateByAddingDays(_ days: GXStandardClasses.GXNumber) -> Foundation.Date
+  public func gxDateByAddingMonths(_ months: GXStandardClasses.GXNumber) -> Foundation.Date
+  public func gxDateTimeByAddingMonths(_ months: GXStandardClasses.GXNumber) -> Foundation.Date
+  public func gxDateByAddingYears(_ years: GXStandardClasses.GXNumber) -> Foundation.Date
+  public func gxDateTimeByAddingYears(_ years: GXStandardClasses.GXNumber) -> Foundation.Date
+  public func gxDateTimeByAddingSeconds(_ seconds: GXStandardClasses.GXNumber) -> Foundation.Date
+  public func gxDateTimeByAddingMilliseconds(_ milliseconds: GXStandardClasses.GXNumber) -> Foundation.Date
+  public func gxDateEndOfMonth() -> Foundation.Date
+  public func gxDateTimeEndOfMonth() -> Foundation.Date
+  public static func gxTime() -> Swift.String
+  public static func gxChar(toTime str: Swift.String) -> Foundation.Date
+  public static func gxChar(toTime str: Swift.String, format: Swift.Int) -> Foundation.Date
+  public static func gxChar(toDate str: Swift.String) -> Foundation.Date
+  public static func gxChar(toDate str: Swift.String, format: Swift.Int) -> Foundation.Date
+  public func gxDateCharDayOfWeek() -> Swift.String
+  public func gxDateTimeCharDayOfWeek() -> Swift.String
+  public func gxDateCharDayOfWeekWithLanguage(_ lang: Swift.String?) -> Swift.String
+  public func gxDateTimeCharDayOfWeekWithLanguage(_ lang: Swift.String?) -> Swift.String
+  public func gxDateCharMonth() -> Swift.String
+  public func gxDateTimeCharMonth() -> Swift.String
+  public func gxDateCharMonthWithLanguage(_ lang: Swift.String?) -> Swift.String
+  public func gxDateTimeCharMonthWithLanguage(_ lang: Swift.String?) -> Swift.String
+  public func gxDateToString() -> Swift.String
+  public func gxDateToStringWithFormat(_ format: Swift.Int, delimiter sep: Swift.String = "-") -> Swift.String
+  public func gxDateToStringWithPicture(_ picture: Swift.String) -> Swift.String
+  public func gxTimeToString() -> Swift.String
+  public func gxTimeToStringWithDateLength(_ dateLen: Swift.Int, timeLength: Swift.Int, amPm: Swift.Int, format: Swift.Int, dateSeparator: Swift.String, timeSeparator: Swift.String, dateTimeSeparator: Swift.String) -> Swift.String
+  public static func gxDateByRemovingDatePart(from date: Foundation.Date) -> Foundation.Date
+  public static func gxDateByRemovingTimePart(from date: Foundation.Date) -> Foundation.Date
+  public static func gxDateToUTC(_ date: Foundation.Date) -> Foundation.Date
+  public static func gxDateTimeToUTC(_ date: Foundation.Date) -> Foundation.Date
+}
+@objc @_inheritsConvenienceInitializers open class GXHttpRequest : ObjectiveC.NSObject {
+  public static let sharedInstance: GXStandardClasses.GXHttpRequest
+  open var serverHost: Swift.String {
+    get
+  }
+  open var serverPort: Swift.Int {
+    get
+  }
+  open var scriptPath: Swift.String {
+    get
+  }
+  open var secure: Swift.Bool {
+    get
+  }
+  open var baseURL: Swift.String {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class GXPropertiesCollection : GXStandardClasses.GXGenericsObjectCollection<GXStandardClasses.GXProperties> {
+  @objc override dynamic public func gxSerialize() -> Any
+  @objc override dynamic public func gxJSONSerialize() -> Any
+  @objc override dynamic public init(array initialArray: [Any], embeddedModelObject: GXStandardClasses.GXEmbeddedModelObject)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class GXImageUtil : ObjectiveC.NSObject {
+  @objc public static func getImageWidth(_ imageStr: Swift.String) -> Swift.Int
+  @objc public static func getImageHeight(_ imageStr: Swift.String) -> Swift.Int
+  @objc public static func getFileSize(_ imageStr: Swift.String) -> Swift.Int
+  @objc public static func resize(_ imageStr: Swift.String, _ width: Swift.Int, _ height: Swift.Int, _ keepAspect: Swift.Bool) -> Swift.String
+  @objc public static func scale(_ imageStr: Swift.String, _ percent: Swift.Int) -> Swift.String
+  @objc public static func rotate(_ imageStr: Swift.String, _ angle: Swift.Int) -> Swift.String
+  @objc public static func crop(_ imageStr: Swift.String, _ left: Swift.Int, _ top: Swift.Int, _ width: Swift.Int, _ height: Swift.Int) -> Swift.String
+  @objc public static func flipHorizontally(_ imageStr: Swift.String) -> Swift.String
+  @objc public static func flipVertically(_ imageStr: Swift.String) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class GxSilentTrnGridCollection : GXStandardClasses.GXSilentTrnCollection {
+  @objc override dynamic open func addItem(_ item: Any, at index: Swift.Int)
+  override open func removeByKeyArray(_ key: [Any]) -> Swift.Bool
+  @objc override dynamic public init(array initialArray: [Any], embeddedModelObject modelObject: GXStandardClasses.GXEmbeddedModelObject)
+  @objc override dynamic public init(typeName: Swift.String?, embeddedModelObject modelObject: GXStandardClasses.GXEmbeddedModelObject)
+  @objc deinit
+}
+extension GXStandardClasses.GXHttpClient : GXObjectsModel.GXDataTypeWithProperties {
+  @objc dynamic public func valueForProperty(name propName: Swift.String) -> Swift.AnyObject
+  @objc dynamic public func setValue(_ value: Swift.AnyObject, forPropertyName propName: Swift.String)
+}
+extension GXStandardClasses.GXHttpClient {
+  public func addProxyAuthentication(_ method: Swift.Int, _ realm: Swift.String, _ user: Swift.String, _ password: Swift.String)
+  public func addCertificate(_ certificate: Swift.String)
+  public func addAuthentication(_ method: Swift.Int, _ realm: Swift.String, _ user: Swift.String, _ password: Swift.String)
+}
+extension GXStandardClasses.GXutil {
+  public class func strcmp(_ s1: Swift.String, _ s2: Swift.String) -> Swift.Int
+  public class func strcmp2(_ s1: Swift.String, _ s2: Swift.String) -> Swift.Bool
+  public class func right(_ text: Swift.String, _ size: Swift.Int) -> Swift.String
+  public class func left(_ text: Swift.String, _ size: Swift.Int) -> Swift.String
+  public class func ltrim(_ s: Swift.String) -> Swift.String
+  public class func rtrim(_ s: Swift.String) -> Swift.String
+  public class func str(_ i: GXStandardClasses.GXNumber) -> Swift.String
+  public class func str(_ i: GXStandardClasses.GXNumber, _ totalLength: Swift.Int, _ decimals: Swift.Int) -> Swift.String
+  public class func dadd(_ date: Foundation.Date, _ days: Swift.Int) -> Foundation.Date
+  public class func dtadd(_ dateTime: Foundation.Date, _ seconds: Swift.Int) -> Foundation.Date
+  public class func random() -> Foundation.Decimal
+  public class func rseed(_ seed: Foundation.Decimal) -> Swift.Int
+  public class func sleep(_ secs: Swift.Int) -> Swift.Int
+  public class func gxInt(_ num: Foundation.Decimal) -> Swift.Int
+  public class func ddiff(_ d1: Foundation.Date, _ d2: Foundation.Date) -> Swift.Int64
+  @nonobjc public class func formatNumber(_ num: GXStandardClasses.GXNumber, picture: Swift.String, hasDecimals: Swift.Bool = true) -> Swift.String
+  public class func toValueList(_ dbms: Swift.String, _ collection: GXStandardClasses.GXObjectCollection, _ prefix: Swift.String, _ tail: Swift.String) -> Swift.String
+  public static func byteCount(_ str: Swift.String, _ encoding: Swift.String) -> Swift.Int
+  @nonobjc public static func boolToStr(_ b: Swift.Bool) -> Swift.String
+  public class func writeLogln(_ message: Swift.String)
+  public class func writeLog(_ message: Swift.String)
+  public class func notNumeric(_ str: Swift.String) -> Swift.Bool
+  public class func formatDateParm(_ date: Foundation.Date) -> Swift.String
+  public class func formatDateTimeParm(_ dateTime: Foundation.Date) -> Swift.String
+  public static func blobToURLString(_ blob: Swift.String) -> Swift.String
+  public class func compare<T>(_ left: T, _ op: Swift.String, _ right: T) -> Swift.Bool where T : Swift.Comparable
+  @objc(colorValueFromR:G:B:) dynamic public class func colorValueFromRGB(_ red: Swift.Int, _ green: Swift.Int, _ blue: Swift.Int) -> Swift.Int
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class GXCryptoHash : GXStandardClasses.GXCryptoBaseType {
+  public var algorithm: Swift.String?
+  public func compute(_ text: Swift.String, key: Swift.String) -> Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class GXCryptoSymmetricEncrypt : GXStandardClasses.GXCryptoBaseType {
+  public var algorithm: Swift.String?
+  public var key: Swift.String {
+    get
+  }
+  public var iv: Swift.String {
+    get
+  }
+  public var keySize: Swift.Int
+  public var blockSize: Swift.Int
+  public var keySizeInBits: Swift.Int {
+    get
+    set(value)
+  }
+  public var blockSizeInBits: Swift.Int {
+    get
+    set(value)
+  }
+  public func encrypt(_ text: Swift.String) -> Swift.String
+  public func decrypt(_ text: Swift.String) -> Swift.String
+  @objc deinit
+}
+extension GXFoundation.GXUUID {
+  public func equals(_ left: GXFoundation.GXUUID) -> Swift.Bool
+  public class func fromObject(_ obj: Any) -> GXFoundation.GXUUID
+}
+@objc @_hasMissingDesignatedInitializers public class GXCryptoError : ObjectiveC.NSObject {
+  @objc public var code: Swift.Int
+  @objc public var desc: Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class GXSilentTrnCollection : GXStandardClasses.GXObjectCollection, GXObjectsModel.GXBCRootSDTDataCollectionProtocol {
+  open func clearCollection()
+  open func insert() -> Swift.Bool
+  open func update() -> Swift.Bool
+  open func insertOrUpdate() -> Swift.Bool
+  open func getByKey(_ key: Any...) -> GXStandardClasses.GXSdtBusinessComponent
+  open func getByKeyArray(_ key: [Any]) -> GXStandardClasses.GXSdtBusinessComponent
+  open func removeByKey(_ key: Any...) -> Swift.Bool
+  open func removeByKeyArray(_ key: [Any]) -> Swift.Bool
+  @objc public func bcInsert(completion: @escaping (_ success: Swift.Bool) -> Swift.Void)
+  @objc public func bcUpdate(completion: @escaping (_ success: Swift.Bool) -> Swift.Void)
+  @objc public func bcInsertOrUpdate(completion: @escaping (_ success: Swift.Bool) -> Swift.Void)
+  @objc public func bcDelete(completion: @escaping () -> Swift.Void)
+  @objc public var bcConnectivitySupport: GXFoundation.GXConnectivitySupportType {
+    @objc get
+  }
+  @objc public func bcGetItemByKey(_ key: GXObjectsModel.GXEntityDataKey) -> GXObjectsModel.GXBCSDTDataProtocol
+  @objc public func bcRemoveItemByKey(_ key: GXObjectsModel.GXEntityDataKey) -> Swift.Bool
+  @objc override dynamic public init(array initialArray: [Any], embeddedModelObject modelObject: GXStandardClasses.GXEmbeddedModelObject)
+  @objc override dynamic public init(typeName: Swift.String?, embeddedModelObject modelObject: GXStandardClasses.GXEmbeddedModelObject)
+  @objc deinit
+}
+extension GXStandardClasses.GXOfflineDynamicCallHelper {
+  public class func dynamicExecute(_ dynExecute: Swift.String, parameters: [Any]) -> [Any]
+  public class func dynamicExecuteSwift(_ dynExecute: Swift.String, parameters params: [Any]) -> [Any]
+}
+extension GXStandardClasses.GXProcedure {
+  public func executeSubmit(_ params: [Any]?)
+}
+extension GXStandardClasses.TypeConstants : Swift.Equatable {}
+extension GXStandardClasses.TypeConstants : Swift.Hashable {}

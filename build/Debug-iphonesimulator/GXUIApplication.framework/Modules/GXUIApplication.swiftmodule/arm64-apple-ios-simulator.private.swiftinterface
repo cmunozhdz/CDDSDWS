@@ -1,0 +1,149 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GXUIApplication
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_spi(GXInternal) import GXCoreBL
+import GXCoreUI
+import GXFoundation
+@_spi(GXInternal) import GXObjectsModel
+@_exported import GXUIApplication
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+extension GXUIApplication.GXUIApplicationClass {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func remoteControlReceived(with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var userInterfaceLayoutDirection: UIKit.UIUserInterfaceLayoutDirection {
+    @objc get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GXUIApplicationExecutionEnvironment) public class GXUIApplicationExecutionEnvironment : ObjectiveC.NSObject {
+  public class func beginCoreInitialization()
+  public class func endCoreInitialization(extensionLibraries: [GXCoreBL.GXExtensionLibraryProtocol] = [])
+  @objc deinit
+}
+extension GXUIApplication.GXUIApplicationExecutionEnvironment : GXFoundation.GXExecutionEnvironment {
+  @objc dynamic public var applicationState: GXFoundation.GXApplicationStateType {
+    @objc get
+  }
+  @objc dynamic public var isTransitioningFromBackgroundToForeground: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var activeStateNotificationsSupported: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var didBecomeActiveNotification: Swift.String? {
+    @objc get
+  }
+  @objc dynamic public var willResignActiveNotification: Swift.String? {
+    @objc get
+  }
+  @objc dynamic public var didReceiveMemoryWarningNotification: Swift.String? {
+    @objc get
+  }
+  @objc dynamic public var willTerminateNotification: Swift.String? {
+    @objc get
+  }
+  @objc dynamic public var isMultitaskingSupported: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var multitaskingNotificationsSupported: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var didEnterBackgroundNotification: Swift.String? {
+    @objc get
+  }
+  @objc dynamic public var willEnterForegroundNotification: Swift.String? {
+    @objc get
+  }
+  @objc dynamic public var backgroundTimeRemaining: Foundation.TimeInterval {
+    @objc get
+  }
+  @objc dynamic public func backgroundTaskInvalidIdentifier() -> GXFoundation.GXBackgroundTaskIdentifier
+  @objc dynamic public func beginBackgroundTask(withName taskName: Swift.String?, expirationHandler handler: (() -> Swift.Void)?) -> GXFoundation.GXBackgroundTaskIdentifier
+  @objc dynamic public func endBackgroundTask(_ identifier: GXFoundation.GXBackgroundTaskIdentifier)
+  @objc dynamic public func open(_ url: Foundation.URL, options: [Swift.String : Any]?, completionHandler completion: ((_ success: Swift.Bool) -> Swift.Void)?)
+  @objc dynamic public var openURLOptionUniversalLinksOnlyKey: Swift.String? {
+    @objc get
+  }
+  @objc dynamic public func canOpen(_ url: Foundation.URL) -> Swift.Bool
+  @objc dynamic public var currentTraitCollection: UIKit.UITraitCollection {
+    @objc get
+  }
+  @objc dynamic public var keyWindow: UIKit.UIWindow? {
+    @objc get
+  }
+  @objc dynamic public var windows: [UIKit.UIWindow] {
+    @objc get
+  }
+  @available(iOS 13.0, tvOS 13.0, *)
+  @objc dynamic public var connectedScenes: Swift.Set<UIKit.UIScene> {
+    @objc get
+  }
+  @available(iOS 13.0, tvOS 13.0, *)
+  @objc dynamic open var openSessions: Swift.Set<UIKit.UISceneSession> {
+    @objc get
+  }
+  @available(iOS 13.0, tvOS 13.0, *)
+  @objc dynamic public var supportsMultipleScenes: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public func sendAction(toFirstResponder action: ObjectiveC.Selector)
+  @objc dynamic public var userInterfaceLayoutDirection: UIKit.UIUserInterfaceLayoutDirection {
+    @objc get
+  }
+  @objc dynamic public var statusBarFrame: CoreFoundation.CGRect {
+    @objc get
+  }
+  @objc dynamic public var interfaceOrientation: UIKit.UIInterfaceOrientation {
+    @objc get
+  }
+  @objc dynamic public var supportedInterfaceOrientationsForKeyWindow: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @objc dynamic public var preferredContentSizeCategory: UIKit.UIContentSizeCategory {
+    @objc get
+  }
+  @objc dynamic public var preferredContentSizeCategoryIsAccessibilityCategory: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public func beginReceivingRemoteControlEvents()
+  @objc dynamic public func endReceivingRemoteControlEvents()
+}
+extension GXUIApplication.AppDelegate_Shared : UIKit.UIApplicationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func application(_ app: UIKit.UIApplication, willFinishLaunchingWithOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func application(_ app: UIKit.UIApplication, didFinishLaunchingWithOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func applicationDidBecomeActive(_ app: UIKit.UIApplication)
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func applicationWillTerminate(_ app: UIKit.UIApplication)
+  @available(iOS 9.0, *)
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func application(_ app: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func applicationWillResignActive(_ application: UIKit.UIApplication)
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func applicationDidEnterBackground(_ application: UIKit.UIApplication)
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func applicationWillEnterForeground(_ application: UIKit.UIApplication)
+}
+extension GXUIApplication.AppDelegate_Shared {
+  public func nothingSelectedViewController() -> UIKit.UIViewController
+  @objc dynamic open func initialSetup()
+  @objc dynamic open var gxapplicationExtensionLibraries: [GXCoreBL.GXExtensionLibraryProtocol] {
+    @objc get
+  }
+  @objc dynamic open func gxapplication(_ app: UIKit.UIApplication, willOrDid willEvent: Swift.Bool, finishLaunchingWithOptions launchOptions: [Swift.AnyHashable : Any]? = nil) -> Swift.Bool
+  public func gxApplication(_ application: UIKit.UIApplication, performActionFor shortcutItem: UIKit.UIApplicationShortcutItem, completionHandler: @escaping (Swift.Bool) -> Swift.Void) -> Swift.Bool
+  @objc(gxDataValueForKey:) dynamic public func gxDataValue(for key: Swift.AnyHashable) -> Any?
+}
+extension GXUIApplication.AppDelegate_Shared : GXCoreUI.GXPreferenceViewControllerDelegate {
+  @objc dynamic public func preferenceViewController(_ controller: GXCoreUI.GXPreferencesViewController, didValidateModelForUrl url: Swift.String)
+}
+extension GXUIApplication.AppDelegate_Shared : GXFoundation.GXUtilitiesDeveloperInfoExtension {
+  @objc dynamic open var gxShowDeveloperInfo: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var isDeveloperInfoExtensionDynamic: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var showDeveloperInfo: Swift.Bool {
+    @objc get
+  }
+}

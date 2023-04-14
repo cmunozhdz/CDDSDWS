@@ -1,0 +1,26 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GXCoreModule_Common_Log
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import GXCoreModule_Common_Log
+import GXFoundation
+import GXStandardClasses
+import Swift
+import _Concurrency
+import _StringProcessing
+@_inheritsConvenienceInitializers @objc(GXEOLog) open class GXEOLog : GXStandardClasses.GXExternalObjectBase {
+  @objc(debug:) public class func debug(_ message: Swift.String)
+  @objc(debug::) public class func debug(_ message: Swift.String, _ topic: Swift.String)
+  @objc(info:) public class func info(_ message: Swift.String)
+  @objc(info::) public class func info(_ message: Swift.String, _ topic: Swift.String)
+  @objc(warning:) public class func warning(_ message: Swift.String)
+  @objc(warning::) public class func warning(_ message: Swift.String, _ topic: Swift.String)
+  @objc(error:) public class func error(_ message: Swift.String)
+  @objc(error::) public class func error(_ message: Swift.String, _ topic: Swift.String)
+  @objc(fatal:) public class func fatal(_ message: Swift.String)
+  @objc(fatal::) public class func fatal(_ message: Swift.String, _ topic: Swift.String)
+  @objc(write:) public class func write(_ message: Swift.String)
+  @objc(write:::) public class func write(_ message: Swift.String, _ topic: Swift.String, _ logLevel: Swift.Int)
+  @objc override dynamic public init()
+  @objc deinit
+}

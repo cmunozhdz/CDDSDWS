@@ -1,0 +1,1073 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GXCoreUI
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import CoreLocation
+import Foundation
+import GXCoreBL
+@_exported import GXCoreUI
+import GXDataLayer
+import GXFoundation
+import GXObjectsModel
+import GXStandardClasses
+import MapKit
+import ObjectiveC
+import Photos
+import PhotosUI
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func apply(styleClass: GXObjectsModel.GXStyleClass?, propertyDefaultResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, flags: GXCoreUI.UIViewThemeFlags)
+}
+@_inheritsConvenienceInitializers @objc(GXEODynamicCall) public class GXEODynamicCall : GXStandardClasses.GXExternalObjectBase {
+  @objc override dynamic public var externalObjectName: Swift.String {
+    @objc get
+  }
+  @objc(setOption:::) public class func setOption(_ objectNameOrLink: Swift.String, _ callOption: Swift.String, _ value: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public func gxDefaultImageTransform(backgroundMode: GXObjectsModel.GXBackgroundImageMode? = nil, scaleType: GXObjectsModel.GXImageScaleType? = nil, renderingMode: GXObjectsModel.GXImageRenderingMode? = nil, flipsForRTL: Swift.Bool? = nil) -> GXCoreUI.GXImageWebCacheTransformImage?
+}
+extension UIKit.UIImageView {
+  @objc(gxSetImageNamed:highlightedImageNamed:modelObject:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, highlightedImageNamed hImageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:highlightedImageNamed:modelObject:) instead")
+  @objc(gxSetImageNamed:highlightedImageNamed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, highlightedImageNamed hImageName: Swift.String?)
+  @objc(gxSetImageNamed:highlightedImageNamed:modelObject:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, highlightedImageNamed hImageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewHighlightedReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:highlightedImageNamed:modelObject:reloadHandler:) instead")
+  @objc(gxSetImageNamed:highlightedImageNamed:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, highlightedImageNamed hImageName: Swift.String?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewHighlightedReloadHandler?)
+  @objc(gxSetImageNamed:highlightedImageNamed:modelObject:placeholderImage:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, highlightedImageNamed hImageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewHighlightedReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:highlightedImageNamed:modelObject:placeholderImage:reloadHandler:) instead")
+  @objc(gxSetImageNamed:highlightedImageNamed:placeholderImage:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, highlightedImageNamed hImageName: Swift.String?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewHighlightedReloadHandler?)
+  @objc(gxSetImageNamed:highlightedImageNamed:modelObject:placeholderImage:transformImage:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, highlightedImageNamed hImageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: ((_ image: UIKit.UIImage, _ gxImage: GXObjectsModel.GXImage?, _ isEmbededImage: Swift.Bool, _ isHighlightedImage: Swift.Bool) -> UIKit.UIImage)?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewHighlightedReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:highlightedImageNamed:modelObject:placeholderImage:reloadHandler:) instead")
+  @objc(gxSetImageNamed:highlightedImageNamed:placeholderImage:transformImage:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, highlightedImageNamed hImageName: Swift.String?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: ((_ image: UIKit.UIImage, _ gxImage: GXObjectsModel.GXImage?, _ isEmbededImage: Swift.Bool, _ isHighlightedImage: Swift.Bool) -> UIKit.UIImage)?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewHighlightedReloadHandler?)
+}
+extension UIKit.UIImageView {
+  @objc(gxSetImageNamed:modelObject:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:modelObject:) instead")
+  @objc(gxSetImageNamed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?)
+  @objc(gxSetImageNamed:modelObject:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:modelObject:reloadHandler:) instead")
+  @objc(gxSetImageNamed:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @objc(gxSetImageNamed:modelObject:placeholderImage:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:modelObject:placeholderImage:reloadHandler:) instead")
+  @objc(gxSetImageNamed:placeholderImage:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @objc(gxSetImageNamed:modelObject:placeholderImage:transformImage:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:modelObject:placeholderImage:transformImage:reloadHandler:) instead")
+  @objc(gxSetImageNamed:placeholderImage:transformImage:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @objc(gxSetImageNamed:modelObject:placeholderImage:transformImage:reloadHandler:options:progress:completed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?, options: GXDataLayer.GXWebImageOptions, progress progressBlock: GXDataLayer.GXWebImageDownloaderProgressBlock?, completed completedBlock: GXDataLayer.GXWebImageCompletionBlock?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:modelObject:placeholderImage:transformImage:reloadHandler:options:progress:completed:) instead")
+  @objc(gxSetImageNamed:placeholderImage:transformImage:reloadHandler:options:progress:completed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?, options: GXDataLayer.GXWebImageOptions, progress progressBlock: GXDataLayer.GXWebImageDownloaderProgressBlock?, completed completedBlock: GXDataLayer.GXWebImageCompletionBlock?)
+  @objc(gxSetImageNamed:modelObject:placeholderImage:transformImage:reloadHandler:options:context:progress:completed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?, options: GXDataLayer.GXWebImageOptions, context: [Swift.String : Any]?, progress progressBlock: GXDataLayer.GXWebImageDownloaderProgressBlock?, completed completedBlock: GXDataLayer.GXWebImageCompletionBlock?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:modelObject:placeholderImage:transformImage:reloadHandler:options:context:progress:completed:) instead")
+  @objc(gxSetImageNamed:placeholderImage:transformImage:reloadHandler:options:context:progress:completed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?, options: GXDataLayer.GXWebImageOptions, context: [Swift.String : Any]?, progress progressBlock: GXDataLayer.GXWebImageDownloaderProgressBlock?, completed completedBlock: GXDataLayer.GXWebImageCompletionBlock?)
+  @objc(gxSetImageNamed:modelObject:styleClass:resolvingToDefaultWithPropertyResolver:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, styleClass: GXObjectsModel.GXStyleClass?, resolvingToDefaultWithPropertyResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:modelObject:styleClass:resolvingToDefaultWithPropertyResolver:reloadHandler:) instead")
+  @objc(gxSetImageNamed:styleClass:resolvingToDefaultWithPropertyResolver:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, styleClass: GXObjectsModel.GXStyleClass?, resolvingToDefaultWithPropertyResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+}
+extension UIKit.UIImageView {
+  @objc(gxSetHighlightedImageNamed:modelObject:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetHighlightedImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use gxSetHighlightedImageNamed(_:modelObject:) instead")
+  @objc(gxSetHighlightedImageNamed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetHighlightedImageNamed(_ imageName: Swift.String?)
+  @objc(gxSetHighlightedImageNamed:modelObject:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetHighlightedImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetHighlightedImageNamed(_:modelObject:reloadHandler:) instead")
+  @objc(gxSetHighlightedImageNamed:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetHighlightedImageNamed(_ imageName: Swift.String?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @objc(gxSetHighlightedImageNamed:modelObject:transformImage:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetHighlightedImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetHighlightedImageNamed(_:modelObject:transformImage:reloadHandler:) instead")
+  @objc(gxSetHighlightedImageNamed:transformImage:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetHighlightedImageNamed(_ imageName: Swift.String?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @objc(gxSetHighlightedImageNamed:modelObject:transformImage:reloadHandler:options:progress:completed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetHighlightedImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?, options: GXDataLayer.GXWebImageOptions, progress progressBlock: GXDataLayer.GXWebImageDownloaderProgressBlock?, completed completedBlock: GXDataLayer.GXWebImageCompletionBlock?)
+  @available(*, deprecated, message: "Use gxSetHighlightedImageNamed(_:modelObject:transformImage:reloadHandler:options:progress:completed:) instead")
+  @objc(gxSetHighlightedImageNamed:transformImage:reloadHandler:options:progress:completed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetHighlightedImageNamed(_ imageName: Swift.String?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?, options: GXDataLayer.GXWebImageOptions, progress progressBlock: GXDataLayer.GXWebImageDownloaderProgressBlock?, completed completedBlock: GXDataLayer.GXWebImageCompletionBlock?)
+  @objc(gxSetHighlightedImageNamed:modelObject:transformImage:reloadHandler:options:context:progress:completed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetHighlightedImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?, options: GXDataLayer.GXWebImageOptions, context: [Swift.String : Any]?, progress progressBlock: GXDataLayer.GXWebImageDownloaderProgressBlock?, completed completedBlock: GXDataLayer.GXWebImageCompletionBlock?)
+  @available(*, deprecated, message: "Use gxSetHighlightedImageNamed(_:modelObject:transformImage:reloadHandler:options:context:progress:completed:) instead")
+  @objc(gxSetHighlightedImageNamed:transformImage:reloadHandler:options:context:progress:completed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetHighlightedImageNamed(_ imageName: Swift.String?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?, options: GXDataLayer.GXWebImageOptions, context: [Swift.String : Any]?, progress progressBlock: GXDataLayer.GXWebImageDownloaderProgressBlock?, completed completedBlock: GXDataLayer.GXWebImageCompletionBlock?)
+}
+extension UIKit.UIImageView {
+  @objc(gxSetPlaceHolderImageAsFinalImage:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetPlaceHolderImage(asFinalImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?)
+  @objc(gxSetPlaceHolderImageAsFinalImage:completed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetPlaceHolderImage(asFinalImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, completed completedBlock: GXDataLayer.GXWebImageCompletionBlock?)
+}
+extension UIKit.UIImageView {
+  @objc(gxSetImageFromEntityDataFieldValue:modelObject:placeholderImage:transformImage:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImage(fromEntityDataFieldValue entityDataFieldValue: Any?, modelObject: GXObjectsModel.GXModelObject?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetImage(fromEntityDataFieldValue:modelObject:placeholderImage:transformImage:reloadHandler:) instead")
+  @objc(gxSetImageFromEntityDataFieldValue:placeholderImage:transformImage:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImage(fromEntityDataFieldValue entityDataFieldValue: Any?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @objc(gxSetImageFromEntityDataFieldValue:modelObject:placeholderImage:transformImage:reloadHandler:options:progress:completed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImage(fromEntityDataFieldValue entityDataFieldValue: Any?, modelObject: GXObjectsModel.GXModelObject?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?, options: GXDataLayer.GXWebImageOptions, progress progressBlock: GXDataLayer.GXWebImageDownloaderProgressBlock?, completed completedBlock: GXDataLayer.GXWebImageCompletionBlock?)
+  @available(*, deprecated, message: "Use gxSetImage(fromEntityDataFieldValue:modelObject:placeholderImage:transformImage:reloadHandler:) instead")
+  @objc(gxSetImageFromEntityDataFieldValue:placeholderImage:transformImage:reloadHandler:options:progress:completed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImage(fromEntityDataFieldValue entityDataFieldValue: Any?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?, options: GXDataLayer.GXWebImageOptions, progress progressBlock: GXDataLayer.GXWebImageDownloaderProgressBlock?, completed completedBlock: GXDataLayer.GXWebImageCompletionBlock?)
+  @objc(gxSetImageFromEntityDataFieldValue:modelObject:placeholderImage:transformImage:reloadHandler:options:context:progress:completed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImage(fromEntityDataFieldValue entityDataFieldValue: Any?, modelObject: GXObjectsModel.GXModelObject?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?, options: GXDataLayer.GXWebImageOptions, context: [Swift.String : Any]?, progress progressBlock: GXDataLayer.GXWebImageDownloaderProgressBlock?, completed completedBlock: GXDataLayer.GXWebImageCompletionBlock?)
+  @available(*, deprecated, message: "Use gxSetImage(fromEntityDataFieldValue:modelObject:placeholderImage:transformImage:reloadHandler:options:context:progress:completed) instead")
+  @objc(gxSetImageFromEntityDataFieldValue:placeholderImage:transformImage:reloadHandler:options:context:progress:completed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImage(fromEntityDataFieldValue entityDataFieldValue: Any?, placeholderImage placeholderImageProvider: GXCoreUI.GXImageWebCachePlaceholderImageProvider?, transformImage: GXCoreUI.GXImageWebCacheTransformImage?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?, options: GXDataLayer.GXWebImageOptions, context: [Swift.String : Any]?, progress progressBlock: GXDataLayer.GXWebImageDownloaderProgressBlock?, completed completedBlock: GXDataLayer.GXWebImageCompletionBlock?)
+  @objc(gxSetImageFromEntityDataFieldValue:modelObject:styleClass:resolvingToDefaultWithPropertyResolver:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImage(fromEntityDataFieldValue entityDataFieldValue: Any?, modelObject: GXObjectsModel.GXModelObject?, styleClass: GXObjectsModel.GXStyleClass?, resolvingToDefaultWithPropertyResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetImage(fromEntityDataFieldValue:modelObject:styleClass:resolvingToDefaultWithPropertyResolver:reloadHandler:) instead")
+  @objc(gxSetImageFromEntityDataFieldValue:styleClass:resolvingToDefaultWithPropertyResolver:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImage(fromEntityDataFieldValue entityDataFieldValue: Any?, styleClass: GXObjectsModel.GXStyleClass?, resolvingToDefaultWithPropertyResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, reloadHandler: GXCoreUI.GXImageWebCacheUIImageViewReloadHandler?)
+}
+extension UIKit.UIImageView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var imageGxImage: GXObjectsModel.GXImage? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var highlightedImageGxImage: GXObjectsModel.GXImage? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setImage(_ newValue: UIKit.UIImage?, forCurrentGxImage isCurrentGxImage: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setHighlightedImage(_ newValue: UIKit.UIImage?, forCurrentGxImage isCurrentGxImage: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setImageForCurrentGxImage(_ newValue: UIKit.UIImage?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setHighlightedImageForCurrentGxImage(_ newValue: UIKit.UIImage?)
+}
+extension GXObjectsModel.GXPresentationContext {
+  @objc dynamic public var gxRootController: GXCoreUI.GXRootControllerInstanceRef? {
+    @objc get
+  }
+}
+extension UIKit.UIViewController {
+  @objc(classNameForNavigationBarFromAppBarAppearance:) @_Concurrency.MainActor(unsafe) dynamic public class func classNameForNavigationBar(from appBarAppearance: GXCoreUI.GXApplicationBarsAppearance) -> Swift.String?
+  @_Concurrency.MainActor(unsafe) public class func gxPreferredStatusBarStyle(for controller: UIKit.UIViewController, appBarAppearance: GXCoreUI.GXApplicationBarsAppearance) -> UIKit.UIStatusBarStyle?
+  @_Concurrency.MainActor(unsafe) public class func gxPreferredStatusBarStyle(forControllerWithAppBarAppearance controller: UIKit.UIViewController & GXCoreUI.GXApplicationBarsAppearance, unresolvedValue: UIKit.UIStatusBarStyle) -> UIKit.UIStatusBarStyle?
+  @objc(gxPreferredStatusBarStyleForController:appBarAppearance:unresolvedValue:) @_Concurrency.MainActor(unsafe) dynamic public class func __gxPreferredStatusBarStyle(for controller: UIKit.UIViewController, appBarAppearance: GXCoreUI.GXApplicationBarsAppearance, unresolvedValue: UIKit.UIStatusBarStyle) -> UIKit.UIStatusBarStyle
+  @objc(gxPreferredStatusBarStyleForControllerWithAppBarAppearance:unresolvedValue:) @_Concurrency.MainActor(unsafe) dynamic public class func __gxPreferredStatusBarStyle(forControllerWithAppBarAppearance controller: UIKit.UIViewController & GXCoreUI.GXApplicationBarsAppearance, unresolvedValue: UIKit.UIStatusBarStyle) -> UIKit.UIStatusBarStyle
+  @_Concurrency.MainActor(unsafe) public class func gxPrefersStatusBarHidden(for controller: UIKit.UIViewController, appBarAppearance: GXCoreUI.GXApplicationBarsAppearance) -> Swift.Bool?
+  @_Concurrency.MainActor(unsafe) public class func gxPrefersStatusBarHidden(forControllerWithAppBarAppearance controller: UIKit.UIViewController & GXCoreUI.GXApplicationBarsAppearance) -> Swift.Bool?
+  @objc(gxPrefersStatusBarHiddenForController:appBarAppearance:unresolvedValue:) @_Concurrency.MainActor(unsafe) dynamic public class func __gxPrefersStatusBarHidden(for controller: UIKit.UIViewController, appBarAppearance: GXCoreUI.GXApplicationBarsAppearance, unresolvedValue: Swift.Bool) -> Swift.Bool
+  @objc(gxPrefersStatusBarHiddenForControllerWithAppBarAppearance:unresolvedValue:) @_Concurrency.MainActor(unsafe) dynamic public class func __gxPrefersStatusBarHidden(forControllerWithAppBarAppearance controller: UIKit.UIViewController & GXCoreUI.GXApplicationBarsAppearance, unresolvedValue: Swift.Bool) -> Swift.Bool
+}
+@available(iOS 14, *)
+@objc extension PhotosUI.PHPickerViewController {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var editorHelper: GXCoreUI.GXEntityDataFieldEditorViewControllerHelper? {
+    @objc get
+    @objc set(newEditorHelper)
+  }
+}
+@available(iOS 14, *)
+@objc extension PhotosUI.PHPickerViewController : GXObjectsModel.GXModelObject {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var gxModel: GXObjectsModel.GXModel? {
+    @objc get
+  }
+}
+@available(iOS 14, *)
+@objc extension PhotosUI.PHPickerViewController : GXCoreUI.GXEntityDataFieldEditorViewController {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func editableEntityDataFieldData() -> GXObjectsModel.GXEntityDataWithOverrideValues?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func isEditingEntityData() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var shouldDelayEntityDataUpdatesUntilDissmissed: Swift.Bool {
+    @objc get
+    @objc set(shouldDelayEntityDataUpdatesUntilDissmissed)
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var entityDataFieldEditorDelegate: GXCoreUI.GXEntityDataFieldEditorViewControllerDelegate? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func dismiss(_ save: Swift.Bool, animated: Swift.Bool, completion: (() -> Swift.Void)?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func entityDataFieldData() -> GXObjectsModel.GXEntityData?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func entityDataFieldDescriptor() -> GXObjectsModel.GXEntityDataFieldDescriptor
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func resolvedEntityDataFieldInfo() -> GXObjectsModel.GXEntityDataFieldInfo
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func entityDataFieldSpecifier() -> Swift.String?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func entityDataFieldIndexer() -> [Foundation.NSNumber]?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var entityDataFieldDelegate: GXCoreUI.GXEntityDataFieldViewControllerDelegate? {
+    @objc get
+    @objc set(entityDataFieldDelegate)
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func dismiss(_ animated: Swift.Bool, completion: (() -> Swift.Void)?) -> Swift.Bool
+}
+extension QuartzCore.CACornerMask {
+  public static let gxAllCorners: QuartzCore.CACornerMask
+  public static let gxAllCornersArray: [QuartzCore.CACornerMask]
+}
+extension GXFoundation.GXBordersRadius {
+  public func radius(for cornerMask: QuartzCore.CACornerMask) -> CoreFoundation.CGFloat?
+  public mutating func setRadius(_ radius: CoreFoundation.CGFloat, toCorners cornerMask: QuartzCore.CACornerMask)
+}
+@objc public class GXImageObserver : ObjectiveC.NSObject {
+  @objc final public let image: GXObjectsModel.GXImage
+  @objc public init(image: GXObjectsModel.GXImage)
+  @objc deinit
+  @objc public var reloadHandler: ((GXCoreUI.GXImageObserver) -> Swift.Void)?
+}
+extension GXCoreUI.GXImageObserver {
+  public func setImageKeyPathObservedObject<T>(_ observedObject: T, forKeyPath keyPath: Swift.KeyPath<T, UIKit.UIImage?>, changeHandler: @escaping (T) -> Swift.Void) where T : ObjectiveC.NSObject
+  public func removeImageKeyPathObservedObject()
+  @objc(performIgnoringImageKeyPathChanges:) dynamic public func __performIgnoringImageKeyPathChanges(actions: () -> Swift.Void)
+  public func performIgnoringImageKeyPathChanges(ignoringChanges: Swift.Bool = true, actions: () -> Swift.Void)
+  @objc(performIgnoringImageKeyPathChangesOfObserver:actions:) dynamic public class func __performIgnoringImageKeyPathChanges(of observer: GXCoreUI.GXImageObserver?, actions: () -> Swift.Void)
+  public class func performIgnoringImageKeyPathChanges(of observer: GXCoreUI.GXImageObserver?, ignoringChanges: Swift.Bool = true, actions: () -> Swift.Void)
+}
+@_inheritsConvenienceInitializers @objc(GXEODesignSystem) public class GXEODesignSystem : GXStandardClasses.GXExternalObjectBase {
+  @objc override dynamic public var externalObjectName: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GXCoreUI.GXEODesignSystem {
+  @objc(setOption::) dynamic public class func setOption(_ name: Swift.String, _ value: Swift.String)
+  @objc(clearOption:) dynamic public class func clearOption(_ name: Swift.String)
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func apply(styleClass: GXObjectsModel.GXStyleClass?, propertyDefaultResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, flags: GXCoreUI.UIViewThemeFlags)
+}
+@_inheritsConvenienceInitializers @objc public class GXControlWithExpandableBoundsHelper : ObjectiveC.NSObject {
+  @objc public class func validExpandable(edgeInsets: UIKit.UIEdgeInsets, forExpandDirections expandDirection: GXFoundation.GXLayoutExpandDirection) -> UIKit.UIEdgeInsets
+  @objc public class func validExpandable(edgeInsets: UIKit.UIEdgeInsets, forExpandDirectionsResolver expandDirectionResolver: @escaping () -> GXFoundation.GXLayoutExpandDirection) -> UIKit.UIEdgeInsets
+  @objc public class func expandableEdgeInsets(_ expEdgeInsets: UIKit.UIEdgeInsets, matchingInsets insets: GXFoundation.GXLayoutQuadDimension) -> UIKit.UIEdgeInsets
+  @objc public class func expandableEdgeInsets(_ expEdgeInsets: UIKit.UIEdgeInsets, matchingContentBounds contentBounds: CoreFoundation.CGRect, withInsets insets: GXFoundation.GXLayoutQuadDimension) -> UIKit.UIEdgeInsets
+  @objc public class func expandableEdgeInsets(_ expEdgeInsets: UIKit.UIEdgeInsets, matchingContentEdges contentEdges: UIKit.UIEdgeInsets, withInsets insets: GXFoundation.GXLayoutQuadDimension) -> UIKit.UIEdgeInsets
+  @objc public class func expandableEdgeInsets(_ expEdgeInsets: UIKit.UIEdgeInsets, matchingContentBounds contentBounds: CoreFoundation.CGRect, withControlFrame controlFrame: CoreFoundation.CGRect) -> UIKit.UIEdgeInsets
+  @objc public class func expandableEdgeInsets(_ expEdgeInsets: UIKit.UIEdgeInsets, matchingContentEdges contentEdges: UIKit.UIEdgeInsets, withControlFrame controlFrame: CoreFoundation.CGRect) -> UIKit.UIEdgeInsets
+  @objc public class func expandableEdgeInsets(_ expEdgeInsets: UIKit.UIEdgeInsets, matchingContentBoundsButBottom contentBounds: CoreFoundation.CGRect, withControlFrame controlFrame: CoreFoundation.CGRect) -> UIKit.UIEdgeInsets
+  @objc public class func expandableEdgeInsets(_ expEdgeInsets: UIKit.UIEdgeInsets, matchingContentEdgesButBottom contentEdges: UIKit.UIEdgeInsets, withControlFrame controlFrame: CoreFoundation.CGRect) -> UIKit.UIEdgeInsets
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UISearchBar {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func apply(styleClass: GXObjectsModel.GXStyleClass?, propertyDefaultResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, flags: GXCoreUI.UIViewThemeFlags)
+}
+extension UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var containerViewControllerFromNextResponder: UIKit.UIViewController? {
+    @objc get
+  }
+}
+public typealias GXImageWebCacheUIToolbarReloadHandler = (_ toolbar: UIKit.UIToolbar, _ gxImage: GXObjectsModel.GXLocalizedImageObject) -> Swift.Void
+extension UIKit.UIToolbar {
+  @objc(gxSetBackgroundImageNamed:modelObject:realodHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, reloadHandler: GXCoreUI.GXImageWebCacheUIToolbarReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetBackgroundImageNamed(_:modelObject:reloadHandler:) instead")
+  @objc(gxSetBackgroundImageNamed:realodHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?, reloadHandler: GXCoreUI.GXImageWebCacheUIToolbarReloadHandler?)
+  @objc(gxSetBackgroundImageNamed:modelObject:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use gxSetBackgroundImageNamed(_:modelObject:) instead")
+  @objc(gxSetBackgroundImageNamed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?)
+}
+extension UIKit.UIToolbar {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var backgroundImageGxImage: GXObjectsModel.GXImage? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setBackgroundImage(_ newValue: UIKit.UIImage?, forCurrentGxImage isCurrentGxImage: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setBackgroundImageForCurrentGxImage(_ newValue: UIKit.UIImage?)
+}
+@objc extension GXCoreUI.GXControlGridCollectionViewBase {
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var gridCollectionView: UIKit.UICollectionView? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open func newGridCollectionViewLayout() -> UIKit.UICollectionViewLayout
+  @objc @_Concurrency.MainActor(unsafe) dynamic open func newGridCollectionView(withFrame frame: CoreFoundation.CGRect) -> UIKit.UICollectionView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func newGridView(withFrame frame: CoreFoundation.CGRect) -> UIKit.UIView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func makeGridViewReloadDelegateSelectors(_ gridView: UIKit.UIScrollView & GXCoreUI.GXControlGridCollectionTableView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func classForCellEntityData(withReuseIdentifier identifier: Swift.String) -> Swift.AnyClass
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func onRelativeSizeForItem(withPercentDimensionChanged oldRelativeSizeForItemWithPercentDimension: CoreFoundation.CGSize)
+}
+extension GXCoreUI.GXControlGridCollectionViewBase : UIKit.UICollectionViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt vIndexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func indexTitles(for collectionView: UIKit.UICollectionView) -> [Swift.String]?
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, indexPathForIndexTitle title: Swift.String, at index: Swift.Int) -> Foundation.IndexPath
+}
+extension GXCoreUI.GXControlGridCollectionViewBase : UIKit.UICollectionViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, shouldHighlightItemAt vIndexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, shouldSelectItemAt vIndexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt vIndexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt vIndexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt vIndexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var defaultGridItemHeight: CoreFoundation.CGFloat {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var defaultGridItemSize: CoreFoundation.CGSize {
+    @objc get
+  }
+}
+extension GXCoreUI.GXControlGridCollectionViewBase : UIKit.UICollectionViewDelegateFlowLayout {
+}
+extension GXCoreUI.GXControlBase {
+  @objc dynamic open var hasDesignSystemTokenReference: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic open func onDesignSystemTokenOptionChanged()
+}
+public protocol GXUserControlClassProvider {
+  func userControlClass(forUserControlType userControlType: Swift.String, layoutElement: GXObjectsModel.GXLayoutElement) -> GXCoreUI.GXControl.Type?
+}
+public protocol GXUserControlClassProviderCustomPropertiesTransformer {
+  func transformControlCustomPropertiesFromMetadata(_ customProperties: [Swift.String : Any]?, forUserControlType userControlType: Swift.String) -> [Swift.String : Any]?
+}
+extension GXCoreUI.GXControlFactory {
+  @objc(registerControlClass:forUserControlType:) dynamic public class func register(controlClass: GXCoreUI.GXControl.Type, forUserControlType userControlType: Swift.String)
+  public class func register(userControlClassProvider: GXCoreUI.GXUserControlClassProvider, forUserControlType userControlType: Swift.String)
+}
+extension GXCoreUI.GXControlFactory : GXObjectsModel.GXControlModelService {
+  @objc(transformControl:customPropertiesFromMetadata:) dynamic public class func transformControl(_ userControlType: Swift.String, customPropertiesFromMetadata customProperties: [Swift.String : Any]?) -> [Swift.String : Any]?
+  @objc dynamic public func transformControlType(_ controlType: Swift.String, customPropertiesFromMetadata customProperties: [Swift.String : Any]?) -> [Swift.String : Any]?
+}
+@available(iOS 14, *)
+@objc extension PhotosUI.PHPickerViewController : GXCoreUI.GXEntityDataFieldImagePickerProtocol {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var fieldImagePickerAllowsNull: Swift.Bool {
+    @objc get
+    @objc set(allowsNulls)
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func newPresentationContext(for userInterfaceContext: GXObjectsModel.GXUserInterfaceContext?) -> GXObjectsModel.GXPresentationContext
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func update(presentationContext: GXObjectsModel.GXPresentationContext)
+}
+public typealias GXImageWebCacheUINavigationBarReloadHandler = (_ navBar: UIKit.UINavigationBar, _ gxImage: GXObjectsModel.GXLocalizedImageObject) -> Swift.Void
+extension UIKit.UINavigationBar {
+  @objc(gxSetBackgroundImageNamed:realodHandler:modelObject:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, reloadHandler: GXCoreUI.GXImageWebCacheUINavigationBarReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetBackgroundImageNamed(_:modelObject:reloadHandler:) instead")
+  @objc(gxSetBackgroundImageNamed:realodHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?, reloadHandler: GXCoreUI.GXImageWebCacheUINavigationBarReloadHandler?)
+  @objc(gxSetBackgroundImageNamed:modelObject:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use gxSetBackgroundImageNamed(_:modelObject:) instead")
+  @objc(gxSetBackgroundImageNamed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?)
+}
+extension UIKit.UINavigationBar {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var backgroundImageGxImage: GXObjectsModel.GXImage? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setBackgroundImage(_ newValue: UIKit.UIImage?, forCurrentGxImage isCurrentGxImage: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setBackgroundImageForCurrentGxImage(_ newValue: UIKit.UIImage?)
+}
+extension GXCoreUI.GXWebViewOptionsType {
+  public static var defaultOptions: GXCoreUI.GXWebViewOptionsType {
+    get
+  }
+}
+@objc(GXActivityIndicatorView) public protocol GXActivityIndicatorView : ObjectiveC.NSObjectProtocol {
+  @objc func startAnimating()
+  @objc func stopAnimating()
+  @objc var isAnimating: Swift.Bool { get }
+  @objc var view: UIKit.UIView { get }
+  @objc(applyStyleClass:propertyDefaultResolver:) func apply(styleClass: GXObjectsModel.GXStyleClass?, propertyDefaultResolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?)
+}
+@objc(GXActivityIndicatorViewWithProgress) public protocol GXActivityIndicatorViewWithProgress : GXCoreUI.GXActivityIndicatorView {
+  @objc(setProgress:) func setProgress(_ newProgress: CoreFoundation.CGFloat)
+}
+@objc(GXActivityIndicatorViewWithMessage) public protocol GXActivityIndicatorViewWithMessage : GXCoreUI.GXActivityIndicatorView {
+  @objc var messageText: Swift.String? { get set }
+}
+@objc(GXActivityIndicatorViewProviderProtocol) public protocol GXActivityIndicatorViewProviderProtocol : ObjectiveC.NSObjectProtocol {
+  @objc func activityIndicatorView() -> GXCoreUI.GXActivityIndicatorView
+  @objc optional func activityIndicatorViewWithMessage() -> GXCoreUI.GXActivityIndicatorViewWithMessage
+  @objc optional var animationThemeClassExtensionProperties: [GXObjectsModel.GXStyleClass.PropertyName] { get }
+}
+@_inheritsConvenienceInitializers @objc public class GXActionExObjDesignSystemHandler : GXCoreBL.GXActionExternalObjectHandler {
+  @objc override dynamic public class func handleActionExecutionUsingMethodHandlerSelectorNamePrefix() -> Swift.Bool
+  @objc override dynamic public var actionExObjThreadRequirement: GXCoreBL.GXActionExternalObjectHandlerThreadRequirement {
+    @objc get
+  }
+  @objc public func gxActionExObjMethodHandler_SetOption(_ parameters: [Any])
+  @objc public func gxActionExObjMethodHandler_ClearOption(_ parameters: [Any])
+  @objc override dynamic public init(actionExObjDescriptor actionExObjDesc: GXObjectsModel.GXActionExternalObjectDescriptor, componentActionsHandlers: [GXObjectsModel.GXActionHandler]?, userInfo: [Swift.String : Any]? = nil)
+  @objc deinit
+}
+extension GXCoreBL.ActionHandler : GXObjectsModel.GXActionUIHandler {
+  @objc dynamic public var uiDelegate: GXObjectsModel.GXActionHandlerUIDelegate? {
+    @objc get
+  }
+  @objc dynamic public var actionHandlerUIContext: GXObjectsModel.GXActionHandlerUIContext? {
+    @objc get
+  }
+}
+@_inheritsConvenienceInitializers @objc(SwitchThemeClass) public class SwitchThemeClass : GXObjectsModel.GXThemeClassBase {
+  @objc(colorForPropertyName:fromStyleClass:resolvingToDefaultWith:) final public class func color(for propName: GXObjectsModel.GXStyleClass.PropertyName, from styleClass: GXObjectsModel.GXStyleClass?, resolvingToDefaultWith resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?) -> UIKit.UIColor?
+  @objc override dynamic public class func loadSpecificPropertiesValues(byName propertyValuesByName: Foundation.NSMutableDictionary?, fromMetadata metadata: [Swift.String : Any], forStyleObjectType styleObjectType: GXFoundation.GXObjectType) -> Foundation.NSMutableDictionary?
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic public init(name: Swift.String, propertiesValuesByName: [Swift.String : Any]?, subClasses: [GXObjectsModel.GXThemeClass]?)
+  @objc deinit
+}
+extension GXObjectsModel.GXStyleHelper {
+  @objc(applyBackgroundColor:toView:oldView:animated:) final public class func applyBackgroundColor(_ color: UIKit.UIColor?, to view: UIKit.UIView, oldView: UIKit.UIView, animated: Swift.Bool)
+  @objc(applyBackgroundColor:toView:animated:) final public class func applyBackgroundColor(_ color: UIKit.UIColor?, to view: UIKit.UIView, animated: Swift.Bool)
+  @objc(applyHighligth:animated:toBackgroundView:) final public class func applyHighligth(_ highlighted: Swift.Bool, animated: Swift.Bool, toBackgroundView bgView: UIKit.UIImageView)
+  @objc(applyHighligthWithBlock:animated:toBackgroundView:) final public class func applyHighligth(_ isHighlighted: @escaping () -> Swift.Bool, animated: Swift.Bool, toBackgroundView bgView: UIKit.UIImageView)
+  @objc(applyBackgroundImagesToView:backgroundImageView:backgroundImageName:highlightedBackgroundImage:modelObject:backgroundImageMode:) final public class func applyBackgroundImages(to parentView: UIKit.UIView, backgroundImageView bgImageView: Swift.AutoreleasingUnsafeMutablePointer<UIKit.UIImageView?>, backgroundImageName bgImageName: Swift.String?, highlightedBackgroundImage hBgImageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, backgroundImageMode: GXObjectsModel.GXBackgroundImageMode)
+  @available(*, deprecated, message: "Use applyBackgroundImages(to:backgroundImageView:backgroundImageName:highlightedBackgroundImage:backgroundImageMode:) instead")
+  @objc(applyBackgroundImagesToView:backgroundImageView:backgroundImageName:highlightedBackgroundImage:backgroundImageMode:) final public class func applyBackgroundImages(to parentView: UIKit.UIView, backgroundImageView bgImageView: Swift.AutoreleasingUnsafeMutablePointer<UIKit.UIImageView?>, backgroundImageName bgImageName: Swift.String?, highlightedBackgroundImage hBgImageName: Swift.String?, backgroundImageMode: GXObjectsModel.GXBackgroundImageMode)
+}
+extension GXObjectsModel.GXStyleHelper {
+  @objc(applyApplicationBackgroundFromCurrentStyleObjectToView:modelObject:) final public class func applyApplicationBackgroundFromCurrentStyleObject(to view: UIKit.UIView, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use applyApplicationBackgroundFromCurrentStyleObject(to:modelObject:) instead")
+  @objc(applyApplicationBackgroundFromCurrentStyleObjectToView:) final public class func applyApplicationBackgroundFromCurrentStyleObject(to view: UIKit.UIView)
+  @objc(applyApplicationBackgroundFromCurrentStyleObjectToView:modelObject:withDefaultBackgroundColor:) final public class func applyApplicationBackgroundFromCurrentStyleObject(to view: UIKit.UIView, modelObject: GXObjectsModel.GXModelObject?, defaultBackgroundColor defBgColor: @autoclosure () -> UIKit.UIColor?)
+  @available(*, deprecated, message: "Use applyApplicationBackgroundFromCurrentStyleObject(to:modelObject:defaultBackgroundColor:) instead")
+  @objc(applyApplicationBackgroundFromCurrentStyleObjectToView:withDefaultBackgroundColor:) final public class func applyApplicationBackgroundFromCurrentStyleObject(to view: UIKit.UIView, defaultBackgroundColor defBgColor: UIKit.UIColor?)
+  @objc(applyBackgroundColor:toViewControllerIfNeeded:) final public class func applyBackgroundColor(_ bgColor: UIKit.UIColor?, toViewControllerIfNeeded controller: UIKit.UIViewController)
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class GXSegmentedControl : UIKit.UISegmentedControl {
+  @objc @_Concurrency.MainActor(unsafe) public var useDefaultCornerRounding: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var allowsDeselecting: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(items: [Any]?)
+  @objc deinit
+}
+extension GXObjectsModel.GXUserInterfaceContext {
+  @objc dynamic public var userInterfaceController: GXObjectsModel.GXUserInterfaceController? {
+    @objc get
+  }
+  @objc dynamic public var gxRootController: GXCoreUI.GXRootControllerInstanceRef? {
+    @objc get
+  }
+}
+@objc public protocol GXEntityDataFieldImagePickerProtocol : GXCoreUI.GXEntityDataFieldEditorViewController {
+  @objc var fieldImagePickerAllowsNull: Swift.Bool { get set }
+  @objc(newPresentationContextForUserInterfaceContext:) func newPresentationContext(for userInterfaceContext: GXObjectsModel.GXUserInterfaceContext?) -> GXObjectsModel.GXPresentationContext
+  @objc(updatePresentationContext:) func update(presentationContext: GXObjectsModel.GXPresentationContext)
+}
+@_inheritsConvenienceInitializers @objc open class GXControllerHelper : ObjectiveC.NSObject {
+  @objc public class func backEventType(_ backEvent: GXObjectsModel.GXEventDescriptorProtocol?) -> GXFoundation.GXControllerBackEventType
+  @objc public class func updateGXControllerReturnState(_ controller: GXCoreUI.GXControllerProtocol)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol GXEOiOSPermissionsPhotoLibraryOptionals {
+  @objc optional static func requestPhotoLibraryAuthorization(_ handler: @escaping (Photos.PHAuthorizationStatus) -> Swift.Void)
+}
+@available(macCatalyst 14.0, *)
+@objc public protocol GXEOiOSPermissionsCameraOptionals {
+  @objc(captureDeviceFromInput:) optional static func captureDevice(from input: AVFoundation.AVCaptureInput) -> AVFoundation.AVCaptureDevice?
+  @objc(newCaptureDeviceInputWithDevice:) optional static func newCaptureDeviceInput(with captureDevice: AVFoundation.AVCaptureDevice) -> AVFoundation.AVCaptureInput?
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GXFullScreenZoomImageView) public class GXFullScreenZoomImageView : ObjectiveC.NSObject {
+  @objc public static var sharedInstance: GXCoreUI.GXFullScreenZoomImageView {
+    @objc get
+  }
+  @objc public func handleFullScreenZoom(ofImageView imageView: UIKit.UIImageView, withGesture gesture: UIKit.UIPinchGestureRecognizer, withMaxZoomScaleOf maxZoomScale: CoreFoundation.CGFloat)
+  @objc deinit
+}
+extension GXCoreUI.GXMessageView : GXCoreUI.GXActivityIndicatorViewWithMessage {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func startAnimating()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func stopAnimating()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var isAnimating: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var view: UIKit.UIView {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var messageText: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension GXCoreBL.ActionHandler {
+  @objc dynamic public var userInterfaceContext: GXObjectsModel.GXUserInterfaceContext? {
+    @objc get
+  }
+  @objc dynamic public var gxActionHandlerUserInterfaceController: GXObjectsModel.GXActionHandlerUserInterfaceControllerProtocol? {
+    @objc get
+  }
+  @objc dynamic public var gxActionHandlerControllerPresentationHandler: GXObjectsModel.GXControllerPresentationHandlerProtocol? {
+    @objc get
+  }
+  @objc dynamic public var gxActionHandlerUserInterfaceControllerFromContext: GXObjectsModel.GXUserInterfaceController? {
+    @objc get
+  }
+  @objc dynamic public var gxActionHandlerRootControllerFromContext: GXCoreUI.GXRootControllerInstanceRef? {
+    @objc get
+  }
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func apply(styleClass: GXObjectsModel.GXStyleClass?, propertyDefaultResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, flags: GXCoreUI.UIViewThemeFlags)
+}
+extension GXCoreBL.ActionHandler : GXObjectsModel.GXActionHandlerUIDelegate {
+  @objc dynamic public func actionHandlerUserInterfaceController(_ actionHandler: GXObjectsModel.GXActionHandler) -> GXObjectsModel.GXActionHandlerUserInterfaceControllerProtocol?
+  @objc dynamic public func actionHandlerControllerPresentationHandler(_ actionHandler: GXObjectsModel.GXActionHandler) -> GXObjectsModel.GXControllerPresentationHandlerProtocol?
+}
+extension UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var gxParentOrPresentingController: UIKit.UIViewController? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var gxRootParentOrPresentingController: UIKit.UIViewController {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var gxRootController: GXCoreUI.GXRootControllerInstanceRef? {
+    @objc get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GXControlVideoProperties : ObjectiveC.NSObject {
+  @objc override dynamic public var debugDescription: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+extension UIKit.UIView {
+  @objc(applyStyleClass:propertyDefaultResolver:) @_Concurrency.MainActor(unsafe) dynamic open func apply(styleClass: GXObjectsModel.GXStyleClass?, propertyDefaultResolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?)
+  @objc(applyStyleClass:propertyDefaultResolver:withFlags:) @_Concurrency.MainActor(unsafe) dynamic open func apply(styleClass: GXObjectsModel.GXStyleClass?, propertyDefaultResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, flags: GXCoreUI.UIViewThemeFlags)
+}
+public typealias GXImageWebCacheUIButtonReloadHandler = (_ button: UIKit.UIButton, _ gxImage: GXObjectsModel.GXLocalizedImageObject) -> Swift.Void
+extension UIKit.UIButton {
+  @objc(gxSetImageNamed:forState:modelObject:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, for state: UIKit.UIControl.State, modelObject: GXObjectsModel.GXModelObject?, reloadHandler: GXCoreUI.GXImageWebCacheUIButtonReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:for:modelObject:reloadHandler:) instead")
+  @objc(gxSetImageNamed:forState:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, for state: UIKit.UIControl.State, reloadHandler: GXCoreUI.GXImageWebCacheUIButtonReloadHandler?)
+  @objc(gxSetBackgroundImageNamed:forState:modelObject:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?, for state: UIKit.UIControl.State, modelObject: GXObjectsModel.GXModelObject?, reloadHandler: GXCoreUI.GXImageWebCacheUIButtonReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetBackgroundImageNamed(_:for:modelObject:reloadHandler:) instead")
+  @objc(gxSetBackgroundImageNamed:forState:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?, for state: UIKit.UIControl.State, reloadHandler: GXCoreUI.GXImageWebCacheUIButtonReloadHandler?)
+  @objc(gxSetImageNamed:forState:modelObject:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, for state: UIKit.UIControl.State, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:for:modelObject:) instead")
+  @objc(gxSetImageNamed:forState:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, for state: UIKit.UIControl.State)
+  @objc(gxSetBackgroundImageNamed:forState:modelObject:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?, for state: UIKit.UIControl.State, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use gxSetBackgroundImageNamed(_:for:modelObject:) instead")
+  @objc(gxSetBackgroundImageNamed:forState:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?, for state: UIKit.UIControl.State)
+}
+extension UIKit.UIButton {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func imageGxImage(for state: UIKit.UIControl.State) -> GXObjectsModel.GXImage?
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func backgroundGxImage(for state: UIKit.UIControl.State) -> GXObjectsModel.GXImage?
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setImage(_ newValue: UIKit.UIImage?, forCurrentGxImage isCurrentGxImage: Swift.Bool, state: UIKit.UIControl.State)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setBackgroundImage(_ newValue: UIKit.UIImage?, forCurrentGxImage isCurrentGxImage: Swift.Bool, state: UIKit.UIControl.State)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setImageForCurrentGxImage(_ newValue: UIKit.UIImage?, state: UIKit.UIControl.State)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setBackgroundImageForCurrentGxImage(_ newValue: UIKit.UIImage?, state: UIKit.UIControl.State)
+}
+extension GXCoreUI.GXControlGridBase {
+  @objc override dynamic open func nonThemeClass(_ styleClass: GXObjectsModel.GXStyleClass?, defaultPropertyValue propertyName: GXObjectsModel.GXStyleClass.PropertyName) -> Any?
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func groupSeparatorStyleClassPropertyDefaultResolver(for styleClass: GXObjectsModel.GXStyleClass?) -> GXObjectsModel.GXStyleClassPropertyDefaultResolver
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func horizontalStyleClassPropertyDefaultResolver(for styleClass: GXObjectsModel.GXStyleClass?) -> GXObjectsModel.GXStyleClassPropertyDefaultResolver
+  @_Concurrency.MainActor(unsafe) public func groupSeparatorStyleClass(_ styleClass: GXObjectsModel.GXStyleClass?, defaultPropertyValue propertyName: GXObjectsModel.GXStyleClass.PropertyName) -> Any?
+  @_Concurrency.MainActor(unsafe) public func horizontalSeparatorStyleClass(_ styleClass: GXObjectsModel.GXStyleClass?, defaultPropertyValue propertyName: GXObjectsModel.GXStyleClass.PropertyName) -> Any?
+}
+extension GXCoreUI.GXControlBase : GXObjectsModel.GXStyleClassPropertyDefaultResolver {
+  @objc dynamic public func styleClass(_ styleClass: GXObjectsModel.GXStyleClass?, defaultPropertyValue propertyName: GXObjectsModel.GXStyleClass.PropertyName) -> Any?
+  @objc dynamic public var styleClassPropertyDefaultResolverModelObject: GXObjectsModel.GXModelObject? {
+    @objc get
+  }
+}
+extension GXCoreUI.GXControlBase {
+  @objc(nonThemeClass:defaultPropertyValueForpropertyName:) dynamic open func nonThemeClass(_ styleClass: GXObjectsModel.GXStyleClass?, defaultPropertyValue propertyName: GXObjectsModel.GXStyleClass.PropertyName) -> Any?
+  @objc(styleClassPropertyDefaultResolverForStyleClass:) dynamic open func styleClassPropertyDefaultResolver(for styleClass: GXObjectsModel.GXStyleClass?) -> GXObjectsModel.GXStyleClassPropertyDefaultResolver?
+}
+extension UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func apply(styleClass: GXObjectsModel.GXStyleClass?, propertyDefaultResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, flags: GXCoreUI.UIViewThemeFlags)
+}
+extension UIKit.UIScrollView {
+  @objc(applyGxStyleClassWithScroll:) @_Concurrency.MainActor(unsafe) dynamic public func apply(_ classWithScroll: GXObjectsModel.GXStyleClassWithScroll?)
+  @objc(applyGXScrollIndicatorsStyle:) @_Concurrency.MainActor(unsafe) dynamic public func apply(_ indicatorsStyle: GXObjectsModel.GXScrollIndicatorsStyle)
+  @objc(applyGXScrollIndicatorsVisibility:) @_Concurrency.MainActor(unsafe) dynamic public func apply(_ indicatorsVisibility: GXObjectsModel.GXScrollIndicatorsVisibility)
+  @objc(applyGXScrollBouncingStyle:) @_Concurrency.MainActor(unsafe) dynamic public func apply(_ bouncingStyle: GXObjectsModel.GXScrollBouncingStyle)
+}
+public typealias GXImageWebCacheGXSegmentedControlItemReloadHandler = (_ segmentedControlItem: GXCoreUI.GXSegmentedControlItem, _ gxImage: GXObjectsModel.GXLocalizedImageObject) -> Swift.Void
+extension GXCoreUI.GXSegmentedControlItem {
+  @objc(gxSetImageNamed:modelObject:reloadHandler:) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, reloadHandler: GXCoreUI.GXImageWebCacheGXSegmentedControlItemReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:modelObject:reloadHandler:) instead")
+  @objc(gxSetImageNamed:reloadHandler:) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, reloadHandler: GXCoreUI.GXImageWebCacheGXSegmentedControlItemReloadHandler?)
+  @objc(gxSetImageNamed:modelObject:) dynamic public func gxSetImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:modelObject:) instead")
+  @objc(gxSetImageNamed:) dynamic public func gxSetImageNamed(_ imageName: Swift.String?)
+}
+extension GXCoreUI.GXSegmentedControlItem {
+  @objc dynamic public var imageGxImage: GXObjectsModel.GXImage? {
+    @objc get
+  }
+  @objc dynamic public func setImage(_ newValue: UIKit.UIImage?, forCurrentGxImage isCurrentGxImage: Swift.Bool)
+  @objc dynamic public func setImageForCurrentGxImage(_ newValue: UIKit.UIImage?)
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func contentSizeCategoryIsAccessibilityCategory(_ category: UIKit.UIContentSizeCategory) -> Swift.Bool
+  @objc dynamic public class func flexibleSpaceSeparator() -> UIKit.UIBarButtonItem
+  @objc dynamic public class func fixedSpaceSeparator() -> UIKit.UIBarButtonItem
+  @objc dynamic public class func fixedSpaceSeparatorWidth(_ width: CoreFoundation.CGFloat) -> UIKit.UIBarButtonItem
+  @objc dynamic public class func addFlexibleSpaceSeparatorBetweenItems(_ items: Foundation.NSMutableArray)
+  @objc dynamic public class func addFlexibleSpaceSeparatorBetweenItems(_ items: Foundation.NSMutableArray, addLeftSeparator leftCount: Swift.Int, addRightSeparator rightCount: Swift.Int)
+  public class func addingFlexibleSpaceSeparatorBetweenItems(_ items: [Any], sidesSeparators: (left: Swift.Int, right: Swift.Int) = (0, 0)) -> [Any]
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class GXControlGridCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var developmentLayoutDirection: UIKit.UIUserInterfaceLayoutDirection {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var flipsHorizontallyInOppositeLayoutDirection: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func shouldInvalidateLayout(forBoundsChange newBounds: CoreFoundation.CGRect) -> Swift.Bool
+  @objc deinit
+}
+@objc(GXControlBaseRuntimePropertiesProxyWrapper) public class GXControlBaseRuntimePropertiesProxyWrapper : ObjectiveC.NSObject, GXObjectsModel.GXNamedControlElement, GXCoreUI.GXControlBaseRuntimeProperties {
+  @objc required public init(_ proxy: GXCoreUI.GXControlRuntimePropertiesProxy, controlName: Swift.String, userInterfaceContext uiContext: GXObjectsModel.GXUserInterfaceContext? = nil, contextEntityData: GXObjectsModel.GXEntityDataWithOverrideValues? = nil)
+  @discardableResult
+  @objc public func addUserInterfaceContex(withDynamicPropertyOverrideName lowercasePropName: Swift.String) -> GXObjectsModel.GXDynamicPropertyOverrideUserInterfaceContext?
+  @objc final public let controlName: Swift.String
+  @objc public func value(forPropertyName propertyName: Swift.String) -> Any?
+  @objc public func setProperty(_ propertyName: Swift.String, value propertyValue: Any?)
+  @objc public func executeMethod(_ methodName: Swift.String, withParameters parameters: [Any]) -> Any?
+  @objc public func executeMethod(_ methodName: Swift.String, withParameters parameters: [Any], entityData: GXObjectsModel.GXEntityDataWithOverrideValues?) -> Any?
+  @objc public func executeMethod(_ methodName: Swift.String, withParameters parameters: [Any], entityData: GXObjectsModel.GXEntityDataWithOverrideValues?, userInterfaceContext uiContext: GXObjectsModel.GXUserInterfaceContext?) -> Any?
+  @objc deinit
+}
+extension UIKit.UIActivityIndicatorView : GXCoreUI.GXActivityIndicatorView {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var view: UIKit.UIView {
+    @objc get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class GXDeepLinkApplicationOpenURLHandler : ObjectiveC.NSObject, GXCoreBL.GXApplicationOpenURLHandler {
+  @available(iOS, introduced: 4.2, deprecated: 9.0, message: "Use application:openURL:options: instead.")
+  public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, sourceApplication sourceApp: Swift.String?, annotation: Any?) -> Swift.Bool
+  @available(iOS 9.0, *)
+  @objc public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXControlRadioButton) @_Concurrency.MainActor(unsafe) open class GXControlRadioButton : GXCoreUI.GXControlEditableWithLabelSingleEditorViewBase {
+  @_Concurrency.MainActor(unsafe) open class var enumValuesPropertyName: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var allowsDeselecting: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open func selectedForeColor(styleClass: GXObjectsModel.GXStyleClass?) -> UIKit.UIColor?
+  @_Concurrency.MainActor(unsafe) open func selectedBackgroundColor(styleClass: GXObjectsModel.GXStyleClass?) -> UIKit.UIColor?
+  @_Concurrency.MainActor(unsafe) open func unselectedForeColor(styleClass: GXObjectsModel.GXStyleClass?) -> UIKit.UIColor?
+  @_Concurrency.MainActor(unsafe) open func unselectedBackgroundColor(styleClass: GXObjectsModel.GXStyleClass?) -> UIKit.UIColor?
+  @available(*, unavailable)
+  @_Concurrency.MainActor(unsafe) required public init(layoutElement: GXObjectsModel.GXLayoutElement, controlId: Swift.UInt, gxMode modeType: GXFoundation.GXModeType, indexerStack indexer: [Foundation.NSNumber]?, parentControl: GXCoreUI.GXControlContainer?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init(layoutElement: GXObjectsModel.GXLayoutElementData, controlId: Swift.UInt, gxMode modeType: GXFoundation.GXModeType, fieldDescriptor: GXObjectsModel.GXEntityDataFieldDescriptor, indexerStack indexer: [Foundation.NSNumber]?, parentControl: GXCoreUI.GXControlContainer)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func newEditorView(withFrame frame: CoreFoundation.CGRect) -> UIKit.UIView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadEntityDataFieldValue()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func onReadOnlyChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func onEnabledChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func editorViewFrame(forEditorFrame editorFrame: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func applyStyleClass()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func value(forPropertyName propertyName: Swift.String) -> Any?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func executeMethod(_ methodName: Swift.String, withParameters parameters: [Any]) -> Any?
+  @objc deinit
+}
+extension UIKit.UITableViewCell {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func apply(styleClass: GXObjectsModel.GXStyleClass?, propertyDefaultResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, flags: GXCoreUI.UIViewThemeFlags)
+}
+@objc public enum GXControlSmartGridScrollDirection : Swift.Int {
+  case vertical
+  case horizontal
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum GXControlSmartGridMultipleItems : Swift.Int {
+  case single
+  case multipleByQuantity
+  case staggeredByQuantity
+  case multipleBySize
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(GXControlSmartGridPropertiesHelper) public class GXControlSmartGridPropertiesHelper : ObjectiveC.NSObject {
+  @objc final public let layoutElement: GXObjectsModel.GXLayoutElementGrid
+  @objc required public init(layoutElement: GXObjectsModel.GXLayoutElementGrid)
+  @objc public var scrollDirection: GXCoreUI.GXControlSmartGridScrollDirection
+  @objc public var multipleItems: GXCoreUI.GXControlSmartGridMultipleItems
+  @objc public var itemsByQuantityPerRowColumn: Swift.UInt {
+    @objc get
+    @objc set
+  }
+  @objc public var itemBySizeMinWidthHeight: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc public var itemBySizeMaxWidthHeight: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc public var scrollReverse: Swift.Bool
+  @objc public var snapToGrid: Swift.Bool
+  @objc deinit
+}
+extension GXObjectsModel.GXStyleHelper {
+  @objc(applyBackgroundBorderShadowFromStyleClass:propertiesDefaultResolver:withOverrides:toView:backgroundImageView:borderView:borderBounds:) final public class func applyBackgroundBorderShadow(from styleClass: GXObjectsModel.GXStyleClass?, propertiesDefaultResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, overrides classOverrides: GXObjectsModel.GXStyleClassPropertiesOverrides?, to view: UIKit.UIView, backgroundImageView: Swift.AutoreleasingUnsafeMutablePointer<UIKit.UIImageView?>?, borderView: Swift.AutoreleasingUnsafeMutablePointer<UIKit.UIView?>?, borderBounds: CoreFoundation.CGRect)
+  @objc(applyBackgroundBorderShadowFromStyleClass:propertiesDefaultResolver:withOverrides:toView:backgroundImageView:borderView:borderBounds:applyBackgroundColor:) final public class func applyBackgroundBorderShadow(from styleClass: GXObjectsModel.GXStyleClass?, propertiesDefaultResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, overrides classOverrides: GXObjectsModel.GXStyleClassPropertiesOverrides?, to view: UIKit.UIView, backgroundImageView: Swift.AutoreleasingUnsafeMutablePointer<UIKit.UIImageView?>?, borderView: Swift.AutoreleasingUnsafeMutablePointer<UIKit.UIView?>?, borderBounds: CoreFoundation.CGRect, applyBackgroundColor: Swift.Bool)
+  @objc(applyHighligthBackgroundColorFromStyleClass:propertiesDefaultResolver:withOverrides:toView:highlightedBlock:animated:backgroundView:) final public class func applyHighligthBackgroundColor(from styleClass: GXObjectsModel.GXStyleClass?, propertiesDefaultResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, overrides classOverrides: GXObjectsModel.GXStyleClassPropertiesOverrides?, to view: UIKit.UIView, isHighlighted: @escaping () -> Swift.Bool, animated: Swift.Bool, backgroundView bgView: UIKit.UIImageView?)
+  @objc(applyBackgroundImagesFromStyleClass:propertiesDefaultResolver:withOverrides:toView:backgroundImageView:) final public class func applyBackgroundImages(from styleClass: GXObjectsModel.GXStyleClass?, propertiesDefaultResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, overrides classOverrides: GXObjectsModel.GXStyleClassPropertiesOverrides?, to view: UIKit.UIView, backgroundImageView bgImageView: Swift.AutoreleasingUnsafeMutablePointer<UIKit.UIImageView?>)
+}
+extension UIKit.UIBarButtonItem {
+  @objc(initWithGXImageName:modelObject:style:target:action:) @_Concurrency.MainActor(unsafe) convenience dynamic public init(gxImageName imageName: Swift.String, modelObject: GXObjectsModel.GXModelObject?, style: UIKit.UIBarButtonItem.Style, target: Any?, action: ObjectiveC.Selector?)
+  @available(*, deprecated, message: "Use init(gxImageName:modelObject:style:target:action:) instead")
+  @objc(initWithGXImageName:style:target:action:) @_Concurrency.MainActor(unsafe) convenience dynamic public init(gxImageName imageName: Swift.String, style: UIKit.UIBarButtonItem.Style, target: Any?, action: ObjectiveC.Selector?)
+  @objc(initWithGXImageName:modelObject:style:targetActionBlock:) @_Concurrency.MainActor(unsafe) convenience dynamic public init(gxImageName imageName: Swift.String, modelObject: GXObjectsModel.GXModelObject?, style: UIKit.UIBarButtonItem.Style, targetActionBlock block: @escaping () -> Swift.Void)
+  @available(*, deprecated, message: "Use init(gxImageName:modelObject:style:targetActionBlock:) instead")
+  @objc(initWithGXImageName:style:targetActionBlock:) @_Concurrency.MainActor(unsafe) convenience dynamic public init(gxImageName imageName: Swift.String, style: UIKit.UIBarButtonItem.Style, targetActionBlock block: @escaping () -> Swift.Void)
+}
+extension UIKit.UIBarButtonItem {
+  @_Concurrency.MainActor(unsafe) public static let _gxEmptyBackgroundImage: UIKit.UIImage
+  @objc(gxEmptyBackgroundImage) @_Concurrency.MainActor(unsafe) dynamic public class func gxEmptyBackgroundImage() -> UIKit.UIImage
+  @objc(gxLoadEmptyBackgroundImage) @_Concurrency.MainActor(unsafe) dynamic public func gxLoadEmptyBackgroundImage()
+  @objc(gxLoadEmptyBackBackgroundImage) @_Concurrency.MainActor(unsafe) dynamic public func gxLoadEmptyBackBackgroundImage()
+  @_Concurrency.MainActor(unsafe) public func gxLoadEmptyBackgroundImage(isBackButton: Swift.Bool)
+}
+public typealias GXImageWebCacheUIBarButtonItemReloadHandler = (_ barButtonItem: UIKit.UIBarButtonItem, _ gxImage: GXObjectsModel.GXLocalizedImageObject) -> Swift.Void
+extension UIKit.UIBarButtonItem {
+  @objc(gxSetImageNamed:modelObject:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String, modelObject: GXObjectsModel.GXModelObject?, reloadHandler: GXCoreUI.GXImageWebCacheUIBarButtonItemReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:modelObject:reloadHandler:) instead")
+  @objc(gxSetImageNamed:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String, reloadHandler: GXCoreUI.GXImageWebCacheUIBarButtonItemReloadHandler?)
+  @objc(gxSetImageNamed:modelObject:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use gxSetImageNamed(_:modelObject:) instead")
+  @objc(gxSetImageNamed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetImageNamed(_ imageName: Swift.String)
+  @objc(gxSetBackgroundImageNamed:modelObject:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String, modelObject: GXObjectsModel.GXModelObject?, reloadHandler: GXCoreUI.GXImageWebCacheUIBarButtonItemReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetBackgroundImageNamed(_:modelObject:reloadHandler:) instead")
+  @objc(gxSetBackgroundImageNamed:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String, reloadHandler: GXCoreUI.GXImageWebCacheUIBarButtonItemReloadHandler?)
+  @objc(gxSetBackgroundImageNamed:modelObject:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use gxSetBackgroundImageNamed(_:modelObject:) instead")
+  @objc(gxSetBackgroundImageNamed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String)
+  @objc(gxSetBackButtonBackgroundImageNamed:modelObject:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackButtonBackgroundImageNamed(_ imageName: Swift.String, modelObject: GXObjectsModel.GXModelObject?, reloadHandler: GXCoreUI.GXImageWebCacheUIBarButtonItemReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetBackButtonBackgroundImageNamed(_:modelObject:) instead")
+  @objc(gxSetBackButtonBackgroundImageNamed:reloadHandler:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackButtonBackgroundImageNamed(_ imageName: Swift.String, reloadHandler: GXCoreUI.GXImageWebCacheUIBarButtonItemReloadHandler?)
+  @objc(gxSetBackButtonBackgroundImageNamed:modelObject:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackButtonBackgroundImageNamed(_ imageName: Swift.String, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use gxSetBackButtonBackgroundImageNamed(_:,modelObject:) instead")
+  @objc(gxSetBackButtonBackgroundImageNamed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackButtonBackgroundImageNamed(_ imageName: Swift.String)
+}
+extension UIKit.UIBarButtonItem {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var imageGxImage: GXObjectsModel.GXImage? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var backgroundImageGxImage: GXObjectsModel.GXImage? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setImage(_ newValue: UIKit.UIImage?, forCurrentGxImage isCurrentGxImage: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setBackgroundImage(_ newValue: UIKit.UIImage?, forCurrentGxImage isCurrentGxImage: Swift.Bool, isBackButton: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setImageForCurrentGxImage(_ newValue: UIKit.UIImage?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setBackgroundImageForCurrentGxImage(_ newValue: UIKit.UIImage?, isBackButton: Swift.Bool)
+}
+@objc(GXCollectionViewFlowLayout) public protocol GXCollectionViewFlowLayout {
+  @objc var gxScrollDirection: UIKit.UICollectionView.ScrollDirection { get }
+  @objc var gxItemSize: CoreFoundation.CGSize { get set }
+}
+extension UIKit.UICollectionViewFlowLayout : GXCoreUI.GXCollectionViewFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var gxScrollDirection: UIKit.UICollectionView.ScrollDirection {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var gxItemSize: CoreFoundation.CGSize {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc public class GXMulticolumnWheelValuesProvider : ObjectiveC.NSObject {
+  @objc public var values: Swift.Array<GXCoreUI.GXWheelValue>?
+  @objc public var numberOfComponents: Swift.Int {
+    @objc get
+  }
+  @objc public var hasValues: Swift.Bool {
+    @objc get
+  }
+  @objc public var selectedValueDescription: Swift.String {
+    @objc get
+  }
+  @objc public func numberOfRows(inComponent component: Swift.Int) -> Swift.Int
+  @objc public func value(forRow row: Swift.Int, inComponent component: Swift.Int) -> Swift.String?
+  @objc public func selectValue(atRow row: Swift.Int, forComponent component: Swift.Int)
+  @objc public func updateValues(fromControl gxControl: GXCoreUI.GXControlEditableWithLabelBase)
+  @objc public func updateValues(fromHelper helper: GXCoreUI.GXEntityDataFieldViewControllerHelper)
+  @objc public func enumerateSelectedRowsInComponents(_ block: (Swift.Int, Swift.Int) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIWindow {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var gxPreventLowContrastTintColor: Swift.Bool {
+    @objc get
+  }
+  @objc(gxShouldPreventLowContrastTintColorForController:) @_Concurrency.MainActor(unsafe) dynamic public func gxShouldPreventLowContrastTintColor(for controller: UIKit.UIViewController) -> Swift.Bool
+  @discardableResult
+  @objc(gxPreventLowContrastTintColorIfNeededForController:) @_Concurrency.MainActor(unsafe) dynamic public func gxPreventLowContrastTintColorIfNeeded(for controller: UIKit.UIViewController) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class GXWindow : UIKit.UIWindow {
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var gxPreventLowContrastTintColor: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func tintColorDidChange()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didAddSubview(_ subview: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var rootViewController: UIKit.UIViewController? {
+    @objc get
+    @objc set
+  }
+  @available(iOS 13.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(windowScene: UIKit.UIWindowScene)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension GXCoreUI.GXWindow : GXObjectsModel.GXModelObject {
+  @_Concurrency.MainActor(unsafe) @objc dynamic open var gxModel: GXObjectsModel.GXModel? {
+    @objc get
+  }
+}
+extension UIKit.UILabel : GXCoreUI.GXFlexboxLayoutBaselineDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func firstBaselineForFlex(forBounds bounds: CoreFoundation.CGRect) -> Swift.Float
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func lastBaselineForFlex(forBounds bounds: CoreFoundation.CGRect) -> Swift.Float
+}
+extension UIKit.UITextField : GXCoreUI.GXFlexboxLayoutBaselineDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func firstBaselineForFlex(forBounds bounds: CoreFoundation.CGRect) -> Swift.Float
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func lastBaselineForFlex(forBounds bounds: CoreFoundation.CGRect) -> Swift.Float
+}
+extension UIKit.UITextView : GXCoreUI.GXFlexboxLayoutBaselineDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func firstBaselineForFlex(forBounds bounds: CoreFoundation.CGRect) -> Swift.Float
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func lastBaselineForFlex(forBounds bounds: CoreFoundation.CGRect) -> Swift.Float
+}
+extension UIKit.UIButton : GXCoreUI.GXFlexboxLayoutBaselineDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func firstBaselineForFlex(forBounds bounds: CoreFoundation.CGRect) -> Swift.Float
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func lastBaselineForFlex(forBounds bounds: CoreFoundation.CGRect) -> Swift.Float
+}
+@_inheritsConvenienceInitializers @objc(GXEODeepLink) public class GXEODeepLink : GXStandardClasses.GXExternalObjectBase {
+  @objc override dynamic public var externalObjectName: Swift.String {
+    @objc get
+  }
+  public class func handleContinueBrowsingWebUserActivity(_ userActivity: Foundation.NSUserActivity) -> Swift.Bool
+  public class func handleContinueBrowsingWebUserActivity(_ userActivity: Foundation.NSUserActivity, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GXCoreUI.GXRootControllerHelper {
+  @available(*, deprecated, message: "Use UIViewController.gxRootController, GXUserInterfaceContext.gxRootController, GXPresentationContext.gxRootController and GXExecutionEnvironmentHelper instead")
+  @objc dynamic public class var currentRootController: GXCoreUI.GXRootControllerInstanceRef? {
+    @objc get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GXInAppBrowserHelper : ObjectiveC.NSObject, SafariServices.SFSafariViewControllerDelegate {
+  @objc(sharedInstance) public static let shared: GXCoreUI.GXInAppBrowserHelper
+  @objc public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
+  @objc deinit
+}
+extension GXCoreUI.GXMKMapView : GXCoreUI.GXMapView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var frame: CoreFoundation.CGRect {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var gxMinZoomLevel: Foundation.NSNumber? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var gxMaxZoomLevel: Foundation.NSNumber? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxSetMinZoomLevel(_ minZoomLevel: Swift.Float)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxSetMaxZoomLevel(_ maxZoomLevel: Swift.Float)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxClear()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxClear(removeAll: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxUserLocation() -> CoreLocation.CLLocation?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxAnnotations() -> [MapKit.MKAnnotation]
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxSelectedAnnotations() -> [MapKit.MKAnnotation]
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxRegionCenter() -> CoreLocation.CLLocationCoordinate2D
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxLongitudeDelta() -> CoreLocation.CLLocationDegrees
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxLatitudeDelta() -> CoreLocation.CLLocationDegrees
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxIsScrollEnabled() -> Swift.Bool
+  @available(*, deprecated, renamed: "gxAdd(_:isPersistent:)")
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxAdd(_ annotation: MapKit.MKAnnotation)
+  @available(*, deprecated, renamed: "gxAdd(_:arePersistent:)")
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxAdd(_ annotations: [MapKit.MKAnnotation])
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxAdd(_ annotation: MapKit.MKAnnotation, isPersistent: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxAdd(_ annotations: [MapKit.MKAnnotation], arePersistent: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func gxAdd(_ overlay: MapKit.MKOverlay, isRefreshable: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxRemove(_ annotation: MapKit.MKAnnotation)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxRemove(_ annotations: [MapKit.MKAnnotation])
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxShow(_ annotations: [MapKit.MKAnnotation], animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxDeselect(_ annotation: MapKit.MKAnnotation?, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxDeselectAnnotation(at indexPath: Foundation.IndexPath, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxSetShowsUserLocation(_ showLocation: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxSelect(_ annotation: MapKit.MKAnnotation, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxSelectAnnotation(at indexPath: Foundation.IndexPath, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxView(for annotation: MapKit.MKAnnotation) -> MapKit.MKAnnotationView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxSetGXMapType(_ gxMapType: GXCoreUI.GXMapType)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var gxMapViewCenter: CoreFoundation.CGPoint {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxSetCenter(_ newCenterCoordinate: CoreLocation.CLLocationCoordinate2D, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxSetCenter(_ newCenterCoordinate: CoreLocation.CLLocationCoordinate2D, withZoomLevel zoomLevel: Swift.Float, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxSetZoomLevel(_ zoomLevel: Swift.Float, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxZoomLevel() -> Swift.Float
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxConvert(_ point: CoreFoundation.CGPoint, toCoordinateFrom mapView: UIKit.UIView) -> CoreLocation.CLLocationCoordinate2D
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxVisibleMapRect() -> MapKit.MKMapRect
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxSetVisibleMapRect(_ mapRect: MapKit.MKMapRect, edgePadding adjustedMapViewEdgePadding: UIKit.UIEdgeInsets, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gxClearPolylines()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func annotationAtIndexPath(_ indexPath: Foundation.IndexPath) -> MapKit.MKAnnotation?
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class GXCoreUIDesignSystemStyleClassPropertyLoader : ObjectiveC.NSObject, GXObjectsModel.GXDesignSystemStyleClassPropertyLoader {
+  @objc public static let shared: GXCoreUI.GXCoreUIDesignSystemStyleClassPropertyLoader
+  @objc final public func loadStyleClassProperties(fromMetadata metadata: [Swift.String : Any]) -> [GXObjectsModel.GXStyleClass.PropertyName : Any]?
+  @objc final public func convertDesignSystemTokenValue(_ value: GXObjectsModel.GXDesignSystemToken.Value, forProperty property: GXObjectsModel.GXStyleClass.PropertyName) -> Any?
+  @objc final public var convertibleStyleClassPropertyNames: Swift.Set<GXObjectsModel.GXStyleClass.PropertyName>? {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXControlDrawing) @_Concurrency.MainActor(unsafe) public class GXControlDrawing : GXCoreUI.GXControlImage {
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init(layoutElement: GXObjectsModel.GXLayoutElementData, controlId: Swift.UInt, gxMode modeType: GXFoundation.GXModeType, fieldDescriptor: GXObjectsModel.GXEntityDataFieldDescriptor, indexerStack indexer: [Foundation.NSNumber]?, parentControl: GXCoreUI.GXControlContainer)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var readOnly: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func applyPropertyValue(_ propValue: Any?, toPropertyName propName: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func value(forPropertyName propName: Swift.String) -> Any?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func executeMethod(_ methodName: Swift.String, withParameters parameters: [Any]) -> Any?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadContentViews(withContentFrame contentFrame: CoreFoundation.CGRect, intoContainerView containerView: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutContentViews(withContentFrame contentFrame: CoreFoundation.CGRect)
+  @objc deinit
+}
+@objc public enum GXActivityIndicatorViewWrappedLayoutStyle : Swift.Int {
+  case centerMessage = 0
+  case centerActivityIndicatorViewMessage = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(GXActivityIndicatorViewWrapped) public protocol GXActivityIndicatorViewWrapped : GXCoreUI.GXActivityIndicatorView {
+  @objc optional var wrappedActivityIndicatorViewAllowedMessagePosition: UIKit.UIRectEdge { get }
+  @objc optional var wrappedActivityIndicatorViewPreferredMessagePosition: UIKit.UIRectEdge { get }
+  @objc optional var wrappedActivityIndicatorViewLayoutStyle: GXCoreUI.GXActivityIndicatorViewWrappedLayoutStyle { get }
+}
+extension GXCoreUI.GXControlHelpers {
+  @objc(currentStyleClassFromControlLayoutElement:) final public class func currentStyleClass(fromControlLayoutElement control: GXCoreUI.GXControl) -> GXObjectsModel.GXStyleClass?
+  @objc(currentStyleClassFromLayoutElement:) final public class func currentStyleClass(from layoutElement: GXObjectsModel.GXLayoutElement) -> GXObjectsModel.GXStyleClass?
+  @objc(styleClassFromControlLayoutElement:styleObject:) final public class func styleClass(fromControlLayoutElement control: GXCoreUI.GXControl, style: GXObjectsModel.GXStyleKBObject?) -> GXObjectsModel.GXStyleClass?
+  @objc(styleClassFromLayoutElement:styleObject:) final public class func styleClass(from layoutElement: GXObjectsModel.GXLayoutElement, styleObject: GXObjectsModel.GXStyleKBObject?) -> GXObjectsModel.GXStyleClass?
+  @objc(styleClassFrom:propertyDefaultResolver:forDragDropState:) final public class func styleClass(from styleClass: GXObjectsModel.GXStyleClass?, propertyDefaultResolver resolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?, for state: GXCoreUI.GXDragDropState) -> GXObjectsModel.GXStyleClass?
+  @objc(styleClassPropertyDefaultResolverForStyleClass:control:) final public class func styleClassPropertyDefaultResolver(for styleClass: GXObjectsModel.GXStyleClass?, control: GXCoreUI.GXControlBaseProperties?) -> GXObjectsModel.GXStyleClassPropertyDefaultResolver?
+}
+public typealias GXImageWebCacheUITabBarReloadHandler = (_ tabBar: UIKit.UITabBar, _ gxImage: GXObjectsModel.GXLocalizedImageObject) -> Swift.Void
+extension UIKit.UITabBar {
+  @objc(gxSetBackgroundImageNamed:modelObject:reloadHanlder:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, reloadHandler: GXCoreUI.GXImageWebCacheUITabBarReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetBackgroundImageNamed(_:modelObject:reloadHandler:) instead")
+  @objc(gxSetBackgroundImageNamed:reloadHanlder:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?, reloadHanlder: GXCoreUI.GXImageWebCacheUITabBarReloadHandler?)
+  @objc(gxSetBackgroundImageNamed:modelObject:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use gxSetBackgroundImageNamed(_:modelObject:) instead")
+  @objc(gxSetBackgroundImageNamed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetBackgroundImageNamed(_ imageName: Swift.String?)
+  @objc(gxSetSelectionIndicatorImageNamed:modelObject:reloadHanlder:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetSelectionIndicatorImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?, reloadHandler: GXCoreUI.GXImageWebCacheUITabBarReloadHandler?)
+  @available(*, deprecated, message: "Use gxSetSelectionIndicatorImageNamed(_:modelObject:reloadHandler:) instead")
+  @objc(gxSetSelectionIndicatorImageNamed:reloadHanlder:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetSelectionIndicatorImageNamed(_ imageName: Swift.String?, reloadHanlder: GXCoreUI.GXImageWebCacheUITabBarReloadHandler?)
+  @objc(gxSetSelectionIndicatorImageNamed:modelObject:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetSelectionIndicatorImageNamed(_ imageName: Swift.String?, modelObject: GXObjectsModel.GXModelObject?)
+  @available(*, deprecated, message: "Use gxSetSelectionIndicatorImageNamed(_:modelObject:) instead")
+  @objc(gxSetSelectionIndicatorImageNamed:) @_Concurrency.MainActor(unsafe) dynamic public func gxSetSelectionIndicatorImageNamed(_ imageName: Swift.String?)
+}
+extension UIKit.UITabBar {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var backgroundImageGxImage: GXObjectsModel.GXImage? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var selectionIndicatorImageGxImage: GXObjectsModel.GXImage? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setBackgroundImage(_ newValue: UIKit.UIImage?, forCurrentGxImage isCurrentGxImage: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setSelectionIndicatorImage(_ newValue: UIKit.UIImage?, forCurrentGxImage isCurrentGxImage: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setBackgroundImageForCurrentGxImage(_ newValue: UIKit.UIImage?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setSelectionIndicatorImageForCurrentGxImage(_ newValue: UIKit.UIImage?)
+}
+@_inheritsConvenienceInitializers @objc(GXStyleClassWithFontHelper_Swift) public class GXStyleClassWithFontHelper_Swift : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GXCoreUI.GXControlDrawing {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func reuseContextClass() -> Swift.AnyClass
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForReuseViews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func endPrepareForReuseViews()
+}
+@_inheritsConvenienceInitializers @objc(GXActivityIndicatorViewProvidersManager) public class GXActivityIndicatorViewProvidersManager : ObjectiveC.NSObject {
+  @objc public class func register(activityIndicatorViewProvider provider: GXCoreUI.GXActivityIndicatorViewProviderProtocol, forIdentifier identifier: Swift.String)
+  @objc public class func activityIndicatorView(forIdentifier identifier: Swift.String?) -> GXCoreUI.GXActivityIndicatorView
+  @objc public class func activityIndicatorViewWithMessage(forIdentifier identifier: Swift.String?) -> GXCoreUI.GXActivityIndicatorViewWithMessage
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Foundation.Bundle {
+  @objc dynamic public class var gxBundle_CoreUI: Foundation.Bundle {
+    @objc get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class GXCollectionViewCellEntityData : UIKit.UICollectionViewCell, GXCoreUI.GXControlGridItem {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func apply(styleClass: GXObjectsModel.GXStyleClass?, propertyDefaultResolver: GXObjectsModel.GXStyleClassPropertyDefaultResolver?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isSelected: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open func needsHeightAdjustment(forHeightDiff heightDiff: CoreFoundation.CGFloat) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc weak public var gridItemDelegate: GXCoreUI.GXControlGridItemDelegate?
+  @_Concurrency.MainActor(unsafe) @objc public var gridItemView: UIKit.UIView {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc public var gridItemTable: GXCoreUI.GXControlTableGridItem? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc open var gridItemStyleClass: GXObjectsModel.GXStyleClass? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc public var gridItemRelativeSizeForPercentDimension: CoreFoundation.CGSize {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc public var gridItemSelected: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc public func setGridItemSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc public var gridItemHighlightStyle: GXFoundation.GXHighlightStyleType {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc public var gridItemHighlightStyleModifiers: GXCoreUI.GXControlGridItemHighlightStyleModifierFlags {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var gxItemIndexPath: Foundation.IndexPath? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func apply(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes)
+  @objc deinit
+}
+extension GXCoreUI.GXCollectionViewCellEntityData : GXCoreUI.GXControlGridCollectionTableViewCellEntityData {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func initialize(withGridItemTable gridItemTable: GXCoreUI.GXControlTableGridItem, relativeSizeForPercentDimension: CoreFoundation.CGSize)
+}
+@_inheritsConvenienceInitializers @objc(GXEOAppearance) public class GXEOAppearance : GXStandardClasses.GXExternalObjectBase {
+  @objc override dynamic public var externalObjectName: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GXCoreUI.GXEOAppearance {
+  @objc dynamic public var preferredColorScheme: Swift.Int {
+    @objc get
+  }
+}
+extension UIKit.UIImage {
+  @objc(gxDefaultWebCacheImageTransformWithNonNullGXImage) dynamic public class var gxDefaultWebCacheImageTransformWithNonNullGXImage: GXCoreUI.GXImageWebCacheTransformImage {
+    @objc get
+  }
+  @objc(applyingDefaultWebCacheImageTransformWithGXImage:isEmbededImage:) dynamic public func applyingDefaultWebCacheImageTransform(with gxImage: GXObjectsModel.GXImage, isEmbededImage: Swift.Bool) -> UIKit.UIImage
+}
+extension GXCoreUI.GXControlWithLabelBase {
+  @objc override dynamic open func nonThemeClass(_ styleClass: GXObjectsModel.GXStyleClass?, defaultPropertyValue propertyName: GXObjectsModel.GXStyleClass.PropertyName) -> Any?
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func labelStyleClassPropertyDefaultResolver(for styleClass: GXObjectsModel.GXStyleClass?) -> GXObjectsModel.GXStyleClassPropertyDefaultResolver
+  @_Concurrency.MainActor(unsafe) public func labelStyleClass(_ styleClass: GXObjectsModel.GXStyleClass?, defaultPropertyValue propertyName: GXObjectsModel.GXStyleClass.PropertyName) -> Any?
+}
+@objc extension UIKit.UIPickerView : GXCoreUI.GXInlinePickerView {
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class GXControlMulticolumnWheelLabel : GXCoreUI.GXEditorLabelWithPlaceholderAndInputViewBase, UIKit.UIPickerViewDelegate, UIKit.UIPickerViewDataSource {
+  @objc @_Concurrency.MainActor(unsafe) public var picker: UIKit.UIPickerView?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var inlinePicker: (UIKit.UIView & GXCoreUI.GXInlinePickerView)? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public func createPickerIfNeeded() -> UIKit.UIPickerView?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func updateGXControlValueFromPicker()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadPickerValueFromGXControl()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func cleanPicker()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func setupInputView() -> UIKit.UIView
+  @_Concurrency.MainActor(unsafe) @objc public func numberOfComponents(in pickerView: UIKit.UIPickerView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func pickerView(_ pickerView: UIKit.UIPickerView, numberOfRowsInComponent component: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func pickerView(_ pickerView: UIKit.UIPickerView, titleForRow row: Swift.Int, forComponent component: Swift.Int) -> Swift.String?
+  @_Concurrency.MainActor(unsafe) @objc public func pickerView(_ pickerView: UIKit.UIPickerView, didSelectRow row: Swift.Int, inComponent component: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension GXCoreUI.GXControlSmartGridScrollDirection : Swift.Equatable {}
+extension GXCoreUI.GXControlSmartGridScrollDirection : Swift.Hashable {}
+extension GXCoreUI.GXControlSmartGridScrollDirection : Swift.RawRepresentable {}
+extension GXCoreUI.GXControlSmartGridMultipleItems : Swift.Equatable {}
+extension GXCoreUI.GXControlSmartGridMultipleItems : Swift.Hashable {}
+extension GXCoreUI.GXControlSmartGridMultipleItems : Swift.RawRepresentable {}
+extension GXCoreUI.GXActivityIndicatorViewWrappedLayoutStyle : Swift.Equatable {}
+extension GXCoreUI.GXActivityIndicatorViewWrappedLayoutStyle : Swift.Hashable {}
+extension GXCoreUI.GXActivityIndicatorViewWrappedLayoutStyle : Swift.RawRepresentable {}

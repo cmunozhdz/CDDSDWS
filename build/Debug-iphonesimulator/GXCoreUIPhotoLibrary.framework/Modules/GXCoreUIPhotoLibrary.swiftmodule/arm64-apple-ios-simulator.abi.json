@@ -1,0 +1,1792 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "GXCoreUI",
+        "printedName": "GXCoreUI",
+        "declKind": "Import",
+        "moduleName": "GXCoreUIPhotoLibrary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreServices",
+        "printedName": "CoreServices",
+        "declKind": "Import",
+        "moduleName": "GXCoreUIPhotoLibrary"
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreUI",
+        "printedName": "GXCoreUI",
+        "declKind": "Import",
+        "moduleName": "GXCoreUIPhotoLibrary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreUI",
+        "printedName": "GXCoreUI",
+        "declKind": "Import",
+        "moduleName": "GXCoreUIPhotoLibrary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXCoreUIPhotoLibrary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PhotosUI",
+        "printedName": "PhotosUI",
+        "declKind": "Import",
+        "moduleName": "GXCoreUIPhotoLibrary"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXImagePickerControllerHelper",
+        "printedName": "GXImagePickerControllerHelper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "optionalNewImagePickerController",
+            "printedName": "optionalNewImagePickerController(with:mediaType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "UIKit.UIViewController & GXCoreUI.GXUIImagePickerController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SourceType",
+                "printedName": "UIKit.UIImagePickerController.SourceType",
+                "usr": "c:@E@UIImagePickerControllerSourceType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)GXImagePickerControllerHelper(cm)optionalNewImagePickerControllerWithSourceType:mediaType:error:",
+            "mangledName": "$sSo29GXImagePickerControllerHelperC20GXCoreUIPhotoLibraryE016optionalNewImagebC04with9mediaTypeSo09GXUIImagebC0_So06UIViewC0CXcSo07UIImagebc6SourceM0V_SStKFZ",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "static": true,
+            "objc_name": "optionalNewImagePickerControllerWithSourceType:mediaType:error:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "optionalNewEntityDataFieldImagePicker",
+            "printedName": "optionalNewEntityDataFieldImagePicker(withEntityData:fieldDescriptor:fieldSpecifier:indexer:sourceType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "UIKit.UIViewController & GXCoreUI.GXEntityDataFieldImagePickerProtocol"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GXEntityDataWithOverrideValues",
+                "printedName": "GXObjectsModel.GXEntityDataWithOverrideValues",
+                "usr": "c:objc(pl)GXEntityDataWithOverrideValues"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GXEntityDataFieldDescriptor",
+                "printedName": "GXObjectsModel.GXEntityDataFieldDescriptor",
+                "usr": "c:objc(pl)GXEntityDataFieldDescriptor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SourceType",
+                "printedName": "UIKit.UIImagePickerController.SourceType",
+                "usr": "c:@E@UIImagePickerControllerSourceType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)GXImagePickerControllerHelper(cm)optionalNewEntityDataFieldImagePickerWithEntityData:fieldDescriptor:fieldSpecifier:indexer:sourceType:error:",
+            "mangledName": "$sSo29GXImagePickerControllerHelperC20GXCoreUIPhotoLibraryE031optionalNewEntityDataFieldImageB004withjK015fieldDescriptor0O9Specifier7indexer10sourceType0E2UI08GXEntityklmB8Protocol_So06UIViewC0CXcSo0vK18WithOverrideValues_p_So0vklP0_pSSSgSayypGSgSo07UIImagebc6SourceT0VtKFZ",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "static": true,
+            "objc_name": "optionalNewEntityDataFieldImagePickerWithEntityData:fieldDescriptor:fieldSpecifier:indexer:sourceType:error:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)GXImagePickerControllerHelper",
+        "moduleName": "GXCoreUI",
+        "isOpen": true,
+        "objc_name": "GXImagePickerControllerHelper",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIImagePickerController",
+        "printedName": "UIImagePickerController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "imagePickerDelegate",
+            "printedName": "imagePickerDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(UIKit.UIImagePickerControllerDelegate & UIKit.UINavigationControllerDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "UIKit.UIImagePickerControllerDelegate & UIKit.UINavigationControllerDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerDelegate",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB8DelegateSo0abcH0_So012UINavigationcH0pSgvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerDelegate",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(UIKit.UIImagePickerControllerDelegate & UIKit.UINavigationControllerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "UIKit.UIImagePickerControllerDelegate & UIKit.UINavigationControllerDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerDelegate",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB8DelegateSo0abcH0_So012UINavigationcH0pSgvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerDelegate",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(UIKit.UIImagePickerControllerDelegate & UIKit.UINavigationControllerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "UIKit.UIImagePickerControllerDelegate & UIKit.UINavigationControllerDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerDelegate:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB8DelegateSo0abcH0_So012UINavigationcH0pSgvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerDelegate:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imagePickerSourceType",
+            "printedName": "imagePickerSourceType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SourceType",
+                "printedName": "UIKit.UIImagePickerController.SourceType",
+                "usr": "c:@E@UIImagePickerControllerSourceType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerSourceType",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB10SourceTypeSo0abchI0Vvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerSourceType",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SourceType",
+                    "printedName": "UIKit.UIImagePickerController.SourceType",
+                    "usr": "c:@E@UIImagePickerControllerSourceType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerSourceType",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB10SourceTypeSo0abchI0Vvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerSourceType",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SourceType",
+                    "printedName": "UIKit.UIImagePickerController.SourceType",
+                    "usr": "c:@E@UIImagePickerControllerSourceType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerSourceType:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB10SourceTypeSo0abchI0Vvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerSourceType:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imagePickerMediaTypes",
+            "printedName": "imagePickerMediaTypes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerMediaTypes",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB10MediaTypesSaySSGvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerMediaTypes",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerMediaTypes",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB10MediaTypesSaySSGvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerMediaTypes",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerMediaTypes:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB10MediaTypesSaySSGvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerMediaTypes:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imagePickerAllowsEditing",
+            "printedName": "imagePickerAllowsEditing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerAllowsEditing",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB13AllowsEditingSbvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerAllowsEditing",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerAllowsEditing",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB13AllowsEditingSbvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerAllowsEditing",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerAllowsEditing:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB13AllowsEditingSbvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerAllowsEditing:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imagePickerImageExportPreset",
+            "printedName": "imagePickerImageExportPreset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageURLExportPreset",
+                "printedName": "UIKit.UIImagePickerController.ImageURLExportPreset",
+                "usr": "c:@E@UIImagePickerControllerImageURLExportPreset"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerImageExportPreset",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB17ImageExportPresetSo0abch9URLExportJ0Vvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "intro_iOS": "11.0",
+            "objc_name": "imagePickerImageExportPreset",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImageURLExportPreset",
+                    "printedName": "UIKit.UIImagePickerController.ImageURLExportPreset",
+                    "usr": "c:@E@UIImagePickerControllerImageURLExportPreset"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerImageExportPreset",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB17ImageExportPresetSo0abch9URLExportJ0Vvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerImageExportPreset",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImageURLExportPreset",
+                    "printedName": "UIKit.UIImagePickerController.ImageURLExportPreset",
+                    "usr": "c:@E@UIImagePickerControllerImageURLExportPreset"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerImageExportPreset:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB17ImageExportPresetSo0abch9URLExportJ0Vvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerImageExportPreset:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imagePickerVideoMaximumDuration",
+            "printedName": "imagePickerVideoMaximumDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerVideoMaximumDuration",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB20VideoMaximumDurationSdvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerVideoMaximumDuration",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerVideoMaximumDuration",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB20VideoMaximumDurationSdvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerVideoMaximumDuration",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerVideoMaximumDuration:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB20VideoMaximumDurationSdvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerVideoMaximumDuration:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imagePickerVideoQuality",
+            "printedName": "imagePickerVideoQuality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QualityType",
+                "printedName": "UIKit.UIImagePickerController.QualityType",
+                "usr": "c:@E@UIImagePickerControllerQualityType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerVideoQuality",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB12VideoQualitySo0abcI4TypeVvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerVideoQuality",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QualityType",
+                    "printedName": "UIKit.UIImagePickerController.QualityType",
+                    "usr": "c:@E@UIImagePickerControllerQualityType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerVideoQuality",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB12VideoQualitySo0abcI4TypeVvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerVideoQuality",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QualityType",
+                    "printedName": "UIKit.UIImagePickerController.QualityType",
+                    "usr": "c:@E@UIImagePickerControllerQualityType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerVideoQuality:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB12VideoQualitySo0abcI4TypeVvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerVideoQuality:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imagePickerVideoExportPreset",
+            "printedName": "imagePickerVideoExportPreset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerVideoExportPreset",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB17VideoExportPresetSSvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "intro_iOS": "11.0",
+            "objc_name": "imagePickerVideoExportPreset",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerVideoExportPreset",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB17VideoExportPresetSSvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerVideoExportPreset",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerVideoExportPreset:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB17VideoExportPresetSSvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerVideoExportPreset:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imagePickerShowsCameraControls",
+            "printedName": "imagePickerShowsCameraControls",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerShowsCameraControls",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB19ShowsCameraControlsSbvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerShowsCameraControls",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerShowsCameraControls",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB19ShowsCameraControlsSbvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerShowsCameraControls",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerShowsCameraControls:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB19ShowsCameraControlsSbvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerShowsCameraControls:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imagePickerCameraOverlayView",
+            "printedName": "imagePickerCameraOverlayView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerCameraOverlayView",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB17CameraOverlayViewSo6UIViewCSgvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerCameraOverlayView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerCameraOverlayView",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB17CameraOverlayViewSo6UIViewCSgvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerCameraOverlayView",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerCameraOverlayView:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB17CameraOverlayViewSo6UIViewCSgvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerCameraOverlayView:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imagePickerCameraViewTransform",
+            "printedName": "imagePickerCameraViewTransform",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGAffineTransform",
+                "printedName": "CoreFoundation.CGAffineTransform",
+                "usr": "c:@S@CGAffineTransform"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerCameraViewTransform",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB19CameraViewTransformSo08CGAffineJ0Vvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerCameraViewTransform",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGAffineTransform",
+                    "printedName": "CoreFoundation.CGAffineTransform",
+                    "usr": "c:@S@CGAffineTransform"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerCameraViewTransform",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB19CameraViewTransformSo08CGAffineJ0Vvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerCameraViewTransform",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGAffineTransform",
+                    "printedName": "CoreFoundation.CGAffineTransform",
+                    "usr": "c:@S@CGAffineTransform"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerCameraViewTransform:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB19CameraViewTransformSo08CGAffineJ0Vvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerCameraViewTransform:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "imagePickerTakePicture",
+            "printedName": "imagePickerTakePicture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerTakePicture",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB11TakePictureyyF",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerTakePicture",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "imagePickerStartVideoCapture",
+            "printedName": "imagePickerStartVideoCapture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerStartVideoCapture",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB17StartVideoCaptureSbyF",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerStartVideoCapture",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "imagePickerStopVideoCapture",
+            "printedName": "imagePickerStopVideoCapture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerStopVideoCapture",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB16StopVideoCaptureyyF",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerStopVideoCapture",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "imagePickerCameraCaptureMode",
+            "printedName": "imagePickerCameraCaptureMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraCaptureMode",
+                "printedName": "UIKit.UIImagePickerController.CameraCaptureMode",
+                "usr": "c:@E@UIImagePickerControllerCameraCaptureMode"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerCameraCaptureMode",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB17CameraCaptureModeSo0abchiJ0Vvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerCameraCaptureMode",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraCaptureMode",
+                    "printedName": "UIKit.UIImagePickerController.CameraCaptureMode",
+                    "usr": "c:@E@UIImagePickerControllerCameraCaptureMode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerCameraCaptureMode",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB17CameraCaptureModeSo0abchiJ0Vvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerCameraCaptureMode",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraCaptureMode",
+                    "printedName": "UIKit.UIImagePickerController.CameraCaptureMode",
+                    "usr": "c:@E@UIImagePickerControllerCameraCaptureMode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerCameraCaptureMode:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB17CameraCaptureModeSo0abchiJ0Vvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerCameraCaptureMode:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imagePickerCameraDevice",
+            "printedName": "imagePickerCameraDevice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraDevice",
+                "printedName": "UIKit.UIImagePickerController.CameraDevice",
+                "usr": "c:@E@UIImagePickerControllerCameraDevice"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerCameraDevice",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB12CameraDeviceSo0abchI0Vvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerCameraDevice",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraDevice",
+                    "printedName": "UIKit.UIImagePickerController.CameraDevice",
+                    "usr": "c:@E@UIImagePickerControllerCameraDevice"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerCameraDevice",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB12CameraDeviceSo0abchI0Vvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerCameraDevice",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraDevice",
+                    "printedName": "UIKit.UIImagePickerController.CameraDevice",
+                    "usr": "c:@E@UIImagePickerControllerCameraDevice"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerCameraDevice:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB12CameraDeviceSo0abchI0Vvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerCameraDevice:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imagePickerCameraFlashMode",
+            "printedName": "imagePickerCameraFlashMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraFlashMode",
+                "printedName": "UIKit.UIImagePickerController.CameraFlashMode",
+                "usr": "c:@E@UIImagePickerControllerCameraFlashMode"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(py)imagePickerCameraFlashMode",
+            "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB15CameraFlashModeSo0abchiJ0Vvp",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "imagePickerCameraFlashMode",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraFlashMode",
+                    "printedName": "UIKit.UIImagePickerController.CameraFlashMode",
+                    "usr": "c:@E@UIImagePickerControllerCameraFlashMode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)imagePickerCameraFlashMode",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB15CameraFlashModeSo0abchiJ0Vvg",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "imagePickerCameraFlashMode",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraFlashMode",
+                    "printedName": "UIKit.UIImagePickerController.CameraFlashMode",
+                    "usr": "c:@E@UIImagePickerControllerCameraFlashMode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)UIImagePickerController(im)setImagePickerCameraFlashMode:",
+                "mangledName": "$sSo23UIImagePickerControllerC20GXCoreUIPhotoLibraryE05imageB15CameraFlashModeSo0abchiJ0Vvs",
+                "moduleName": "GXCoreUIPhotoLibrary",
+                "objc_name": "setImagePickerCameraFlashMode:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIImagePickerController",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIImagePickerController",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UINavigationController",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UINavigationController",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PHPickerViewController",
+        "printedName": "PHPickerViewController",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "gxAllowsModalPresentation",
+            "printedName": "gxAllowsModalPresentation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)PHPickerViewController(im)gxAllowsModalPresentation",
+            "mangledName": "$sSo22PHPickerViewControllerC20GXCoreUIPhotoLibraryE25gxAllowsModalPresentationSbyF",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "gxAllowsModalPresentation",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "gxAllowsPopupPresentation",
+            "printedName": "gxAllowsPopupPresentation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)PHPickerViewController(im)gxAllowsPopupPresentation",
+            "mangledName": "$sSo22PHPickerViewControllerC20GXCoreUIPhotoLibraryE25gxAllowsPopupPresentationSbyF",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "gxAllowsPopupPresentation",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "gxAllowsNavigationControllerPresentation",
+            "printedName": "gxAllowsNavigationControllerPresentation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)PHPickerViewController(im)gxAllowsNavigationControllerPresentation",
+            "mangledName": "$sSo22PHPickerViewControllerC20GXCoreUIPhotoLibraryE018gxAllowsNavigationC12PresentationSbyF",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "gxAllowsNavigationControllerPresentation",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "gxDismissObservingSupportsDealloc",
+            "printedName": "gxDismissObservingSupportsDealloc()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GXCoreUIPhotoLibrary@@objc(cs)PHPickerViewController(im)gxDismissObservingSupportsDealloc",
+            "mangledName": "$sSo22PHPickerViewControllerC20GXCoreUIPhotoLibraryE33gxDismissObservingSupportsDeallocSbyF",
+            "moduleName": "GXCoreUIPhotoLibrary",
+            "objc_name": "gxDismissObservingSupportsDealloc",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)PHPickerViewController",
+        "moduleName": "PhotosUI",
+        "intro_iOS": "14",
+        "objc_name": "PHPickerViewController",
+        "declAttributes": [
+          "Custom",
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "GXEntityDataFieldImagePickerProtocol",
+            "printedName": "GXEntityDataFieldImagePickerProtocol",
+            "usr": "c:@M@GXCoreUI@objc(pl)GXEntityDataFieldImagePickerProtocol",
+            "mangledName": "$s8GXCoreUI36GXEntityDataFieldImagePickerProtocolP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

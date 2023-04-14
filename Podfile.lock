@@ -1,0 +1,20 @@
+PODS:
+  - lottie-ios (3.5.0)
+  - OpenCV (3.4.6)
+
+DEPENDENCIES:
+  - lottie-ios (~> 3.5)
+  - OpenCV (~> 3.2)
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+    - OpenCV
+
+SPEC CHECKSUMS:
+  lottie-ios: c55158d67d0629a260625cc2ded2052b829e3c3e
+  OpenCV: 1df7b8ab75900ef4365905b989bf60f5ca4101aa
+
+PODFILE CHECKSUM: c205499807197cd2f59c609bfb1c4968a4787a6f
+
+COCOAPODS: 1.11.3

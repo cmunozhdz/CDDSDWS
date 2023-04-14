@@ -1,0 +1,133 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXCoreModule_SD_DeviceAuthentication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreBL",
+        "printedName": "GXCoreBL",
+        "declKind": "Import",
+        "moduleName": "GXCoreModule_SD_DeviceAuthentication"
+      },
+      {
+        "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "GXCoreModule_SD_DeviceAuthentication"
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreBL",
+        "printedName": "GXCoreBL",
+        "declKind": "Import",
+        "moduleName": "GXCoreModule_SD_DeviceAuthentication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXCoreModule_SD_DeviceAuthentication"
+      },
+      {
+        "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "GXCoreModule_SD_DeviceAuthentication"
+      },
+      {
+        "kind": "Import",
+        "name": "GXCoreBL",
+        "printedName": "GXCoreBL",
+        "declKind": "Import",
+        "moduleName": "GXCoreModule_SD_DeviceAuthentication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXCoreModule_SD_DeviceAuthentication\/GXCoreModule_SD_DeviceAuthentication\/GXActionExObjDeviceAuthenticationHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 339,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXCoreModule_SD_DeviceAuthentication\/GXCoreModule_SD_DeviceAuthentication\/GXActionExObjDeviceAuthenticationHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 360,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXCoreModule_SD_DeviceAuthentication\/GXCoreModule_SD_DeviceAuthentication\/GXActionExObjDeviceAuthenticationHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 339,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXCoreModule_SD_DeviceAuthentication\/GXCoreModule_SD_DeviceAuthentication\/GXActionExObjDeviceAuthenticationHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 360,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXCoreModule_SD_DeviceAuthentication\/GXCoreModule_SD_DeviceAuthentication\/GXActionExObjDeviceAuthenticationHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 339,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXCoreModule_SD_DeviceAuthentication\/GXCoreModule_SD_DeviceAuthentication\/GXActionExObjDeviceAuthenticationHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 360,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXCoreModule_SD_DeviceAuthentication\/GXCoreModule_SD_DeviceAuthentication\/GXActionExObjDeviceAuthenticationHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 763,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXCoreModule_SD_DeviceAuthentication\/GXCoreModule_SD_DeviceAuthentication\/GXActionExObjDeviceAuthenticationHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 787,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXCoreModule_SD_DeviceAuthentication\/GXCoreModule_SD_DeviceAuthentication\/GXActionExObjDeviceAuthenticationHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 726,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

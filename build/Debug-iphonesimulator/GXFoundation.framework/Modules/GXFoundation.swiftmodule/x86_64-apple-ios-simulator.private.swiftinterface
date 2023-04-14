@@ -1,0 +1,1156 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GXFoundation
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CoreLocation
+import Foundation
+@_exported import GXFoundation
+import MapKit
+import MobileCoreServices
+import Network
+import ObjectiveC
+import Swift
+import SystemConfiguration
+import UIKit
+import UniformTypeIdentifiers
+import WatchConnectivity
+import YAJL
+import _Concurrency
+import _StringProcessing
+@objc public protocol GXLogListener : ObjectiveC.NSObjectProtocol {
+  @objc(logListenerNotifyMessage:) func logListenerNotifyMessage(_ message: Swift.String)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GXLog : ObjectiveC.NSObject {
+  @objc(isLogEnabled) public class func isLogEnabled() -> Swift.Bool
+  @objc(logInConsole) public class var logInConsole: Swift.Bool {
+    @objc get
+  }
+  @objc(logInFileEnabled) public class var logInFileEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc(isLogRequestsEnabled) public class func isLogRequestsEnabled() -> Swift.Bool
+  @objc(isLogResponsesEnabled) public class func isLogResponsesEnabled() -> Swift.Bool
+  @objc(isLogResponsesBodyEnabled) public class func isLogResponsesBodyEnabled() -> Swift.Bool
+  @objc(logMessage:) public class func logMessage(_ message: Swift.String)
+  public class func log(format: Swift.String, _ args: Swift.CVarArg...)
+  @objc(logJSONObject:withTitle:) public class func logJSONObject(_ object: Any, withTitle title: Swift.String)
+  @objc(logURLRequestIfEnabled:) public class func logURLRequestIfEnabled(_ request: Foundation.URLRequest)
+  @objc(logURLResponseIfEnabled:request:data:) public class func logURLResponseIfEnabled(_ response: Foundation.URLResponse, request: Foundation.URLRequest, data: Foundation.Data?)
+  @objc(logURLResponseIfEnabled:request:dataPath:) public class func logURLResponseIfEnabled(_ response: Foundation.URLResponse, request: Foundation.URLRequest, dataPath: Swift.String)
+  @objc(logJSONParserElementIfEnabled:) public class func logJSONParserElementIfEnabled(_ element: Any)
+  public class func logJSONParserElementIfEnabled(element: @autoclosure () -> Any)
+  @objc(clearLog) public class func clear()
+  @objc(logString) public class func logString() -> Swift.String?
+  @objc(addListener:) public class func add(_ listener: GXFoundation.GXLogListener)
+  @objc(removeListener:) public class func remove(_ listener: GXFoundation.GXLogListener)
+  @objc deinit
+}
+extension GXFoundation.GXLog {
+  @objc(loggerService) dynamic public class func loggerService() -> GXFoundation.GXLoggerService!
+}
+extension MapKit.MKCoordinateRegion {
+  public var isValid: Swift.Bool {
+    get
+  }
+}
+extension Foundation.NSError {
+  @objc dynamic public class func userCancelledError() -> Foundation.NSError
+  @objc dynamic public class func userCancelledError(withUnderlyingError underlyingError: Swift.Error?) -> Foundation.NSError
+  @objc dynamic public class func loopExitError() -> Foundation.NSError
+  @objc dynamic public class func defaultGXError() -> Foundation.NSError
+  @objc dynamic public class func defaultGXError(withDeveloperDescription description: Swift.String) -> Foundation.NSError
+  @objc dynamic public class func defaultGXError(withDeveloperDescription description: Swift.String, userInfo: [Swift.String : Any]?) -> Foundation.NSError
+  @objc dynamic public class func fatalGXError(withDeveloperDescription description: Swift.String) -> Foundation.NSError
+  @objc(errorWithDomain:code:developerDescription:) dynamic public class func error(withDomain domain: Swift.String, code: Swift.Int, developerDescription description: Swift.String) -> Foundation.NSError
+  @objc(errorWithDomain:code:developerDescription:userInfo:) dynamic public class func error(withDomain domain: Swift.String, code: Swift.Int, developerDescription description: Swift.String, userInfo: [Swift.String : Any]?) -> Foundation.NSError
+  convenience public init(domain: Swift.String, code: Swift.Int, developerDescription description: Swift.String, userInfo: [Swift.String : Any]? = nil)
+  @objc dynamic public class func defaultGXError(withLocalizedDescription description: Swift.String?) -> Foundation.NSError
+  @objc dynamic public class func defaultGXError(withCode code: Swift.Int, localizedDescription description: Swift.String?) -> Foundation.NSError
+  @objc(errorWithDomain:code:localizedDescription:) dynamic public class func error(withDomain domain: Swift.String, code: Swift.Int, localizedDescription description: Swift.String) -> Foundation.NSError
+  convenience public init(domain: Swift.String, code: Swift.Int, localizedDescription description: Swift.String?)
+  @objc(errorForHTTPURLResponseStatusCode:) dynamic public class func error(forHTTPURLResponseStatusCode statusCode: Swift.Int) -> Foundation.NSError
+  convenience public init(HTTPURLResponseStatusCode statusCode: Swift.Int)
+  @objc dynamic public class func loginCanceledError() -> Foundation.NSError
+  @objc dynamic public class func notAutorizedError(withDescription desc: Swift.String?) -> Foundation.NSError
+  @objc dynamic public class func wrongNumberOfParametersDeveloperError(forMethod methodName: Swift.String) -> Foundation.NSError
+  @objc dynamic public class func wrongNumberOfParametersDeveloperError(forMethod methodName: Swift.String, received: Swift.Int, expected: Swift.Int) -> Foundation.NSError
+  @objc dynamic public class func permissionDeniedErrorWithGoToSettingsRecoveryAttempter() -> Foundation.NSError
+  @objc dynamic public class func permissionDeniedErrorWithGo(toSettingsRecoveryAttempter settingsLocalizedRecoveryOption: Swift.String?, localizedDescription: Swift.String?, localizedRecoverySuggestion: Swift.String?) -> Foundation.NSError
+  @objc dynamic public class func posixError(_ err: Swift.Int32) -> Foundation.NSError
+}
+extension Foundation.NSError {
+  @objc dynamic public func userInfoLocalizedDescription() -> Swift.String?
+  @objc dynamic public func hasUserInfoLocalizedDescription() -> Swift.Bool
+  @objc dynamic public var gxDeveloperDescription: Swift.String? {
+    @objc get
+  }
+  @discardableResult
+  @objc dynamic public func logLocalizedDescriptionIfShowDeveloperInfoIsEnabled() -> Swift.Bool
+  @objc dynamic public func isUserCancelledError() -> Swift.Bool
+  @objc dynamic public func isLoopExitError() -> Swift.Bool
+  @objc dynamic public func isNotConnectedToInternetError() -> Swift.Bool
+  @objc dynamic public func isLoginCanceledError() -> Swift.Bool
+  @objc dynamic public func isNotAuthorizedError() -> Swift.Bool
+  @objc dynamic public func isNetworkPossibleError() -> Swift.Bool
+  @objc(gxErrCodeFromError:) dynamic public class func gxErrCode(from error: Foundation.NSError?) -> GXFoundation.GXErrCode
+  @objc dynamic public var gxErrCode: GXFoundation.GXErrCode {
+    @objc get
+  }
+}
+extension GXFoundation.GXUtilities {
+  @objc public static let flexibleClientVersion: Swift.String
+  @objc dynamic public class func numericRepresentation(fromVersionString version: Swift.String) -> Swift.UInt
+  @objc dynamic public class func comparaVersionString(_ version1: Swift.String, toVersion version2: Swift.String) -> Foundation.ComparisonResult
+}
+extension Foundation.NSString {
+  @objc(gxStringWithOnlyFirstLetterCapitalized) dynamic public func gxStringWithOnlyFirstLetterCapitalized() -> Swift.String
+}
+extension Swift.String {
+  public var gxOnlyFirstLetterCapitalized: Swift.String {
+    get
+  }
+}
+@objc(GXInvocationWithSelfOperation) open class GXInvocationWithSelfOperation : Foundation.Operation {
+  @objc public var hasReturnValue: Swift.Bool
+  @objc public var result: Swift.AnyObject? {
+    @objc get
+  }
+  @objc public var context: Any?
+  @objc required public init(target: Swift.AnyObject, selector sel: ObjectiveC.Selector)
+  @objc override dynamic public func main()
+  @objc deinit
+}
+extension Swift.Collection where Self.Element : ObjectiveC.NSObjectProtocol {
+  public func dictionary(withSelectorForKeys keySelector: ObjectiveC.Selector) -> [Swift.AnyHashable : Self.Element]
+  public func map(with selector: ObjectiveC.Selector) -> [Swift.AnyObject]
+}
+extension Swift.Sequence {
+  public func compactMapFirst<T>(transform: (Self.Element) throws -> T?) rethrows -> T?
+}
+extension Swift.Collection {
+  public func dictionary<T>(withBlockForKeys block: (_ element: Self.Element) -> T) -> [T : Self.Element] where T : Swift.Hashable
+  public func last(where block: (_ element: Self.Element) throws -> Swift.Bool) rethrows -> Self.Element?
+  public func compactMapLast<T>(transform: (Self.Element) throws -> T?) rethrows -> T?
+}
+extension Swift.Array where Element : Swift.Equatable {
+  public func removing(element: Element) -> Swift.Array<Element>
+  @inlinable public init(withCapacity capacity: Swift.Int) {
+		self.init()
+		
+		self.reserveCapacity(capacity)
+	}
+}
+extension Swift.Array where Element : AnyObject {
+  public func removing(identicalElement element: Element) -> Swift.Array<Element>
+}
+extension Swift.Collection where Self.Element : Swift.Sequence {
+  public var flatten: [Self.Element.Element] {
+    get
+  }
+}
+extension Foundation.NSNumber {
+  @objc(gxIsInteger) dynamic public func gxIsInteger() -> Swift.Bool
+  @objc(gxNumberRoundedToDecimals:) dynamic public func gxNumberRounded(toDecimals dec: Foundation.NSNumber?) -> Foundation.NSDecimalNumber
+  @objc(gxNumberRoundedToDecimalsInt:) dynamic public func gxNumberRounded(toDecimals dec: Swift.Int) -> Foundation.NSDecimalNumber
+  @objc(gxNumberRoundedToEvenDecimals:) dynamic public func gxNumberRounded(toEvenDecimals dec: Foundation.NSNumber?) -> Foundation.NSDecimalNumber
+  @objc(gxNumberRoundedToEvenDecimalsInt:) dynamic public func gxNumberRounded(toEvenDecimals dec: Swift.Int) -> Foundation.NSDecimalNumber
+  @objc(gxNumberTruncatedToDecimals:) dynamic public func gxNumberTruncated(toDecimals dec: Foundation.NSNumber?) -> Foundation.NSDecimalNumber
+  @objc(gxNumberTruncatedToDecimalsInt:) dynamic public func gxNumberTruncated(toDecimals dec: Swift.Int) -> Foundation.NSDecimalNumber
+}
+extension Foundation.Decimal {
+  public func gxRoundedToDecimals(_ decimals: Swift.Int) -> Foundation.Decimal
+  public func gxRoundedToEvenDecimals(_ decimals: Swift.Int) -> Foundation.Decimal
+  public func gxTruncatedToDecimals(_ decimals: Swift.Int) -> Foundation.Decimal
+}
+@objc(GXAlertMessageService) public protocol GXAlertMessageService : ObjectiveC.NSObjectProtocol {
+  @objc(showMessage:) func showMessage(_ message: Swift.String)
+  @objc(showMessages:) func showMessages(_ messages: [Swift.String])
+  @objc(showMessage:completion:dismissedHandler:) func showMessage(_ message: Swift.String, completion: (() -> Swift.Void)?, dismissedHandler: (() -> Swift.Void)?)
+  @objc(showMessages:completion:dismissedHandler:) func showMessages(_ messages: [Swift.String], completion: (() -> Swift.Void)?, dismissedHandler: (() -> Swift.Void)?)
+  @objc(showAlertWithTitle:message:) func showAlert(withTitle alertTitle: Swift.String?, message alertMsg: Swift.String?)
+  @objc(showAlertWithTitle:message:completion:dismissedHandler:) func showAlert(withTitle alertTitle: Swift.String?, message alertMsg: Swift.String?, completion: (() -> Swift.Void)?, dismissedHandler: (() -> Swift.Void)?)
+  @objc(showAlertForError:) func showAlert(forError error: Swift.Error?)
+  @objc(showAlertForError:completion:dismissedHandler:) func showAlert(forError error: Swift.Error?, completion: (() -> Swift.Void)?, dismissedHandler: (() -> Swift.Void)?)
+}
+@objc(GXPropertiesObject) public protocol GXPropertiesObjectProtocol : ObjectiveC.NSObjectProtocol {
+  @objc func getPropertyValue(_ propertyName: Swift.String) -> Any?
+  @objc func getPropertyValueBool(_ propertyName: Swift.String) -> Swift.Bool
+  @objc func getPropertyValueBool(_ propertyName: Swift.String, defaultValue: Swift.Bool) -> Swift.Bool
+  @objc func getPropertyValueInteger(_ propertyName: Swift.String) -> Swift.Int
+  @objc func getPropertyValueFloat(_ propertyName: Swift.String) -> CoreFoundation.CGFloat
+  @objc func getPropertyValueString(_ propertyName: Swift.String) -> Swift.String?
+  @objc func getPropertyValueColor(_ propertyName: Swift.String) -> UIKit.UIColor?
+}
+@objc(GXCodingPropertiesObject) public protocol GXCodingPropertiesObjectProtocol : Foundation.NSCoding, GXFoundation.GXPropertiesObjectProtocol {
+  @objc func getCodingPropertyValue(_ propertyName: Swift.String) -> Foundation.NSCoding?
+}
+@objc(GXMutablePropertiesObject) public protocol GXMutablePropertiesObjectProtocol : GXFoundation.GXPropertiesObjectProtocol {
+  @objc func setPropertyValue(_ value: Any?, forPropertyName propertyName: Swift.String)
+  @objc func removePropertyFoPropertyName(_ propertyName: Swift.String)
+  @objc func setBoolProperty(_ value: Swift.Bool, forPropertyName propertyName: Swift.String)
+  @objc func setIntegerProperty(_ value: Swift.Int, forPropertyName propertyName: Swift.String)
+  @objc func setFloatProperty(_ value: CoreFoundation.CGFloat, forPropertyName propertyName: Swift.String)
+}
+@objc(GXMutableCodingPropertiesObject) public protocol GXMutableCodingPropertiesObjectProtocol : GXFoundation.GXCodingPropertiesObjectProtocol, GXFoundation.GXMutablePropertiesObjectProtocol {
+  @objc func setCodingPropertyValue(_ value: Foundation.NSCoding?, forPropertyName propertyName: Swift.String)
+}
+extension Foundation.NSString {
+  @objc(xmlSimpleEscapeString) dynamic public func xmlSimpleEscapeString() -> Swift.String
+  @objc(xmlSimpleUnescapeString) dynamic public func xmlSimpleUnescapeString() -> Swift.String
+}
+extension Foundation.NSMutableString {
+  @objc(xmlSimpleEscape) dynamic public func xmlSimpleEscape()
+  @objc(xmlSimpleUnescape) dynamic public func xmlSimpleUnescape()
+}
+extension Swift.String {
+  public var xmlSimpleEscape: Swift.String {
+    get
+  }
+  public var xmlSimpleUnescape: Swift.String {
+    get
+  }
+}
+extension Foundation.URLSession {
+  @objc dynamic public class func gxMayBeLocalNetworkPermissionError(_ error: Swift.Error, forURL url: Foundation.URL) -> Swift.Bool
+  @objc(gxDataTaskWaitingForPermissionWithRequest:completionHandler:onRetryWaitingTaskCreated:) dynamic public func gxDataTaskWaitingForPermission(with request: Foundation.URLRequest, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void, onRetryWaitingTaskCreated retryWaitingTaskCreatedHandler: ((Foundation.URLSessionDataTask) -> Swift.Void)? = nil) -> Foundation.URLSessionDataTask
+  @objc(gxDataTaskWaitingForPermissionWithURL:completionHandler:onRetryWaitingTaskCreated:) dynamic public func gxDataTaskWaitingForPermission(with url: Foundation.URL, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void, onRetryWaitingTaskCreated retryWaitingTaskCreatedHandler: ((Foundation.URLSessionDataTask) -> Swift.Void)? = nil) -> Foundation.URLSessionDataTask
+  @objc(gxUploadTaskWaitingForPermissionWithRequest:fromFile:completionHandler:onRetryWaitingTaskCreated:) dynamic public func gxUploadTaskWaitingForPermission(with request: Foundation.URLRequest, fromFile fileURL: Foundation.URL, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void, onRetryWaitingTaskCreated retryWaitingTaskCreatedHandler: ((Foundation.URLSessionDataTask) -> Swift.Void)? = nil) -> Foundation.URLSessionUploadTask
+  @objc(gxUploadTaskWaitingForPermissionWithRequest:from:completionHandler:onRetryWaitingTaskCreated:) dynamic public func gxUploadTaskWaitingForPermission(with request: Foundation.URLRequest, from bodyData: Foundation.Data?, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void, onRetryWaitingTaskCreated retryWaitingTaskCreatedHandler: ((Foundation.URLSessionDataTask) -> Swift.Void)? = nil) -> Foundation.URLSessionUploadTask
+  @objc(gxDownloadTaskWaitingForPermissionWithRequest:completionHandler:onRetryWaitingTaskCreated:) dynamic public func gxDownloadTaskWaitingForPermission(with request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URL?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void, onRetryWaitingTaskCreated retryWaitingTaskCreatedHandler: ((Foundation.URLSessionDownloadTask) -> Swift.Void)? = nil) -> Foundation.URLSessionDownloadTask
+  @objc(gxDownloadTaskWaitingForPermissionWithURL:completionHandler:onRetryWaitingTaskCreated:) dynamic public func gxDownloadTaskWaitingForPermission(with url: Foundation.URL, completionHandler: @escaping (Foundation.URL?, Foundation.URLResponse?, Swift.Error?) -> Swift.Void, onRetryWaitingTaskCreated retryWaitingTaskCreatedHandler: ((Foundation.URLSessionDownloadTask) -> Swift.Void)? = nil) -> Foundation.URLSessionDownloadTask
+}
+@objc public enum GXLoggerType : Swift.Int {
+  case general
+  case network
+  case synchronization
+  case database
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum GXLoggerLevel : Swift.Int {
+  case off
+  case always
+  case fatal
+  case error
+  case warning
+  case info
+  case debug
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol GXLoggerService : ObjectiveC.NSObjectProtocol {
+  @objc func startLogging()
+  @objc func endLogging()
+  @objc var isLogEnabled: Swift.Bool { get }
+  @objc(logLevelForType:) func logLevel(for type: GXFoundation.GXLoggerType) -> GXFoundation.GXLoggerLevel
+  @objc(logMessage:forType:withLevel:logToConsole:) func logMessage(_ message: Swift.String, for type: GXFoundation.GXLoggerType, with level: GXFoundation.GXLoggerLevel, logToConsole: Swift.Bool)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GXExecutionEnvironmentHelper) public class GXExecutionEnvironmentHelper : ObjectiveC.NSObject {
+  @objc deinit
+}
+extension GXFoundation.GXExecutionEnvironmentHelper {
+  @objc dynamic public class var applicationState: GXFoundation.GXApplicationStateType {
+    @objc get
+  }
+  @objc(transitioningFromBackgroundToForeground) dynamic public class var isTransitioningFromBackgroundToForeground: Swift.Bool {
+    @objc(isTransitioningFromBackgroundToForeground) get
+  }
+  @objc dynamic public class func activeStateNotificationsSupported() -> Swift.Bool
+  @objc dynamic public class var currentContextDidBecomeActiveNotification: Swift.String? {
+    @objc get
+  }
+  public class var currentContextDidBecomeActiveNotificationName: Foundation.Notification.Name? {
+    get
+  }
+  @objc dynamic public class var currentContextWillResignActiveNotification: Swift.String? {
+    @objc get
+  }
+  public class var currentContextWillResignActiveNotificationName: Foundation.Notification.Name? {
+    get
+  }
+  @objc dynamic public class var currentContextDidReceiveMemoryWarningNotification: Swift.String? {
+    @objc get
+  }
+  public class var currentContextDidReceiveMemoryWarningNotificationName: Foundation.Notification.Name? {
+    get
+  }
+  @objc dynamic public class var currentContextWillTerminateNotification: Swift.String? {
+    @objc get
+  }
+  public class var currentContextWillTerminateNotificationName: Foundation.Notification.Name? {
+    get
+  }
+}
+extension GXFoundation.GXExecutionEnvironmentHelper {
+  @objc(multitaskingSupported) dynamic public class var isMultitaskingSupported: Swift.Bool {
+    @objc(isMultitaskingSupported) get
+  }
+  @objc dynamic public class var multitaskingNotificationsSupported: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public class var currentContextDidEnterBackgroundNotification: Swift.String? {
+    @objc get
+  }
+  public class var currentContextDidEnterBackgroundNotificationName: Foundation.Notification.Name? {
+    get
+  }
+  @objc dynamic public class var currentContextWillEnterForegroundNotification: Swift.String? {
+    @objc get
+  }
+  public class var currentContextWillEnterForegroundNotificationName: Foundation.Notification.Name? {
+    get
+  }
+}
+extension GXFoundation.GXExecutionEnvironmentHelper {
+  @objc dynamic public class var backgroundTaskSupported: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public class func backgroundTimeRemaining() -> Foundation.TimeInterval
+  @objc dynamic public class func backgroundTaskInvalidIdentifier() -> GXFoundation.GXBackgroundTaskIdentifier
+  @objc dynamic public class func beginBackgroundTask(withName taskName: Swift.String?, expirationHandler handler: (() -> Swift.Void)? = nil) -> GXFoundation.GXBackgroundTaskIdentifier
+  @objc dynamic public class func endBackgroundTask(_ identifier: GXFoundation.GXBackgroundTaskIdentifier)
+}
+extension GXFoundation.GXExecutionEnvironmentHelper {
+  @objc(openURL:options:completionHandler:) dynamic public class func open(_ url: Foundation.URL, options: [Swift.String : Any]?, completionHandler completion: ((_ success: Swift.Bool) -> Swift.Void)? = nil)
+  @objc(openURLOptionUniversalLinksOnlyKey) dynamic public class var openURLOptionUniversalLinksOnlyKey: Swift.String? {
+    @objc get
+  }
+  @objc(canOpenURL:) dynamic public class func canOpen(_ url: Foundation.URL) -> Swift.Bool
+}
+extension GXFoundation.GXExecutionEnvironmentHelper {
+  @objc dynamic public class var currentTraitCollection: UIKit.UITraitCollection {
+    @objc get
+  }
+  @available(iOS, deprecated: 13.0, message: "Should not be used for applications that support multiple scenes as it returns a key window across all connected scenes")
+  @available(tvOS, deprecated: 13.0, message: "Should not be used for applications that support multiple scenes as it returns a key window across all connected scenes")
+  @objc dynamic public class var keyWindow: UIKit.UIWindow? {
+    @objc get
+  }
+  @available(iOS, deprecated: 13.0, message: "Use UIWindowScene.windows on a relevant window scene instead.")
+  @available(tvOS, deprecated: 13.0, message: "Use UIWindowScene.windows on a relevant window scene instead.")
+  @objc dynamic public class var windows: [UIKit.UIWindow] {
+    @objc get
+  }
+  @objc dynamic public class var supportsMultipleScenes: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public class func sendAction(toFirstResponder action: ObjectiveC.Selector)
+  @objc(darkUIStyle) dynamic public class var isDarkUIStyle: Swift.Bool {
+    @objc(isDarkUIStyle) get
+  }
+  @objc dynamic public class var darkUIStyleRuntimeChangeSupported: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public class var userInterfaceLayoutDirection: UIKit.UIUserInterfaceLayoutDirection {
+    @objc get
+  }
+  @objc dynamic public class var isLayoutDirectionLeftToRight: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public class var isLayoutDirectionRightToLeft: Swift.Bool {
+    @objc get
+  }
+  @available(iOS, deprecated: 13.0, message: "Use the statusBarManager property of the window scene instead.")
+  @objc dynamic public class var statusBarFrame: CoreFoundation.CGRect {
+    @objc get
+  }
+  @objc dynamic public class var interfaceOrientation: UIKit.UIInterfaceOrientation {
+    @objc get
+  }
+  @objc dynamic public class var supportedInterfaceOrientationsForKeyWindow: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @objc dynamic public class var preferredContentSizeCategory: UIKit.UIContentSizeCategory {
+    @objc get
+  }
+  @objc dynamic public class var preferredContentSizeCategoryIsAccessibilityCategory: Swift.Bool {
+    @objc get
+  }
+}
+@available(iOS 13.0, tvOS 13.0, *)
+extension GXFoundation.GXExecutionEnvironmentHelper {
+  @objc dynamic public class var connectedScenes: Swift.Set<UIKit.UIScene> {
+    @objc get
+  }
+  @objc dynamic public class var connectedWindowScenes: [UIKit.UIWindowScene] {
+    @objc get
+  }
+  @objc dynamic public class var openSessions: Swift.Set<UIKit.UISceneSession> {
+    @objc get
+  }
+}
+extension GXFoundation.GXExecutionEnvironmentHelper {
+  @objc dynamic public class var allConnectedWindows: [UIKit.UIWindow] {
+    @objc get
+  }
+}
+extension GXFoundation.GXExecutionEnvironmentHelper {
+  @objc dynamic public class func beginReceivingRemoteControlEvents()
+  @objc dynamic public class func endReceivingRemoteControlEvents()
+}
+@_inheritsConvenienceInitializers @objc(GXCancelableOperationBase) public class GXCancelableOperationBase : ObjectiveC.NSObject {
+  @objc(cancelled) public var isCancelled: Swift.Bool {
+    @objc(isCancelled) get
+  }
+  @objc(performCancel) public func performCancel()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GXFoundation.GXCancelableOperationBase : GXFoundation.GXCancelableOperation {
+  @objc dynamic public func cancel()
+}
+extension UIKit.UITraitCollection {
+  @objc dynamic public var gxIsDarkUIStyle: Swift.Bool {
+    @objc get
+  }
+}
+extension Foundation.DateFormatter {
+  @objc(dateFormatterWithTimeZone_UTC_ForDateFormatterDateStyle:timeStyle:hasMilliseconds:localeId:) dynamic public class func withTimeZone_UTC(forDateStyle dateStyle: Foundation.DateFormatter.Style, timeStyle: Foundation.DateFormatter.Style, hasMilliseconds: Swift.Bool, localeId: Swift.String?) -> Foundation.DateFormatter
+  @objc(dateFormatterWithTimeZone_UTC_ForDateFormatterDateStyle:timeStyle:hasMilliseconds:localeId:useCurrentCalendar:) dynamic public class func withTimeZone_UTC(forDateStyle dateStyle: Foundation.DateFormatter.Style, timeStyle: Foundation.DateFormatter.Style, hasMilliseconds: Swift.Bool, localeId: Swift.String?, useCurrentCalendar: Swift.Bool) -> Foundation.DateFormatter
+  @objc(dateFormatterWithTimeZone_UTC_Locale_en_US_POSIX_forDateFormat:) dynamic public class func withTimeZone_UTC_Locale_en_US_POSIX(forDateFormat dateFormat: Swift.String) -> Foundation.DateFormatter
+  @objc(dateFormatterStyleFromGXDataDateFormat:) dynamic public class func dateFormatterStyle(from dateFormat: GXFoundation.GXDataDateFormat) -> Foundation.DateFormatter.Style
+  @objc(dateFormatterStyleFromGXDataTimeFormat:) dynamic public class func dateFormatterStyle(from timeFormat: GXFoundation.GXDataTimeFormat) -> Foundation.DateFormatter.Style
+  @objc(gxDateFormatForShortGXFormat:) dynamic public class func gxDateFormat(forShortGXFormat format: Swift.String) -> Swift.String?
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func error(fromResponseData data: Foundation.Data) -> Swift.Error?
+  @objc dynamic public class func httpWarnings(fromHeader warningHeader: Swift.String?) -> [GXFoundation.GXHTTPWarningHeader]?
+}
+extension Foundation.NSString {
+  @objc(mimeTypeForPathExtension) dynamic public func mimeTypeForPathExtension() -> Swift.String?
+  @objc public static let mimeTypeApplicationOctetStream: Swift.String
+}
+extension Swift.String {
+  public static let mimeTypeApplicationOctetStream: Swift.String
+  public var mimeTypeForPathExtension: Swift.String? {
+    get
+  }
+  public static func mimeType(fromPathExtension ext: Swift.String) -> Swift.String?
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GXFoundationServices) public class GXFoundationServices : ObjectiveC.NSObject {
+  @objc deinit
+}
+extension GXFoundation.GXFoundationServices {
+  @objc dynamic public class func alertMessageService() -> GXFoundation.GXAlertMessageService
+  @objc dynamic public class func loggerService() -> GXFoundation.GXLoggerService?
+  @objc dynamic public class func networkActivityIndicatorService() -> GXFoundation.GXNetworkActivityIndicatorService?
+  @objc dynamic public class func progressActivityIndicatorService() -> GXFoundation.GXProgressActivityIndicatorService?
+  @objc dynamic public class var watchConnectivityService: GXFoundation.GXWCSessionService? {
+    @objc get
+  }
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func createUniqueTemporaryFilePath() -> Swift.String
+  @objc dynamic public class func createUniqueTemporaryDirectoryPath() -> Swift.String
+  @objc dynamic public class func createUniqueTemporaryFilePath(withExtension ext: Swift.String?) -> Swift.String
+  @objc(createUniqueTemporaryFileURL:) dynamic public class func createUniqueTemporaryFileURL(isDirectory: Swift.Bool) -> Foundation.URL
+  @objc dynamic public class func createUniqueTemporaryFileURL(withExtension ext: Swift.String? = nil) -> Foundation.URL
+  @objc dynamic public class func excludePath(fromBackup path: Swift.String)
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func setExtendedFileAttribute(name: Swift.String, data: Foundation.Data, at fileURL: Foundation.URL) throws
+  @objc dynamic public class func removeExtendedFileAttribute(name: Swift.String, at fileURL: Foundation.URL) throws
+  @objc dynamic public class func dataForExtendedFileAttribute(name: Swift.String, at fileURL: Foundation.URL) throws -> Foundation.Data
+  public class func optionalDataForExtendedFileAttribute(name: Swift.String, at fileURL: Foundation.URL) throws -> Foundation.Data?
+}
+@_inheritsConvenienceInitializers @objc public class GXSynchronousExecutionHelper : ObjectiveC.NSObject {
+  @objc(startWithBlock:async:) public func start(block: (() -> Swift.Void)?, async: Swift.Bool)
+  @objc(startWithAsyncBlock:) public func start(asyncBlock block: (() -> Swift.Void)?)
+  @objc(startWithSyncBlock:) public func start(syncBlock block: (() -> Swift.Void)?)
+  @objc public func start()
+  @objc public func signal()
+  @objc public func executeWaitingBlock(_ block: (() -> Swift.Void)?)
+  @objc public func wait()
+  @objc public func cancel()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GXHTTPWarningHeader) public class GXHTTPWarningHeader : ObjectiveC.NSObject {
+  @objc public var code: Swift.Int {
+    get
+  }
+  @objc public var agent: Swift.String {
+    get
+  }
+  @objc public var text: Swift.String {
+    get
+  }
+  @objc(initWithCode:agent:text:) required public init(code: Swift.Int, agent: Swift.String, text: Swift.String)
+  @objc(isUserWarning) public func isUserWarning() -> Swift.Bool
+  @objc(warningText) public func warningText() -> Swift.String
+  @objc deinit
+}
+extension GXFoundation.GXUtilities {
+  @objc(installUncaughtExceptionsHandler) dynamic public class func installUncaughtExceptionsHandler()
+  @objc(tryRecoverFatalError:) dynamic public class func tryRecoverFatalError(_ developerDescription: Swift.String)
+  @objc(tryRecoverFatalError:withExceptionName:) dynamic public class func tryRecoverFatalError(_ developerDescription: Swift.String, with exceptionName: Foundation.NSExceptionName?)
+  @objc(tryRecoverFatalError:withRecoveryBlock:) dynamic public class func tryRecoverFatalError(_ developerDescription: Swift.String, withRecoveryBlock recoveryBlock: @escaping () -> Swift.Bool)
+  @objc(tryRecoverFatalError:withExceptionName:recoveryBlock:) dynamic public class func tryRecoverFatalError(_ developerDescription: Swift.String, with exceptionName: Foundation.NSExceptionName?, recoveryBlock: @escaping () -> Swift.Bool)
+  @objc(tryHandleFatalError:) dynamic public class func tryHandleFatalError(_ developerDescription: Swift.String) -> Swift.Error
+  @objc(tryHandleFatalError:withExceptionName:) dynamic public class func tryHandleFatalError(_ developerDescription: Swift.String, with exceptionName: Foundation.NSExceptionName?) -> Swift.Error
+  @objc(tryHandleFatalError:withRecoveryBlock:) dynamic public class func tryHandleFatalError(_ developerDescription: Swift.String, withRecoveryBlock recoveryBlock: @escaping () -> Swift.Bool) -> Swift.Error
+  @objc(tryHandleFatalError:withExceptionName:recoveryBlock:) dynamic public class func tryHandleFatalError(_ developerDescription: Swift.String, with exceptionName: Foundation.NSExceptionName?, recoveryBlock: @escaping () -> Swift.Bool) -> Swift.Error
+}
+extension GXFoundation.GXTimeZone {
+  public static var current: Foundation.TimeZone {
+    get
+  }
+  @inline(__always) @objc(currentTimeZone) dynamic public class func currentTimeZone() -> Foundation.TimeZone
+  @objc(currentTimeZoneName) dynamic public class func currentTimeZoneName() -> Swift.String
+  @objc(currentTimeZoneOffset) dynamic public class func currentTimeZoneOffset() -> Foundation.NSNumber
+  @discardableResult
+  @objc(setCurrentTimeZoneWithName:) dynamic public class func setCurrentTimeZoneWithName(_ tzName: Swift.String) -> Swift.Bool
+  @objc(convertDateTime:fromTimeZone:) dynamic public class func convertDateTime(_ dateTime: Foundation.Date, fromTimeZone tzName: Swift.String) -> Foundation.Date
+}
+extension GXFoundation.GXOptionalBoolean {
+  public init(value: Swift.Bool?)
+  public var asBool: Swift.Bool? {
+    get
+  }
+}
+extension GXFoundation.GXSpecialDomainType {
+  public static func from(domainName: Swift.String) -> GXFoundation.GXSpecialDomainType?
+}
+extension GXFoundation.GXSpecialDomainType : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public func GXSpecialDomainType(fromDomainName domainName: Swift.String) -> GXFoundation.GXSpecialDomainType?
+extension GXFoundation._gxLayoutDimension {
+  public static let zeroPoint: GXFoundation.GXLayoutDimension
+  public static let hundredPercent: GXFoundation.GXLayoutDimension
+}
+extension GXFoundation._gxLayoutDimension : Swift.Equatable {
+  public static func == (lhs: GXFoundation._gxLayoutDimension, rhs: GXFoundation._gxLayoutDimension) -> Swift.Bool
+}
+extension GXFoundation._gxLayoutQuadDimension {
+  public static let zero: GXFoundation.GXLayoutQuadDimension
+}
+extension GXFoundation._gxLayoutQuadDimension : Swift.Equatable {
+  public static func == (lhs: GXFoundation._gxLayoutQuadDimension, rhs: GXFoundation._gxLayoutQuadDimension) -> Swift.Bool
+}
+extension GXFoundation.GXVerticalEdgeInsets {
+  public static let zero: GXFoundation.GXVerticalEdgeInsets
+}
+extension GXFoundation.GXVerticalEdgeInsets : Swift.Equatable {
+  public static func == (lhs: GXFoundation.GXVerticalEdgeInsets, rhs: GXFoundation.GXVerticalEdgeInsets) -> Swift.Bool
+}
+extension GXFoundation.GXHorizontalEdgeInsets {
+  public static let zero: GXFoundation.GXHorizontalEdgeInsets
+}
+extension GXFoundation.GXHorizontalEdgeInsets : Swift.Equatable {
+  public static func == (lhs: GXFoundation.GXHorizontalEdgeInsets, rhs: GXFoundation.GXHorizontalEdgeInsets) -> Swift.Bool
+}
+extension GXFoundation.GXBordersRadius {
+  public static let zero: GXFoundation.GXBordersRadius
+}
+extension GXFoundation.GXBordersRadius : Swift.Equatable {
+  public static func == (lhs: GXFoundation.GXBordersRadius, rhs: GXFoundation.GXBordersRadius) -> Swift.Bool
+}
+extension GXFoundation.GXLayoutLabelPositionType {
+  public static let platformDefault: GXFoundation.GXLayoutLabelPositionType
+}
+extension GXFoundation.GXUtilities {
+  @objc(stringFromInteger:) dynamic public class func string(from integer: Swift.Int) -> Swift.String
+  @objc(stringFromFloat:) dynamic public class func string(from floatValue: Swift.Float) -> Swift.String
+  @objc(stringFromObject:) dynamic public class func string(from anObject: Any?) -> Swift.String?
+  @objc(nonEmptyStringFromObject:) dynamic public class func nonEmptyString(from anObject: Any?) -> Swift.String?
+  @objc dynamic public class func isStringNullOrEmpty(_ string: Swift.String?) -> Swift.Bool
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func alphabetCharacters() -> [Swift.String]
+  @objc dynamic public class func alphabetCharacters(_ ascending: Swift.Bool) -> [Swift.String]
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func string(byRemovingEnclosingQuotes string: Swift.String) -> Swift.String
+  @objc dynamic public class func string(byRemovingEnclosingQuotes string: Swift.String, hasQuotes quotes: Swift.UnsafeMutablePointer<ObjectiveC.ObjCBool>?, isTranslatable translatable: Swift.UnsafeMutablePointer<ObjectiveC.ObjCBool>?) -> Swift.String
+  public class func string(removingEnclosingQuotes string: Swift.String) -> (result: Swift.String, hasQuotes: Swift.Bool, isTranslatable: Swift.Bool)
+}
+extension GXFoundation.GXUtilities {
+  @discardableResult
+  @objc(splitString:byFirstOcurrenceOfString:toLeft:andRigth:) dynamic public class func splitString(_ string: Swift.String, byFirstOcurrenceOf separator: Swift.String, toLeft left: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?, andRigth rigth: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?) -> Swift.Bool
+  @discardableResult
+  @objc(splitString:byLastOcurrenceOfString:toLeft:andRigth:) dynamic public class func splitString(_ string: Swift.String, byLastOcurrenceOfString separator: Swift.String, toLeft left: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?, andRigth rigth: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?) -> Swift.Bool
+  @discardableResult
+  @objc(splitString:byOcurrenceOfString:withOptions:toLeft:andRigth:) dynamic public class func splitString(_ string: Swift.String, byOcurrenceOfString separator: Swift.String, with options: Swift.String.CompareOptions, toLeft left: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?, andRigth rigth: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?) -> Swift.Bool
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func string(withGXFormat format: Swift.String, values: [Any]) -> Swift.String
+}
+extension GXFoundation.GXUtilities {
+  public class func removeWhiteSpaceAndEnclosingQuotes(_ format: Swift.String) -> Swift.String
+}
+extension Foundation.NSString {
+  @objc(urlSimpleEscapeString) dynamic public func urlSimpleEscape() -> Swift.String
+  @objc(urlSimpleUnescapeString) dynamic public func urlSimpleUnescape() -> Swift.String
+}
+extension Swift.String {
+  public var urlSimpleEscape: Swift.String {
+    get
+  }
+  public var urlSimpleUnescape: Swift.String {
+    get
+  }
+}
+extension Foundation.NSDate {
+  @objc(isGxDateTime) dynamic public func isGxDateTime() -> Swift.Bool
+  @objc(isGxTimeOnlyDateTime) dynamic public func isGxTimeOnly() -> Swift.Bool
+  @objc(gxDateTimeNSDate) dynamic public func gxDateTime() -> Foundation.Date
+  @objc(gxDateTimeNSDateMS) dynamic public func gxDateTimeMS() -> Foundation.Date
+  @objc(gxDateNSDate) dynamic public func gxDate() -> Foundation.Date
+  @objc(gxTimeOnlyDateTimeNSDate) dynamic public func gxTimeOnlyDateTime() -> Foundation.Date
+  @objc(gxTimeOnlyDateTimeNSDateMS) dynamic public func gxTimeOnlyDateTimeMS() -> Foundation.Date
+}
+extension Foundation.Date {
+  public func isGxDateTime() -> Swift.Bool
+  public func isGxTimeOnly() -> Swift.Bool
+  public var gxDateTime: Foundation.Date {
+    get
+  }
+  public var gxDateTimeMS: Foundation.Date {
+    get
+  }
+  public var gxDate: Foundation.Date {
+    get
+  }
+  public var gxTimeOnlyDateTime: Foundation.Date {
+    get
+  }
+  public var gxTimeOnlyDateTimeMS: Foundation.Date {
+    get
+  }
+}
+extension Foundation.NSDate {
+  @objc(gxEmptyDate) public static func gxEmpty() -> Foundation.Date
+  @objc(gxEmptyDateTime) public static func gxEmptyTime() -> Foundation.Date
+  @objc(isGxEmptyDate) dynamic public func isGxEmpty() -> Swift.Bool
+}
+extension Foundation.Date {
+  public static let gxEmptyDate: Foundation.Date
+  @inlinable @inline(__always) public static func gxEmpty() -> Foundation.Date { // Can not be var as is part of GXStd
+		return gxEmptyDate
+	}
+  @inlinable @inline(__always) public static func gxEmptyDateTime() -> Foundation.Date { // Can not be var as is part of GXStd
+		return gxEmptyDate
+	}
+  @inlinable public func isGxEmpty() -> Swift.Bool { // Can not be var as is part of GXStd
+		return self == Self.gxEmptyDate
+	}
+}
+extension Foundation.Thread {
+  public func threadDictionaryCachedObject<T>(withKey key: Swift.AnyHashable, notFoundBuilder builder: () -> T) -> T
+  final public class func objcSync(_ obj: Any, execute: () throws -> Swift.Void) rethrows
+}
+@_inheritsConvenienceInitializers @objc(GXPropertiesObject) public class GXPropertiesObject : ObjectiveC.NSObject {
+  @objc required public init(properties: [Swift.String : Any]?)
+  @objc convenience override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+extension GXFoundation.GXPropertiesObject : GXFoundation.GXPropertiesObjectProtocol {
+  @objc dynamic public func getPropertyValue(_ propertyName: Swift.String) -> Any?
+  @objc dynamic public func getPropertyValueBool(_ propertyName: Swift.String, defaultValue: Swift.Bool) -> Swift.Bool
+  @objc dynamic public func getPropertyValueBool(_ propertyName: Swift.String) -> Swift.Bool
+  @objc dynamic public func getPropertyValueInteger(_ propertyName: Swift.String) -> Swift.Int
+  @objc dynamic public func getPropertyValueFloat(_ propertyName: Swift.String) -> CoreFoundation.CGFloat
+  @objc dynamic public func getPropertyValueString(_ propertyName: Swift.String) -> Swift.String?
+  @objc dynamic public func getPropertyValueColor(_ propertyName: Swift.String) -> UIKit.UIColor?
+}
+@_inheritsConvenienceInitializers @objc(GXMutablePropertiesObject) public class GXMutablePropertiesObject : GXFoundation.GXPropertiesObject, GXFoundation.GXMutablePropertiesObjectProtocol {
+  @objc public func setPropertyValue(_ value: Any?, forPropertyName propertyName: Swift.String)
+  @objc public func removePropertyFoPropertyName(_ propertyName: Swift.String)
+  @objc public func setBoolProperty(_ value: Swift.Bool, forPropertyName propertyName: Swift.String)
+  @objc public func setIntegerProperty(_ value: Swift.Int, forPropertyName propertyName: Swift.String)
+  @objc public func setFloatProperty(_ value: CoreFoundation.CGFloat, forPropertyName propertyName: Swift.String)
+  @objc required public init(properties: [Swift.String : Any]?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXCodingPropertiesObject) public class GXCodingPropertiesObject : GXFoundation.GXPropertiesObject, GXFoundation.GXCodingPropertiesObjectProtocol {
+  @objc override dynamic public func getPropertyValue(_ propertyName: Swift.String) -> Any?
+  @objc public func getCodingPropertyValue(_ propertyName: Swift.String) -> Foundation.NSCoding?
+  @objc public func encode(with coder: Foundation.NSCoder)
+  @objc required public init?(coder: Foundation.NSCoder)
+  @objc required public init(properties: [Swift.String : Any]?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(GXMutableCodingPropertiesObject) public class GXMutableCodingPropertiesObject : GXFoundation.GXMutablePropertiesObject, GXFoundation.GXMutableCodingPropertiesObjectProtocol {
+  @objc override dynamic public func getPropertyValue(_ propertyName: Swift.String) -> Any?
+  @objc override public func setPropertyValue(_ value: Any?, forPropertyName propertyName: Swift.String)
+  @objc public func getCodingPropertyValue(_ propertyName: Swift.String) -> Foundation.NSCoding?
+  @objc public func setCodingPropertyValue(_ value: Foundation.NSCoding?, forPropertyName propertyName: Swift.String)
+  @objc public func encode(with coder: Foundation.NSCoder)
+  @objc required public init?(coder: Foundation.NSCoder)
+  @objc required public init(properties: [Swift.String : Any]?)
+  @objc deinit
+}
+extension GXFoundation.GXUtilities {
+  @objc(jsonObject:ofClass:) dynamic public class func jsonObject(_ object: ObjectiveC.NSObject?, of expectedClass: Swift.AnyClass) -> Any?
+}
+@objc(GXCancelableOperation) public protocol GXCancelableOperation : ObjectiveC.NSObjectProtocol {
+  @objc func cancel()
+}
+extension Foundation.Operation : GXFoundation.GXCancelableOperation {
+}
+extension Foundation.URLSessionTask : GXFoundation.GXCancelableOperation {
+}
+extension Foundation.NSCalendar {
+  @objc(gxCalendar) public static func gx() -> Foundation.Calendar
+}
+extension Foundation.Calendar {
+  public static let gx: Foundation.Calendar
+}
+extension Foundation.NSArray {
+  @objc(dictionaryWithSelectorForKeys:) dynamic public func dictionary(withSelectorForKeys keySelector: ObjectiveC.Selector) -> [Swift.AnyHashable : Foundation.NSArray.Element]
+  @objc(dictionaryWithBlockForKeys:) dynamic public func dictionary(withBlockForKeys block: (_ element: Foundation.NSArray.Element) -> Swift.AnyHashable) -> [Swift.AnyHashable : Foundation.NSArray.Element]
+  @objc(map:) dynamic public func map(_ transform: (_ element: Foundation.NSArray.Element) -> Swift.AnyObject) -> [Swift.AnyObject]
+  @objc(compactMap:) dynamic public func compactMap(_ transform: (_ element: Foundation.NSArray.Element) -> Swift.AnyObject?) -> [Swift.AnyObject]
+  @objc(compactMapFirst:) dynamic public func compactMap(_ transform: (_ element: Foundation.NSArray.Element) -> Swift.AnyObject?) -> Swift.AnyObject?
+  @objc(mapWithSelector:) dynamic public func map(withSelector selector: ObjectiveC.Selector) -> [Swift.AnyObject]
+  @objc(findFirst:) dynamic public func findFirst(_ block: (_ element: Foundation.NSArray.Element) -> Swift.Bool) -> Foundation.NSArray.Element?
+  @objc(findLast:) dynamic public func findLast(_ block: (_ element: Foundation.NSArray.Element) -> Swift.Bool) -> Foundation.NSArray.Element?
+  @objc(filter:) dynamic public func filter(_ block: @escaping (_ element: Foundation.NSArray.Element) -> Swift.Bool) -> [Foundation.NSArray.Element]
+  @objc(flatten) dynamic public func flatten() -> [Any]
+  @objc(shuffledArray) dynamic public func shuffledArray() -> [Foundation.NSArray.Element]
+  @objc(arrayByRemovingObject:) dynamic public func removing(element: Foundation.NSArray.Element) -> [Foundation.NSArray.Element]
+  @objc(arrayByRemovingObjectIdenticalTo:) dynamic public func removing(identicalElement element: Foundation.NSArray.Element) -> [Foundation.NSArray.Element]
+  @objc(isEmpty) dynamic public var isEmpty: Swift.Bool {
+    @objc get
+  }
+}
+extension Foundation.NSMutableArray {
+  @objc(addObjectsFromSet:) dynamic public func addObjects(fromSet set: Foundation.NSSet)
+  @objc(filterUsingBlock:) dynamic public func filter(usingBlock block: @escaping (_ element: Any?) -> Swift.Bool)
+  @objc(shuffle) dynamic public func shuffle()
+}
+@_inheritsConvenienceInitializers @objc(GXInsensitiveMetadata) public class GXInsensitiveMetadata : ObjectiveC.NSObject {
+  @objc(metadataObjectForKey:fromMetadata:) public class func metadataObject(forKey key: Swift.String, fromMetadata metadata: [Swift.String : Any]?) -> Any?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objcMembers @objc(GXRecoveryAttempter) public class GXRecoveryAttempter : ObjectiveC.NSObject {
+  @objc public var attemptRecoverBlock: ((_ error: Swift.Error, _ recoveryOptionIndex: Swift.Int) -> Swift.Bool)?
+  @objc public var asyncAttemptRecoverBlock: ((_ error: Swift.Error, _ recoveryOptionIndex: Swift.Int, _ delegate: Any?, _ didRecoverSelector: ObjectiveC.Selector?, _ contextInfo: Swift.UnsafeMutableRawPointer?) -> Swift.Bool)?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func bool(fromValue value: Any?, defaultValue: Swift.Bool) -> Swift.Bool
+  @objc dynamic public class func bool(fromValue value: Any?) -> Swift.Bool
+  @objc dynamic public class func unsignedInteger(fromValue value: Any?, defaultValue: Swift.UInt) -> Swift.UInt
+  public class func unsignedInteger(fromValue value: Any?) -> Swift.UInt?
+  @objc dynamic public class func unsignedIntegerNumber(fromValue value: Any?) -> Foundation.NSNumber?
+  @objc dynamic public class func integer(fromValue value: Any?, defaultValue: Swift.Int) -> Swift.Int
+  public class func integer(fromValue value: Any?) -> Swift.Int?
+  @objc dynamic public class func integerNumber(fromValue value: Any?) -> Foundation.NSNumber?
+  @objc dynamic public class func floatNumber(fromValue value: Any?) -> Foundation.NSNumber?
+  @objc dynamic public class func doubleNumber(fromValue value: Any?) -> Foundation.NSNumber?
+  @objc dynamic public class func decimalNumber(fromValue value: Any?) -> Foundation.NSDecimalNumber?
+  @objc dynamic public class func numberWithBoolIfTrue(fromValue value: Any?) -> Foundation.NSNumber?
+}
+extension GXFoundation.GXUtilities {
+  @objc(wktPointFromGeoString:) dynamic public class func wktPoint(fromGeoString locationStr: Swift.String?) -> GXFoundation.WKTPoint?
+  @objc(coordinateFromGeoString:forType:) dynamic public class func coordinate(fromGeoString locationStr: Swift.String?, for fieldType: GXFoundation.GXDataType) -> CoreLocation.CLLocationCoordinate2D
+  @objc dynamic public class func coordinate(fromGeoLocationString locationStr: Swift.String?) -> CoreLocation.CLLocationCoordinate2D
+  @objc dynamic public class func geoLocationString(fromCoordinate coordinate: CoreLocation.CLLocationCoordinate2D) -> Swift.String
+  @objc(geoLocationStringFromCoordinate:forType:) dynamic public class func geoLocationString(fromCoordinate coordinate: CoreLocation.CLLocationCoordinate2D, for fieldType: GXFoundation.GXDataType) -> Swift.String
+  @objc(polylineFromGeoLine:) dynamic public class func polyline(fromGeoLine geolineStr: Swift.String?) -> MapKit.MKPolyline?
+}
+extension GXFoundation.GXUtilities {
+  @objc(arrayFromObject:) dynamic public class func array(from anObject: Any?) -> [Any]?
+  public class func array(from anObject: Any) -> [Any]
+  @objc dynamic public class func lastObjectIfArray(fromObject anObject: Any?) -> Any?
+}
+extension GXFoundation.GXObjectType {
+  public var objectIdString: Swift.String {
+    get
+  }
+  public var knownObjectIdString: Swift.String? {
+    get
+  }
+  public static func known(fromObjectId objectType: Swift.String?) -> GXFoundation.GXObjectType?
+}
+extension GXFoundation.GXObjectHelper {
+  @discardableResult
+  @objc(parseObjectType:objectName:from:) dynamic public class func __parseObjectType(_ objectType: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?, objectName: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?, from data: Any?) -> Swift.Bool
+  public class func parseObjectTypeAndName(from data: Any?) -> (type: Swift.String, name: Swift.String)?
+  @discardableResult
+  @objc(parseObjectTypeEnum:objectName:from:) dynamic public class func __parseObjectTypeEnum(_ objectType: Swift.UnsafeMutablePointer<GXFoundation.GXObjectType>?, objectName: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?, from data: Any?) -> Swift.Bool
+  public class func parseObjectTypeEnumAndName(from data: Any?) -> (type: GXFoundation.GXObjectType, name: Swift.String)?
+  public class func parseKnownObjectTypeEnumAndName(from data: Any?) -> (type: GXFoundation.GXObjectType, name: Swift.String)?
+  @objc dynamic public class func parseObjectName(ofType objectType: Swift.String, from data: Any?) -> Swift.String?
+  @objc dynamic public class func parseObjectName(ofTypeEnum objectType: GXFoundation.GXObjectType, from data: Any?) -> Swift.String?
+  @objc dynamic public class func objectTypeString(fromEnum objectType: GXFoundation.GXObjectType) -> Swift.String?
+  @objc dynamic public class func objectTypeEnum(fromString objectType: Swift.String?) -> GXFoundation.GXObjectType
+  public class func knownObjectTypeEnum(fromString objectType: Swift.String?) -> GXFoundation.GXObjectType?
+  public class func objectReferenceString(fromEnum objectType: GXFoundation.GXObjectType, objectName: Swift.String) -> Swift.String?
+  public class func knownObjectReferenceString(fromEnum objectType: GXFoundation.GXObjectType, objectName: Swift.String) -> Swift.String?
+}
+extension Swift.Dictionary {
+  public func gxMapKeys<T>(_ transform: (Key) -> T) -> Swift.Dictionary<T, Value> where T : Swift.Hashable
+}
+@objc(GXProgressActivityIndicatorService) public protocol GXProgressActivityIndicatorService : ObjectiveC.NSObjectProtocol {
+  @objc var data: GXFoundation.GXProgressIndicatorData { get set }
+  @objc func showIndicator()
+  @objc func showIndicator(withTitle title: Swift.String?)
+  @objc func showIndicator(withTitle title: Swift.String?, description: Swift.String?)
+  @objc func hideIndicator()
+  @objc func invalidate()
+  @objc func shouldHideOnNewViewController(_ hide: Swift.Bool)
+  @objc func isShowing() -> Swift.Bool
+}
+@objc(GXWCSessionServiceDelegate) public protocol GXWCSessionServiceDelegate : ObjectiveC.NSObjectProtocol {
+  @objc optional func sessionService(_ service: GXFoundation.GXWCSessionService, didReceiveMessage message: [Swift.String : Any], withIdentifier identifier: Swift.String, replyHandler: (([Swift.String : Any], Foundation.NSError?) -> Swift.Void)?)
+  @objc optional func sessionService(_ service: GXFoundation.GXWCSessionService, didFinishUserInfoTransfer userInfo: [Swift.String : Any], withIdentifier identifier: Swift.String, uniqueKey: Swift.String?)
+  @objc optional func sessionService(_ service: GXFoundation.GXWCSessionService, didFailUserInfoTransfer userInfo: [Swift.String : Any], withIdentifier identifier: Swift.String, uniqueKey: Swift.String?, error: Swift.Error, retry: (() -> Swift.Void)?)
+  @objc optional func sessionService(_ service: GXFoundation.GXWCSessionService, didReceiveUserInfo userInfo: [Swift.String : Any], withIdentifier identifier: Swift.String, uniqueKey: Swift.String?)
+}
+@objc(GXWCSessionService) public protocol GXWCSessionService : ObjectiveC.NSObjectProtocol {
+  @objc func registerDelegate(_ delegate: GXFoundation.GXWCSessionServiceDelegate, forIdentifier identifier: Swift.String)
+  @objc func executeWithActiveSession(_ handler: @escaping (Swift.Error?) -> Swift.Void)
+  @objc var isPaired: Swift.Bool { get }
+  @objc var isWatchAppInstalled: Swift.Bool { get }
+  @objc var watchDirectoryURL: Foundation.URL? { get }
+  @objc var canSendMessage: Swift.Bool { get }
+  @objc func sendMessage(_ message: [Swift.String : Any], withIdentifier identifier: Swift.String, replyHandler: (([Swift.String : Any], Foundation.NSError?) -> Swift.Void)?, errorHandler: ((Swift.Error) -> Swift.Void)?)
+  @objc func transferUserInfo(_ userInfo: [Swift.String : Any], withIdentifier identifier: Swift.String, uniqueKey: Swift.String?)
+}
+@objc public protocol GXUtilitiesDeveloperInfoExtension : ObjectiveC.NSObjectProtocol {
+  @objc var isDeveloperInfoExtensionDynamic: Swift.Bool { get }
+  @objc var showDeveloperInfo: Swift.Bool { get }
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func showDeveloperInfo() -> Swift.Bool
+  @objc(registerDeveloperInfoExtension:) dynamic public class func register(_ developerInfoExtension: GXFoundation.GXUtilitiesDeveloperInfoExtension)
+}
+extension Foundation.NSDate {
+  @objc(localTimeZoneSecondsFromGMT) dynamic public func localTimeZoneSecondsFromGMT() -> Foundation.TimeInterval
+  @objc(localTimeZoneDateFromGMT) dynamic public func localTimeZoneDateFromGMT() -> Foundation.Date
+  @objc(gmtTimeZoneDateFromLocal) dynamic public func gmtTimeZoneDateFromLocal() -> Foundation.Date
+  @objc(currentTimeZoneSecondsFromGMT) dynamic public func currentTimeZoneSecondsFromGMT() -> Foundation.TimeInterval
+  @objc(currentTimeZoneDateFromGMT) dynamic public func currentTimeZoneDateFromGMT() -> Foundation.Date
+  @objc(gmtTimeZoneDateFromCurrent) dynamic public func gmtTimeZoneDateFromCurrent() -> Foundation.Date
+  @objc(currentTimeZoneDateFromLocal) dynamic public func currentTimeZoneDateFromLocal() -> Foundation.Date
+  @objc(localTimeZoneDateFromCurrent) dynamic public func localTimeZoneDateFromCurrent() -> Foundation.Date
+}
+extension Foundation.Date {
+  public var localTimeZoneSecondsFromGMT: Foundation.TimeInterval {
+    get
+  }
+  public var localTimeZoneDateFromGMT: Foundation.Date {
+    get
+  }
+  public var gmtTimeZoneDateFromLocal: Foundation.Date {
+    get
+  }
+  public var currentTimeZoneSecondsFromGMT: Foundation.TimeInterval {
+    get
+  }
+  public var currentTimeZoneDateFromGMT: Foundation.Date {
+    get
+  }
+  public var gmtTimeZoneDateFromCurrent: Foundation.Date {
+    get
+  }
+  public var currentTimeZoneDateFromLocal: Foundation.Date {
+    get
+  }
+  public var localTimeZoneDateFromCurrent: Foundation.Date {
+    get
+  }
+}
+@objc(GXActivityIndicatorType) public enum GXActivityIndicatorType : Darwin.uint_least8_t {
+  case indeterminated
+  case determinated
+  public init?(rawValue: Darwin.uint_least8_t)
+  public typealias RawValue = Darwin.uint_least8_t
+  public var rawValue: Darwin.uint_least8_t {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc(GXProgressIndicatorData) @objcMembers public class GXProgressIndicatorData : ObjectiveC.NSObject {
+  @objc public var type: GXFoundation.GXActivityIndicatorType
+  @objc public var styleClassName: Swift.String?
+  @objc public var title: Swift.String?
+  @objc public var desc: Swift.String?
+  @objc public var maxValue: Swift.Int
+  @objc public var value: Swift.Int
+  @objc public var visible: Swift.Bool
+  @objc public var normalizedValue: Swift.Float {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Foundation.NotificationCenter {
+  @discardableResult
+  @objc(gxAddOnceObserverForName:object:queue:usingBlock:) dynamic public func gxAddOnceObserver(for name: Foundation.NSNotification.Name?, object: Any?, queue: Foundation.OperationQueue?, usingBlock block: @escaping (Foundation.Notification) -> Swift.Void) -> ObjectiveC.NSObjectProtocol
+  public func gxAddObserverUntilDealloc<T>(of untilDeallocObj: T, forName name: Foundation.NSNotification.Name?, object obj: Any?, queue: Foundation.OperationQueue?, using block: @escaping (T, Foundation.Notification) -> Swift.Void) where T : ObjectiveC.NSObjectProtocol
+}
+extension GXFoundation.GXUtilities {
+  public class func stringEncoding(fromCharsetString strEncoding: Swift.String?) -> Swift.String.Encoding?
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GXThreadErrorHandler) public class GXThreadErrorHandler : ObjectiveC.NSObject {
+  @inlinable @objc public class func errorHandler() -> GXFoundation.GXThreadErrorHandler {
+		return current
+	}
+  @objc public class var current: GXFoundation.GXThreadErrorHandler {
+    @objc get
+  }
+  @objc public func addError(withCode code: Swift.Int, description desc: Swift.String?)
+  @objc public func addError(_ error: Foundation.NSError)
+  @objc public func hasError() -> Swift.Bool
+  @objc public func getErrors() -> [Foundation.NSError]
+  @objc public func clearErrors()
+  @objc public func removeErrors(withCode code: Swift.Int)
+  @objc deinit
+}
+extension Foundation.Thread {
+  @objc dynamic open var gxErrorHandler: GXFoundation.GXThreadErrorHandler {
+    @objc get
+  }
+  @_spi(GXInternal) public func internalSetGxErrorHandler(_ errorHanlder: GXFoundation.GXThreadErrorHandler)
+}
+extension Foundation.NSDate : YAJL.YAJLCoding {
+  @objc dynamic public var json: Any! {
+    @objc get
+  }
+}
+@objc extension Foundation.URLSession {
+  @objc dynamic public class func gxSession(withConfiguration configuration: Foundation.URLSessionConfiguration, delegate: Foundation.URLSessionDelegate?, delegateQueue queue: Foundation.OperationQueue?) -> Foundation.URLSession
+  @objc dynamic public class func gxSession(withConfiguration configuration: Foundation.URLSessionConfiguration) -> Foundation.URLSession
+  @objc public static let gxSharedSession: Foundation.URLSession
+}
+extension Foundation.Bundle {
+  @objc(gxMainBundle) dynamic public class var gxMain: Foundation.Bundle {
+    @objc get
+  }
+  @objc dynamic public var gxBundleName: Swift.String? {
+    @objc get
+  }
+  @_spi(GXInternal) public var gxCandidateModuleName: Swift.String? {
+    get
+  }
+  @_spi(GXInternal) public func gxCandidateQualifiedClassName(swiftClassName: Swift.String) -> Swift.String?
+  @_spi(GXInternal) public static func gxQualifiedClassName(moduleName: Swift.String, swiftClassName: Swift.String, checkAlreadyHasModuleName: Swift.Bool = true) -> Swift.String
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func applicationContainsBackgroundMode(_ backgroundMode: Swift.String) -> Swift.Bool
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func urlParametersString(from parameters: [Swift.String : Any]) -> Swift.String?
+  @objc dynamic public class func urlParametersString(from parameters: [Swift.String : Any], sorted: Swift.Bool) -> Swift.String?
+  @objc dynamic public class func url(fromMaybeEscapedURLString urlString: Swift.String) -> Foundation.URL?
+}
+@_spi(GXInternal) public enum GXCodingKeysHelpers {
+  @_spi(GXInternal) public static func typedValueLoggingError<T, K>(_ key: K, from valueProvider: (K) -> Any?) -> T? where K : Swift.CodingKey
+  @_spi(GXInternal) public static func typedValue<T, K>(_ key: K, from valueProvider: (K) -> Any?, logNotFoundError: Swift.Bool = false, logTypeMissmatch: Swift.Bool = false) -> T? where K : Swift.CodingKey
+}
+extension UIKit.UIColor {
+  @objc(colorFromValue:) dynamic public class func fromValue(_ value: Any?) -> UIKit.UIColor?
+  @objc(gxRGBColor) dynamic public var gxRGBColor: Swift.Int {
+    @objc get
+  }
+  @objc(gxColorAlpha) dynamic public func gxColorAlpha() -> CoreFoundation.CGFloat
+  @objc(isGxColorTransparent) dynamic public func isGxColorTransparent() -> Swift.Bool
+  @objc(gxColorPerceivedBrightness) dynamic public func gxColorPerceivedBrightness() -> CoreFoundation.CGFloat
+  @objc(isColorDark) dynamic public func isColorDark() -> Swift.Bool
+  @objc(isColorBright) dynamic public func isColorBright() -> Swift.Bool
+}
+extension Swift.Dictionary {
+  public func mapKeys<T>(_ transform: (Key) throws -> T) rethrows -> [T : Value] where T : Swift.Hashable
+}
+extension Swift.Dictionary where Key : Swift.StringProtocol {
+  public func mapKeysToLowercase() -> [Swift.String : Value]
+}
+extension Foundation.NSString {
+  @objc(gxStringEncodingFromURLResponse:) public static func gxStringEncoding(from response: Foundation.URLResponse?) -> Swift.UInt
+}
+extension Foundation.URLResponse {
+  public var gxStringEncoding: Swift.String.Encoding? {
+    get
+  }
+}
+extension Dispatch.DispatchQueue {
+  public static func gxSyncOnMain<T>(execute work: () throws -> T) rethrows -> T
+  public static func gxOnMain(execute work: @escaping () -> Swift.Void)
+  public static func gxOnBackground<T>(qos: Dispatch.DispatchQoS.QoSClass = .default, execute work: @escaping () -> T, callback: ((T) -> Swift.Void)? = nil)
+  public static func gxTryOnBackground<T>(qos: Dispatch.DispatchQoS.QoSClass = .default, execute work: @escaping () throws -> T, callback: ((Swift.Result<T, Swift.Error>) -> Swift.Void)? = nil)
+}
+extension Foundation.NSMutableSet {
+  @discardableResult
+  @objc(addObjectOrRemoveIfContained:) dynamic public func addObjectOrRemoveIfContained(_ object: Foundation.NSMutableSet.Element) -> Swift.Bool
+  @objc(addObjectIfNotContained:) dynamic public func addObjectIfNotContained(_ object: Foundation.NSMutableSet.Element) -> Swift.Bool
+  @discardableResult
+  @objc(removeObjectIfContained:) dynamic public func removeObjectIfContained(_ object: Foundation.NSMutableSet.Element) -> Swift.Bool
+  @objc(removeObjectsInArray:) dynamic public func removeObjects(inArray array: [Foundation.NSMutableSet.Element])
+}
+extension Swift.Set {
+  @discardableResult
+  public mutating func addOrRemoveIfContained(_ member: Element) -> Swift.Bool
+  public mutating func remove(in array: [Element])
+}
+@objc public protocol GXExecutionEnvironment : ObjectiveC.NSObjectProtocol {
+  @objc var applicationState: GXFoundation.GXApplicationStateType { get }
+  @objc(transitioningFromBackgroundToForeground) var isTransitioningFromBackgroundToForeground: Swift.Bool { get }
+  @objc var activeStateNotificationsSupported: Swift.Bool { get }
+  @objc var didBecomeActiveNotification: Swift.String? { get }
+  @objc var willResignActiveNotification: Swift.String? { get }
+  @objc var didReceiveMemoryWarningNotification: Swift.String? { get }
+  @objc var willTerminateNotification: Swift.String? { get }
+  @objc(multitaskingSupported) var isMultitaskingSupported: Swift.Bool { get }
+  @objc var multitaskingNotificationsSupported: Swift.Bool { get }
+  @objc var didEnterBackgroundNotification: Swift.String? { get }
+  @objc var willEnterForegroundNotification: Swift.String? { get }
+  @objc optional var backgroundTimeRemaining: Foundation.TimeInterval { get }
+  @objc optional func backgroundTaskInvalidIdentifier() -> GXFoundation.GXBackgroundTaskIdentifier
+  @objc optional func beginBackgroundTask(withName taskName: Swift.String?, expirationHandler handler: (() -> Swift.Void)?) -> GXFoundation.GXBackgroundTaskIdentifier
+  @objc optional func endBackgroundTask(_ identifier: GXFoundation.GXBackgroundTaskIdentifier)
+  @objc(openURL:options:completionHandler:) optional func open(_ url: Foundation.URL, options: [Swift.String : Any]?, completionHandler completion: ((_ success: Swift.Bool) -> Swift.Void)?)
+  @objc optional var openURLOptionUniversalLinksOnlyKey: Swift.String? { get }
+  @objc(canOpenURL:) optional func canOpen(_ url: Foundation.URL) -> Swift.Bool
+  @objc var currentTraitCollection: UIKit.UITraitCollection { get }
+  @available(iOS, deprecated: 13.0, message: "Should not be used for applications that support multiple scenes as it returns a key window across all connected scenes")
+  @available(tvOS, deprecated: 13.0, message: "Should not be used for applications that support multiple scenes as it returns a key window across all connected scenes")
+  @objc var keyWindow: UIKit.UIWindow? { get }
+  @available(iOS, deprecated: 13.0, message: "Use UIWindowScene.windows on a relevant window scene instead.")
+  @available(tvOS, deprecated: 13.0, message: "Use UIWindowScene.windows on a relevant window scene instead.")
+  @objc var windows: [UIKit.UIWindow] { get }
+  @available(iOS 13.0, tvOS 13.0, *)
+  @objc var connectedScenes: Swift.Set<UIKit.UIScene> { get }
+  @available(iOS 13.0, tvOS 13.0, *)
+  @objc var openSessions: Swift.Set<UIKit.UISceneSession> { get }
+  @available(iOS 13.0, tvOS 13.0, *)
+  @objc optional var supportsMultipleScenes: Swift.Bool { get }
+  @objc func sendAction(toFirstResponder action: ObjectiveC.Selector)
+  @objc var userInterfaceLayoutDirection: UIKit.UIUserInterfaceLayoutDirection { get }
+  @available(iOS, deprecated: 13.0, message: "Use the statusBarManager property of the window scene instead.")
+  @objc var statusBarFrame: CoreFoundation.CGRect { get }
+  @objc var interfaceOrientation: UIKit.UIInterfaceOrientation { get }
+  @objc var supportedInterfaceOrientationsForKeyWindow: UIKit.UIInterfaceOrientationMask { get }
+  @objc var preferredContentSizeCategory: UIKit.UIContentSizeCategory { get }
+  @objc var preferredContentSizeCategoryIsAccessibilityCategory: Swift.Bool { get }
+  @objc optional func beginReceivingRemoteControlEvents()
+  @objc optional func endReceivingRemoteControlEvents()
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GXCancelableOperationComposite) public class GXCancelableOperationComposite : GXFoundation.GXCancelableOperationBase {
+  @objc(initWithChildOperations:) required public init(withChildOperations childOperations: [GXFoundation.GXCancelableOperation])
+  @objc override public func performCancel()
+  @objc deinit
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func deviceSystemVersion() -> Swift.UInt
+  public static let deviceSystemNumericVersion: Swift.UInt
+  @objc dynamic public class func deviceName() -> Swift.String
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func currentDeviceIPAD() -> Swift.Bool
+  @objc dynamic public class func currentDeviceIPHONE() -> Swift.Bool
+  @objc dynamic public class func currentDeviceIPHONE_4INCH() -> Swift.Bool
+  @objc dynamic public class func currentDeviceIPHONE_4_7INCH() -> Swift.Bool
+  @objc dynamic public class func currentDeviceIPHONE_5_5INCH() -> Swift.Bool
+}
+extension GXFoundation.GXUtilities {
+  @_spi(GXInternal) public class func swizzle(_ targetClass: Swift.AnyClass, originalSelector: ObjectiveC.Selector, replacementSelector: ObjectiveC.Selector, isClassMethod: Swift.Bool = false)
+  @_spi(GXInternal) public class func execute(_ block: () throws -> Swift.Void, swizzlingTargetClass targetClass: Swift.AnyClass, selector: ObjectiveC.Selector, newImplementation newImp: ObjectiveC.IMP, isClassMethod: Swift.Bool = false) rethrows
+}
+extension GXFoundation.GXUtilities {
+  @objc dynamic public class func connectivitySupport(fromValue value: Any?) -> GXFoundation.GXConnectivitySupportType
+  public class func connectivitySupport(fromValue value: Any?, defaultValue: GXFoundation.GXConnectivitySupportType? = nil) -> GXFoundation.GXConnectivitySupportType?
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(GXCancelableOperationWrapper) public class GXCancelableOperationWrapper : GXFoundation.GXCancelableOperationBase {
+  @objc(innerOperation) public var innerOperation: GXFoundation.GXCancelableOperation {
+    @objc get
+    @objc set
+  }
+  @objc(initWithInnerOperation:) required public init(withInnerOperation innerOperation: GXFoundation.GXCancelableOperation)
+  @objc override public func performCancel()
+  @objc deinit
+}
+extension Foundation.NSString {
+  @objc(ltrim) dynamic public func ltrim() -> Swift.String
+  @objc(rtrim) dynamic public func rtrim() -> Swift.String
+  @objc(trim) dynamic public func trim() -> Swift.String
+}
+extension Swift.String {
+  public var ltrim: Swift.String {
+    get
+  }
+  public var rtrim: Swift.String {
+    get
+  }
+  public var trim: Swift.String {
+    get
+  }
+}
+@objc(GXNetworkActivityIndicatorService) public protocol GXNetworkActivityIndicatorService : ObjectiveC.NSObjectProtocol {
+  @objc func startActivity()
+  @objc func stopActivity()
+  @objc func stopAllActivity()
+}
+extension Foundation.NumberFormatter {
+  @objc(numberFormatterForGXPicture:localeId:numberHasDecimals:) dynamic public class func numberFormatter(forGXPicture picture: Swift.String?, localeId: Swift.String?, numberHasDecimals hasDecimals: Swift.Bool) -> Foundation.NumberFormatter?
+  @objc(numberFormatterForNumberFormat:localeId:) dynamic public class func numberFormatter(forNumberFormat numberFormat: Swift.String, localeId: Swift.String?) -> Foundation.NumberFormatter
+  @objc(numberFormatterForNumberFormat:zeroSymbol:localeId:) dynamic public class func numberFormatter(forNumberFormat numberFormat: Swift.String, zeroSymbol: Swift.String?, localeId: Swift.String?) -> Foundation.NumberFormatter
+  @objc(numberFormatterForMaximumFractionDigits:maximumIntegerDigits:localeId:) dynamic public class func numberFormatter(forMaximumFractionDigits maxFractionDigits: Swift.Int, maximumIntegerDigits maxIntegerDigits: Swift.Int, localeId: Swift.String?) -> Foundation.NumberFormatter
+  @objc(numberFormatterForLocale_en_US_POSIX) dynamic public class func numberFormatterForLocale_en_US_POSIX() -> Foundation.NumberFormatter
+  @objc(decimalNumberFormatterForLocales_en_US_POSIX) dynamic public class func decimalNumberFormatterForLocales_en_US_POSIX() -> Foundation.NumberFormatter
+}
+@_inheritsConvenienceInitializers @objc(GXCancelableOperationWithBlock) public class GXCancelableOperationWithBlock : GXFoundation.GXCancelableOperationBase {
+  @objc(initWithCancelBlock:) required public init(withCancelBlock cancelblock: (() -> Swift.Void)?)
+  @objc override public func performCancel()
+  @objc deinit
+}
+extension Foundation.OperationQueue {
+  @discardableResult
+  @objc(addURLRequestAndParseJSONOperationsForRequest:delegate:) dynamic public func addURLRequestAndParseJSONOperations(forRequest request: Foundation.URLRequest, delegate: (GXFoundation.GXParseJsonOperationDelegate & GXFoundation.GXURLRequestOperationDelegate)) -> Foundation.Operation
+}
+@objc(GXNumberWithPictureFormatter) open class GXNumberWithPictureFormatter : Foundation.NumberFormatter {
+  public var gxNumberFormat: Swift.String
+  @objc public init(numberFormat: Swift.String)
+  @objc override dynamic open func string(from num: Foundation.NSNumber) -> Swift.String?
+  @objc override dynamic open func string(for obj: Any?) -> Swift.String?
+  @objc override dynamic open func number(from str: Swift.String) -> Foundation.NSNumber?
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func encode(with aCoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Foundation.NSString {
+  @objc(gxNumberOfOccurrencesOfString:) dynamic public func gxNumberOfOccurrences(of str: Swift.String?) -> Swift.UInt
+  @objc(gxStringUpToFirstOccurrenceOfString:) dynamic public func gxStringUpToFirstOccurrence(of str: Swift.String) -> Swift.String
+  @objc(gxSeparateStringWithSeparator:escapeString:) dynamic public func gxSeparate(withSeparator separatorStr: Swift.String, escape escapeStr: Swift.String) -> [Swift.String]
+  @objc(gxCaseInsensitiveEquals:) dynamic public func gxCaseInsensitiveEquals(_ otherString: Swift.String) -> Swift.Bool
+}
+extension Swift.String {
+  public func gxNumberOfOccurrences<T>(of str: T) -> Swift.Int where T : Swift.StringProtocol
+  public func gxStringUpToFirstOccurrence<T>(of str: T) -> Swift.String where T : Swift.StringProtocol
+  public func gxSeparate<Ts, Te>(withSeparator separatorStr: Ts, escape escapeStr: Te) -> [Swift.String] where Ts : Swift.StringProtocol, Te : Swift.StringProtocol
+  public func gxSplit<T>(byFirstOcurrenceOf separator: T) -> (head: Swift.Substring, tail: Swift.Substring)? where T : Swift.StringProtocol
+  public func gxSplit<T>(byLastOcurrenceOf separator: T) -> (head: Swift.Substring, tail: Swift.Substring)? where T : Swift.StringProtocol
+  public func gxSplit<T>(byOcurrenceOf separator: T, options: Swift.String.CompareOptions) -> (head: Swift.Substring, tail: Swift.Substring)? where T : Swift.StringProtocol
+  public func gxSplitString<T>(byFirstOcurrenceOf separator: T) -> (head: Swift.String, tail: Swift.String)? where T : Swift.StringProtocol
+  public func gxSplitString<T>(byLastOcurrenceOf separator: T) -> (head: Swift.String, tail: Swift.String)? where T : Swift.StringProtocol
+  public func gxSplitString<T>(byOcurrenceOf separator: T, options: Swift.String.CompareOptions) -> (head: Swift.String, tail: Swift.String)? where T : Swift.StringProtocol
+}
+@objc extension CoreLocation.CLLocationManager {
+  @objc(gxAuthorizationStatus) dynamic public var gxAuthorizationStatus: CoreLocation.CLAuthorizationStatus {
+    @objc get
+  }
+}
+extension GXFoundation.GXLoggerType : Swift.Equatable {}
+extension GXFoundation.GXLoggerType : Swift.Hashable {}
+extension GXFoundation.GXLoggerType : Swift.RawRepresentable {}
+extension GXFoundation.GXLoggerLevel : Swift.Equatable {}
+extension GXFoundation.GXLoggerLevel : Swift.Hashable {}
+extension GXFoundation.GXLoggerLevel : Swift.RawRepresentable {}
+extension GXFoundation.GXActivityIndicatorType : Swift.Equatable {}
+extension GXFoundation.GXActivityIndicatorType : Swift.Hashable {}
+extension GXFoundation.GXActivityIndicatorType : Swift.RawRepresentable {}

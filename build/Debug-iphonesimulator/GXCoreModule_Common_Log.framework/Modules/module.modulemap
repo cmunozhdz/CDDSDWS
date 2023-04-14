@@ -1,0 +1,11 @@
+framework module GXCoreModule_Common_Log {
+  umbrella header "GXCoreModule_Common_Log.h"
+
+  export *
+  module * { export * }
+}
+
+module GXCoreModule_Common_Log.Swift {
+  header "GXCoreModule_Common_Log-Swift.h"
+  requires objc
+}

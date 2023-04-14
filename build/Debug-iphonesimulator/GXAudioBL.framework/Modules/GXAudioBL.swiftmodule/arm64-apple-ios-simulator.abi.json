@@ -1,0 +1,497 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GXAudioBL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXObjectsModel",
+        "printedName": "GXObjectsModel",
+        "declKind": "Import",
+        "moduleName": "GXAudioBL"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXSDTMediaItemProperties",
+        "printedName": "GXSDTMediaItemProperties",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sdtData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXSDTMediaItemProperties",
+                "printedName": "GXAudioBL.GXSDTMediaItemProperties",
+                "usr": "c:@M@GXAudioBL@objc(cs)GXSDTMediaItemProperties"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GXObjectsModel.GXSDTDataCollectionProtocol?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GXSDTDataCollectionProtocol",
+                    "printedName": "GXObjectsModel.GXSDTDataCollectionProtocol",
+                    "usr": "c:@M@GXObjectsModel@objc(pl)GXSDTDataCollection"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GXAudioBL@objc(cs)GXSDTMediaItemProperties(im)initWithSdtData:",
+            "mangledName": "$s9GXAudioBL24GXSDTMediaItemPropertiesC7sdtDataAC14GXObjectsModel27GXSDTDataCollectionProtocol_pSg_tcfc",
+            "moduleName": "GXAudioBL",
+            "objc_name": "initWithSdtData:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "arrayRepresentation",
+            "printedName": "arrayRepresentation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[[Swift.String : Swift.String]]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[Swift.String : Swift.String]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXAudioBL@objc(cs)GXSDTMediaItemProperties(im)arrayRepresentation",
+            "mangledName": "$s9GXAudioBL24GXSDTMediaItemPropertiesC19arrayRepresentationSaySDyS2SGGSgyF",
+            "moduleName": "GXAudioBL",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dictionaryRepresentation",
+            "printedName": "dictionaryRepresentation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXAudioBL@objc(cs)GXSDTMediaItemProperties(im)dictionaryRepresentation",
+            "mangledName": "$s9GXAudioBL24GXSDTMediaItemPropertiesC24dictionaryRepresentationSDyS2SGSgyF",
+            "moduleName": "GXAudioBL",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXSDTMediaItemProperties",
+                "printedName": "GXAudioBL.GXSDTMediaItemProperties",
+                "usr": "c:@M@GXAudioBL@objc(cs)GXSDTMediaItemProperties"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GXAudioBL@objc(cs)GXSDTMediaItemProperties(im)init",
+            "mangledName": "$s9GXAudioBL24GXSDTMediaItemPropertiesCACycfc",
+            "moduleName": "GXAudioBL",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GXAudioBL@objc(cs)GXSDTMediaItemProperties",
+        "mangledName": "$s9GXAudioBL24GXSDTMediaItemPropertiesC",
+        "moduleName": "GXAudioBL",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXStandardClasses",
+        "printedName": "GXStandardClasses",
+        "declKind": "Import",
+        "moduleName": "GXAudioBL",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GXAudioBL_Private",
+        "printedName": "GXAudioBL_Private",
+        "declKind": "Import",
+        "moduleName": "GXAudioBL"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GXEOAudioRecorderAPI",
+        "printedName": "GXEOAudioRecorderAPI",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isRecording",
+            "printedName": "isRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GXAudioBL@objc(cs)GXEOAudioRecorderAPI(py)isRecording",
+            "mangledName": "$s9GXAudioBL20GXEOAudioRecorderAPIC11isRecordingSbvp",
+            "moduleName": "GXAudioBL",
+            "isOpen": true,
+            "objc_name": "isRecording",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GXAudioBL@objc(cs)GXEOAudioRecorderAPI(im)isRecording",
+                "mangledName": "$s9GXAudioBL20GXEOAudioRecorderAPIC11isRecordingSbvg",
+                "moduleName": "GXAudioBL",
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXAudioBL@objc(cs)GXEOAudioRecorderAPI(cm)start",
+            "mangledName": "$s9GXAudioBL20GXEOAudioRecorderAPIC5startSbyFZ",
+            "moduleName": "GXAudioBL",
+            "static": true,
+            "objc_name": "start",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GXAudioBL@objc(cs)GXEOAudioRecorderAPI(cm)stop",
+            "mangledName": "$s9GXAudioBL20GXEOAudioRecorderAPIC4stopSSyFZ",
+            "moduleName": "GXAudioBL",
+            "static": true,
+            "objc_name": "stop",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GXEOAudioRecorderAPI",
+                "printedName": "GXAudioBL.GXEOAudioRecorderAPI",
+                "usr": "c:@M@GXAudioBL@objc(cs)GXEOAudioRecorderAPI"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GXAudioBL@objc(cs)GXEOAudioRecorderAPI(im)init",
+            "mangledName": "$s9GXAudioBL20GXEOAudioRecorderAPICACycfc",
+            "moduleName": "GXAudioBL",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GXAudioBL@objc(cs)GXEOAudioRecorderAPI",
+        "mangledName": "$s9GXAudioBL20GXEOAudioRecorderAPIC",
+        "moduleName": "GXAudioBL",
+        "isOpen": true,
+        "objc_name": "GXEOAudioRecorderAPI",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)GXExternalObjectBase",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "GXStandardClasses.GXExternalObjectBase",
+          "GXStandardClasses.GXEmbeddedModelNSObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXAudioBL\/GXAudioBL\/SDT\/GXSDMediaItemProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 376,
+      "length": 5,
+      "value": "\"Key\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXAudioBL\/GXAudioBL\/SDT\/GXSDMediaItemProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 436,
+      "length": 7,
+      "value": "\"Value\""
+    },
+    {
+      "filePath": "\/Users\/builder\/github-actions-runner\/_work\/iOSFlexibleClient\/iOSFlexibleClient\/GXFlexibleClient\/GXAudioBL\/GXAudioBL\/SDT\/GXSDMediaItemProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 210,
+      "length": 24,
+      "value": "\"GXAudioBL.GXSDTMediaItemProperties\""
+    }
+  ]
+}

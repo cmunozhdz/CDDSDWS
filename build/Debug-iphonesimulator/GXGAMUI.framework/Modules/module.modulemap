@@ -1,0 +1,6 @@
+framework module GXGAMUI {
+  umbrella header "GXGAMUI.h"
+
+  export *
+  module * { export * }
+}

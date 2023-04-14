@@ -1,0 +1,11 @@
+{ 
+    "images" : [ { 
+        "idiom" : "universal",
+        "filename" : "workwithplus_nativemobile_wwp_nm_menu_background.jpg",
+        "scale" : "1x"
+    } ],
+    "info" : { 
+        "version" : 1,
+        "author" : "GeneXus"
+    }
+}

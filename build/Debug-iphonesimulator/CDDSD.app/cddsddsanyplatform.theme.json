@@ -1,0 +1,113 @@
+{ 
+    "Tokens" : [ { 
+        "Values" : { 
+            "colors_primary" : "#D5303E",
+            "colors_primary10" : "#D5303E1A",
+            "colors_primary30" : "#D5303E4D",
+            "colors_primary50" : "#D5303E80",
+            "colors_primary80" : "#D5303ECC",
+            "colors_primarytone" : "#C92432",
+            "colors_secondary" : "#FFC2D0",
+            "colors_statusbar" : "#D5303E",
+            "colors_applicationbar" : "#D5303E",
+            "fonts_primary-font-family" : "Montserrat",
+            "fontsizes_body-xlarge" : "20dip",
+            "fontsizes_body-large" : "16dip",
+            "fontsizes_body-regular" : "14dip",
+            "fontsizes_body-small" : "12dip",
+            "fontsizes_body-xsmall" : "8dip",
+            "fontsizes_attribute-label" : "12dip"
+        }
+    } ],
+    "Imports" : [ { 
+        "Name" : "WorkWithPlus.NativeMobile.WorkWithPlusDSNative",
+        "Type" : "DSO",
+        "Part" : "all"
+    } ],
+    "Styles" : [ { 
+        "Name" : "MenuBannerTall",
+        "background_image" : "9fb193d9-64a4-4d30-b129-ff7c76830f7e-wwp_nm_menubanner_tall"
+    }, { 
+        "Name" : "CardUserBackgroundImageTable",
+        "background_image" : "9fb193d9-64a4-4d30-b129-ff7c76830f7e-wwp_nm_menubanner"
+    }, { 
+        "Name" : "TableBackgroundImageLogin",
+        "background_image" : "9fb193d9-64a4-4d30-b129-ff7c76830f7e-wwp_nm_login_background"
+    }, { 
+        "Name" : "TableBackgroundImageMenu",
+        "background_image" : "9fb193d9-64a4-4d30-b129-ff7c76830f7e-wwp_nm_menu_background"
+    }, { 
+        "Name" : "TableGrow100x100",
+        "ThemeTransformationReference" : "tablegrow100x100"
+    }, { 
+        "Name" : "TableShrink",
+        "ThemeTransformationReference" : "tableshrink"
+    }, { 
+        "Name" : "BottomActionSheet",
+        "ThemeTransformationReference" : "bottomactionsheet"
+    }, { 
+        "Name" : "BottomActionSheetHide",
+        "ThemeTransformationReference" : "bottomactionsheethide"
+    }, { 
+        "Name" : "SlidingMessageTable",
+        "ThemeTransformationReference" : "bottomactionsheet"
+    }, { 
+        "Name" : "SlidingMessageTableBottomHide",
+        "ThemeTransformationReference" : "bottomactionsheethide"
+    }, { 
+        "Name" : "SlidingMessageTableTopHide",
+        "ThemeTransformationReference" : "slidingmessagetabletophide"
+    }, { 
+        "Name" : "SlidingTransparentTable",
+        "ThemeTransformationReference" : "bottomactionsheet",
+        "elevation" : "0"
+    }, { 
+        "Name" : "SlidingTransparentTableRightHalfHide",
+        "ThemeTransformationReference" : "slidingtransparenttablerighthalfhide",
+        "elevation" : "0"
+    } ],
+    "Transformations" : [ { 
+        "Name" : "tablegrow100x100",
+        "gxtranslation_value_x" : "0dip",
+        "gxtranslation_value_y" : "0dip",
+        "gxtranslation_relative_to" : "form",
+        "gxscale_value_x" : "100%",
+        "gxscale_value_y" : "100%",
+        "gxscale_relative_to" : "form"
+    }, { 
+        "Name" : "tableshrink",
+        "gxscale_value_x" : "0dip",
+        "gxscale_value_y" : "0dip",
+        "gxscale_relative_to" : "form"
+    }, { 
+        "Name" : "bottomactionsheet",
+        "gxtransform_anchor_point_y" : "top",
+        "gxtranslation_value_x" : "0dip",
+        "gxtranslation_value_y" : "0dip",
+        "gxtranslation_relative_to" : "parent",
+        "gxtransform_translation_type" : "translate_by"
+    }, { 
+        "Name" : "bottomactionsheethide",
+        "gxtransform_anchor_point_y" : "top",
+        "gxtranslation_value_y" : "300dip",
+        "gxtranslation_relative_to" : "parent",
+        "gxtransform_translation_type" : "translate_by"
+    }, { 
+        "Name" : "slidingmessagetabletophide",
+        "gxtransform_anchor_point_y" : "top",
+        "gxtranslation_value_y" : "-1000dip",
+        "gxtranslation_relative_to" : "parent",
+        "gxtransform_translation_type" : "translate_by"
+    }, { 
+        "Name" : "slidingtransparenttablerighthalfhide",
+        "gxtranslation_value_x" : "260dip",
+        "gxtranslation_relative_to" : "parent",
+        "gxtransform_translation_type" : "translate_by"
+    } ],
+    "Fonts" : [ { 
+        "Name" : "Montserrat",
+        "InternalName" : "Montserrat-Regular",
+        "FileName" : "Montserrat.ttf",
+        "File" : "Montserrat"
+    } ]
+}
